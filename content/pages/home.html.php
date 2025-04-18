@@ -8,9 +8,9 @@
 	echo "<h2>" . _("Welcome to Dungeon Crawl Cosplay; a 5-in-1 website!") . "</h2>";
 	echo '<img src="'.$dir_path."/".$filename.'" alt="'.$filename.'"  width="400"  style="float:right">';
 
-	echo '<h3><a href="/dungeoncrawl">Dungeon Crawl</a> (DC) ' . _("is the game with many forks to choose from.") . "</h3>";
-	echo '<ul><li><a href="/dungeoncrawl/online_servers">' . _("Play online") . "</a>" . _(" on a Webtiles server.") . "</li>";
-	echo     '<li><a href="/dungeoncrawl/download_forks">' . _("Download") . "</a>" . _(" an offline version of one of the DC forks.") . "</li>";
+	echo '<h3><a href="https://www.dungeoncrawlcentral.org/">Dungeon Crawl</a> (DC) ' . _("is the game with many forks to choose from.") . "</h3>";
+	echo '<ul><li><a href="https://www.dungeoncrawlcentral.org/online_servers">' . _("Play online") . "</a>" . _(" on a Webtiles server.") . "</li>";
+	echo     '<li><a href="https://www.dungeoncrawlcentral.org/download_forks">' . _("Download") . "</a>" . _(" an offline version of one of the DC forks.") . "</li>";
 	echo     "<li>" . _("Join our ") . '<a href="https://discord.gg/gMnE5JFcB7" target="_blank">' . _("Dungeon Crawl community") . "</a>". _(" discord server; the only place to discuss all DC forks!") . "</li></ul>";
 
 	echo "<br><p style='color:orange'>" . _("Please select your Crawl Cosplay pleasure among the following options") . ":</p>";
