@@ -4,6 +4,8 @@
 	$count = count($files);
 	$index = rand(2, ($count-1));
 	$filename = $files[$index];
+	$index2 = rand(2, ($count-1));
+	$filename2 = $files[$index];
 
 	echo "<h2>" . _("Welcome to Crawl Cosplay; a 5-in-1 website!") . "</h2>";
 	echo '<img src="'.$dir_path."/".$filename.'" alt="'.$filename.'"  width="350"  style="float:right">';
@@ -38,7 +40,9 @@
 	echo "<ul><li>" . _("A tournament lasting 4 weeks with each week highlighting a different Dungeon Crawl fork.") . "</li>";
 	echo     "<li>" . _("The first ever CCFT will likely start on May 30th, 2025.");
 	echo     "<li>" . _("Read a draft of") . ' <a href="/ccft/about_ccft">' . _("About CCFT") . "</a>.</li></ul>";
-	
+
+	echo '<img src="'.$dir_path."/".$filename2.'" alt="'.$filename2.'"  width="350"  style="float:right">';
+
 	echo "<h2>" . _("Watch a video about the Crawl Cosplay website") . "</h2>";
 	echo "<p>" . _("For indepth details about the Crawl Cosplay website, see:")
 		   . ' <a href="https://www.youtube.com/watch?v=x7u0PwESwPM&t=39s" target="_blank">' . _("Dumalacath's CC video") . "</a></p>";
