@@ -14,7 +14,7 @@
 	echo     '<li><a href="https://www.dungeoncrawlcentral.org/download_forks.html" target="_blank">' . _("Download") . "</a>" . _(" an offline version of one of the DC forks.") . "</li>";
 	echo     "<li>" . _("Join our ") . '<a href="https://discord.gg/gMnE5JFcB7" target="_blank">' . _("Dungeon Crawl community") . "</a>". _(" discord server; the only place to discuss all DC forks!") . "</li></ul>";
 
-	echo "<p style='color:orange'>" . _("Please select your Crawl Cosplay pleasure among the following options") . ":</p>";
+	echo "<p style='color:orange'>" . _("Please select your Crawl Cosplay pleasure among the following 5 options") . ":</p>";
 	echo '<h3><a href="/cca">' . _("Crawl Cosplay Academy") . "</a> (CCA)</h3>";
 	echo "<ul><li>" . _("For those new to DCSS or who haven't yet won a couple of times.") . "</li>";
 	echo     "<li>" . _("Read") . ' <a href="/cca/about_cca">' . _("About CCA") . "</a></li></ul>";
