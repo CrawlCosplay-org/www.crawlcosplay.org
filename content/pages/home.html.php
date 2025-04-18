@@ -5,7 +5,7 @@
 	$index = rand(2, ($count-1));
 	$filename = $files[$index];
 
-	echo "<h2>" . _("Welcome to Dungeon Crawl Cosplay; a 5-in-1 website!") . "</h2>";
+	echo "<h2>" . _("Welcome to Crawl Cosplay; a 5-in-1 website!") . "</h2>";
 	echo '<img src="'.$dir_path."/".$filename.'" alt="'.$filename.'"  width="350"  style="float:right">';
 
 	echo '<h3>' . _("<b>BACKGROUND:</b> Dungeon Crawl (DC) is the game with many forks to choose from.") . "</h3>";
