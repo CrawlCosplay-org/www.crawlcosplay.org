@@ -5,7 +5,7 @@
 	$index = rand(2, ($count-1));
 	$filename = $files[$index];
 	$index2 = rand(2, ($count-1));
-	$filename2 = $files[$index];
+	$filename2 = $files[$index2];
 
 	echo "<h2>" . _("Welcome to Crawl Cosplay; a 5-in-1 website!") . "</h2>";
 	echo '<img src="'.$dir_path."/".$filename.'" alt="'.$filename.'"  width="350"  style="float:right">';
