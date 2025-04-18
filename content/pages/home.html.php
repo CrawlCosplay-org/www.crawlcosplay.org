@@ -47,7 +47,7 @@
 	echo "<p>" . _("Come chat with us on our DCSS Crawl Cosplay 2.0 community")
 	           . ' <a href="https://discord.gg/pW7nqC8Wu3" target="_blank">'
 		   . _("Discord server") . '<img src="/img/discord_transparent_border.png" width="18" height="18" ></a> '
-		   . _("with over 125 members!") . "</p>";
+		   . _("with over 150 members!") . "</p>";
 	
 	echo "<h2>" . _("Crawl Cosplay Streamers") . "</h2>";
 	echo "<p>"  . _("Our Crawl Cosplay YouTube channel")
