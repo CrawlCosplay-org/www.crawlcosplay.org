@@ -6,7 +6,7 @@
 	$filename = $files[$index];
 
 	echo "<h2>" . _("Welcome to Dungeon Crawl Cosplay; a 5-in-1 website!") . "</h2>";
-	echo '<img src="'.$dir_path."/".$filename.'" alt="'.$filename.'"  width="400"  style="float:right">';
+	echo '<img src="'.$dir_path."/".$filename.'" alt="'.$filename.'"  width="350"  style="float:right">';
 
 	echo '<h3>' . _("<b>BACKGROUND:</b> Dungeon Crawl (DC) is the game with many forks to choose from.") . "</h3>";
 	echo '<ul><li><a href="https://www.dungeoncrawlcentral.org/" target="_blank">Dungeon Crawl Central</a> ' . _("is the NEW website with all the details of DC forks curently being developed.") . "</li>";
