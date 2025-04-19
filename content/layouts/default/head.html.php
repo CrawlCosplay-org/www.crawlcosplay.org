@@ -4,7 +4,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title><?=$page_title ?? 'Dungeon Crawl Cosplay - the 5-in-1 website'?></title>
+    <title><?=$page_title ?? 'Crawl Cosplay - the 5-in-1 website'?></title>
     <link rel="icon" href="/img/cc_stone_soup_icon-444x370.png" type="image/png">
     <!-- <link rel="stylesheet" 	href="/css/reset.css"> -->
     <link rel="stylesheet" href="/css/cosplay.css?v=<?=time()?>">
