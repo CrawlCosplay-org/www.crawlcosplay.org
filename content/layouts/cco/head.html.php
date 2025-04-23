@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title><?=$page_title ?? 'CCO Webtiles - CCO.CrawlCosplay.org'?></title>
-    <link rel="icon" href="/img/cco_stone_soup_icon-512x512.png" type="image/png">
+    <link rel="icon" href="/img/cco.png" type="image/png">
     <!-- <link rel="stylesheet" 	href="/css/reset.css"> -->
     <link rel="stylesheet" href="/css/cco.css?v=<?=time()?>">
     <!-- <link rel="stylesheet" href="https://crawl.develz.org/tournament/0.23/tourney-score.css"> -->
