@@ -107,7 +107,7 @@ if ($active) :
 	echo '<h2 style="color:rgb(69, 136, 5);">Welcome to the <b>Crawl Cosplay Forks Tournament</b> (CCFT)</h2>';
 	echo '<!-- <p><a href="/ccft/past_ccft_results.html">Past CCFTournaments Results</a>.</p> -->';
   echo '<h4>Next Tournament</h4>';
-  echo '<p>Expected in early June 2025.</p>';
+  echo '<p>Starts June 6th 2025 @ 00:00 UTC.</p>';
   echo '<h2>General Rules, Scoring and Credits</h2>';
   echo 'See the <a href="/ccft/about_ccft.html">CCFT About page</a>.';
 	echo "<br>";
