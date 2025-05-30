@@ -45,7 +45,7 @@
     Submissions will be approved by a moderator, who will verify your morgue and your score, and create a username for your future submissions.</p>
 
 <h3>Restrictions for tournament play</h3>
-<ul><li><b>Submitted runs must be played on online servers. See the <a href="https://www.dungeoncrawlcentral.org/online_servers.html" target="_blank">Dungeon Crawl Central</a> website for details.</b>.
+<ul><li><b>Submitted runs must be played on online servers. See the <a href="https://www.dungeoncrawlcentral.org/online_servers.html" target="_blank">Dungeon Crawl Central</a> website for details.</b>
     <li><b>Seeded games are NOT accepted.</b></li>
     <li>You can make as many attempts as you want.</li>
     <li>Morgues must be submitted while a challenge is active. No late submissions!</li>
