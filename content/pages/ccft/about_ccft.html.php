@@ -16,24 +16,22 @@
 <h2>About Crawl Cosplay Fork Tournament (CCFT)</h2>
 <?php    echo '<img src="/'.$dir_path."/".$filename1.'" alt="'.$filename1.'" width="72" height="72" style="float:right">'; ?>
 
-<p>The <b>Crawl Cosplay Fork Tournament</b> is a 5-week long tournament with a different fork each week highlighting major features not found in the regular DCSS version.
- The tournament is based on the weekly <a href="http://crawlcosplay.dcss.io/" target="_blank">Crawl Cosplay Challenge</a> (CCC) series for <a href="http://crawl.develz.org/" target="_blank">Dungeon Crawl Stone Soup</a> (DCSS).</p>
+<p>The <b>Crawl Cosplay Forks Tournament</b> is a 4-week long tournament with a different fork each week highlighting some important changes.
 
-<p>Each week will likely feature a fork's Unique character for you to play, with one or more options for starting species and background, as well as which god you must worship.
+<p>Each week will feature a fork's Unique combo for you to play, with one or more options for starting species and background, as well as which god you must worship.
    These are all mandatory and you must worship your god before entering any multi-level branch besides the dungeon (e.g. Lair, Orc, Depths). 
    Also, you can't do anything to lose your religion, including abandoning your god. 
    The goal is not to emulate the unique's behaviour exactly, but to get a good starting point on playing games with interesting requirements.</p>
-<p>In the event of a tie for top spot, the last week's challenge will be a very difficult one. 
-   The highest score for that last week will be used to determine the winner.</p>
+<p>In the event of a tie for top spot, the highest score for the last week will be used to determine the winner.</p>
 
 <p>A week's challenge details will be posted on Reddit at the time of the start on Friday at 00:00 UTC.</p>
 
 <h3>Featured Forks</h3>
 <ul>
-    <li><a href="https://cosplay.kelbi.org/ccft/fork_bcadren.html">BCadren</a></li>
-    <li><a href="https://cosplay.kelbi.org/ccft/fork_bcrawl.html">BCrawl</a></li>
-    <li><a href="https://cosplay.kelbi.org/ccft/fork_hellcrawl.html">HellCrawl</a></li>
-    <li><a href="https://cosplay.kelbi.org/ccft/fork_stoatsoup.html">Stoat Soup</a></li>
+    <li><a href="/ccft/fork_bcadren.html">BCadren</a></li>
+    <li><a href="/ccft/fork_bcrawl.html">BCrawl</a></li>
+    <li><a href="/ccft/fork_stoatsoup.html">Stoat Soup</a></li>
+    <li><a href="/ccft/fork_stonesoup.html">Stone Soup (DCSS)</a></li>
 </ul>
 
 <h3>How to Enter</h3>
@@ -47,9 +45,7 @@
     Submissions will be approved by a moderator, who will verify your morgue and your score, and create a username for your future submissions.</p>
 
 <h3>Restrictions for tournament play</h3>
-<ul><li><b>Submitted runs must be played in selected fork on one of the <a href="https://crawl.develz.org/play.htm" target="_blank"> official online servers</a></b> 
-           or <a href="https://crawl.yiuf.org/" target="_blank">crawl.yiuf.org</a>.
-           A list of which fork is available on which server will be written in the Reddit post and on the challenge's details page.</li>
+<ul><li><b>Submitted runs must be played on online servers. See the <a href="https://www.dungeoncrawlcentral.org/online_servers.html" target="_blank">Dungeon Crawl Central</a> website for details.</b>.
     <li><b>Seeded games are NOT accepted.</b></li>
     <li>You can make as many attempts as you want.</li>
     <li>Morgues must be submitted while a challenge is active. No late submissions!</li>
@@ -86,7 +82,7 @@
 <?php
     echo '<img src="/'.$dir_path."/".$filename4.'" alt="'.$filename4.'" width="72" height="72" style="float:right">'; 
 ?>
-<p>Each of the 5 challenges will also have two <em>optional</em> bonus challenges, that are usually difficult or unconventional.
+<p>Each of the 4 challenges will also have two <em>optional</em> bonus challenges, that are usually difficult or unconventional.
   Completing a bonus challenge doesn't affect your score, but gets you a <strong>star</strong>, a small trophy to recognize your skill.
   Each week has one star that requires you to win the game or is to be done on the Orb rune, and another that doesn't. 
   You don't need to follow any of the cosplay conducts to earn stars.</p>
@@ -94,9 +90,6 @@
 <h3>Credits</h3>
 
 <p>The Crawl Cosplay Fork Tournament was created and is run by <a href="https://www.reddit.com/user/RoGGa_69/" target="_blank">RoGGa</a>
-  with the help from our Crawl Cosplay @VIPs in our CC Discord server. Thanks to MalcolmRose for giving me the idea!</p>
-
+  with the help from our Crawl Cosplay @VIPs in our CC Discord server.</p>
 <p>The CCFT part of the website was created by copying the CCTT format.</p>
-<p>A big thank you to floraline for hosting CC on the old CKO server.</p>
-
 <p>See the <a href="/ccc/about_ccc">CCC about page</a> for more detailed credits about the original website live since 2019.</p>
