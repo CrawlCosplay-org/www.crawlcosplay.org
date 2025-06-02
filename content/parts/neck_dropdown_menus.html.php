@@ -14,7 +14,7 @@
 			<a href="/ccsdt">Crawl Cosplay Sudden Death Tournament (CCSDT)</a>
 			<a href="/ccsdt/about_ccsdt"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#8627; About CCSDT</a>
 			<a href="/ccsdt/past_ccsdt_results.html"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#8627; Past CCSDT results</a>
-		        <a href="/ccft">Crawl Cosplay Fork Tournament (CCFT) - NEW!</a>
+		        <a href="/ccft">Crawl Cosplay Forks Tournament (CCFT) - NEW!</a>
 			<a href="/ccft/about_ccft"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#8627; About CCFT</a>
 		</div>
 	</div>
