@@ -57,7 +57,7 @@ After you complete a good game (with either a <abbr title="aka Yet Another Victo
 <p> tile_player_tile = tile:MONS_WIGLAF</p>
 
 <h2>Q&A</h2>
-<h3>Why aren't easy combos like Minotaur Beserker (MiBe) not one of the 12 CCA challenges?</h3>
+<h3>Why aren't easy combos like Minotaur Berserker (MiBe) not one of the 12 CCA challenges?</h3>
 <p>Simple, you won't find some of the easiest combos such as MiBe because there are not any DCSS Uniques that fill those combos.</p><br>
 <h3>Need more help than what's on the challenge details' page?</h3>
 <p>Ask all your questions to the Crawl Cosplay community on our <a href="https://discord.gg/pW7nqC8Wu3" target="_blank">Discord server<img src="/img/discord_transparent_border.png" width="18" height="18"></a>. Our @VIPs group will likely be available to help!</p><br>
