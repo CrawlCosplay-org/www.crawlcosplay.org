@@ -17,7 +17,7 @@ if ($active) :
 <p style="text-align:right;"><span style="font-size: smaller"><?=$e($active->shortform)?></span></p>
 
 <p>  <a href="/ccft/fchallengedetails?id=<?=$e($active->id)?>">Challenge details</a>  
-   | <a href="/ccft/submit_ccft">Submit a CCFT run</a> 
+   | <a href="/ccft/submit_ccft?id=<?=$e($active->id)?>">Submit a CCFT run</a> 
    | <a href="https://discord.gg/pW7nqC8Wu3">Discuss it in CC's Discord</a> 
    | <a href="<?=$e($active->reddit)?>">Fork details</a>
    | Next challenge starts on Friday 00:00 UTC.</p>
