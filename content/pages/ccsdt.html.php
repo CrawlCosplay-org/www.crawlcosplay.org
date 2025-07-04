@@ -7,5 +7,5 @@
 <p>Next CCSDT for v0.33 likely starts at end of August 2025.</p>
 
 <h2>General Rules, Scoring and Credits</h2>
-See the <a href="about_ccsdt.html">CCSDT About page</a>.
+See the <a href="/ccsdt/about_ccsdt.html">CCSDT About page</a>.
 <br>
