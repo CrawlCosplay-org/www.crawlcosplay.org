@@ -9,7 +9,7 @@ use app\models\{Challenge, Submission, Player};
 	$weeks = sizeof($challenges_in_set);
 ?>
 <h2>Crawl Cosplay Forks Tournament (CCFT) results</h2>
-<h3>for CCFT#<?=$set?></h3>
+<h3>for CCFT#<?=abs($set)?></h3>
 
 <table class="set-list">
 <?php 
