@@ -33,12 +33,12 @@
 
 	echo '<h3><a href="/ccsdt">' . _("Crawl Cosplay Sudden Death Tournament") . "</a> (CCSDT)</h3>";
 	echo "<ul><li>" . _("A DCSS tournament lasting 5 weeks with a different Crawl Unique combo to play each week. You only get one try!") . "</li>";
-	echo     "<li>" . _("Next CCSDT for v0.33 in mid 2025.") . "</li>";
+	echo     "<li>" . _("Next CCSDT for v0.33 likely starts at end of August 2025.") . "</li>";
 	echo     "<li>" . _("Read") . ': <a href="/ccsdt/about_ccsdt">' . _("About CCSDT") . "</a>.</li></ul>";
 
 	echo '<h3><a href="/ccft">' . _("Crawl Cosplay Forks Tournament") . "</a> (CCFT) </h3>";
 	echo "<ul><li>" . _("A tournament lasting 4 weeks with each week highlighting a different Dungeon Crawl fork.") . "</li>";
-	echo     "<li>" . _("The next CCFT will likely start iin early 2026.");
+	echo     "<li>" . _("The next CCFT will likely start in early 2026.");
 	echo     "<li>" . _("Read ") . ' <a href="/ccft/about_ccft">' . _("About CCFT") . "</a>.</li></ul>";
 
 	echo '<img src="'.$dir_path."/".$filename2.'" alt="'.$filename2.'"  width="350"  style="float:right">';
