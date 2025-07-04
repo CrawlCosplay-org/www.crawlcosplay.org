@@ -105,11 +105,10 @@ if ($active) :
 
 <?php else : // no active challenge
 	echo '<h2 style="color:rgb(69, 136, 5);">Welcome to the <b>Crawl Cosplay Forks Tournament</b> (CCFT)</h2>';
-	echo "<h2>There is currently no active Crawl Cosplay Forks Tournament (CCFT)</h2>";
+	echo "<h3>There is currently no active Crawl Cosplay Forks Tournament (CCFT)</h3>";
 	echo 'For previous tournament results, see:';
-	echo '<ul><li><a href="/ccft/tresults.html?set=-1">CCTT#1</a> June 2025</li>';
+	echo '<ul><li><a href="/ccft/tresults.html?set=-1">CCFT#1</a> June 2025</li>';
 	echo "</ul>";
-	echo "<br>";
  	echo '<h4>Next Tournament</h4>';
   	echo '<p>Will likely start in early 2026.</p>';
   	echo '<h2>General Rules, Scoring and Credits</h2>';
