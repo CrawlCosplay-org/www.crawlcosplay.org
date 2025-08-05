@@ -34,7 +34,7 @@
 
 	echo '<h3><a href="/ccsdt">' . _("Crawl Cosplay Sudden Death Tournament") . "</a> (CCSDT)</h3>";
 	echo "<ul><li>" . _("A DCSS tournament lasting 5 weeks with a different Crawl Unique combo to play each week. You only get one try!") . "</li>";
-	echo     "<li>" . _("Next CCSDT for v0.33 likely starts at end of August 2025.") . "</li>";
+	echo     "<li>" . _("Next CCSDT for v0.33 likely starts on Sept 5th, 2025.") . "</li>";
 	echo     "<li>" . _("Read") . ': <a href="/ccsdt/about_ccsdt">' . _("About CCSDT") . "</a>.</li></ul>";
 
 	echo '<h3><a href="/ccft">' . _("Crawl Cosplay Forks Tournament") . "</a> (CCFT) </h3>";
