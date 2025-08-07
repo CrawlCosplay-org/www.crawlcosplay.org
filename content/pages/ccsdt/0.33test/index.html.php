@@ -1,7 +1,7 @@
 <title>Crawl Cosplay Sudden Death Tournament</title>
     <?php $this->layout = 'ccsdt'; ?>
     <div id="title">
-    <h2 id="sdc"><center>CCSDT for DCSS v0.32</center></h2>
+    <h2 id="sdc"><center>CCSDT for DCSS v0.33</center></h2>
     <h2></h2></div><div id="content">
     <pre id="cover">
 _You are suddenly pulled into a different region of the Abyss!
