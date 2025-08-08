@@ -22,6 +22,7 @@
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">Syis</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">kuniqs</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">ereinion</td>
+                <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">erikjake</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">RoGGa</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">PieDemon</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">TheMeInTeam</td>
@@ -36,4 +37,4 @@
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">kickassninja</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">cpf86</td>
                 <td colspan="10"></td><td class="total">0</td></tr></table></div></div>
-    <div id="bottomtext"><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="../about_ccsdt.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu">Week 1 - </span><span class="menu"><a href="2.html">Week 2</a> - </span><span class="menu">Week 3 - </span><span class="menu">Week 4 - </span><span class="menu">Week 5 - </span><span id="updated"><span class="label">Updates every 10 mins. Last Update: </span>2025-08-08 20:19 UTC</span></div>
+    <div id="bottomtext"><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="../about_ccsdt.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu">Week 1 - </span><span class="menu"><a href="2.html">Week 2</a> - </span><span class="menu">Week 3 - </span><span class="menu">Week 4 - </span><span class="menu">Week 5 - </span><span id="updated"><span class="label">Updates every 10 mins. Last Update: </span>2025-08-08 20:29 UTC</span></div>
