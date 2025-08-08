@@ -2,28 +2,29 @@
 <h2 style="color:rgb(69, 136, 5);">About Crawl Cosplay Sudden Death Tournament (CCSDT)</h2>
 
 <p>The Crawl Cosplay Sudden Death Tournament is a competition that aims to fill a
-Crawl niche not currently filled by the version release tournament or the other three Crawl Cosplays initiatives.
+Crawl niche not currently filled by the version release tournament or the other Crawl Cosplays initiatives.
 The idea is for players to compete by trying to do as well as possible in a
 game of Crawl with one attempt only; if you die, that challenge is over (thus
 "sudden death"). This competition is a lower time commitment event that aims to challenge 
-players while playing one of the 100 or so Crawl Unique characters.</p>
+players while playing 5 of the 100 or so Crawl Unique characters.</p>
 
 <h2>Rules</h2>
 <ol>
 <li>Each weekly challenge consists of playing a randomly chosen Crawl Unqiue's starting combo (e.g. Snorg, a TrBe). 
-The combos for each week of the competition have already been selected by our Crawl Cosplay @VIPs on our 
-<a href="https://discord.gg/pW7nqC8Wu3" target="_blank">Discord server<img src="/img/discord_transparent_border.png" width="18" height="18"></a>. 
-All players have one week to finish a game using that combo. Only milestones recorded during the week (from
+The chosen combo for each week of the competition will streamed on Twitch.tv by Dumalacath: https://www.youtube.com/@dumalacath
+20 minutes before the start of the new week. A spin the wheel format will be used to make the choices random.</li>
+<li>All players have one week to finish a game using that combo. Only milestones recorded during the week (from
 00:00 UTC on the start date until 00:00 UTC on the end date) will count for scoring.</li>
-<li>Your first 0.32 game started on an official server (except for LLD) during the week will count
-for scoring. This is the only allowed attempt, subject to rule 3 below.</li>
+<li>Your first 0.33 game started on an official server during the week will count
+for scoring. This is the only allowed attempt, subject to rule 4 below.</li>
 <li>One redo per week is allowed if your first game ended in death with player
 XL < 5 (i.e., no redo once you reach XL 5). The redo game must be started after
 the end of the first game (no startscumming!).  The highest score of the
 two games is counted towards your score.</li>
 <li>Each challenge includes a list of 3 gods. A bonus point can be earned upon
 reaching ****** piety (or on worship with Gozag or Xom) with one of the listed
-gods. The point is lost if you ever abandon your god or are excommunicated or worship another god first instead of the 3 choiced gods.</li>
+gods. The point is lost if you ever abandon your god or are excommunicated or worship another god first 
+instead of the 3 choiced gods.</li>
 <li>The tournament consists of 5 challenges total (i.e., 5 different combos). Each
 race and background is selected at most once during the competition.</li>
 <li>The final rankings will be tallied at the end of week 5 and represent the
