@@ -5,7 +5,7 @@
     <h2>Week 2 &mdash; DsAl</h2></div><div id="content"><div id="times"><span class="label">Week of 2025-08-04</span></div><div id="combo"><span class="label">Character: </span>Demonspawn Alchemist</div>
 <div id="bonus"><span class="label">Bonus 1: </span>Reach the end of Lair at XL &leq; 12.<br/>
 <span class="label">Bonus 2: </span>Collect the golden rune.</div>
-<div id="gods"><span class="label">Gods: </span>Qazlal, Vehumet, The Shining One</div><div class="card"><table><tr class="head">
+<div id="gods"><span class="label">Gods: </span>Qazlal, Vehumet, Lugonu</div><div class="card"><table><tr class="head">
     <th>Player</th>
     <th>Unique Kill</th>
     <th>Branch Enter</th>
@@ -18,7 +18,7 @@
     <th>Bonus 1</th>
     <th>Bonus 2</th>
     <th>Total</th>
-    </tr><tr class="alive"><td class="name">RoGGa</td><td class="pt">1</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="total">1</td></tr>
+    </tr><tr class="alive"><td class="name">RoGGa</td><td class="pt">1</td><td class="pt">1</td><td class="pt">1</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">1</td><td class="pt">0</td><td class="total">4</td></tr>
 <tr class="none"><td class="name">Bronksi</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">Syis</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">kuniqs</td>
@@ -36,4 +36,4 @@
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">kickassninja</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">cpf86</td>
                 <td colspan="10"></td><td class="total">0</td></tr></table></div></div>
-    <div id="bottomtext"><span class="menu"><a href="../ccsdt.html">Overview</a> - </span><span class="menu"><a href="../about_ccsdt.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu"><a href="1.html">Week 1</a> - </span><span class="menu">Week 2 - </span><span class="menu">Week 3 - </span><span class="menu">Week 4 - </span><span class="menu">Week 5 - </span><span id="updated"><span class="label">Updates every 5 mins. Last Update: </span>2025-08-08 12:54 UTC</span></div>
+    <div id="bottomtext"><span class="menu"><a href="../ccsdt.html">Overview</a> - </span><span class="menu"><a href="../about_ccsdt.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu"><a href="1.html">Week 1</a> - </span><span class="menu">Week 2 - </span><span class="menu">Week 3 - </span><span class="menu">Week 4 - </span><span class="menu">Week 5 - </span><span id="updated"><span class="label">Updates every 5 mins. Last Update: </span>2025-08-08 13:54 UTC</span></div>
