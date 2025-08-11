@@ -13,7 +13,7 @@ players while playing 5 of the 100 or so Crawl Unique characters.</p>
 <li>Each weekly challenge consists of playing a randomly chosen Crawl Unqiue's starting combo (e.g. Snorg, a TrBe). 
 The chosen combo for each week of the competition will streamed on Twitch.tv by RoGGa 
  ( <a href="https://twitch.tv/@rogga_likes_dcss" target="_blank">twitch.tv/@rogga_likes_dcss</a> ) 
-20 minutes before the start of the new week. A spin the wheel format will be used to make the choices random.</li>
+30 minutes before the start of the new week. A spin the wheel format will be used to make the choices random.</li>
 <li>All players have one week to finish a game using that combo. Only milestones recorded during the week (from
 00:00 UTC on the start date until 00:00 UTC on the end date) will count for scoring.</li>
 <li>Your first 0.33 game started on an official server during the week will count
