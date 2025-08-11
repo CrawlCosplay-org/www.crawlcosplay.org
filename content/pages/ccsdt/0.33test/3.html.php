@@ -19,6 +19,7 @@
     <th>Bonus 2</th>
     <th>Total</th>
     </tr><tr class="dead"><td class="name"><a href="https://cbro.berotato.org/morgue//RoGGa/morgue-RoGGa-20250811-132050.txt">RoGGa</a></td><td class="pt">1</td><td class="pt">1</td><td class="pt">1</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="total">3</td></tr>
+<tr class="alive"><td class="name">Platt</td><td class="pt">1</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="total">1</td></tr>
 <tr class="none"><td class="name">Bronksi</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">Syis</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">kuniqs</td>
@@ -28,7 +29,6 @@
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">PieDemon</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">TheMeInTeam</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">TheBenjamin</td>
-                <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">Platt</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">tmt</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">ASCIIPhilia</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">DWEMPhilia</td>
@@ -39,4 +39,4 @@
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">kickassninja</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">cpf86</td>
                 <td colspan="10"></td><td class="total">0</td></tr></table></div></div>
-    <div id="bottomtext"><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="../about_ccsdt.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu"><a href="1.html">Week 1</a> - </span><span class="menu"><a href="2.html">Week 2</a> - </span><span class="menu">Week 3 - </span><span class="menu">Week 4 - </span><span class="menu">Week 5 - </span><span id="updated"><span class="label">Updates every 10 mins. Last Update: </span>2025-08-11 21:30 UTC</span></div>
+    <div id="bottomtext"><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="../about_ccsdt.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu"><a href="1.html">Week 1</a> - </span><span class="menu"><a href="2.html">Week 2</a> - </span><span class="menu">Week 3 - </span><span class="menu">Week 4 - </span><span class="menu">Week 5 - </span><span id="updated"><span class="label">Updates every 10 mins. Last Update: </span>2025-08-11 21:40 UTC</span></div>
