@@ -5,7 +5,7 @@
     <h2>Week 3 &mdash; OpAl</h2></div><div id="content"><div id="times"><span class="label">Week of 2025-08-11</span></div><div id="combo"><span class="label">Character: </span>Octopode Alchemist</div>
 <div id="bonus"><span class="label">Bonus 1: </span>Enter Slime as your second multi-level branch (don't get banished).<br/>
 <span class="label">Bonus 2: </span>Enter a rune branch with all base skills < 11.</div>
-<div id="gods"><span class="label">Gods: </span>Vehumet, GOD_NO_GOD, GOD_NO_GOD</div><div class="card"><table><tr class="head">
+<div id="gods"><span class="label">Gods: </span>Vehumet, Okawaru, Makhleb</div><div class="card"><table><tr class="head">
     <th>Player</th>
     <th>Unique Kill</th>
     <th>Branch Enter</th>
@@ -18,7 +18,7 @@
     <th>Bonus 1</th>
     <th>Bonus 2</th>
     <th>Total</th>
-    </tr><tr class="dead"><td class="name"><a href="https://cbro.berotato.org/morgue//RoGGa/morgue-RoGGa-20250811-132050.txt">RoGGa</a></td><td class="pt">1</td><td class="pt">1</td><td class="pt">1</td><td class="pt">1</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="total">4</td></tr>
+    </tr><tr class="dead"><td class="name"><a href="https://cbro.berotato.org/morgue//RoGGa/morgue-RoGGa-20250811-132050.txt">RoGGa</a></td><td class="pt">1</td><td class="pt">1</td><td class="pt">1</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="total">3</td></tr>
 <tr class="none"><td class="name">Bronksi</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">Syis</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">kuniqs</td>
@@ -38,4 +38,4 @@
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">kickassninja</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">cpf86</td>
                 <td colspan="10"></td><td class="total">0</td></tr></table></div></div>
-    <div id="bottomtext"><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="../about_ccsdt.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu"><a href="1.html">Week 1</a> - </span><span class="menu"><a href="2.html">Week 2</a> - </span><span class="menu">Week 3 - </span><span class="menu">Week 4 - </span><span class="menu">Week 5 - </span><span id="updated"><span class="label">Updates every 10 mins. Last Update: </span>2025-08-11 13:29 UTC</span></div>
+    <div id="bottomtext"><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="../about_ccsdt.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu"><a href="1.html">Week 1</a> - </span><span class="menu"><a href="2.html">Week 2</a> - </span><span class="menu">Week 3 - </span><span class="menu">Week 4 - </span><span class="menu">Week 5 - </span><span id="updated"><span class="label">Updates every 10 mins. Last Update: </span>2025-08-11 13:39 UTC</span></div>
