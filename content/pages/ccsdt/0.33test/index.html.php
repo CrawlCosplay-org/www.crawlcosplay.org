@@ -27,7 +27,7 @@ href="rules.html">rules page</a>.</li>
 
 <h2>Schedule</h2>
 
-<ul id="schedule"><li><span class="label"><a href="1.html">Week 1 &mdash; NaAl</a>:</span> 2025-07-28 to 2025-08-04<li><span class="label"><a href="2.html">Week 2 &mdash; DsAl</a>:</span> 2025-08-04 to 2025-08-11<li><span class="label"><a href="3.html">Week 3 &mdash; OpAl</a>:</span> 2025-08-11 to 2025-08-18<li><span class="label">Week 4:</span> 2025-08-18 to 2025-08-25<li><span class="label">Week 5:</span> 2025-08-25 to 2024-09-01</ul>
+<ul id="schedule"><li><span class="label"><a href="1.html">Week 1 &mdash; NaAl</a>:</span> 2025-07-28 to 2025-08-04<li><span class="label"><a href="2.html">Week 2 &mdash; DsAl</a>:</span> 2025-08-04 to 2025-08-11<li><span class="label"><a href="3.html">Week 3 &mdash; OpAl</a>:</span> 2025-08-11 to 2025-08-18<li><span class="label"><a href="4.html">Week 4 &mdash; MiFi</a>:</span> 2025-08-18 to 2025-08-25<li><span class="label">Week 5:</span> 2025-08-25 to 2024-09-01</ul>
 
 <h2>Sign Up</h2> <p>Sign ups are now closed. See you in 0.33.</p>
 
@@ -36,4 +36,4 @@ href="rules.html">rules page</a>.</li>
 <p>Original CSDC rules and organization by <a href="http://crawl.akrasiac.org/scoring/players/walkerboh.html">WalkerBoh</a> and 
 <a href="http://crawl.akrasiac.org/scoring/players/ebering.html">ebering</a>.
 Thank you to scrubbdaddy for python assistance. I am your host, RoGGa.</div>
-    <div id="bottomtext"><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="../about_ccsdt.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu"><a href="1.html">Week 1</a> - </span><span class="menu"><a href="2.html">Week 2</a> - </span><span class="menu"><a href="3.html">Week 3</a> - </span><span class="menu">Week 4 - </span><span class="menu">Week 5 - </span>
+    <div id="bottomtext"><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="../about_ccsdt.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu"><a href="1.html">Week 1</a> - </span><span class="menu"><a href="2.html">Week 2</a> - </span><span class="menu"><a href="3.html">Week 3</a> - </span><span class="menu"><a href="4.html">Week 4</a> - </span><span class="menu">Week 5 - </span>
