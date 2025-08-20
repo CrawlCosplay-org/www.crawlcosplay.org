@@ -5,7 +5,7 @@
 <p>Next CCSDT for v0.33 starts on Friday Sept 5th, 2025 at 00:00 UTC.</p>
 
 <p>We are currently testing small changes to the automated python scripts; 
-   you can test yourself at: <a href="https://www.crawlcosplay.org/ccsdt/0.33test/index.html">https://www.crawlcosplay.org/ccsdt/0.33test/3.html</a></p>
+   you can test yourself at: <a href="https://www.crawlcosplay.org/ccsdt/0.33test/index.html">https://www.crawlcosplay.org/ccsdt/0.33test/index.html</a></p>
 
 <h2><a href="/ccsdt/past_ccsdt_results.html">Past Tournaments Results</a></h2>
 
