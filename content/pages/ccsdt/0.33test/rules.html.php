@@ -5,7 +5,8 @@
     <h2>Rules</h2></div><div id="content">
     <ol>
 <li>Each challenge consists of playing a randomly chosen Crawl race/class combo
-(e.g. MiBe). The combo for each week of the competition will be announced at
+(e.g. MiBe) based on a Crawl Unique. 
+The combo for each week of the competition will be announced at
 00:00 UTC on the Friday starting that week. All players have one week to
 finish a game using that combo. Only milestones recorded during the week (from
 00:00 UTC on the start date until 00:00 UTC on the end date) will count for
