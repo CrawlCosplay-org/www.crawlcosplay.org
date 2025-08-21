@@ -6,17 +6,17 @@ Crawl niche not currently filled by the version release tournament or the other 
 The idea is for players to compete by trying to do as well as possible in a
 game of Crawl with one attempt only; if you die, that challenge is over (thus
 "sudden death"). This competition is a lower time commitment event that aims to challenge 
-players while playing 5 of the 100 or so Crawl Unique characters.</p>
+players while playing 5 of the 100+ Crawl Unique characters.</p>
 
 <h2>Rules</h2>
 <ol>
 <li>Each weekly challenge consists of playing a randomly chosen Crawl Unqiue's starting combo (e.g. Snorg, a TrBe). 
 The chosen combo for each week of the competition will streamed on Twitch.tv by RoGGa 
  ( <a href="https://twitch.tv/@rogga_likes_dcss" target="_blank">twitch.tv/@rogga_likes_dcss</a> ) 
-30 minutes before the start of the new week. A spin the wheel format will be used to make the choices random.</li>
+30 minutes before the start of the new week. A spin-the-wheel format will be used to make the choices random.</li>
 <li>All players have one week to finish a game using that combo. Only milestones recorded during the week (from
 00:00 UTC on the start date until 00:00 UTC on the end date) will count for scoring.</li>
-<li>Your first 0.33 game started on an official server during the week will count
+<li>Your first 0.33 game started on an official DCSS server (or CCO: https://cco.crawlcosplay.org/ ) during the week will count
 for scoring. This is the only allowed attempt, subject to rule 4 below.</li>
 <li>One redo per week is allowed if your first game ended in death with player
 XL < 5 (i.e., no redo once you reach XL 5). The redo game must be started after
