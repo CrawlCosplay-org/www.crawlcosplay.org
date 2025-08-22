@@ -7,7 +7,8 @@
 <p>We are currently testing small changes to the automated python scripts; 
    you can test yourself at: <a href="https://www.crawlcosplay.org/ccsdt/0.33test/index.html">https://www.crawlcosplay.org/ccsdt/0.33test/index.html</a></p>
 
-<h2><a href="/ccsdt/past_ccsdt_results.html">Past Tournaments Results</a></h2>
+<h2>Past Tournaments Results</h2>
+<ul><a href="/0.32/standings.html">CCSDT#1</a> for DCSS v0.32</ul>
 
 <h2>General Rules, Scoring and Credits</h2>
 See the <a href="/ccsdt/about_ccsdt.html">CCSDT About page</a>.
