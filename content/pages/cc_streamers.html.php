@@ -7,7 +7,7 @@
 	it motivates them to make more great Crawl Cosplay content!</p>
 
 <p><b>particleface</b>: Mr. !Progress and CCA master.</p>
-<ul>	<li>Active Channels: 	<a href="https://www.twitch.tv/particleface" target="_blank">www.twitch.tv/particleface</a>< & 
+<ul>	<li>Active Channels: 	<a href="https://www.twitch.tv/particleface" target="_blank">www.twitch.tv/particleface</a> & 
 				<a href="https://www.youtube.com/@particleface" target="_blank">www.youtube.com/@particleface</a> & 
 				<a href="https://discord.gg/FJTZUHXT" target="_blank">Discord server</a></li>
 	<li>Crawl Cosplay playlists: 	<a href="https://www.youtube.com/playlist?list=PLY2Drf0NBvk-TkLUf7T9Ceg_HtoPwOHtT" target="_blank">CCA</a> &  
@@ -47,15 +47,5 @@
 <p><b>Platt_Mallar</b>: The new blood on the block with 1 WIN!!!</p>
 <ul>	<li>Active Channels:		<a href="https://www.twitch.tv/platt_mallar" target="_blank">www.twitch.tv/platt_mallar</a> &
 									<a href="https://www.youtube.com/@platt_mallar" target="_blank">www.youtube.com/@platt_mallar</a></li>
-</ul>
-...AND...
-<p><b>MalcolmRose</b>: the one and only!</p>
-<ul>	<li>Channels: 	<a href="https://www.twitch.tv/malcolmrosegaming" target="_blank">www.twitch.tv/malcolmrosegaming</a> & 
-			<a href="https://www.youtube.com/@MalcolmRoseGaming" target="_blank">www.youtube.com/@MalcolmRoseGaming</a> & 
-			<a href="https://discord.gg/3khp7weR8j" target="_blank">MR moderated DCSS Discord server</a></li>
-	<li>Crawl Cosplay playlists: 	<a href="https://www.youtube.com/playlist?list=PLDaRV3E1eciYScSTw2RnztSrkVLNpbBAV" target="_blank">CCC for v0.24</a>; 
-					<a href="https://www.youtube.com/playlist?list=PLDaRV3E1eciYRRnD5qxmyjXCxL6sizmsQ" target="_blank">CCTT promo videos</a></li>
-	<li>Malcolm Rose has the longest win-streak ever in DCSS with over 75 wins and counting! So checkout his YouTube channel for past wins and hairy moments,
-	and Follow him on twitch.tv to be notified about his next World Record stream.
-	Here's a link to his <a href="https://www.youtube.com/playlist?list=PLDaRV3E1ecibDeKDyvFUCYOKMPcO3FKLlDCSS" target="_blank">DCSS World Record playlist</a>.</li>
+	<li>Mr sPlatt normally streams on Saturdays and Sundays.</li>
 </ul>
