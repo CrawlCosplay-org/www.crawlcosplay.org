@@ -44,9 +44,9 @@
 	<li>Chadlywick plays offline and has 4 wins to his credit! You can catch him with his late streams between 11pm and 1am EST on Mondays, Wednesdays & Sundays.</li>
 </ul>
 
-<p><b>quinnr</b>: The new blood on the block!</p>
-<ul>	<li>Active Channels:		<a href="https://www.youtube.com/@dcss_quinnr" target="_blank">www.youtube.com/@dcss_quinnr</a></li>
-	<li>Crawl Cosplay playlists: 	<a href="https://www.youtube.com/playlist?list=PL0Wa3uNFkheEPwtOdw4u-zNczGMn2_a9J" target="_blank">CCTT</a></li>
+<p><b>Platt_Mallar</b>: The new blood on the block with 1 WIN!!!</p>
+<ul>	<li>Active Channels:		<a href="https://www.twitch.tv/platt_mallar" target="_blank">www.twitch.tv/platt_mallar</a> &
+									<a href="https://www.youtube.com/@platt_mallar" target="_blank">www.youtube.com/@platt_mallar</a></li>
 </ul>
 ...AND...
 <p><b>MalcolmRose</b>: the one and only!</p>
