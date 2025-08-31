@@ -7,7 +7,7 @@
 	it motivates them to make more great Crawl Cosplay content!</p>
 
 <p><b>particleface</b>: Mr. !Progress and CCA master.</p>
-<ul>	<li>Active Channels: 	<a href="https://www.twitch.tv/particleface" target="_blank">www.twitch.tv/particleface</a>< & 
+<ul>	<li>Active Channels: 	<a href="https://www.twitch.tv/particleface" target="_blank">www.twitch.tv/particleface</a> & 
 				<a href="https://www.youtube.com/@particleface" target="_blank">www.youtube.com/@particleface</a> & 
 				<a href="https://discord.gg/FJTZUHXT" target="_blank">Discord server</a></li>
 	<li>Crawl Cosplay playlists: 	<a href="https://www.youtube.com/playlist?list=PLY2Drf0NBvk-TkLUf7T9Ceg_HtoPwOHtT" target="_blank">CCA</a> &  
@@ -47,6 +47,7 @@
 <p><b>Platt_Mallar</b>: The new blood on the block with 1 WIN!!!</p>
 <ul>	<li>Active Channels:		<a href="https://www.twitch.tv/platt_mallar" target="_blank">www.twitch.tv/platt_mallar</a> &
 									<a href="https://www.youtube.com/@platt_mallar" target="_blank">www.youtube.com/@platt_mallar</a></li>
+	<li>Mr sPlatt normally streams on Saturdays and Sundays.</li>
 </ul>
 ...AND...
 <p><b>MalcolmRose</b>: the one and only!</p>
