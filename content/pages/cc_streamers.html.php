@@ -49,14 +49,3 @@
 									<a href="https://www.youtube.com/@platt_mallar" target="_blank">www.youtube.com/@platt_mallar</a></li>
 	<li>Mr sPlatt normally streams on Saturdays and Sundays.</li>
 </ul>
-...AND...
-<p><b>MalcolmRose</b>: the one and only!</p>
-<ul>	<li>Channels: 	<a href="https://www.twitch.tv/malcolmrosegaming" target="_blank">www.twitch.tv/malcolmrosegaming</a> & 
-			<a href="https://www.youtube.com/@MalcolmRoseGaming" target="_blank">www.youtube.com/@MalcolmRoseGaming</a> & 
-			<a href="https://discord.gg/3khp7weR8j" target="_blank">MR moderated DCSS Discord server</a></li>
-	<li>Crawl Cosplay playlists: 	<a href="https://www.youtube.com/playlist?list=PLDaRV3E1eciYScSTw2RnztSrkVLNpbBAV" target="_blank">CCC for v0.24</a>; 
-					<a href="https://www.youtube.com/playlist?list=PLDaRV3E1eciYRRnD5qxmyjXCxL6sizmsQ" target="_blank">CCTT promo videos</a></li>
-	<li>Malcolm Rose has the longest win-streak ever in DCSS with over 75 wins and counting! So checkout his YouTube channel for past wins and hairy moments,
-	and Follow him on twitch.tv to be notified about his next World Record stream.
-	Here's a link to his <a href="https://www.youtube.com/playlist?list=PLDaRV3E1ecibDeKDyvFUCYOKMPcO3FKLlDCSS" target="_blank">DCSS World Record playlist</a>.</li>
-</ul>
