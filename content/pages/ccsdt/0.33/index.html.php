@@ -32,7 +32,7 @@ href="../about_ccsdt.html">details/about page</a>.</li>
 
 <h2>Schedule</h2>
 
-<ul id="schedule"><li><span class="label">Week 1:</span> 2025-09-05 to 2025-09-12<li><span class="label">Week 2:</span> 2025-09-12 to 2025-09-19<li><span class="label">Week 3:</span> 2025-09-19 to 2025-09-26<li><span class="label">Week 4:</span> 2025-09-26 to 2025-10-03<li><span class="label">Week 5:</span> 2025-10-03 to 2025-10-10</ul>
+<ul id="schedule"><li><span class="label"><a href="1.html">Week 1 &mdash; NaAl</a>:</span> 2025-09-05 to 2025-09-12<li><span class="label">Week 2:</span> 2025-09-12 to 2025-09-19<li><span class="label">Week 3:</span> 2025-09-19 to 2025-09-26<li><span class="label">Week 4:</span> 2025-09-26 to 2025-10-03<li><span class="label">Week 5:</span> 2025-10-03 to 2025-10-10</ul>
 
 
 <h2>Sign Up</h2>
@@ -48,4 +48,4 @@ you've done this correctly and started at least one 0.33 game (though it may tak
 <p>Original CSDC rules and organization by <a href="http://crawl.akrasiac.org/scoring/players/walkerboh.html">WalkerBoh</a> and 
 <a href="http://crawl.akrasiac.org/scoring/players/ebering.html">ebering</a>.
 Thank you to scrubbdaddy for python assistance. I am your host, RoGGa.</p></div>
-    <div id="bottomtext"><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="../about_ccsdt.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu">Week 1 - </span><span class="menu">Week 2 - </span><span class="menu">Week 3 - </span><span class="menu">Week 4 - </span><span class="menu">Week 5 - </span></div>
+    <div id="bottomtext"><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="../about_ccsdt.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu"><a href="1.html">Week 1</a> - </span><span class="menu">Week 2 - </span><span class="menu">Week 3 - </span><span class="menu">Week 4 - </span><span class="menu">Week 5 - </span></div>
