@@ -72,30 +72,30 @@ require you to win to earn the point(s).</p>
 
 <h3>Bonus 1 list</h3>
 <ol>
-   <li><s>Enter a rune branch with all base skills < 11.</s></li>
+   <li>Enter a rune branch with all base skills < 11.</li>
    <li>Enter Slime as your second multi-level branch (don't get banished).</li>
    <li>Enter the Temple in less than 4,000 turns.</li>
    <li><s>Reach the end of Lair at XL &leq; 12.</s></li>
-   <li><s>Reach the end of Elf before entering a rune branch (excluding getting banished to the Abyss).</s></li>
+   <li>Reach the end of Elf before entering a rune branch (excluding getting banished to the Abyss).</li>
    <li>Reach the end of the Depths before entering a rune branch (excluding getting banished to the Abyss).</li>
-   <li><s>Collect a rune before entering Shoals, Snake, Spider, or Swamp.</s></li>
-   <li><s>Collect a rune before entering Lair.</s></li>
+   <li>Collect a rune before entering Shoals, Snake, Spider, or Swamp.</li>
+   <li>Collect a rune before entering Lair.</li>
    <li>Collect a rune without dying (felids).</li>
    <li>Kill a unique in bat form (vampires).</li>
 </ol>
 
 <h3>Bonus 2 list</h3>
 <ol>
-   <li><s>Collect the golden rune.</s></li>
-   <li>Collect a rune with all base skills < 11.</li>
+   <li>Collect the golden rune.</li>
+   <li><s>Collect a rune with all base skills < 11.</s></li>
    <li>Get the slimy rune without entering any multi-level branch other than Lair, Slime, and Dungeon (don't get banished).</li>
-   <li><s>Collect a rune in less than 15,000 turns.</s></li>
+   <li>Collect a rune in less than 15,000 turns.</li>
    <li>Reach the end of the Vaults at XL &leq; 18.</li>
-   <li><s>Kill or slimify Geryon before entering a rune branch (excluding the Abyss).</s></li>
+   <li>Kill or slimify Geryon before entering a rune branch (excluding the Abyss).</li>
    <li>Get a rune from Hell or Pan before entering any other rune branch (excluding the Abyss).</li>
    <li>Get a rune from Hell before entering any other rune branch (excluding the Abyss).</li>
-   <li><s>Collect at least 5 runes before entering the Depths.</s></li>
-   <li><s>Collect two runes without dying twice (felids).</s></li>
+   <li>Collect at least 5 runes before entering the Depths.</li>
+   <li>Collect two runes without dying twice (felids).</li>
    <li>Kill a Hell or Pan Lord unique in bat form (vampires).</li>
 </ol>
    
