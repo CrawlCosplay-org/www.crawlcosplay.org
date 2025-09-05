@@ -143,3 +143,14 @@ require you to win to earn the point(s).</p>
 and <a href="http://crawl.akrasiac.org/scoring/players/ebering.html">ebering</a>.
 <br>Thank you ScrubDaddy & grumposus for python assistance and PRs. 
 <br>I am your host, RoGGa.
+<div id="bottomtext">
+    <span class="menu"><a href="https://www.crawlcosplay.org/ccsdt/0.33/index.html">Overview</a> - </span>
+    <span class="menu"><a href="https://www.crawlcosplay.org/ccsdt/about_ccsdt.html">Details</a> - </span>
+    <span class="menu"><a href="https://www.crawlcosplay.org/ccsdt/0.33/standings.html">Standings</a></span>
+    <span class="menuspacer"></span>
+    <span class="menu"><a href="https://www.crawlcosplay.org/ccsdt/0.33/1.html">Week 1</a> - </span>
+    <span class="menu">Week 2 - </span>
+    <span class="menu">Week 3 - </span>
+    <span class="menu">Week 4 - </span>
+    <span class="menu">Week 5 - </span>
+</div>
