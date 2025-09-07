@@ -11,10 +11,12 @@
 			<a href="/cctt">Crawl Cosplay Trunk Tournament (CCTT)</a>
 			<a href="/cctt/about_cctt"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#8627; About CCTT</a>
 			<a href="/cctt/past_cctt_results"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#8627; Past CCTT results</a>
-			<a href="/ccsdt">Crawl Cosplay Sudden Death Tournament (CCSDT)</a>
+			<a href="/ccsdt">Crawl Cosplay Sudden Death Tournament (CCSDT)-Currently LIVE!</a>
 			<a href="/ccsdt/about_ccsdt"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#8627; About CCSDT</a>
+			<a href="/ccsdt/0.33/standings.html"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#8627; CCSDT#2 Standings</a>
+			<a href="/ccsdt/0.33/1.html"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#8627; Week #1 challenge: Aizul!</a>
 			<a href="/ccsdt/past_ccsdt_results.html"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#8627; Past CCSDT results</a>
-		        <a href="/ccft">Crawl Cosplay Forks Tournament (CCFT) - NEW!</a>
+			<a href="/ccft">Crawl Cosplay Forks Tournament (CCFT)</a>
 			<a href="/ccft/about_ccft"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#8627; About CCFT</a>
 		</div>
 	</div>
