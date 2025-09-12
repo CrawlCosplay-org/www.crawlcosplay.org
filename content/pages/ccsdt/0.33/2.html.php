@@ -19,7 +19,7 @@
     <th>Bonus 2</th>
     <th>Total</th>
     </tr><tr class="won"><td class="name"><a href="https://cbro.berotato.org/morgue//Zeldest/morgue-Zeldest-20250912-193854.txt">Zeldest</a></td><td class="pt">1</td><td class="pt">1</td><td class="pt">1</td><td class="pt">1</td><td class="pt">1</td><td class="pt">1</td><td class="pt">1</td><td class="pt">1</td><td class="pt">1</td><td class="pt">1</td><td class="total">10</td></tr>
-<tr class="alive"><td class="name">TomBombadil</td><td class="pt">1</td><td class="pt">1</td><td class="pt">1</td><td class="pt">1</td><td class="pt">1</td><td class="pt">1</td><td class="pt">0</td><td class="pt">0</td><td class="pt">1</td><td class="pt">1</td><td class="total">8</td></tr>
+<tr class="won"><td class="name"><a href="http://underhound.eu/crawl/morgue/TomBombadil/morgue-TomBombadil-20250912-201119.txt">TomBombadil</a></td><td class="pt">1</td><td class="pt">1</td><td class="pt">1</td><td class="pt">1</td><td class="pt">1</td><td class="pt">1</td><td class="pt">1</td><td class="pt">1</td><td class="pt">1</td><td class="pt">1</td><td class="total">10</td></tr>
 <tr class="dead"><td class="name"><a href="http://crawl.xtahua.com/crawl/morgue/IjonTichy1/morgue-IjonTichy1-20250912-112200.txt">IjonTichy1</a></td><td class="pt">1</td><td class="pt">1</td><td class="pt">1</td><td class="pt">1</td><td class="pt">1</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">1</td><td class="pt">0</td><td class="total">6</td></tr>
 <tr class="dead"><td class="name"><a href="https://cbro.berotato.org/morgue//PieDemon/morgue-PieDemon-20250912-170555.txt">PieDemon</a></td><td class="pt">1</td><td class="pt">1</td><td class="pt">1</td><td class="pt">1</td><td class="pt">1</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">1</td><td class="pt">0</td><td class="total">6</td></tr>
 <tr class="alive"><td class="name">RoGGa</td><td class="pt">1</td><td class="pt">1</td><td class="pt">1</td><td class="pt">1</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">1</td><td class="pt">0</td><td class="total">5</td></tr>
@@ -45,6 +45,8 @@
 <tr class="dead"><td class="name"><a href="https://cbro.berotato.org/morgue//Procrustes/morgue-Procrustes-20250912-141900.txt">Procrustes</a></td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="total">0</td></tr>
 <tr class="alive"><td class="name">demonstrator</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="total">0</td></tr>
 <tr class="alive"><td class="name">Endy73</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="total">0</td></tr>
+<tr class="alive"><td class="name">SuperSimple</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="total">0</td></tr>
+<tr class="alive"><td class="name">Strat</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="total">0</td></tr>
 <tr class="none"><td class="name">Blyxx</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">TCC</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">nojaa</td>
@@ -55,7 +57,6 @@
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">GameOver</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">dreamdao</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">ereinion</td>
-                <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">Strat</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">JolietJake</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">Larett</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">community</td>
@@ -101,7 +102,6 @@
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">LadyLuck</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">ousd</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">SpideyBoy</td>
-                <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">SuperSimple</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">AshKetchup</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">PidgeonPower</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">Spatula</td>
@@ -109,4 +109,4 @@
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">CoolPlay</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">Notte</td>
                 <td colspan="10"></td><td class="total">0</td></tr></table></div></div>
-    <div id="bottomtext"><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="../about_ccsdt.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu"><a href="1.html">Week 1</a> - </span><span class="menu">Week 2 - </span><span class="menu">Week 3 - </span><span class="menu">Week 4 - </span><span class="menu">Week 5 - </span><span id="updated"><span class="label">Updates every 10 mins. Last Update: </span>2025-09-12 20:02 UTC</span></div>
+    <div id="bottomtext"><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="../about_ccsdt.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu"><a href="1.html">Week 1</a> - </span><span class="menu">Week 2 - </span><span class="menu">Week 3 - </span><span class="menu">Week 4 - </span><span class="menu">Week 5 - </span><span id="updated"><span class="label">Updates every 10 mins. Last Update: </span>2025-09-12 20:12 UTC</span></div>
