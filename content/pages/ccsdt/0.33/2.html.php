@@ -26,6 +26,7 @@
 <tr class="alive"><td class="name">Draconius</td><td class="pt">1</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="total">1</td></tr>
 <tr class="dead"><td class="name"><a href="https://cbro.berotato.org/morgue//Esekla/morgue-Esekla-20250912-035801.txt">Esekla</a></td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="total">0</td></tr>
 <tr class="alive"><td class="name">demonstrator</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="total">0</td></tr>
+<tr class="alive"><td class="name">K8SM8S</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="total">0</td></tr>
 <tr class="none"><td class="name">RoGGa</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">SlowGraham</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">Blyxx</td>
@@ -95,7 +96,6 @@
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">drwombats</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">Booper</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">LadyLuck</td>
-                <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">K8SM8S</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">Disease</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">ousd</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">SpideyBoy</td>
@@ -108,4 +108,4 @@
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">LottaHair</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">Notte</td>
                 <td colspan="10"></td><td class="total">0</td></tr></table></div></div>
-    <div id="bottomtext"><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="../about_ccsdt.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu"><a href="1.html">Week 1</a> - </span><span class="menu">Week 2 - </span><span class="menu">Week 3 - </span><span class="menu">Week 4 - </span><span class="menu">Week 5 - </span><span id="updated"><span class="label">Updates every 10 mins. Last Update: </span>2025-09-12 04:32 UTC</span></div>
+    <div id="bottomtext"><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="../about_ccsdt.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu"><a href="1.html">Week 1</a> - </span><span class="menu">Week 2 - </span><span class="menu">Week 3 - </span><span class="menu">Week 4 - </span><span class="menu">Week 5 - </span><span id="updated"><span class="label">Updates every 10 mins. Last Update: </span>2025-09-12 04:42 UTC</span></div>
