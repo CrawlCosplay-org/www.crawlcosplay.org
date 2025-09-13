@@ -41,7 +41,7 @@ href="../about_ccsdt.html">details/about page</a>.</li>
 <pre id="rc"># ccsdt</pre>
 <p>on <a href="https://crawl.develz.org/play.htm">any of the official online servers</a>
 or CCO ( https://cco.crawlcosplay.org/ ) at any point during tournament. Your name will appear in the standings once
-you've done this correctly and started at least one 0.33 game (though it may take about 10 minutes before it does).</p>
+you've done this correctly and started at least one 0.33 game (though it may take about 15 minutes before it does).</p>
 
 <h2>Credits</h2>
 
