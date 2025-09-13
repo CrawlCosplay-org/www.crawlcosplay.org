@@ -34,7 +34,14 @@ href="../about_ccsdt.html">details/about page</a>.</li>
 
 <ul id="schedule"><li><span class="label"><a href="1.html">Week 1 &mdash; NaAl</a>:</span> 2025-09-05 to 2025-09-12<li><span class="label"><a href="2.html">Week 2 &mdash; GnSu</a>:</span> 2025-09-12 to 2025-09-19<li><span class="label">Week 3:</span> 2025-09-19 to 2025-09-26<li><span class="label">Week 4:</span> 2025-09-26 to 2025-10-03<li><span class="label">Week 5:</span> 2025-10-03 to 2025-10-10</ul>
 
-<h2>Sign Up</h2> <p>Sign ups are now closed.</p>
+
+<h2>Sign Up</h2>
+
+<p>In order to sign up, set the first line of your 0.33 RC file to</p> 
+<pre id="rc"># ccsdt</pre>
+<p>on <a href="https://crawl.develz.org/play.htm">any of the official online servers</a>
+or CCO ( https://cco.crawlcosplay.org/ ) at any point during tournament. Your name will appear in the standings once
+you've done this correctly and started at least one 0.33 game (though it may take about 10 minutes before it does).</p>
 
 <h2>Credits</h2>
 
