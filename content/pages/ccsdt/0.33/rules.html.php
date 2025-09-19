@@ -1,7 +1,7 @@
 <title>Rules</title>
     <?php $this->layout = 'ccsdt'; ?>
     <div id="title">
-    <h2 id="sdc"><center>CCSDT for DCSS v0.33</center></h2>
+    <h2 id="sdc"><center>CCSDT#2 for DCSS v0.33</center></h2>
     <h2>Rules</h2></div><div id="content">
     <ol>
 <li>Each challenge consists of playing a randomly chosen Crawl race/class combo
