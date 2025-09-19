@@ -18,8 +18,8 @@
     <th>Bonus 1</th>
     <th>Bonus 2</th>
     <th>Total</th>
-    </tr><tr class="dead"><td class="name"><a href="http://crawl.xtahua.com/crawl/morgue/Hans/morgue-Hans-20250919-110321.txt">Hans</a></td><td class="pt">1</td><td class="pt">1</td><td class="pt">1</td><td class="pt">1</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="total">4</td></tr>
-<tr class="alive"><td class="name">PieDemon</td><td class="pt">1</td><td class="pt">1</td><td class="pt">1</td><td class="pt">0</td><td class="pt">1</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="total">4</td></tr>
+    </tr><tr class="alive"><td class="name">PieDemon</td><td class="pt">1</td><td class="pt">1</td><td class="pt">1</td><td class="pt">0</td><td class="pt">1</td><td class="pt">1</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="total">5</td></tr>
+<tr class="dead"><td class="name"><a href="http://crawl.xtahua.com/crawl/morgue/Hans/morgue-Hans-20250919-110321.txt">Hans</a></td><td class="pt">1</td><td class="pt">1</td><td class="pt">1</td><td class="pt">1</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="total">4</td></tr>
 <tr class="dead"><td class="name"><a href="https://cbro.berotato.org/morgue//particleface/morgue-particleface-20250919-151712.txt">particleface</a></td><td class="pt">1</td><td class="pt">1</td><td class="pt">1</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="total">3</td></tr>
 <tr class="dead"><td class="name"><a href="https://cbro.berotato.org/morgue//Zeldest/morgue-Zeldest-20250919-130101.txt">Zeldest</a></td><td class="pt">1</td><td class="pt">1</td><td class="pt">1</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="total">3</td></tr>
 <tr class="dead"><td class="name"><a href="http://crawl.xtahua.com/crawl/morgue/IjonTichy1/morgue-IjonTichy1-20250919-091911.txt">IjonTichy1</a></td><td class="pt">1</td><td class="pt">1</td><td class="pt">1</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="total">3</td></tr>
@@ -46,6 +46,7 @@
 <tr class="dead"><td class="name"><a href="https://cbro.berotato.org/morgue//Esekla/morgue-Esekla-20250919-163613.txt">Esekla</a></td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="total">0</td></tr>
 <tr class="dead"><td class="name"><a href="http://crawl.xtahua.com/crawl/morgue/mobilemanners/morgue-mobilemanners-20250919-070511.txt">mobilemanners</a></td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="total">0</td></tr>
 <tr class="alive"><td class="name">demonstrator</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="total">0</td></tr>
+<tr class="alive"><td class="name">kkplay</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="total">0</td></tr>
 <tr class="none"><td class="name">Blyxx</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">TomBombadil</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">TCC</td>
@@ -57,7 +58,6 @@
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">dreamdao</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">ereinion</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">erikjake</td>
-                <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">kkplay</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">Strat</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">JolietJake</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">Hsik</td>
@@ -111,4 +111,4 @@
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">Notte</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">Vivy</td>
                 <td colspan="10"></td><td class="total">0</td></tr></table></div></div>
-    <div id="bottomtext"><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="../about_ccsdt.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu"><a href="1.html">Week 1</a> - </span><span class="menu"><a href="2.html">Week 2</a> - </span><span class="menu">Week 3 - </span><span class="menu">Week 4 - </span><span class="menu">Week 5 - </span><span id="updated"><span class="label">Updates every 10 mins. Last Update: </span>2025-09-19 19:12 UTC</span></div>
+    <div id="bottomtext"><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="../about_ccsdt.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu"><a href="1.html">Week 1</a> - </span><span class="menu"><a href="2.html">Week 2</a> - </span><span class="menu">Week 3 - </span><span class="menu">Week 4 - </span><span class="menu">Week 5 - </span><span id="updated"><span class="label">Updates every 10 mins. Last Update: </span>2025-09-19 19:22 UTC</span></div>
