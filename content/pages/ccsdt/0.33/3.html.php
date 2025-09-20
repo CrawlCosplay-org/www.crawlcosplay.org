@@ -62,6 +62,7 @@
 <tr class="dead"><td class="name"><a href="https://crawl.dcss.io/crawl/morgue//jaccarmac/morgue-jaccarmac-20250919-195357.txt">jaccarmac</a></td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="total">0</td></tr>
 <tr class="alive"><td class="name">demonstrator</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="total">0</td></tr>
 <tr class="alive"><td class="name">kkplay</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="total">0</td></tr>
+<tr class="alive"><td class="name">Gobbopathe</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="total">0</td></tr>
 <tr class="none"><td class="name">TomBombadil</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">TCC</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">Bronksi</td>
@@ -78,7 +79,6 @@
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">tmt</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">BeansWater</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">Endy73</td>
-                <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">Gobbopathe</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">Fougere</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">Aka8171</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">Archion</td>
@@ -111,4 +111,4 @@
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">Notte</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">Vivy</td>
                 <td colspan="10"></td><td class="total">0</td></tr></table></div></div>
-    <div id="bottomtext"><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="../about_ccsdt.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu"><a href="1.html">Week 1</a> - </span><span class="menu"><a href="2.html">Week 2</a> - </span><span class="menu">Week 3 - </span><span class="menu">Week 4 - </span><span class="menu">Week 5 - </span><span id="updated"><span class="label">Updates every 10 mins. Last Update: </span>2025-09-20 16:42 UTC</span></div>
+    <div id="bottomtext"><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="../about_ccsdt.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu"><a href="1.html">Week 1</a> - </span><span class="menu"><a href="2.html">Week 2</a> - </span><span class="menu">Week 3 - </span><span class="menu">Week 4 - </span><span class="menu">Week 5 - </span><span id="updated"><span class="label">Updates every 10 mins. Last Update: </span>2025-09-20 16:52 UTC</span></div>
