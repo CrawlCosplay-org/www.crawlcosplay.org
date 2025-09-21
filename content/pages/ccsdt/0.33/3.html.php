@@ -5,7 +5,7 @@
     <h2>Week 3 &mdash; DEHW</h2></div><div id="content"><div id="times"><span class="label">Week of 2025-09-19</span></div><div id="combo"><span class="label">Character: </span>Deep Elf Hedge Wizard</div>
 <div id="bonus"><span class="label">Bonus 1: </span>Collect a rune before entering Shoals, Snake, Spider, or Swamp.<br/>
 <span class="label">Bonus 2: </span>Collect the golden rune.</div>
-<div id="gods"><span class="label">Gods: </span>Nemelex Xobeh, Makhleb, Xom</div><pre><right>Legend<br>Green=Won<br>Red=Died<br>White=ongoing<br>or did not finish</right></pre><div class="card"><table><tr class="head">
+<div id="gods"><span class="label">Gods: </span>Nemelex Xobeh, Makhleb, Xom</div><br><pre>LEGEND<br>======<br>Green=Won<br>Red=Died<br>White=ongoing<br>or did not finish</right></pre><div class="card"><table><tr class="head">
     <th>Player</th>
     <th>Unique Kill</th>
     <th>Branch Enter</th>
@@ -112,4 +112,4 @@
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">Notte</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">Vivy</td>
                 <td colspan="10"></td><td class="total">0</td></tr></table></div></div>
-    <div id="bottomtext"><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="../about_ccsdt.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu"><a href="1.html">Week 1</a> - </span><span class="menu"><a href="2.html">Week 2</a> - </span><span class="menu">Week 3 - </span><span class="menu">Week 4 - </span><span class="menu">Week 5 - </span><span id="updated"><span class="label">Updates every 10 mins. Last Update: </span>2025-09-21 13:55 UTC</span></div>
+    <div id="bottomtext"><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="../about_ccsdt.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu"><a href="1.html">Week 1</a> - </span><span class="menu"><a href="2.html">Week 2</a> - </span><span class="menu">Week 3 - </span><span class="menu">Week 4 - </span><span class="menu">Week 5 - </span><span id="updated"><span class="label">Updates every 10 mins. Last Update: </span>2025-09-21 13:59 UTC</span></div>
