@@ -19,7 +19,7 @@
 </ul>
 
 <p><b>Dumalacath</b>: CCA Master and aspiring CCC demi-god!</p>
-<ul>	<li>Active Channel:		<a href="https://www.youtube.com/@dumalacath" target="_blank">www.youtube.com/@dumalacath</a></li>
+<ul>	<li>Non-Active Channel:		<a href="https://www.youtube.com/@dumalacath" target="_blank">www.youtube.com/@dumalacath</a></li>
 	<li>Crawl Cosplay playlists: 	<a href="https://www.youtube.com/playlist?list=PLy8-17WgznzHupXlm9SbgNVWfeF46Yvku" target="_blank">CCA</a>; 
 					<a href="https://www.youtube.com/playlist?list=PLy8-17WgznzGYSC6dJy6NqHErLrtvoYRR" target="_blank">CCC</a>; 
 					<a href="https://www.youtube.com/playlist?list=PLy8-17WgznzHBfUlTlz_ScV5_irFeNx8C" target="_blank">CCTT</a></li>
@@ -38,14 +38,13 @@
 	<li>Crawl Cosplay playlists: 	<a href="https://www.youtube.com/playlist?list=PLU5PEZPkft5vBlJp5H6e4WQUa-W5DV--m" target="_blank">CCC</a></li>
 </ul>
 
-<p><b>Chadlywick</b>: the mouser ;-p</p>
-<ul>	<li>Active Channels:		<a href="https://www.twitch.tv/chadlywick" target="_blank">www.twitch.tv/chadlywick</a> &
-					<a href="https://www.youtube.com/@Chadlywick" target="_blank">www.youtube.com/@Chadlywick</a></li>
-	<li>Chadlywick plays offline and has 4 wins to his credit! You can catch him with his late streams between 11pm and 1am EST on Mondays, Wednesdays & Sundays.</li>
-</ul>
-
-<p><b>Platt_Mallar</b>: The new blood on the block with 1 WIN!!!</p>
+<p><b>Platt_Mallar</b>: Mr sPlatt with 1 WIN!!!</p>
 <ul>	<li>Active Channels:		<a href="https://www.twitch.tv/platt_mallar" target="_blank">www.twitch.tv/platt_mallar</a> &
 									<a href="https://www.youtube.com/@platt_mallar" target="_blank">www.youtube.com/@platt_mallar</a></li>
 	<li>Mr sPlatt normally streams on Saturdays and Sundays.</li>
+</ul>
+
+<p><b>ContrarianOrange</b>: the cautious with 1 win also!</p>
+<ul>	<li>Active Channels:		<a href="https://www.twitch.tv/contrarianorange" target="_blank">www.twitch.tv/contrarianorange</a></li>
+	<li>Plays at random times but more often than not during the evenings eastern timezone.</li>
 </ul>
