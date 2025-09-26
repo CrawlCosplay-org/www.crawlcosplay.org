@@ -149,6 +149,6 @@ and <a href="http://crawl.akrasiac.org/scoring/players/ebering.html">ebering</a>
     <span class="menu"><a href="https://www.crawlcosplay.org/ccsdt/0.33/1.html">Week 1</a> - </span>
     <span class="menu"><a href="https://www.crawlcosplay.org/ccsdt/0.33/2.html">Week 2</a> - </span>
     <span class="menu"><a href="https://www.crawlcosplay.org/ccsdt/0.33/3.html">Week 3</a> - </span>
-    <span class="menu">Week 4 - </span>
+    <span class="menu"><a href="https://www.crawlcosplay.org/ccsdt/0.33/4.html">Week 4</a>  - </span>
     <span class="menu">Week 5 - </span>
 </div>
