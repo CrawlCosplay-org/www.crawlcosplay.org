@@ -40,6 +40,7 @@
 <tr class="dead"><td class="name"><a href="https://crawl.dcss.io/crawl/morgue//SlowGraham/morgue-SlowGraham-20250926-122909.txt">SlowGraham</a></td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="total">0</td></tr>
 <tr class="dead"><td class="name"><a href="https://crawl.dcss.io/crawl/morgue//jaccarmac/morgue-jaccarmac-20250926-054328.txt">jaccarmac</a></td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="total">0</td></tr>
 <tr class="alive"><td class="name">Pigkeeper</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="total">0</td></tr>
+<tr class="alive"><td class="name">particleface</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="total">0</td></tr>
 <tr class="none"><td class="name">Blyxx</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">demonstrator</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">happinesssam</td>
@@ -51,7 +52,6 @@
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">dreamdao</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">ereinion</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">erikjake</td>
-                <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">particleface</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">kkplay</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">Strat</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">JolietJake</td>
@@ -116,4 +116,4 @@
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">Vivy</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">person50605</td>
                 <td colspan="10"></td><td class="total">0</td></tr></table></div></div>
-    <div id="bottomtext"><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="../about_ccsdt.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu"><a href="1.html">Week 1</a> - </span><span class="menu"><a href="2.html">Week 2</a> - </span><span class="menu"><a href="3.html">Week 3</a> - </span><span class="menu">Week 4 - </span><span class="menu">Week 5 - </span><span id="updated"><span class="label">Updates every 10 mins. Last Update: </span>2025-09-26 13:02 UTC</span></div>
+    <div id="bottomtext"><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="../about_ccsdt.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu"><a href="1.html">Week 1</a> - </span><span class="menu"><a href="2.html">Week 2</a> - </span><span class="menu"><a href="3.html">Week 3</a> - </span><span class="menu">Week 4 - </span><span class="menu">Week 5 - </span><span id="updated"><span class="label">Updates every 10 mins. Last Update: </span>2025-09-26 13:12 UTC</span></div>
