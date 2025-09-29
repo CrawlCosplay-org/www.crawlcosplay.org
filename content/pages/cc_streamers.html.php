@@ -38,13 +38,13 @@
 	<li>Crawl Cosplay playlists: 	<a href="https://www.youtube.com/playlist?list=PLU5PEZPkft5vBlJp5H6e4WQUa-W5DV--m" target="_blank">CCC</a></li>
 </ul>
 
-<p><b>Platt_Mallar</b>: Mr sPlatt with 1 WIN!!!</p>
+<p><b>Platt_Mallar</b>: Mr sPlatt with 1 WIN!!! And don't forget to say Hi to Mrs Platt ;-)</p>
 <ul>	<li>Active Channels:		<a href="https://www.twitch.tv/platt_mallar" target="_blank">www.twitch.tv/platt_mallar</a> &
 									<a href="https://www.youtube.com/@platt_mallar" target="_blank">www.youtube.com/@platt_mallar</a></li>
 	<li>Mr sPlatt normally streams on Saturdays and Sundays.</li>
 </ul>
 
-<p><b>ContrarianOrange</b>: the cautious with 1 win also!</p>
+<p><b>ContrarianOrange</b>: the cautious with 2 wins!</p>
 <ul>	<li>Active Channels:		<a href="https://www.twitch.tv/contrarianorange" target="_blank">www.twitch.tv/contrarianorange</a></li>
 	<li>Plays at random times but more often than not during the evenings eastern timezone.</li>
 </ul>
