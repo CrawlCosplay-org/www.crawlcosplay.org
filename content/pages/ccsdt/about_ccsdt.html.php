@@ -79,7 +79,7 @@ require you to win to earn the point(s).</p>
    <li><s>Reach the end of Elf before entering a rune branch (excluding getting banished to the Abyss).</s></li>
    <li>Reach the end of the Depths before entering a rune branch (excluding getting banished to the Abyss).</li>
    <li><s>Collect a rune before entering Shoals, Snake, Spider, or Swamp.</s></li>
-   <li>Collect a rune before entering Lair.</li>
+   <li><s>Collect a rune before entering Lair.</s></li>
    <li>Collect a rune without dying (felids).</li>
 </ol>
 
@@ -92,7 +92,7 @@ require you to win to earn the point(s).</p>
    <li>Reach the end of the Vaults at XL &leq; 18.</li>
    <li>Kill or slimify Geryon before entering a rune branch (excluding the Abyss).</li>
    <li><s>Get a rune from Hell or Pan before entering any other rune branch (excluding the Abyss).</s></li>
-   <li>Get a rune from Hell before entering any other rune branch (excluding the Abyss).</li>
+   <li><s>Get a rune from Hell before entering any other rune branch (excluding the Abyss).</s></li>
    <li>Collect at least 5 runes before entering the Depths.</li>
    <li>Collect two runes without dying twice (felids).</li>
 </ol>
