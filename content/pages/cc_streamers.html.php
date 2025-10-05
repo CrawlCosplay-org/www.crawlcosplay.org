@@ -54,5 +54,5 @@
 </ul>
 
 <p><b>Draconius</b></p>
-<ul>	<li>Non-Active Channel:		<a href="https://www.youtube.com/@DraconiusRogueLike" target="_blank">www.youtube.com/@DraconiusRogueLike</a></li>
+<ul>	<li>Active Channel:		<a href="https://www.youtube.com/@DraconiusRogueLike" target="_blank">www.youtube.com/@DraconiusRogueLike</a></li>
 </ul>
