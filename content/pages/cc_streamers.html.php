@@ -14,8 +14,7 @@
 					<a href="https://www.youtube.com/playlist?list=PLY2Drf0NBvk_c7xH2msjtUZGXu3ivIoNE" target="_blank">CCTT</a></li>
 	
 	<li>particleface is the most regular streamer of DCSS. You can catch him usually weekdays sometime between 9am and 1pm Eastern Timezone.</li>
-	<li>He has also been one of the few to complete !progress (winning all 665 playable DCSS combos). 
-		He now is on the hunt to keep !progress status by winning with all Forgewright, Poltergeist and Revenant combos!</li>
+	<li>He has also been one of the few to complete !progress (winning all 665 playable DCSS combos). </li>
 </ul>
 
 <p><b>Dumalacath</b>: CCA Master and aspiring CCC demi-god!</p>
@@ -47,4 +46,13 @@
 <p><b>ContrarianOrange</b>: the cautious with 2 wins!</p>
 <ul>	<li>Active Channels:		<a href="https://www.twitch.tv/contrarianorange" target="_blank">www.twitch.tv/contrarianorange</a></li>
 	<li>Plays at random times but more often than not during the evenings eastern timezone.</li>
+</ul>
+
+<p><b>Planckenstein</b>: Mr CCSDT#2!</p>
+<ul>	<li>Active Channels:		<a href="https://www.twitch.tv/planckenstein" target="_blank">www.twitch.tv/planckenstein</a></li>
+									<a href="https://www.youtube.com/@planckenstein" target="_blank">www.youtube.com/@planckenstein</a></li>
+</ul>
+
+<p><b>Draconius</b></p>
+<ul>	<li>Non-Active Channel:		<a href="https://www.youtube.com/@DraconiusRogueLike" target="_blank">www.youtube.com/@DraconiusRogueLike</a></li>
 </ul>
