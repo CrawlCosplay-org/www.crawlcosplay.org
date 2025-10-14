@@ -49,7 +49,7 @@
 </ul>
 
 <p><b>Planckenstein</b>: Mr CCSDT#2!</p>
-<ul>	<li>Active Channels:		<a href="https://www.twitch.tv/planckenstein" target="_blank">www.twitch.tv/planckenstein</a></li>
+<ul>	<li>Active Channels:		<a href="https://www.twitch.tv/planckenstein" target="_blank">www.twitch.tv/planckenstein</a> &
 									<a href="https://www.youtube.com/@planckenstein" target="_blank">www.youtube.com/@planckenstein</a></li>
 </ul>
 
