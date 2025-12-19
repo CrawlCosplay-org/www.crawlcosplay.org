@@ -1,5 +1,5 @@
 # Crawl Cosplay
-Dungeon Crawl Stone Soup scoreboard keeper for the Crawl Cosplay 3-in-1 website
+Dungeon Crawl Stone Soup scoreboard keeper for the Crawl Cosplay 5-in-1 website
 
 ## Local Development
 
