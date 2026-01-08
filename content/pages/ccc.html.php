@@ -17,7 +17,7 @@ if ($active) :
 <!-- shortform field is used for Monster Speak -->
 <p style="text-align:right;"><span style="font-size: smaller"><?=$e($active->shortform)?></span></p>
 
-<p><a href="/ccc/challengedetails?id=<?=$e($active->id)?>">Challenge details</a>  | <a href="/ccc/submit_ccc">Submit a CCC run</a> | <a href="https://discord.gg/pW7nqC8Wu3">Discuss it in CCC's Discord</a> | Next challenge starts on Monday.</p>
+<p><a href="/ccc/challengedetails?id=<?=$e($active->id)?>">Challenge details</a>  | <a href="/ccc/submit_ccc">Submit a CCC run</a> | <a href="https://discord.gg/pW7nqC8Wu3">Discuss it in CCC's Discord</a> | Next challenge starts on Friday.</p>
 <table class="table_for_layout">
 	<tr><th>Species</th><th>Background<th>Gods</th></tr>
 	<tr><td><?=$e($active->species)?></td><td><?=$e($active->background)?></td><td><?=$e($active->gods)?></td></tr>
