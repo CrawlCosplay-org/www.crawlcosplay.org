@@ -42,7 +42,7 @@
 </ul>
 
 <p><b>ContrarianOrange</b>: the cautious with 2 wins!</p>
-<ul>	<li>Active Channels:		<a href="https://www.twitch.tv/contrarianorange" target="_blank">www.twitch.tv/contrarianorange</a></li>
+<ul>	<li>Non-Active Channels:		<a href="https://www.twitch.tv/contrarianorange" target="_blank">www.twitch.tv/contrarianorange</a></li>
 	<li>Plays at random times but more often than not during the evenings eastern timezone.</li>
 </ul>
 
@@ -53,6 +53,6 @@
 </ul>
 
 <p><b>Planckenstein</b>: Mr CCSDT#2!</p>
-<ul>	<li>Active Channels:		<a href="https://www.twitch.tv/planckenstein" target="_blank">www.twitch.tv/planckenstein</a> &
+<ul>	<li>Non-Active Channels:		<a href="https://www.twitch.tv/planckenstein" target="_blank">www.twitch.tv/planckenstein</a> &
 									<a href="https://www.youtube.com/@planckenstein" target="_blank">www.youtube.com/@planckenstein</a></li>
 </ul>
