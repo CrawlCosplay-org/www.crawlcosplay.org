@@ -34,16 +34,14 @@
 <ul>	<li>Active Channel:		<a href="https://www.youtube.com/@DraconiusRogueLike" target="_blank">www.youtube.com/@DraconiusRogueLike</a></li>
 </ul>
 
-<p><b>Dumalacath</b>: CCA Master and aspiring CCC demi-god!</p>
-<ul>	<li>Non-Active Channel:		<a href="https://www.youtube.com/@dumalacath" target="_blank">www.youtube.com/@dumalacath</a></li>
-	<li>Crawl Cosplay playlists: 	<a href="https://www.youtube.com/playlist?list=PLy8-17WgznzHupXlm9SbgNVWfeF46Yvku" target="_blank">CCA</a>; 
-					<a href="https://www.youtube.com/playlist?list=PLy8-17WgznzGYSC6dJy6NqHErLrtvoYRR" target="_blank">CCC</a>; 
-					<a href="https://www.youtube.com/playlist?list=PLy8-17WgznzHBfUlTlz_ScV5_irFeNx8C" target="_blank">CCTT</a></li>
+<p><b>ContrarianOrange</b>: the cautious with 2 wins!</p>
+<ul>	<li>Active Channels:		<a href="https://www.twitch.tv/contrarianorange" target="_blank">www.twitch.tv/contrarianorange</a></li>
+	<li>Plays at random times but more often than not during the evenings eastern timezone.</li>
 </ul>
 
-<p><b>ContrarianOrange</b>: the cautious with 2 wins!</p>
-<ul>	<li>Non-Active Channels:		<a href="https://www.twitch.tv/contrarianorange" target="_blank">www.twitch.tv/contrarianorange</a></li>
-	<li>Plays at random times but more often than not during the evenings eastern timezone.</li>
+<p><b>Planckenstein</b>: Mr CCSDT#2!</p>
+<ul>	<li>Active Channels:		<a href="https://www.twitch.tv/planckenstein" target="_blank">www.twitch.tv/planckenstein</a> &
+									<a href="https://www.youtube.com/@planckenstein" target="_blank">www.youtube.com/@planckenstein</a></li>
 </ul>
 
 <p><b>Wizard1ke</b>: our favourite Kiwi</p>
@@ -52,7 +50,9 @@
 	<li>Crawl Cosplay playlists: 	<a href="https://www.youtube.com/playlist?list=PLU5PEZPkft5vBlJp5H6e4WQUa-W5DV--m" target="_blank">CCC</a></li>
 </ul>
 
-<p><b>Planckenstein</b>: Mr CCSDT#2!</p>
-<ul>	<li>Non-Active Channels:		<a href="https://www.twitch.tv/planckenstein" target="_blank">www.twitch.tv/planckenstein</a> &
-									<a href="https://www.youtube.com/@planckenstein" target="_blank">www.youtube.com/@planckenstein</a></li>
+<p><b>Dumalacath</b>: CCA Master and aspiring CCC demi-god!</p>
+<ul>	<li>Non-Active Channel:		<a href="https://www.youtube.com/@dumalacath" target="_blank">www.youtube.com/@dumalacath</a></li>
+	<li>Crawl Cosplay playlists: 	<a href="https://www.youtube.com/playlist?list=PLy8-17WgznzHupXlm9SbgNVWfeF46Yvku" target="_blank">CCA</a>; 
+					<a href="https://www.youtube.com/playlist?list=PLy8-17WgznzGYSC6dJy6NqHErLrtvoYRR" target="_blank">CCC</a>; 
+					<a href="https://www.youtube.com/playlist?list=PLy8-17WgznzHBfUlTlz_ScV5_irFeNx8C" target="_blank">CCTT</a></li>
 </ul>
