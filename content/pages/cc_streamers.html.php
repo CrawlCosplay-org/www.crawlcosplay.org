@@ -44,6 +44,11 @@
 									<a href="https://www.youtube.com/@planckenstein" target="_blank">www.youtube.com/@planckenstein</a></li>
 </ul>
 
+<p><b>ThePixelVilain</b>: Mr CCA roulette!</p>
+<ul>	<li>Active Channels:		<a href="https://www.twitch.tv/thepixelvillain" target="_blank">www.twitch.tv/thepixelvillain</a> &
+									<a href="https://www.youtube.com/@ThePixelVillain" target="_blank">www.youtube.com/@ThePixelVillain</a></li>
+</ul>
+
 <p><b>Wizard1ke</b>: our favourite Kiwi</p>
 <ul>	<li>Non-Active Channels:	<a href="https://www.twitch.tv/wizardike" target="_blank">www.twitch.tv/wizardike</a> & 
 					<a href="https://www.youtube.com/@WizardIke" target="_blank">www.youtube.com/@WizardIke</a></li>
