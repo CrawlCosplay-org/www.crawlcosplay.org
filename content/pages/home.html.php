@@ -53,10 +53,6 @@
 		   . _("with over 225 members!") . "</p>";
 	
 	echo "<h2>" . _("Crawl Cosplay Streamers") . "</h2>";
-	echo "<p>"  . _("Our Crawl Cosplay YouTube channel")
-		    . ' <a href="https://www.youtube.com/@DungeonCrawlCosplayShorts" target="_blank">@DungeonCrawlCosplayShorts</a> ' 
-		    . _("is a repertoire of short video extracts that have links to the full video or playlist.") . "</p>";
-
 	echo "<p>"  . _("See the") . ' <a href="/cc_streamers"><b>' . _("Crawl Cosplay Streamers") . "</b></a>' "  
 		    . _("webpage for info on current and past streamers as well as links to their CC playlists.") . "</p>";
 	echo "<p>" . _("Happy Crawling,") . "</p>";
