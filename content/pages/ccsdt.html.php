@@ -2,7 +2,7 @@
 <h2 style="color:rgb(69, 136, 5);">Welcome to the <b>Crawl Cosplay Sudden Death Tournament</b> (CCSDT)</h2>
 
 <h2>Next Tournament</h2>
-<ul><li>CCSDT#3 for DCSS v0.34 will start in early May 2026</li>
+<ul><li>CCSDT#3 for DCSS v0.34 will start in mid May to early June 2026</li>
 
 </ul>
 
