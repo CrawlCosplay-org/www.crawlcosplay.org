@@ -18,5 +18,15 @@
     <th>Bonus 1</th>
     <th>Bonus 2</th>
     <th>Total</th>
-    </tr></table></div></div>
-    <div id="bottomtext"><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="../about_ccsdt.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu">Week 1 - </span><span class="menu">Week 2 - </span><span id="updated"><span class="label">Updates every 10 mins. Last Update: </span>2026-05-02 13:28 UTC</span></div>
+    </tr><tr class="none"><td class="name">RoGGa</td>
+                <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">agentchuck</td>
+                <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">TheMeInTeam</td>
+                <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">Astinus</td>
+                <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">Platt</td>
+                <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">Archion</td>
+                <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">ASCIIPhilia</td>
+                <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">yakattack</td>
+                <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">ElricMelnibone</td>
+                <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">Caterwaul</td>
+                <td colspan="10"></td><td class="total">0</td></tr></table></div></div>
+    <div id="bottomtext"><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="../about_ccsdt.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu">Week 1 - </span><span class="menu">Week 2 - </span><span id="updated"><span class="label">Updates every 10 mins. Last Update: </span>2026-05-02 13:38 UTC</span></div>
