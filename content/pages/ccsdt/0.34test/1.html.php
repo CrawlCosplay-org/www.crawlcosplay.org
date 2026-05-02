@@ -1,11 +1,11 @@
-<title>Week 1 &mdash; GrEE</title>
+<title>Week 1 &mdash; OnAE</title>
     <?php $this->layout = 'ccsdt'; ?>
     <meta http-equiv="refresh" content="240"><div id="title">
     <h2 id="sdc"><center>CCSDT#3 for DCSS v0.34test</center></h2>
-    <h2>Week 1 &mdash; GrEE</h2></div><div id="content"><div id="times"><span class="label">Week of 2026-05-01</span></div><div id="combo"><span class="label">Character: </span>Gargoyle Earth Elementalist</div>
+    <h2>Week 1 &mdash; OnAE</h2></div><div id="content"><div id="times"><span class="label">Week of 2026-04-17</span></div><div id="combo"><span class="label">Character: </span>Oni Air Elementalist</div>
 <div id="bonus"><span class="label">Bonus 1: </span>Reach the end of Lair at XL &leq; 12.<br/>
 <span class="label">Bonus 2: </span>Collect a rune with all base skills < 11.</div>
-<div id="gods"><span class="label">Gods: </span>Makhleb, Makhleb, Makhleb</div><br><pre>LEGEND<br>------<br>Green = Won<br>Red   = Died<br>Grey  = ongoing or did not finish</right></pre><div class="card"><table><tr class="head">
+<div id="gods"><span class="label">Gods: </span>Ashenzari, Ashenzari, Ashenzari</div><br><pre>LEGEND<br>------<br>Green = Won<br>Red   = Died<br>Grey  = ongoing or did not finish</right></pre><div class="card"><table><tr class="head">
     <th>Player</th>
     <th>Unique Kill</th>
     <th>Branch Enter</th>
@@ -29,4 +29,4 @@
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">ElricMelnibone</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">Caterwaul</td>
                 <td colspan="10"></td><td class="total">0</td></tr></table></div></div>
-    <div id="bottomtext"><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="../about_ccsdt.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu">Week 1 - </span><span class="menu">Week 2 - </span><span class="menu"><a href="3.html">Week 3</a> - </span><span class="menu"><a href="4.html">Week 4</a> - </span><span class="menu"><a href="5.html">Week 5</a> - </span><span id="updated"><span class="label">Updates every 10 mins. Last Update: </span>2026-05-02 14:28 UTC</span></div>
+    <div id="bottomtext"><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="../about_ccsdt.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu">Week 1 - </span><span class="menu"><a href="2.html">Week 2</a> - </span><span class="menu"><a href="3.html">Week 3</a> - </span><span class="menu">Week 4 - </span><span class="menu">Week 5 - </span><span id="updated"><span class="label">Updates every 10 mins. Last Update: </span>2026-05-02 14:30 UTC</span></div>
