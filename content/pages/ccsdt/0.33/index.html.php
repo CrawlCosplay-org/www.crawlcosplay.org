@@ -1,7 +1,7 @@
 <title>Crawl Cosplay Sudden Death Tournament</title>
     <?php $this->layout = 'ccsdt'; ?>
     <div id="title">
-    <h2 id="sdc"><center>CCSDT#2 for DCSS v0.33</center></h2>
+    <h2 id="sdc"><center>CCSDT#2 for DCSS v0.34</center></h2>
     <h2></h2></div><div id="content">
     <pre id="cover">
 _You are suddenly pulled into a different region of the Abyss!
@@ -37,11 +37,11 @@ href="../about_ccsdt.html">details/about page</a>.</li>
 
 <h2>Sign Up</h2>
 
-<p>In order to sign up, set the first line of your 0.33 RC file to</p> 
+<p>In order to sign up, set the first line of your 0.34 RC file to</p> 
 <pre id="rc"># ccsdt</pre>
 <p>on <a href="https://crawl.develz.org/play.htm">any of the official online servers</a>
 or CCO ( https://cco.crawlcosplay.org/ ) at any point during tournament. Your name will appear in the standings once
-you've done this correctly and started at least one 0.33 game (though it may take about 15 minutes before it does).</p>
+you've done this correctly and started at least one 0.34 game (though it may take about 15 minutes before it does).</p>
 
 <h2>Credits</h2>
 

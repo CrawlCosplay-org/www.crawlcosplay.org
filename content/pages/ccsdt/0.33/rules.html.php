@@ -1,7 +1,7 @@
 <title>Rules</title>
     <?php $this->layout = 'ccsdt'; ?>
     <div id="title">
-    <h2 id="sdc"><center>CCSDT#2 for DCSS v0.33</center></h2>
+    <h2 id="sdc"><center>CCSDT#2 for DCSS v0.34</center></h2>
     <h2>Rules</h2></div><div id="content">
     <ol>
 <li>Each challenge consists of playing a randomly chosen Crawl race/class combo
@@ -11,7 +11,7 @@ The combo for each week of the competition will be announced at
 finish a game using that combo. Only milestones recorded during the week (from
 00:00 UTC on the start date until 00:00 UTC on the end date) will count for
 scoring.</li>
-<li>Your first 0.33 game started on an official server during the week will count
+<li>Your first 0.34 game started on an official server during the week will count
 for scoring. This is the only allowed attempt, subject to rule 3 below.</li>
 <li>One redo per week is allowed if your first game ended in death with player
 XL < 5 (i.e., no redo once you hit XL 5). The redo game must be started after
