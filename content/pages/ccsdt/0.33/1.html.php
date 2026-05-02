@@ -5,7 +5,7 @@
     <h2>Week 1 &mdash; GrEE</h2></div><div id="content"><div id="times"><span class="label">Week of 2026-05-01</span></div><div id="combo"><span class="label">Character: </span>Gargoyle Earth Elementalist</div>
 <div id="bonus"><span class="label">Bonus 1: </span>Reach the end of Lair at XL &leq; 12.<br/>
 <span class="label">Bonus 2: </span>Collect a rune with all base skills < 11.</div>
-<div id="gods"><span class="label">Gods: </span>M, a, k, h, l, e, b</div><br><pre>LEGEND<br>------<br>Green = Won<br>Red   = Died<br>Grey  = ongoing or did not finish</right></pre><div class="card"><table><tr class="head">
+<div id="gods"><span class="label">Gods: </span>Makhleb, Makhleb, Makhleb</div><br><pre>LEGEND<br>------<br>Green = Won<br>Red   = Died<br>Grey  = ongoing or did not finish</right></pre><div class="card"><table><tr class="head">
     <th>Player</th>
     <th>Unique Kill</th>
     <th>Branch Enter</th>
@@ -120,4 +120,4 @@
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">playerghost</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">person50605</td>
                 <td colspan="10"></td><td class="total">0</td></tr></table></div></div>
-    <div id="bottomtext"><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="../about_ccsdt.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu">Week 1 - </span><span class="menu">Week 2 - </span><span id="updated"><span class="label">Updates every 10 mins. Last Update: </span>2026-05-02 12:51 UTC</span></div>
+    <div id="bottomtext"><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="../about_ccsdt.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu">Week 1 - </span><span class="menu">Week 2 - </span><span id="updated"><span class="label">Updates every 10 mins. Last Update: </span>2026-05-02 13:02 UTC</span></div>
