@@ -1,7 +1,7 @@
 <title>Crawl Cosplay Sudden Death Tournament</title>
     <?php $this->layout = 'ccsdt'; ?>
     <div id="title">
-    <h2 id="sdc"><center>CCSDT#3 for DCSS v0.34test</center></h2>
+    <h2 id="sdc"><center>CCSDT#2 for DCSS v0.34</center></h2>
     <h2></h2></div><div id="content">
     <pre id="cover">
 _You are suddenly pulled into a different region of the Abyss!
@@ -32,7 +32,7 @@ href="../about_ccsdt.html">details/about page</a>.</li>
 
 <h2>Schedule</h2>
 
-<ul id="schedule"><li><span class="label"><a href="1.html">Week 1 &mdash; GrEE</a>:</span> 2026-05-01 to 2026-05-08<li><span class="label">Week 2:</span> 2026-05-08 to 2026-05-15</ul>
+<ul id="schedule"><li><span class="label"><a href="1.html">Week 1 &mdash; NaAl</a>:</span> 2025-09-05 to 2025-09-12<li><span class="label"><a href="2.html">Week 2 &mdash; GnSu</a>:</span> 2025-09-12 to 2025-09-19<li><span class="label"><a href="3.html">Week 3 &mdash; DEHW</a>:</span> 2025-09-19 to 2025-09-26<li><span class="label"><a href="4.html">Week 4 &mdash; ReNe</a>:</span> 2025-09-26 to 2025-10-03<li><span class="label"><a href="5.html">Week 5 &mdash; HuWn</a>:</span> 2025-10-03 to 2025-10-10</ul>
 
 
 <h2>Sign Up</h2>
@@ -48,4 +48,4 @@ you've done this correctly and started at least one 0.34 game (though it may tak
 <p>Original CSDC rules and organization by <a href="http://crawl.akrasiac.org/scoring/players/walkerboh.html">WalkerBoh</a> and 
 <a href="http://crawl.akrasiac.org/scoring/players/ebering.html">ebering</a>.
 Thank you to scrubbdaddy for python assistance. I am your host, RoGGa.</p></div>
-    <div id="bottomtext"><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="../about_ccsdt.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu"><a href="1.html">Week 1</a> - </span><span class="menu">Week 2 - </span></div>
+    <div id="bottomtext"><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="../about_ccsdt.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu"><a href="1.html">Week 1</a> - </span><span class="menu"><a href="2.html">Week 2</a> - </span><span class="menu"><a href="3.html">Week 3</a> - </span><span class="menu"><a href="4.html">Week 4</a> - </span><span class="menu"><a href="5.html">Week 5</a> - </span></div>
