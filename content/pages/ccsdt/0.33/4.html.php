@@ -1,7 +1,7 @@
 <title>Week 4 &mdash; ReNe</title>
     <?php $this->layout = 'ccsdt'; ?>
     <meta http-equiv="refresh" content="240"><div id="title">
-    <h2 id="sdc"><center>CCSDT#2 for DCSS v0.34</center></h2>
+    <h2 id="sdc"><center>CCSDT#2 for DCSS v0.33</center></h2>
     <h2>Week 4 &mdash; ReNe</h2></div><div id="content"><div id="times"><span class="label">Week of 2025-09-26</span></div><div id="combo"><span class="label">Character: </span>Revenant Necromancer</div>
 <div id="bonus"><span class="label">Bonus 1: </span>Collect a rune before entering Lair.<br/>
 <span class="label">Bonus 2: </span>Get a rune from Hell before entering any other rune branch (excluding the Abyss).</div>
@@ -120,4 +120,4 @@
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">Vivy</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">person50605</td>
                 <td colspan="10"></td><td class="total">0</td></tr></table></div></div>
-    <div id="bottomtext"><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="../about_ccsdt.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu"><a href="1.html">Week 1</a> - </span><span class="menu"><a href="2.html">Week 2</a> - </span><span class="menu"><a href="3.html">Week 3</a> - </span><span class="menu">Week 4 - </span><span class="menu"><a href="5.html">Week 5</a> - </span><span id="updated"><span class="label">Updates every 10 mins. Last Update: </span>2026-05-02 12:45 UTC</span></div>
+    <div id="bottomtext"><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="../about_ccsdt.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu"><a href="1.html">Week 1</a> - </span><span class="menu"><a href="2.html">Week 2</a> - </span><span class="menu"><a href="3.html">Week 3</a> - </span><span class="menu">Week 4 - </span><span class="menu"><a href="5.html">Week 5</a> - </span><span id="updated"><span class="label">Updates every 10 mins. Last Update: </span>2025-10-10 00:12 UTC</span></div>
