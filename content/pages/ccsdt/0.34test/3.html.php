@@ -1,7 +1,7 @@
 <title>Week 3 &mdash; GrEE</title>
     <?php $this->layout = 'ccsdt'; ?>
     <meta http-equiv="refresh" content="240"><div id="title">
-    <h2 id="sdc"><center>CCSDT#3 for DCSS v0.34test</center></h2>
+    <h2 id="sdc"><center>CCSDT#3 for DCSS v0.34</center></h2>
     <h2>Week 3 &mdash; GrEE</h2></div><div id="content"><div id="times"><span class="label">Week of 2026-05-01</span></div><div id="combo"><span class="label">Character: </span>Gargoyle Earth Elementalist</div>
 <div id="bonus"><span class="label">Bonus 1: </span>Enter Slime as your second multi-level branch (don't get banished).<br/>
 <span class="label">Bonus 2: </span>Enter a rune branch with all base skills < 11.</div>
@@ -29,4 +29,4 @@
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">ElricMelnibone</td>
                 <td colspan="10"></td><td class="total">0</td></tr><tr class="none"><td class="name">Caterwaul</td>
                 <td colspan="10"></td><td class="total">0</td></tr></table></div></div>
-    <div id="bottomtext"><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="../about_ccsdt.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu"><a href="1.html">Week 1</a> - </span><span class="menu"><a href="2.html">Week 2</a> - </span><span class="menu">Week 3 - </span><span class="menu">Week 4 - </span><span class="menu">Week 5 - </span><span id="updated"><span class="label">Updates every 10 mins. Last Update: </span>2026-05-02 15:08 UTC</span></div>
+    <div id="bottomtext"><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="../about_ccsdt.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu"><a href="1.html">Week 1</a> - </span><span class="menu"><a href="2.html">Week 2</a> - </span><span class="menu">Week 3 - </span><span class="menu">Week 4 - </span><span class="menu">Week 5 - </span><span id="updated"><span class="label">Updates every 10 mins. Last Update: </span>2026-05-02 15:18 UTC</span></div>
