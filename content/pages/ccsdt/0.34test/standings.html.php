@@ -1,0 +1,6 @@
+<title>Standings</title>
+    <?php $this->layout = 'ccsdt'; ?>
+    <meta http-equiv="refresh" content="240"><div id="title">
+    <h2 id="sdc"><center>CCSDT#3 for DCSS v0.34test</center></h2>
+    <h2>Standings</h2></div><div id="content"><pre>LEGEND<br>------<br>Green = Won<br>Red   = Died<br>White = ongoing or did not finish</right></pre><div class="card"><table><tr class="head"><th></th><th>Player</th><th><a href="1.html">Week 1 &mdash; GrEE</a></th><th>Week 2</th><th>15 Rune Win</th><th>Full Zig</th><th>Zot <= XL20</th><th>Win &lt;40k Turns</th><th>No Lair Win</th><th>Ascetic Rune</th><th>Total Score</th><th>Weekly Bonuses</th><th>Game High Score</th></tr></table></div></div>
+    <div id="bottomtext"><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="../about_ccsdt.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu"><a href="1.html">Week 1</a> - </span><span class="menu">Week 2 - </span><span id="updated"><span class="label">Updates every 10 mins. Last Update: </span>2026-05-02 13:28 UTC</span></div>
