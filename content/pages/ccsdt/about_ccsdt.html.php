@@ -59,11 +59,11 @@ games achieve them.</p>
 <tr><td class="name">15. Complete Bonus 2:</td><td class="pt">1</td></tr>
 <tr class="head" id="onetime"><th>One-time points (earned once during the tournament)**</th><th></th></tr>
 <!-- <tr><td class="name">Win a game in under 40,000 turns:</td><td class="pt">2</td></tr> -->
-<tr><td class="name">Win a game with 15 runes:</td><td class="pt">3</td></tr>
-<tr><td class="name">Clear a Ziggurat:</td><td class="pt">4</td></tr>
-<tr><td class="name">Enter Zot at XL 20 or lower:</td><td class="pt">5</td></tr>
-<tr><td class="name">Win a game without entering lair:</td><td class="pt">6</td></tr>
-<tr><td class="name">Get a rune without using potions or scrolls:</td><td class="pt">7</td></tr>
+<tr><td class="name">1. Win a game with 15 runes:</td><td class="pt">3</td></tr>
+<tr><td class="name">2. Clear a Ziggurat:</td><td class="pt">4</td></tr>
+<tr><td class="name">3. Enter Zot at XL 20 or lower:</td><td class="pt">5</td></tr>
+<tr><td class="name">4. Win a game without entering lair:</td><td class="pt">6</td></tr>
+<tr><td class="name">5. Get a rune without using potions or scrolls:</td><td class="pt">7</td></tr>
 </table>
 <p class="notes"> * The scoring of weekly points was reworked for CCSDT#3 and 5 item were added. *** The new ones have yet to be programmed. ***</p>
 <p class="notes"> ** The scoring of one-time points was reworked for CCSDT#3 and 1 item was removed. </p>
