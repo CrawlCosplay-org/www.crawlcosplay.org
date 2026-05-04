@@ -41,24 +41,23 @@ score.</li>
 played, and one-time points awarded once per season regardless of how many
 games achieve them.</p>
 
-<table class="info"><tr class="head"><th>Weekly points (can be earned each
-week)</th><th></th></tr>
+<table class="info"><tr class="head"><th>15 Weekly Points (can be earned each week)</th><th></th></tr>
+<tr><td class="name">Reach XL5:</td><td class="pt">1</td>new</tr>
 <tr><td class="name">Kill a Unique:</td><td class="pt">1</td></tr>
-<!-- <tr><td class="name">Enter Temple:</td><td class="pt">1</td></tr> -->
+<tr><td class="name">Enter Temple:</td><td class="pt">1</td></tr>
 <tr><td class="name">Enter a multi-level branch of the dungeon:</td><td class="pt">1</td></tr>
 <tr><td class="name">Reach the end of a multi-level branch (including Dungeon):</td><td class="pt">1</td></tr>
 <tr><td class="name">Champion a listed god:</td><td class="pt">1</td></tr>
-<!-- <tr><td class="name">Collect a Gem:</td><td class="pt">1</td></tr> -->
+<tr><td class="name">Collect a Gem:</td><td class="pt">1</td></tr>
 <tr><td class="name">Collect a Rune:</td><td class="pt">1</td></tr>
-<!-- <tr><td class="name">Collect a 2nd Rune:</td><td class="pt">1</td></tr> -->
+<tr><td class="name">Collect a 2nd Rune:</td><td class="pt">1</td></tr>
 <tr><td class="name">Collect 3 or more Runes:</td><td class="pt">1</td></tr>
 <tr><td class="name">Pick up the Orb of Zot:</td><td class="pt">1</td></tr>
 <tr><td class="name">Win:</td><td class="pt">1</td></tr>
 <tr><td class="name">Complete Bonus 1:</td><td class="pt">1</td></tr>
 <tr><td class="name">Complete Bonus 2:</td><td class="pt">1</td></tr>
-<tr class="head" id="onetime"><th>One-time points (earned once during the
-tournament)*</th><th></th></tr>
-<tr><td class="name">Win a game in under 40,000 turns:</td><td class="pt">2</td></tr>
+<tr class="head" id="onetime"><th>One-time points (earned once during the tournament)*</th><th></th></tr>
+<!-- <tr><td class="name">Win a game in under 40,000 turns:</td><td class="pt">2</td></tr> -->
 <tr><td class="name">Win a game with 15 runes:</td><td class="pt">3</td></tr>
 <tr><td class="name">Clear a Ziggurat:</td><td class="pt">4</td></tr>
 <tr><td class="name">Enter Zot at XL 20 or lower:</td><td class="pt">5</td></tr>
