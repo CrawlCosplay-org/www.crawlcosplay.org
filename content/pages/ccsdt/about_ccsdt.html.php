@@ -67,10 +67,6 @@ games achieve them.</p>
 </table>
 <p class="notes"> * The scoring of weekly points was reworked for CCSDT#3 and 5 item was added. </p>
 <p class="notes"> ** The scoring of one-time points was reworked for CCSDT#3 and 1 item was removed. </p>
-<p class="notes"> - It will not always be the case that earning a
-Bonus 2 implies that you have earned a Bonus 1; these points can be
-awarded separately. Unless specified, a bonus or one time point does not
-require you to win to earn the point(s).</p>
 
 <h2>List of possible Bonuses</h2>
 
@@ -101,7 +97,7 @@ require you to win to earn the point(s).</p>
    <li>Collect two runes without dying twice (felids).</li>
 </ol>
    
-<h3>List of new-version tournament banners to be programmed</h3>
+<h3>List of new-version DCSS tournament banners to be programmed/copied over</h3>
 <ul>
    <li>Tier 3: Enter Tomb for the first time after picking up the Orb of Zot, and then get the golden rune.</li>
    <li>Tier 3: Find the iron rune in Dis before entering Pandemonium or any branch of the dungeon containing any other rune.</li>
@@ -123,19 +119,19 @@ require you to win to earn the point(s).</p>
 
 <h3>List of CCC Bonuses to be programmed</h3>
 <ul>
-   <li> 1.1 Joseph:          Win the game with at least $10000 in gold.</li>
-   <li> 4.2 Bai Suzhen:      Reach skill level 27 in invocations, before you reach XL27.</li>
-   <li> 4.5 Frederick:       Get at least one Hell rune, and one Pan rune other than the demonic rune.</li>
-   <li> 5.4 The Moon Troll:  Win the game without entering the Vaults.</li>
-   <li> 9.3 Nergalle:        Enter the Orcish Mines before reaching XL10.</li>
-   <li>10.1 Maurice:         Get the Abyssal rune during the orb run.</li>
-   <li>10.2 Vashnia:         Don't enter any of Swamp, Shoals, Snake Pit, or Spider Nest, until you have the Silver rune (the Vaults)</li>
-   <li>11.1 Cerebov:         Kill Cerebov in Pandemonium.</li>
-   <li>15.1 Pikel:           Win the game with at least 7 runes.</li>
-   <li>15.5 Tiamat:          Reach XL7 on D:7.</li>
-   <li>16.1 Nessos:          Kill the Serpent of Hell.</li>
-   <li>17.1 The Enchantress: Win before you reach XL25.</li>
-   <li>32.5 Xak:             Get 3 gems other than the dungeon one. The gems do not need to stay intact.</li>
+   <li>Joseph:          Win the game with at least $10000 in gold.</li>
+   <li>Bai Suzhen:      Reach skill level 27 in invocations, before you reach XL27.</li>
+   <li>Frederick:       Get at least one Hell rune, and one Pan rune other than the demonic rune.</li>
+   <li>The Moon Troll:  Win the game without entering the Vaults.</li>
+   <li>Nergalle:        Enter the Orcish Mines before reaching XL10.</li>
+   <li>Maurice:         Get the Abyssal rune during the orb run.</li>
+   <li>Vashnia:         Don't enter any of Swamp, Shoals, Snake Pit, or Spider Nest, until you have the Silver rune (the Vaults)</li>
+   <li>Cerebov:         Kill Cerebov in Pandemonium.</li>
+   <li>Pikel:           Win the game with at least 7 runes.</li>
+   <li>Tiamat:          Reach XL7 on D:7.</li>
+   <li>Nessos:          Kill the Serpent of Hell.</li>
+   <li>The Enchantress: Win before you reach XL25.</li>
+   <li>Xak:             Get 3 gems other than the dungeon one. The gems do not need to stay intact.</li>
 </ul>
 
       
