@@ -41,35 +41,32 @@ score.</li>
 played, and one-time points awarded once per season regardless of how many
 games achieve them.</p>
 
-<table class="info"><tr class="head"><th>Weekly points (can be earned each
-week)</th><th></th></tr>
-<tr><td class="name">Kill a Unique:</td><td class="pt">1</td></tr>
-<!-- <tr><td class="name">Enter Temple:</td><td class="pt">1</td></tr> -->
-<tr><td class="name">Enter a multi-level branch of the dungeon:</td><td class="pt">1</td></tr>
-<tr><td class="name">Reach the end of a multi-level branch (including Dungeon):</td><td class="pt">1</td></tr>
-<tr><td class="name">Champion a listed god:</td><td class="pt">1</td></tr>
-<!-- <tr><td class="name">Collect a Gem:</td><td class="pt">1</td></tr> -->
-<tr><td class="name">Collect a Rune:</td><td class="pt">1</td></tr>
-<!-- <tr><td class="name">Collect a 2nd Rune:</td><td class="pt">1</td></tr> -->
-<tr><td class="name">Collect 3 or more Runes:</td><td class="pt">1</td></tr>
-<tr><td class="name">Pick up the Orb of Zot:</td><td class="pt">1</td></tr>
-<tr><td class="name">Win:</td><td class="pt">1</td></tr>
-<tr><td class="name">Complete Bonus 1:</td><td class="pt">1</td></tr>
-<tr><td class="name">Complete Bonus 2:</td><td class="pt">1</td></tr>
-<tr class="head" id="onetime"><th>One-time points (earned once during the
-tournament)*</th><th></th></tr>
-<tr><td class="name">Win a game in under 40,000 turns:</td><td class="pt">2</td></tr>
-<tr><td class="name">Win a game with 15 runes:</td><td class="pt">3</td></tr>
-<tr><td class="name">Clear a Ziggurat:</td><td class="pt">4</td></tr>
-<tr><td class="name">Enter Zot at XL 20 or lower:</td><td class="pt">5</td></tr>
-<tr><td class="name">Win a game without entering lair:</td><td class="pt">6</td></tr>
-<tr><td class="name">Get a rune without using potions or scrolls:</td><td class="pt">7</td></tr>
+<table class="info"><tr class="head"><th>15 Weekly Points (can be earned each week)*</th><th>Points</th></tr>
+<tr><td class="name"> 1. Reach XL5:</td><td class="pt">1 (new)</td></tr>
+<tr><td class="name"> 2. Kill a Unique:</td><td class="pt">1     </td></tr>
+<tr><td class="name"> 3. Enter Temple:</td><td class="pt">1 (new)</td></tr>
+<tr><td class="name"> 4. Worship a listed god:</td><td class="pt">1 (new)</td></tr>
+<tr><td class="name"> 5. Enter a multi-level branch of the dungeon:</td><td class="pt">1</td></tr>
+<tr><td class="name"> 6. Reach the end of a multi-level branch (including Dungeon):</td><td class="pt">1</td></tr>
+<tr><td class="name"> 7. Champion a listed god:</td><td class="pt">1</td></tr>
+<tr><td class="name"> 8. Collect a Gem:</td><td class="pt">1 (new)</td></tr>
+<tr><td class="name"> 9. Collect a Rune:</td><td class="pt">1</td></tr>
+<tr><td class="name">10. Collect a 2nd Rune:</td><td class="pt">1 (new)</td></tr>
+<tr><td class="name">11. Collect 3 or more Runes:</td><td class="pt">1</td></tr>
+<tr><td class="name">12. Pick up the Orb of Zot:</td><td class="pt">1</td></tr>
+<tr><td class="name">13. Win:</td><td class="pt">1</td></tr>
+<tr><td class="name">14. Complete Bonus 1:</td><td class="pt">1</td></tr>
+<tr><td class="name">15. Complete Bonus 2:</td><td class="pt">1</td></tr>
+<tr class="head" id="onetime"><th>One-time points (earned once during the tournament)**</th><th>Points</th></tr>
+<!-- <tr><td class="name">Win a game in under 40,000 turns:</td><td class="pt">2</td></tr> -->
+<tr><td class="name">1. Win a game with 15 runes:</td><td class="pt">3</td></tr>
+<tr><td class="name">2. Clear a Ziggurat:</td><td class="pt">4</td></tr>
+<tr><td class="name">3. Enter Zot at XL 20 or lower:</td><td class="pt">5</td></tr>
+<tr><td class="name">4. Win a game without entering lair:</td><td class="pt">6</td></tr>
+<tr><td class="name">5. Get a rune without using potions or scrolls:</td><td class="pt">7</td></tr>
 </table>
-<p class="notes"> * The scoring of one-time points was reworked for CCSDT#3. </p>
-<p class="notes"> - It will not always be the case that earning a
-Bonus 2 implies that you have earned a Bonus 1; these points can be
-awarded separately. Unless specified, a bonus or one time point does not
-require you to win to earn the point(s).</p>
+<p class="notes"> * The scoring of weekly points was reworked for CCSDT#3 and 5 item were added. *** The new ones have yet to be programmed. ***</p>
+<p class="notes"> ** The scoring of one-time points was reworked for CCSDT#3 and 1 item was removed. </p>
 
 <h2>List of possible Bonuses</h2>
 
@@ -78,29 +75,29 @@ require you to win to earn the point(s).</p>
    <li>Enter a rune branch with all base skills < 11.</li>
    <li>Enter Slime as your second multi-level branch (don't get banished).</li>
    <li>Enter the Temple in less than 4,000 turns.</li>
-   <li><s>Reach the end of Lair at XL &leq; 12.</s></li>
-   <li><s>Reach the end of Elf before entering a rune branch (excluding getting banished to the Abyss).</s></li>
+   <li>Reach the end of Lair at XL &leq; 12.</li>
+   <li>Reach the end of Elf before entering a rune branch (excluding getting banished to the Abyss).</li>
    <li>Reach the end of the Depths before entering a rune branch (excluding getting banished to the Abyss).</li>
-   <li><s>Collect a rune before entering Shoals, Snake, Spider, or Swamp.</s></li>
-   <li><s>Collect a rune before entering Lair.</s></li>
+   <li>Collect a rune before entering Shoals, Snake, Spider, or Swamp.</li>
+   <li>Collect a rune before entering Lair.</li>
    <li>Collect a rune without dying (felids).</li>
 </ol>
 
 <h3>Bonus 2 list</h3>
 <ol>
-   <li><s>Collect the golden rune.</s></li>
-   <li><s>Collect a rune with all base skills < 11.</s></li>
+   <li>Collect the golden rune.</li>
+   <li>Collect a rune with all base skills < 11.</li>
    <li>Get the slimy rune without entering any multi-level branch other than Lair, Slime, and Dungeon (don't get banished).</li>
    <li>Collect a rune in less than 15,000 turns.</li>
    <li>Reach the end of the Vaults at XL &leq; 18.</li>
    <li>Kill or slimify Geryon before entering a rune branch (excluding the Abyss).</li>
-   <li><s>Get a rune from Hell or Pan before entering any other rune branch (excluding the Abyss).</s></li>
-   <li><s>Get a rune from Hell before entering any other rune branch (excluding the Abyss).</s></li>
+   <li>Get a rune from Hell or Pan before entering any other rune branch (excluding the Abyss).</li>
+   <li>Get a rune from Hell before entering any other rune branch (excluding the Abyss).</li>
    <li>Collect at least 5 runes before entering the Depths.</li>
    <li>Collect two runes without dying twice (felids).</li>
 </ol>
    
-<h3>List of new-version tournament banners to be programmed</h3>
+<h3>List of new-version DCSS tournament banners to be programmed/copied over</h3>
 <ul>
    <li>Tier 3: Enter Tomb for the first time after picking up the Orb of Zot, and then get the golden rune.</li>
    <li>Tier 3: Find the iron rune in Dis before entering Pandemonium or any branch of the dungeon containing any other rune.</li>
@@ -122,19 +119,19 @@ require you to win to earn the point(s).</p>
 
 <h3>List of CCC Bonuses to be programmed</h3>
 <ul>
-   <li> 1.1 Joseph:          Win the game with at least $10000 in gold.</li>
-   <li> 4.2 Bai Suzhen:      Reach skill level 27 in invocations, before you reach XL27.</li>
-   <li> 4.5 Frederick:       Get at least one Hell rune, and one Pan rune other than the demonic rune.</li>
-   <li> 5.4 The Moon Troll:  Win the game without entering the Vaults.</li>
-   <li> 9.3 Nergalle:        Enter the Orcish Mines before reaching XL10.</li>
-   <li>10.1 Maurice:         Get the Abyssal rune during the orb run.</li>
-   <li>10.2 Vashnia:         Don't enter any of Swamp, Shoals, Snake Pit, or Spider Nest, until you have the Silver rune (the Vaults)</li>
-   <li>11.1 Cerebov:         Kill Cerebov in Pandemonium.</li>
-   <li>15.1 Pikel:           Win the game with at least 7 runes.</li>
-   <li>15.5 Tiamat:          Reach XL7 on D:7.</li>
-   <li>16.1 Nessos:          Kill the Serpent of Hell.</li>
-   <li>17.1 The Enchantress: Win before you reach XL25.</li>
-   <li>32.5 Xak:             Get 3 gems other than the dungeon one. The gems do not need to stay intact.</li>
+   <li>Joseph:          Win the game with at least $10000 in gold.</li>
+   <li>Bai Suzhen:      Reach skill level 27 in invocations, before you reach XL27.</li>
+   <li>Frederick:       Get at least one Hell rune, and one Pan rune other than the demonic rune.</li>
+   <li>The Moon Troll:  Win the game without entering the Vaults.</li>
+   <li>Nergalle:        Enter the Orcish Mines before reaching XL10.</li>
+   <li>Maurice:         Get the Abyssal rune during the orb run.</li>
+   <li>Vashnia:         Don't enter any of Swamp, Shoals, Snake Pit, or Spider Nest, until you have the Silver rune (the Vaults)</li>
+   <li>Cerebov:         Kill Cerebov in Pandemonium.</li>
+   <li>Pikel:           Win the game with at least 7 runes.</li>
+   <li>Tiamat:          Reach XL7 on D:7.</li>
+   <li>Nessos:          Kill the Serpent of Hell.</li>
+   <li>The Enchantress: Win before you reach XL25.</li>
+   <li>Xak:             Get 3 gems other than the dungeon one. The gems do not need to stay intact.</li>
 </ul>
 
       
