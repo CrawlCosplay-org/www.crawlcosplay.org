@@ -65,7 +65,7 @@ games achieve them.</p>
 <tr><td class="name">Win a game without entering lair:</td><td class="pt">6</td></tr>
 <tr><td class="name">Get a rune without using potions or scrolls:</td><td class="pt">7</td></tr>
 </table>
-<p class="notes"> * The scoring of weekly points was reworked for CCSDT#3 and 5 item was added. </p>
+<p class="notes"> * The scoring of weekly points was reworked for CCSDT#3 and 5 item were added. *** The new ones have yet to be programmed. ***</p>
 <p class="notes"> ** The scoring of one-time points was reworked for CCSDT#3 and 1 item was removed. </p>
 
 <h2>List of possible Bonuses</h2>
