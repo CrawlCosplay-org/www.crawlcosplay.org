@@ -41,7 +41,7 @@ score.</li>
 played, and one-time points awarded once per season regardless of how many
 games achieve them.</p>
 
-<table class="info"><tr class="head"><th>15 Weekly Points (can be earned each week)*</th><th></th></tr>
+<table class="info"><tr class="head"><th>15 Weekly Points (can be earned each week)*</th><th>Points</th></tr>
 <tr><td class="name"> 1. Reach XL5:</td><td class="pt">1 (new)</td></tr>
 <tr><td class="name"> 2. Kill a Unique:</td><td class="pt">1     </td></tr>
 <tr><td class="name"> 3. Enter Temple:</td><td class="pt">1 (new)</td></tr>
@@ -57,7 +57,7 @@ games achieve them.</p>
 <tr><td class="name">13. Win:</td><td class="pt">1</td></tr>
 <tr><td class="name">14. Complete Bonus 1:</td><td class="pt">1</td></tr>
 <tr><td class="name">15. Complete Bonus 2:</td><td class="pt">1</td></tr>
-<tr class="head" id="onetime"><th>One-time points (earned once during the tournament)**</th><th></th></tr>
+<tr class="head" id="onetime"><th>One-time points (earned once during the tournament)**</th><th>Points</th></tr>
 <!-- <tr><td class="name">Win a game in under 40,000 turns:</td><td class="pt">2</td></tr> -->
 <tr><td class="name">1. Win a game with 15 runes:</td><td class="pt">3</td></tr>
 <tr><td class="name">2. Clear a Ziggurat:</td><td class="pt">4</td></tr>
