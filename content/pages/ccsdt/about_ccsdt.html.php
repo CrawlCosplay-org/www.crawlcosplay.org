@@ -43,9 +43,9 @@ games achieve them.</p>
 
 <table class="info"><tr class="head"><th>15 Weekly Points (can be earned each week)*</th><th></th></tr>
 <tr><td class="name"> 1. Reach XL5:</td><td class="pt">1 (new)</td></tr>
-<tr><td class="name"> 2. Kill a Unique:</td><td class="pt">1</td></tr>
+<tr><td class="name"> 2. Kill a Unique:</td><td class="pt">1     </td></tr>
 <tr><td class="name"> 3. Enter Temple:</td><td class="pt">1 (new)</td></tr>
-<tr><td class="name"> 4. Worship a listed god:</td><td class="pt">1</td></tr>
+<tr><td class="name"> 4. Worship a listed god:</td><td class="pt">1 (new)</td></tr>
 <tr><td class="name"> 5. Enter a multi-level branch of the dungeon:</td><td class="pt">1</td></tr>
 <tr><td class="name"> 6. Reach the end of a multi-level branch (including Dungeon):</td><td class="pt">1</td></tr>
 <tr><td class="name"> 7. Champion a listed god:</td><td class="pt">1</td></tr>
