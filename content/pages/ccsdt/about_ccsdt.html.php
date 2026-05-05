@@ -93,6 +93,7 @@ games achieve them.</p>
    <li>Get a rune from Hell or Pan before entering any other rune branch (excluding the Abyss).</li>
    <li>Get a rune from Hell before entering any other rune branch (excluding the Abyss).</li>
    <li>Collect at least 5 runes before entering the Depths.</li>
+   <li>Collect a rune before reaching XL17.</li>
    <li>Collect a rune without dying (felids).</li>
 </ol>
    
