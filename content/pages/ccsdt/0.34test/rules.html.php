@@ -53,8 +53,8 @@ week)</th><th></th></tr>
 <tr><td class="name">10. Collect 1 gem</td><td class="pt">1</td></tr>
 <tr><td class="name">11. Collect the Orb of Zot</td><td class="pt">1</td></tr>
 <tr><td class="name">12. Win</td><td class="pt">1</td></tr>
-<tr><td class="name">13. Complete Bonus 1</td><td class="pt">1</td></tr>
-<tr><td class="name">14. Complete Bonus 2</td><td class="pt">2</td></tr>
+<tr><td class="name">13. Complete Bonus #1</td><td class="pt">1</td></tr>
+<tr><td class="name">14. Complete Bonus #2</td><td class="pt">2</td></tr>
 <tr class="head" id="onetime"><th>One-time points (earned once during the tournament)</th><th></th></tr>
 <!-- <tr><td class="name">Win a game in under 40,000 turns:</td><td class="pt">2</td></tr> -->
 <tr><td class="name">Win a game with 15 runes</td><td class="pt">3</td></tr>
