@@ -1,9 +1,10 @@
-<title>Rules</title>
+<title><h2 style='color:rgb(69, 136, 5);'>About CCSDT#3 for DCSS v0.34</h2></title>
     <?php $this->layout = 'ccsdt'; ?>
     <div id="title">
     <h2 id="sdc"><center>Testing prior to CCSDT#3 for DCSS v0.34</center></h2>
-    <h2>Rules</h2></div><div id="content">
-    <ol>
+    <h2><h2 style='color:rgb(69, 136, 5);'>About CCSDT#3 for DCSS v0.34</h2></h2></div><div id="content">
+<h3>Rules</h3>
+        <ol>
 <li>Each challenge consists of playing a randomly chosen Crawl race/class combo
 (e.g. MiBe) based on a Crawl Unique. 
 The combo for each week of the competition will be announced at

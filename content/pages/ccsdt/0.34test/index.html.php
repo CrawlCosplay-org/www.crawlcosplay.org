@@ -25,7 +25,7 @@ simultaneously encouraging unusual characters and play styles that you might not
 points by reaching various in-game milestones.</li>
 <li>Only games played and milestones scored between 00:00 UTC on the start and end dates count.</li>
 <li>Details on rules and scoring are available on the <a
-href="../about_ccsdt.html">details/about page</a>.</li>
+href="rules.html">details/about page</a>.</li>
 </ul>
 
 <p>* There is 1 caveat detailed on the details/about page at item 4.</p>
