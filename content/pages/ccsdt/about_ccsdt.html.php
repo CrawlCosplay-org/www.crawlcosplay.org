@@ -44,19 +44,18 @@ games achieve them.</p>
 <table class="info"><tr class="head"><th>15 Weekly Points (can be earned each week)*</th><th>Points</th></tr>
 <tr><td class="name"> 1. Kill a Unique:</td><td class="pt">1     </td></tr>
 <tr><td class="name"> 2. Reach XL5:</td><td class="pt">1 (new)</td></tr>
-<tr><td class="name"> 3. Enter Temple:</td><td class="pt">1 (new)</td></tr>
-<tr><td class="name"> 4. Worship a listed god:</td><td class="pt">1 (new)</td></tr>
-<tr><td class="name"> 5. Enter a multi-level branch of the dungeon:</td><td class="pt">1</td></tr>
-<tr><td class="name"> 6. Reach the end of a multi-level branch (including Dungeon):</td><td class="pt">1</td></tr>
-<tr><td class="name"> 7. Champion a listed god:</td><td class="pt">1</td></tr>
-<tr><td class="name"> 8. Collect a Rune:</td><td class="pt">1</td></tr>
-<tr><td class="name"> 9. Collect a 2nd Rune:</td><td class="pt">1 (new)</td></tr>
-<tr><td class="name">10. Collect 3 or more Runes:</td><td class="pt">1</td></tr>
-<tr><td class="name">11. Collect a Gem:</td><td class="pt">1 (new)</td></tr>
-<tr><td class="name">12. Pick up the Orb of Zot:</td><td class="pt">1</td></tr>
-<tr><td class="name">13. Win:</td><td class="pt">1</td></tr>
-<tr><td class="name">14. Complete Bonus 1:</td><td class="pt">1</td></tr>
-<tr><td class="name">15. Complete Bonus 2:</td><td class="pt">1</td></tr>
+<tr><td class="name"> 3. Worship a listed god:</td><td class="pt">1 (new)</td></tr>
+<tr><td class="name"> 4. Enter a multi-level branch of the dungeon:</td><td class="pt">1</td></tr>
+<tr><td class="name"> 5. Reach the end of a multi-level branch (including Dungeon):</td><td class="pt">1</td></tr>
+<tr><td class="name"> 6. Champion a listed god:</td><td class="pt">1</td></tr>
+<tr><td class="name"> 7. Collect a Rune:</td><td class="pt">1</td></tr>
+<tr><td class="name"> 8. Collect a 2nd Rune:</td><td class="pt">1 (new)</td></tr>
+<tr><td class="name"> 9. Collect 3 or more Runes:</td><td class="pt">1</td></tr>
+<tr><td class="name">10. Collect a Gem:</td><td class="pt">1 (new)</td></tr>
+<tr><td class="name">11. Pick up the Orb of Zot:</td><td class="pt">1</td></tr>
+<tr><td class="name">12. Win:</td><td class="pt">1</td></tr>
+<tr><td class="name">13. Complete Bonus 1:</td><td class="pt">1</td></tr>
+<tr><td class="name">14. Complete Bonus 2:</td><td class="pt">2</td></tr>
 <tr class="head" id="onetime"><th>One-time points (earned once during the tournament)**</th><th>Points</th></tr>
 <!-- <tr><td class="name">Win a game in under 40,000 turns:</td><td class="pt">2</td></tr> -->
 <tr><td class="name">1. Win a game with 15 runes:</td><td class="pt">3</td></tr>
@@ -65,7 +64,7 @@ games achieve them.</p>
 <tr><td class="name">4. Win a game without entering lair:</td><td class="pt">6</td></tr>
 <tr><td class="name">5. Get a rune without using potions or scrolls:</td><td class="pt">7</td></tr>
 </table>
-<p class="notes"> * The scoring of weekly points was reworked for CCSDT#3 and 5 item were added. *** The new ones have yet to be programmed. ***</p>
+<p class="notes"> * The scoring of weekly points was reworked for CCSDT#3 and 4 item were added. *** The new ones have yet to be programmed. ***</p>
 <p class="notes"> ** The scoring of one-time points was reworked for CCSDT#3 and 1 item was removed. </p>
 
 <h2>List of possible Bonuses</h2>
@@ -80,7 +79,7 @@ games achieve them.</p>
    <li>Reach the end of the Depths before entering a rune branch (excluding getting banished to the Abyss).</li>
    <li>Collect a rune before entering Shoals, Snake, Spider, or Swamp.</li>
    <li>Collect a rune before entering Lair.</li>
-   <li>Collect a rune without dying (felids).</li>
+   <li>Collect two runes without dying twice (felids).</li>
 </ol>
 
 <h3>Bonus 2 list</h3>
@@ -94,7 +93,8 @@ games achieve them.</p>
    <li>Get a rune from Hell or Pan before entering any other rune branch (excluding the Abyss).</li>
    <li>Get a rune from Hell before entering any other rune branch (excluding the Abyss).</li>
    <li>Collect at least 5 runes before entering the Depths.</li>
-   <li>Collect two runes without dying twice (felids).</li>
+   <li>Collect a rune before reaching XL17.</li>
+   <li>Collect a rune without dying (felids).</li>
 </ol>
    
 <h3>List of new-version DCSS tournament banners to be programmed/copied over</h3>
