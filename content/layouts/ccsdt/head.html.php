@@ -88,7 +88,7 @@ th {
 }
 
 tr.head {
-	font-size: 10pt;
+	font-size: 9pt;
 	border-bottom: 3px solid #669;
 	border-top: 3px solid #669;
 }
