@@ -79,6 +79,7 @@ games achieve them.</p>
    <li>Reach the end of the Depths before entering a rune branch (excluding getting banished to the Abyss).</li>
    <li>Collect a rune before entering Shoals, Snake, Spider, or Swamp.</li>
    <li>Collect a rune before entering Lair.</li>
+   <li>Collect a rune before reaching XL17.</li>
    <li>Collect two runes without dying twice (felids).</li>
 </ol>
 
@@ -93,7 +94,6 @@ games achieve them.</p>
    <li>Get a rune from Hell or Pan before entering any other rune branch (excluding the Abyss).</li>
    <li>Get a rune from Hell before entering any other rune branch (excluding the Abyss).</li>
    <li>Collect at least 5 runes before entering the Depths.</li>
-   <li>Collect a rune before reaching XL17.</li>
    <li>Collect a rune without dying (felids).</li>
 </ol>
    
