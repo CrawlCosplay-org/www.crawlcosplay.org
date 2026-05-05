@@ -4,8 +4,8 @@
     <h2 id="sdc"><center>Testing prior to CCSDT#3 for DCSS v0.34</center></h2>
     <h2><h2 style='color:rgb(69, 136, 5);'>About CCSDT#3</h2></h2></div><div id="content">
 <p>The Crawl Cosplay Sudden Death Tournament is a competition that 
-aims to fill a Crawl niche not currently filled by the version 
-release tournament or the other Crawl Cosplays initiatives. The idea 
+aims to fill a Crawl niche not currently filled by the DCSS version 
+release tournament or the other Crawl Cosplay initiatives. The idea 
 is for players to compete by trying to do as well as possible in a 
 game of Crawl with one attempt only; if you die, that challenge is 
 over (thus "sudden death"). This competition is a lower time 
