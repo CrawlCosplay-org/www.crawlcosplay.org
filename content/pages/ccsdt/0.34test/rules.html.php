@@ -47,21 +47,21 @@ week)</th><th></th></tr>
 <tr><td class="name"> 4. Enter a multi-level branch of the dungeon</td><td class="pt">1</td></tr>
 <tr><td class="name"> 5. Reach the end of a multi-level branch (including D)</td><td class="pt">1</td></tr>
 <tr><td class="name"> 6. Champion a listed god</td><td class="pt">1</td></tr>
-<tr><td class="name"> 7. Collect 1 rune</td><td class="pt">1</td></tr>
-<tr><td class="name"> 8. Collect 2 runes</td><td class="pt">1</td></tr>
-<tr><td class="name"> 9. Collect 3 runes</td><td class="pt">1</td></tr>
-<tr><td class="name">10. Collect 1 gem</td><td class="pt">1</td></tr>
+<tr><td class="name"> 7. Collect 1 gem</td><td class="pt">1</td></tr>
+<tr><td class="name"> 8. Collect 1 rune</td><td class="pt">1</td></tr>
+<tr><td class="name"> 9. Collect 2 runes</td><td class="pt">1</td></tr>
+<tr><td class="name">10. Collect 3 runes</td><td class="pt">1</td></tr>
 <tr><td class="name">11. Collect the Orb of Zot</td><td class="pt">1</td></tr>
 <tr><td class="name">12. Win</td><td class="pt">1</td></tr>
 <tr><td class="name">13. Complete Bonus #1</td><td class="pt">1</td></tr>
 <tr><td class="name">14. Complete Bonus #2</td><td class="pt">2</td></tr>
 <tr class="head" id="onetime"><th>One-time points (earned once during the tournament)</th><th></th></tr>
 <!-- <tr><td class="name">Win a game in under 40,000 turns:</td><td class="pt">2</td></tr> -->
-<tr><td class="name">Win a game with 15 runes</td><td class="pt">3</td></tr>
-<tr><td class="name">Clear a Ziggurat</td><td class="pt">4</td></tr>
-<tr><td class="name">Enter Zot at XL 20 or lower</td><td class="pt">5</td></tr>
-<tr><td class="name">Win a game without entering lair</td><td class="pt">6</td></tr>
-<tr><td class="name">Get a rune without using potions or scrolls (aesetic rune)</td><td class="pt">7</td></tr>
+<tr><td class="name">1. Win a game with 15 runes</td><td class="pt">3</td></tr>
+<tr><td class="name">2. Clear a Ziggurat</td><td class="pt">4</td></tr>
+<tr><td class="name">3. Enter Zot at XL 20 or lower</td><td class="pt">5</td></tr>
+<tr><td class="name">4. Win a game without entering lair</td><td class="pt">6</td></tr>
+<tr><td class="name">5. Get a rune without using potions or scrolls (aesetic rune)</td><td class="pt">7</td></tr>
 </table>
 
 <!-- <p class="notes"> Unless specified, a bonus or one time point does not
