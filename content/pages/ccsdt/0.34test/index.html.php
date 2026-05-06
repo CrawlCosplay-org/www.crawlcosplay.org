@@ -24,8 +24,8 @@ simultaneously encouraging unusual characters and play styles that you might not
 <li>The goal is to advance as far as possible (and win!) in each game, scoring
 points by reaching various in-game milestones.</li>
 <li>Only games played and milestones scored between 00:00 UTC on the start and end dates count.</li>
-<li>Details on rules and scoring are available on the <a
-href="rules.html">details/about page</a>.</li>
+<li>Details on rules and scoring are available on the 
+<ahref="rules.html">details/about page</a>.</li>
 </ul>
 
 <p>* There is 1 caveat detailed on the details/about page at item 4.</p>
@@ -47,5 +47,6 @@ you've done this correctly and started at least one 0.34 game (though it may tak
 
 <p>Original CSDC rules and organization by <a href="http://crawl.akrasiac.org/scoring/players/walkerboh.html">WalkerBoh</a> and 
 <a href="http://crawl.akrasiac.org/scoring/players/ebering.html">ebering</a>.
-Thank you to scrubbdaddy/scrubbuddy (CCSDT#1&3) & grumposus (CCSDT#2) for python assistance. I am your host, RoGGa.</p></div>
+Thank you to scrubbdaddy/scrubbuddy (CCSDT#1&3) & grumposus (CCSDT#2) for python assistance.</p>
+<p>I am your host, RoGGa.</p></div>
     <div id="bottomtext"><span class="menu">CCSDT #3 for v0.34</a> : </span><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="rules.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu"><a href="1.html">Week 1</a> - </span><span class="menu"><a href="2.html">Week 2</a> - </span><span class="menu"><a href="3.html">Week 3</a> - </span><span class="menu">Week 4 - </span><span class="menu">Week 5 - </span></div>
