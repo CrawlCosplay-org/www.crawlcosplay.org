@@ -2,7 +2,7 @@
     <?php $this->layout = 'ccsdt'; ?>
     <div id="title">
     <h2 id="sdc"><center>Testing prior to CCSDT#3 for DCSS v0.34</center></h2>
-    <h2>??</h2></div><div id="content">
+    <h2></h2></div><div id="content">
     <pre id="cover">
 _You are suddenly pulled into a different region of the Abyss!
 _A floating eye, a glowing orange brain and 8 large abominations come into view.</pre>
