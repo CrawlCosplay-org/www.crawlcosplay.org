@@ -8,7 +8,7 @@
 <li>Each weekly challenge consists of playing a randomly chosen 
 Crawl Unqiue's starting combo (e.g. Snorg, a TrBe). 
 The chosen combo for each week of the competition will streamed on 
-Twitch.tv by Platt ( <a href="https://"www.twitch.tv/platt_mallar" target="_blank">www.twitch.tv/platt_mallar</a> ) 30 minutes before 
+Twitch.tv by Platt ( <a href="https://www.twitch.tv/platt_mallar" target="_blank">www.twitch.tv/platt_mallar</a> ) 30 minutes before 
 the start of the new week. A spin-the-wheel format will be used to 
 make the choices random.</li>
 <li>Participants have one week to finish a game using that combo. 
