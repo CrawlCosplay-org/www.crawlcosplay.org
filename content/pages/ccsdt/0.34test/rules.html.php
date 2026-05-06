@@ -13,15 +13,16 @@ commitment event that aims to challenge players while playing 5 of
 the ~100 Crawl Unique characters.</p>
 <h3>Rules</h3>
         <ol>
-<li>Each challenge consists of playing a randomly chosen Crawl race/class combo
-(e.g. MiBe) based on a Crawl Unique. 
-The combo for each week of the competition will be announced at
-00:00 UTC on the Friday starting that week. All players have one week to
-finish a game using that combo. Only milestones recorded during the week (from
-00:00 UTC on the start date until 00:00 UTC on the end date) will count for
-scoring.</li>
-<li>Your first 0.34 game started on an official server during the week will count
-for scoring. This is the only allowed attempt, subject to rule 3 below.</li>
+<li>Each weekly challenge consists of playing a randomly chosen 
+Crawl Unqiue's starting combo (e.g. Snorg, a TrBe). 
+The chosen combo for each week of the competition will streamed on 
+Twitch.tv by Platt ( www.twitch.tv/platt_mallar ) 30 minutes before 
+the start of the new week. A spin-the-wheel format will be used to 
+make the choices random.</li>
+<li>Participants have one week to finish a game using that combo. 
+Only milestones recorded during the week (from 00:00 UTC on the 
+start date until 00:00 UTC on the end date) will count for scoring.</li>
+<li>Your first 0.34 game started on an official DCSS server (or CCO: https://cco.crawlcosplay.org/ ) during the week will count for scoring. This is the only allowed attempt, subject to rule 4 below.
 <li>One redo per week is allowed if your first game ended in death with player
 XL < 5 (i.e., no redo once you hit XL 5). The redo game must be started after
 the end of the first game (no startscumming!).  The highest CSDC score of the
@@ -48,23 +49,23 @@ score.</li>
 played, and one-time points awarded once per season regardless of how many
 games achieve them.</p>
 
-<table class="info"><tr class="head"><th>Weekly points (can be earned each
-week)</th><th></th></tr>
+<table class="info"><tr class="head"><th>15 Weekly Points (can be earned each
+week)</th><th>Points</th></tr>
 <tr><td class="name"> 1. Kill a unique</td><td class="pt">1</td></tr>
-<tr><td class="name"> 2. Reach XL 5</td><td class="pt">1</td></tr>
-<tr><td class="name"> 3. Worship one of three gods</td><td class="pt">1</td></tr>
+<tr><td class="name"> 2. Reach XL 5*</td><td class="pt">1</td></tr>
+<tr><td class="name"> 3. Worship one of three gods*</td><td class="pt">1</td></tr>
 <tr><td class="name"> 4. Enter a multi-level branch of the dungeon</td><td class="pt">1</td></tr>
 <tr><td class="name"> 5. Reach the end of a multi-level branch (including D)</td><td class="pt">1</td></tr>
 <tr><td class="name"> 6. Champion a listed god</td><td class="pt">1</td></tr>
-<tr><td class="name"> 7. Collect 1 gem</td><td class="pt">1</td></tr>
+<tr><td class="name"> 7. Collect 1 gem*</td><td class="pt">1</td></tr>
 <tr><td class="name"> 8. Collect 1 rune</td><td class="pt">1</td></tr>
 <tr><td class="name"> 9. Collect 2 runes</td><td class="pt">1</td></tr>
 <tr><td class="name">10. Collect 3 runes</td><td class="pt">1</td></tr>
 <tr><td class="name">11. Collect the Orb of Zot</td><td class="pt">1</td></tr>
 <tr><td class="name">12. Win</td><td class="pt">1</td></tr>
 <tr><td class="name">13. Complete Bonus #1</td><td class="pt">1</td></tr>
-<tr><td class="name">14. Complete Bonus #2</td><td class="pt">2</td></tr>
-<tr class="head" id="onetime"><th>One-time points (earned once during the tournament)</th><th></th></tr>
+<tr><td class="name">14. Complete Bonus #2</td><td class="pt">2*</td></tr>
+<tr class="head" id="onetime"><th>One-time points (earned once during the tournament)</th><th>Points</th></tr>
 <!-- <tr><td class="name">Win a game in under 40,000 turns:</td><td class="pt">2</td></tr> -->
 <tr><td class="name">1. Win a game with 15 runes</td><td class="pt">3</td></tr>
 <tr><td class="name">2. Clear a Ziggurat</td><td class="pt">4</td></tr>
@@ -72,7 +73,7 @@ week)</th><th></th></tr>
 <tr><td class="name">4. Win a game without entering lair</td><td class="pt">6</td></tr>
 <tr><td class="name">5. Get a rune without using potions or scrolls (aesetic rune)</td><td class="pt">7</td></tr>
 </table>
-
+<p>New milestones or scoring for CCSDT#3.
 <!-- <p class="notes"> Unless specified, a bonus or one time point does not
 require you to win to earn the point.</p> -->
 
