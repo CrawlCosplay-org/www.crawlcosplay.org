@@ -126,7 +126,7 @@
         <span class="menu"><a href="rules.html">Details</a> - </span>
         <span class="menu"><a href="standings.html">Standings</a></span>
         <span class="menuspacer"></span>
-        <span class="menu">Week 1 - </span>
+        <span class="menu"><a href="1.html">Week 1</a> - </span>
         <span class="menu"><a href="2.html">Week 2</a> - </span>
         <span class="menu"><a href="3.html">Week 3</a> - </span>
         <span class="menu"><a href="4.html">Week 4</a> - </span>
