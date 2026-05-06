@@ -2,7 +2,7 @@
     <?php $this->layout = 'ccsdt'; ?>
     <meta http-equiv="refresh" content="240"><div id="title">
     <h2 id="sdc"><center>Testing prior to CCSDT#3 for DCSS v0.34</center></h2>
-    <h2>Week 1 &mdash; OnAE</h2></div><div id="content"><div id="times"><span class="label">Week of 2026-04-17 to start of 2026-04-24 UTC 00:00<span></div><div id="combo"><span class="label">Character: </span>Oni Air Elementalist</div>
+    <h2>Week 1 &mdash; OnAE</h2></div><div id="content"><div id="times"><span class="label">Week of 2026-04-17<span> (until start of 2026-04-24 UTC 00:00)</div><div id="combo"><span class="label">Character: </span>Oni Air Elementalist</div>
 <div id="bonus"><span class="label">Bonus 1: </span>Reach the end of Lair at XL &leq; 12.<br/>
 <span class="label">Bonus 2: </span>Collect a rune with all base skills < 11.</div>
 <div id="gods"><span class="label">Gods: </span>Ashenzari, Ashenzari, Ashenzari</div><br><pre>LEGEND<br>------<br>Green = Won<br>Red   = Died<br>Grey  = ongoing or did not finish before end of the week</right></pre><div class="card"><table><tr class="head">
@@ -38,4 +38,4 @@
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Caterwaul</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">krsz</td>
                 <td colspan="15"></td><td class="total">0</td></tr></table></div></div>
-    <div id="bottomtext"><span class="menu">CCSDT #3 for v0.34</a> : </span><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="rules.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu">Week 1 - </span><span class="menu"><a href="2.html">Week 2</a> - </span><span class="menu"><a href="3.html">Week 3</a> - </span><span class="menu">Week 4 - </span><span class="menu">Week 5 - </span><span id="updated"><span class="label">Updates every 10 mins. Last Update: </span>2026-05-06 15:07 UTC</span></div>
+    <div id="bottomtext"><span class="menu">CCSDT #3 for v0.34</a> : </span><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="rules.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu">Week 1 - </span><span class="menu"><a href="2.html">Week 2</a> - </span><span class="menu"><a href="3.html">Week 3</a> - </span><span class="menu">Week 4 - </span><span class="menu">Week 5 - </span><span id="updated"><span class="label">Updates every 10 mins. Last Update: </span>2026-05-06 15:10 UTC</span></div>
