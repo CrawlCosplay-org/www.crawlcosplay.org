@@ -131,5 +131,5 @@
         <span class="menu"><a href="3.html">Week 3</a> - </span>
         <span class="menu"><a href="4.html">Week 4</a> - </span>
         <span class="menu"><a href="5.html">Week 5</a> - </span>
-        <span id="updated"><span class="label">Updates every 10 mins. Last Update: </span>2025-10-10 00:12 UTC</span>
+        <span id="updated"><span class="label">Last Update: </span>2025-10-10 00:12 UTC</span>
     </div>
