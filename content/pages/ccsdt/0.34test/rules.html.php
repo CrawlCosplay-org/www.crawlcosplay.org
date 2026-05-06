@@ -60,7 +60,7 @@ week)</th><th>Points</th></tr>
 <tr><td class="name"> 5. Enter a multi-level branch of the dungeon</td><td class="pt">1</td></tr>
 <tr><td class="name"> 6. Reach the end of a multi-level branch (including D)</td><td class="pt">1</td></tr>
 <tr><td class="name"> 7. Champion a listed god</td><td class="pt">1</td></tr>
-<tr><td class="name"> 8. Collect 1 gem* (does no need to stay intact)</td><td class="pt">1</td></tr>
+<tr><td class="name"> 8. Collect 1 gem (does not need to stay intact)*</td><td class="pt">1</td></tr>
 <tr><td class="name"> 9. Collect 1 rune</td><td class="pt">1</td></tr>
 <tr><td class="name">10. Collect 2 runes*</td><td class="pt">1</td></tr>
 <tr><td class="name">11. Collect 3 runes</td><td class="pt">1</td></tr>
