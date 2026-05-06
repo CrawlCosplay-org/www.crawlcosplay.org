@@ -3,20 +3,12 @@
     <div id="title">
     <h2 id="sdc"><center>Testing prior to CCSDT#3 for DCSS v0.34</center></h2>
     <h2><h2 style='color:rgb(69, 136, 5);'>About CCSDT#3</h2></h2></div><div id="content">
-<p>The Crawl Cosplay Sudden Death Tournament is a competition that 
-aims to fill a Crawl niche not currently filled by the DCSS version 
-release tournament or the other Crawl Cosplay initiatives. The idea 
-is for players to compete by trying to do as well as possible in a 
-game of Crawl with one attempt only; if you die, that challenge is 
-over (thus "sudden death"). This competition is a lower time 
-commitment event that aims to challenge players while playing 5 of 
-the ~100 Crawl Unique characters.</p>
 <h3>Rules</h3>
         <ol>
 <li>Each weekly challenge consists of playing a randomly chosen 
 Crawl Unqiue's starting combo (e.g. Snorg, a TrBe). 
 The chosen combo for each week of the competition will streamed on 
-Twitch.tv by Platt ( www.twitch.tv/platt_mallar ) 30 minutes before 
+Twitch.tv by Platt ( <a href="https://"www.twitch.tv/platt_mallar" target="_blank">www.twitch.tv/platt_mallar</a> ) 30 minutes before 
 the start of the new week. A spin-the-wheel format will be used to 
 make the choices random.</li>
 <li>Participants have one week to finish a game using that combo. 
