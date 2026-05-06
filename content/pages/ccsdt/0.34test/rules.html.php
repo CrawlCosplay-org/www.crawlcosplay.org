@@ -53,16 +53,16 @@ games achieve them.</p>
 
 <table class="info"><tr class="head"><th>15 Weekly Points (can be earned each
 week)</th><th>Points</th></tr>
-<tr><td class="name"> 1. Reach XL 5*</td><td class="pt">1</td></tr>
+<tr><td class="name"> 1. Reach XL 5 ¹</td><td class="pt">1</td></tr>
 <tr><td class="name"> 2. Kill a unique</td><td class="pt">1</td></tr>
-<tr><td class="name"> 3. Worship one of three gods*</td><td class="pt">1</td></tr>
-<tr><td class="name"> 4. Reach XL 10*</td><td class="pt">1</td></tr>
+<tr><td class="name"> 3. Worship one of three gods ¹</td><td class="pt">1</td></tr>
+<tr><td class="name"> 4. Reach XL 10 ¹</td><td class="pt">1</td></tr>
 <tr><td class="name"> 5. Enter a multi-level branch of the dungeon</td><td class="pt">1</td></tr>
 <tr><td class="name"> 6. Reach the end of a multi-level branch (including D)</td><td class="pt">1</td></tr>
 <tr><td class="name"> 7. Champion a listed god</td><td class="pt">1</td></tr>
-<tr><td class="name"> 8. Collect 1 gem (does not need to stay intact)*</td><td class="pt">1</td></tr>
+<tr><td class="name"> 8. Collect 1 gem ² (does not need to stay intact) ¹</td><td class="pt">1</td></tr>
 <tr><td class="name"> 9. Collect 1 rune</td><td class="pt">1</td></tr>
-<tr><td class="name">10. Collect 2 runes*</td><td class="pt">1</td></tr>
+<tr><td class="name">10. Collect 2 runes ¹</td><td class="pt">1</td></tr>
 <tr><td class="name">11. Collect 3 runes</td><td class="pt">1</td></tr>
 <tr><td class="name">12. Collect the Orb of Zot</td><td class="pt">1</td></tr>
 <tr><td class="name">13. Win</td><td class="pt">1</td></tr>
@@ -76,6 +76,10 @@ week)</th><th>Points</th></tr>
 <tr><td class="name">4. Win a game without entering lair</td><td class="pt">6</td></tr>
 <tr><td class="name">5. Get a rune without using potions or scrolls (aesetic rune)</td><td class="pt">7</td></tr>
 </table>
-<p>* 5 new milestones were created for CCSDT#3.
+<p>* 5 new milestones were created for CCSDT#3.</p>
+<p>² add the follwoing to your DCSS v0.34 RC file:</p>
+<pre>always_show_gems = true
+more_gem_info = true</pre>
+
 </div>
     <div id="bottomtext"><span class="menu">CCSDT #3 for v0.34</a> : </span><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="rules.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu"><a href="1.html">Week 1</a> - </span><span class="menu"><a href="2.html">Week 2</a> - </span><span class="menu"><a href="3.html">Week 3</a> - </span><span class="menu">Week 4 - </span><span class="menu">Week 5 - </span></div>
