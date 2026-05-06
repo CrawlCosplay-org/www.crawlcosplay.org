@@ -22,7 +22,9 @@ make the choices random.</li>
 <li>Participants have one week to finish a game using that combo. 
 Only milestones recorded during the week (from 00:00 UTC on the 
 start date until 00:00 UTC on the end date) will count for scoring.</li>
-<li>Your first 0.34 game started on an official DCSS server (or CCO: https://cco.crawlcosplay.org/ ) during the week will count for scoring. This is the only allowed attempt, subject to rule 4 below.
+<li>Your first 0.34 game started on an official DCSS server 
+( or CCO: <a href="https://cco.crawlcosplay.org/">cco.crawlcosplay.org/</a> ) 
+during the week will count for scoring. This is the only allowed attempt, subject to rule 4 below.
 <li>One redo per week is allowed if your first game ended in death with player
 XL < 5 (i.e., no redo once you hit XL 5). The redo game must be started after
 the end of the first game (no startscumming!).  The highest CSDC score of the
