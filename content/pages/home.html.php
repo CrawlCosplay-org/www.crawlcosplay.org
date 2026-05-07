@@ -26,10 +26,9 @@
    	echo     "<li>" . _("Read") . ': <a href="/ccc/about_ccc">' . _("About CCC") . "</a>.</li>";
    	echo     "<li>" . _("See") . ': <a href="/ccc/all_ccc_history">' . _("all 100+ challenges") . "</a></li></ul>";
 
-	echo '<h3><a href="/ccsdt">' . _("Crawl Cosplay Sudden Death Tournament") . "</a> (CCSDT)</h3>";
+	echo '<h3><a href="/ccsdt">' . _("Crawl Cosplay Sudden Death Tournament") . "</a> (CCSDT) - COMING SOON</h3>";
 	echo "<ul><li>" . _("A DCSS tournament lasting 5 weeks with a different Crawl Unique combo to play each week. You only get one try!") . "</li>";
-	echo     "<li>" . _("CCSDT#3 for DCSS v0.34 will start on Friday May 15th, 2026.") . "</li>";
-	echo     "<li>" . _("Read") . ': <a href="/ccsdt/about_ccsdt">' . _("About CCSDT") . "</a>.</li></ul>";
+	echo     "<li>" . _("CCSDT#3 for DCSS v0.34 starts on Friday May 15th, 2026.") . "</li>";
 
    	echo '<h3><a href="/cctt">' . _("Crawl Cosplay Trunk Tournament") . "</a> (CCTT)</h3>";
    	echo "<ul><li>" . _("A DCSS tournament lasting about a month with each week highlighting some of the latest Trunk changes.") . "</li>";
