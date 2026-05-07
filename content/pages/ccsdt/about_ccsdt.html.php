@@ -16,7 +16,6 @@
    <li>Tier 3: Enter the final floor of Gehenna in under 27,000 turns.</li>
    <li>Tier 2: Reach the 10th floor of a Ziggurat.</li>
    <li>Tier 2: Kill at least one unique pan lord and at least one unique hell lord over the course of the tournament.</li>
-   <li>Tier 3: Kill all four unique pan lords, all four unique hell lords, and the Serpent of Hell (at least once) over the course of the tournament.</li>
 </ul>
 
 <h3>List of CCC Bonuses to be programmed</h3>
