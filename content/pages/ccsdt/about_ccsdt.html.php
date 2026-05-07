@@ -35,22 +35,3 @@
    <li>The Enchantress: Win before you reach XL25.</li>
    <li>Xak:             Get 3 gems other than the dungeon one. The gems do not need to stay intact.</li>
 </ul>
-
-      
-<h2>Credits</h2>
-
-<p>Original <a href="https://csclub.uwaterloo.ca/~ebering/crawl/csdc/0.24/standings.html">CSDC</a> rules and organization by <a href="http://crawl.akrasiac.org/scoring/players/walkerboh.html">WalkerBoh</a> 
-and <a href="http://crawl.akrasiac.org/scoring/players/ebering.html">ebering</a>.
-<br>Thank you ScrubDaddy & grumposus for python assistance and PRs. 
-<br>I am your host, RoGGa.
-<div id="bottomtext">
-    <span class="menu"><a href="https://www.crawlcosplay.org/ccsdt/0.33/index.html">Overview</a> - </span>
-    <span class="menu"><a href="https://www.crawlcosplay.org/ccsdt/about_ccsdt.html">Details</a> - </span>
-    <span class="menu"><a href="https://www.crawlcosplay.org/ccsdt/0.33/standings.html">Standings</a></span>
-    <span class="menuspacer"></span>
-    <span class="menu"><a href="https://www.crawlcosplay.org/ccsdt/0.33/1.html">Week 1</a> - </span>
-    <span class="menu"><a href="https://www.crawlcosplay.org/ccsdt/0.33/2.html">Week 2</a> - </span>
-    <span class="menu"><a href="https://www.crawlcosplay.org/ccsdt/0.33/3.html">Week 3</a> - </span>
-    <span class="menu"><a href="https://www.crawlcosplay.org/ccsdt/0.33/4.html">Week 4</a> - </span>
-    <span class="menu"><a href="https://www.crawlcosplay.org/ccsdt/0.33/5.html">Week 5</a> - </span>
-</div>
