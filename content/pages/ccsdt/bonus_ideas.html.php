@@ -11,9 +11,8 @@
    <li>Tier 2: Win without raising any skill to 20.</li>
    <li>Tier 3: Win without raising any skill to 13.</li>
    <li><s>Tier 2: Win with 3 gems intact.</s></li>
-   <li>Tier 2: Find a rune before reaching experience level 17.</li>
    <li><s>Tier 2: Enter the third floor of the Elven Halls in under 12,000 turns.</s></li>
-   <li>Tier 3: Enter the final floor of Gehenna in under 27,000 turns.</li>
+   <li><s>Tier 3: Enter the final floor of Gehenna in under 27,000 turns.</s></li>
    <li>Tier 2: Reach the 10th floor of a Ziggurat.</li>
    <li>Tier 2: Kill at least one unique pan lord and at least one unique hell lord over the course of the tournament.</li>
 </ul>
