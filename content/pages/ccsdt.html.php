@@ -3,6 +3,7 @@
 
 <h2>Next Tournament</h2>
 <ul><li><a href="/ccsdt/0.34/index.html">CCSDT#3</a> for DCSS v0.34 starts on Friday May 15th, 2026 at 00:00 UTC.</li>
+    <li><a href="/ccsdt/0.34/rules.html">Tournament Details</a>.</li>
 </ul>
 
 <h2>Testing Phase of Python Scripts</h2>
@@ -13,7 +14,3 @@
 <ul><li><a href="/ccsdt/0.32/standings.html">CCSDT#1</a> for DCSS v0.32</li>
     <li><a href="/ccsdt/0.33/standings.html">CCSDT#2</a> for DCSS v0.33</li>
 </ul>
-
-<h2>General Rules, Scoring and Credits</h2>
-See the <a href="/ccsdt/about_ccsdt.html">CCSDT About page</a>.
-<br>
