@@ -32,7 +32,7 @@ points by reaching various in-game milestones.</li>
 
 <h2>Schedule</h2>
 
-<ul id="schedule"><li><span class="label"><a href="1.html">Week 1 &mdash; AntaeusOn</a>:</span> 2026-04-17 to 2026-04-24<li><span class="label"><a href="2.html">Week 2 &mdash; AsmodeusTe</a>:</span> 2026-04-24 to 2026-05-01<li><span class="label"><a href="3.html">Week 3 &mdash; DispaterGr</a>:</span> 2026-05-01 to 2026-05-08<li><span class="label">Week 4:</span> 2026-05-08 to 2026-05-15<li><span class="label">Week 5:</span> 2026-05-15 to 2026-05-22</ul>
+<ul id="schedule"><li><span class="label"><a href="1.html">Week 1 &mdash; Antaeus (OnAE)</a>:</span> 2026-04-17 to 2026-04-24<li><span class="label"><a href="2.html">Week 2 &mdash; Asmodeus (TeFE)</a>:</span> 2026-04-24 to 2026-05-01<li><span class="label"><a href="3.html">Week 3 &mdash; Dispater (GrEE)</a>:</span> 2026-05-01 to 2026-05-08<li><span class="label">Week 4:</span> 2026-05-08 to 2026-05-15<li><span class="label">Week 5:</span> 2026-05-15 to 2026-05-22</ul>
 
 
 <h2>Sign Up</h2>
