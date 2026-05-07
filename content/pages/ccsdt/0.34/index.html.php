@@ -28,7 +28,7 @@ points by reaching various in-game milestones.</li>
 <ahref="rules.html">details/about page</a>.</li>
 </ul>
 
-<p>* There is 1 caveat detailed on the details/about page at item 4.</p>
+<p>* There is 1 caveat detailed on the <a href="rules.html">Details page</a> at item 4.</p>
 
 <h2>Schedule</h2>
 
@@ -51,8 +51,8 @@ you've done this correctly and started at least one 0.34 game (though it may tak
 <h2>Credits</h2>
 
 <p>Original CSDC rules and organization by <a href="http://crawl.akrasiac.org/scoring/players/walkerboh.html">WalkerBoh</a> and 
-<a href="http://crawl.akrasiac.org/scoring/players/ebering.html">ebering</a>.
-Thank you to scrubbdaddy/scrubbuddy (CCSDT#1&3) & grumposus (CCSDT#2) for python assistance.</p>
+<a href="http://crawl.akrasiac.org/scoring/players/ebering.html">ebering</a>.</p>
+<p>Thank you to scrubbdaddy/scrubbuddy (CCSDT#1&3) & grumposus (CCSDT#2) for python assistance.</p>
 <p>I am your host, RoGGa.</p></div>
     <div id="bottomtext"><span class="menu">CCSDT #3 for v0.34</a> : </span>
                          <span class="menu"><a href="index.html">Overview</a> - </span>
