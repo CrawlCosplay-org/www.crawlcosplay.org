@@ -1,6 +1,6 @@
 <?php $this->layout = 'ccsdt'; ?>
 
-<h3>List of new-version DCSS tournament banners to be programmed/copied over</h3>
+<h3>List of new-version DCSS tournament banners to be programmed</h3>
 <ul>
    <li>Tier 3: Enter Tomb for the first time after picking up the Orb of Zot, and then get the golden rune.</li>
    <li>Tier 3: Find the iron rune in Dis before entering Pandemonium or any branch of the dungeon containing any other rune.</li>
