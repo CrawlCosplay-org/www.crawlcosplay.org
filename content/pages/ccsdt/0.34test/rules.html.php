@@ -88,6 +88,7 @@ more_gem_info = true</pre>
    <li>Collect a rune before reaching XL17.</li>
    <li>Collect two runes without dying twice (felids).</li>
    <li><b>NEW</b>: Enter Elf:3 in under 12,000 turns.</li>
+   <li><b>NEW</b>: Reach the 10th floor of a Ziggurat.</li>
 </ol>
 
 <h3>Bonus 2 list</h3>
