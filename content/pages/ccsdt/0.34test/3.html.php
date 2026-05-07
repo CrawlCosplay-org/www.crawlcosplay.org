@@ -1,8 +1,8 @@
-<title>Week 3 &mdash; GrEE</title>
+<title>Week 3 &mdash; DispaterGr</title>
     <?php $this->layout = 'ccsdt'; ?>
     <meta http-equiv="refresh" content="240"><div id="title">
     <h2 id="sdc"><center>Testing prior to CCSDT#3 for DCSS v0.34</center></h2>
-    <h2>Week 3 &mdash; GrEE</h2></div><div id="content"><div id="times"><span class="label">Week of: </span>2026-05-01 (ends at start of 2026-05-08 00:00 UTC)</div><div id="combo"><span class="label">Character: </span>Gargoyle Earth Elementalist</div>
+    <h2>Week 3 &mdash; DispaterGr</h2></div><div id="content"><div id="times"><span class="label">Week of: </span>2026-05-01 (ends at start of 2026-05-08 00:00 UTC)</div><div id="combo"><span class="label">Character: </span>Gargoyle Earth Elementalist</div>
 <div id="bonus"><span class="label">Bonus 1: </span>Enter Slime as your second multi-level branch (don't get banished).<br/>
 <span class="label">Bonus 2: </span>Enter a rune branch with all base skills < 11.</div>
 <div id="gods"><span class="label">Gods: </span>Makhleb, Makhleb, Makhleb</div><br><pre>LEGEND<br>------<br>Green = Won<br>Red   = Died<br>Grey  = ongoing or did not finish before end of the week</right></pre><div class="card"><table><tr class="head">

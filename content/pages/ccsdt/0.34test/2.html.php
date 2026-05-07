@@ -1,8 +1,8 @@
-<title>Week 2 &mdash; TeFE</title>
+<title>Week 2 &mdash; AsmodeusTe</title>
     <?php $this->layout = 'ccsdt'; ?>
     <meta http-equiv="refresh" content="240"><div id="title">
     <h2 id="sdc"><center>Testing prior to CCSDT#3 for DCSS v0.34</center></h2>
-    <h2>Week 2 &mdash; TeFE</h2></div><div id="content"><div id="times"><span class="label">Week of: </span>2026-04-24 (ends at start of 2026-05-01 00:00 UTC)</div><div id="combo"><span class="label">Character: </span>Tengu Fire Elementalist</div>
+    <h2>Week 2 &mdash; AsmodeusTe</h2></div><div id="content"><div id="times"><span class="label">Week of: </span>2026-04-24 (ends at start of 2026-05-01 00:00 UTC)</div><div id="combo"><span class="label">Character: </span>Tengu Fire Elementalist</div>
 <div id="bonus"><span class="label">Bonus 1: </span>Reach the end of the Depths before entering a rune branch (excluding getting banished to the Abyss).<br/>
 <span class="label">Bonus 2: </span>Get a rune from Hell or Pan before entering any other rune branch (excluding the Abyss).</div>
 <div id="gods"><span class="label">Gods: </span>Sif Muna, Sif Muna, Sif Muna</div><br><pre>LEGEND<br>------<br>Green = Won<br>Red   = Died<br>Grey  = ongoing or did not finish before end of the week</right></pre><div class="card"><table><tr class="head">
