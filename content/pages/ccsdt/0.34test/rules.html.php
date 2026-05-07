@@ -69,7 +69,7 @@ week)</th><th>Points</th></tr>
 <tr><td class="name">5. Get a rune without using potions or scrolls (aesetic rune)</td><td class="pt">7</td></tr>
 </table>
 <p>¹ 5 new milestones were created for CCSDT#3.</p>
-<p>² add the follwoing to your DCSS v0.34 RC file:</p>
+<p>² add the following to your DCSS v0.34 RC file:</p>
 <pre>always_show_gems = true
 more_gem_info = true</pre>
 
