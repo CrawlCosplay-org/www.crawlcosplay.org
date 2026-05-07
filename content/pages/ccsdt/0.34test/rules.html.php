@@ -68,10 +68,42 @@ week)</th><th>Points</th></tr>
 <tr><td class="name">4. Win a game without entering lair</td><td class="pt">6</td></tr>
 <tr><td class="name">5. Get a rune without using potions or scrolls (aesetic rune)</td><td class="pt">7</td></tr>
 </table>
-<p>¹ 5 new milestones were created for CCSDT#3.</p>
+<p>¹ 5 new milestones were created for CCSDT#3 along with 
+the removal of 1 one-time point: Win a game in under 40,000 turns</p>
 <p>² add the following to your DCSS v0.34 RC file:</p>
 <pre>always_show_gems = true
 more_gem_info = true</pre>
 
+<h2>Bonuses</h2>
+<h3>Bonus 1 list</h3>
+<ol>
+   <li>Enter a rune branch with all base skills < 11.</li>
+   <li>Enter Slime as your second multi-level branch (don't get banished).</li>
+   <li>Enter the Temple in less than 4,000 turns.</li>
+   <li>Reach the end of Lair at XL &leq; 12.</li>
+   <li>Reach the end of Elf before entering a rune branch (excluding getting banished to the Abyss).</li>
+   <li>Reach the end of the Depths before entering a rune branch (excluding getting banished to the Abyss).</li>
+   <li>Collect a rune before entering Shoals, Snake, Spider, or Swamp.</li>
+   <li>Collect a rune before entering Lair.</li>
+   <li>Collect a rune before reaching XL17.</li>
+   <li>Collect two runes without dying twice (felids).</li>
+   <li>NEW: Enter Elf:3 in under 12,000 turns.</li>
+</ol>
+
+<h3>Bonus 2 list</h3>
+<ol>
+   <li>Collect the golden rune.</li>
+   <li>Collect a rune with all base skills < 11.</li>
+   <li>Get the slimy rune without entering any multi-level branch other than Lair, Slime, and Dungeon (don't get banished).</li>
+   <li>Collect a rune in less than 15,000 turns.</li>
+   <li>Reach the end of the Vaults at XL &leq; 18.</li>
+   <li>Kill or slimify Geryon before entering a rune branch (excluding the Abyss).</li>
+   <li>Get a rune from Hell or Pan before entering any other rune branch (excluding the Abyss).</li>
+   <li>Get a rune from Hell before entering any other rune branch (excluding the Abyss).</li>
+   <li>Collect at least 5 runes before entering the Depths.</li>
+   <li>Collect a rune without dying (felids).</li>
+   <li>NEW: Collect at least 5 gems. (they don't need to stay intact)</li>
+</ol>
+   
 </div>
     <div id="bottomtext"><span class="menu">CCSDT #3 for v0.34</a> : </span><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="rules.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu"><a href="1.html">Week 1</a> - </span><span class="menu"><a href="2.html">Week 2</a> - </span><span class="menu"><a href="3.html">Week 3</a> - </span><span class="menu">Week 4 - </span><span class="menu">Week 5 - </span></div>
