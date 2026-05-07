@@ -102,8 +102,8 @@ more_gem_info = true</pre>
    <li>Get a rune from Hell before entering any other rune branch (excluding the Abyss).</li>
    <li>Collect at least 5 runes before entering the Depths.</li>
    <li>Collect a rune without dying (felids).</li>
-   <li><b>NEW</b>: Collect at least 5 gems. (they don't need to stay intact)</li>
-   <li><b>NEW</b>: Enter the final floor of Gehenna (Gen:7) in under 27,000 turns.</li>
+   <li><b>NEW</b>: Collect at least 3 gems. (they don't need to stay intact)</li>
+   <li><b>NEW</b>: Enter the final floor of Gehenna (Geh:7) in under 27,000 turns.</li>
 </ol>
    
 </div>
