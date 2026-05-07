@@ -87,7 +87,7 @@ more_gem_info = true</pre>
    <li>Collect a rune before entering Lair.</li>
    <li>Collect a rune before reaching XL17.</li>
    <li>Collect two runes without dying twice (felids).</li>
-   <li>NEW: Enter Elf:3 in under 12,000 turns.</li>
+   <li><b>NEW</b>: Enter Elf:3 in under 12,000 turns.</li>
 </ol>
 
 <h3>Bonus 2 list</h3>
@@ -102,7 +102,7 @@ more_gem_info = true</pre>
    <li>Get a rune from Hell before entering any other rune branch (excluding the Abyss).</li>
    <li>Collect at least 5 runes before entering the Depths.</li>
    <li>Collect a rune without dying (felids).</li>
-   <li>NEW: Collect at least 5 gems. (they don't need to stay intact)</li>
+   <li><b>NEW</b>: Collect at least 5 gems. (they don't need to stay intact)</li>
 </ol>
    
 </div>
