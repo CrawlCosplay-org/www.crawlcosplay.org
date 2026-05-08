@@ -28,6 +28,7 @@
 
 	echo '<h3><a href="/ccsdt">' . _("Crawl Cosplay Sudden Death Tournament") . "</a> (CCSDT) - STARTING SOON</h3>";
 	echo "<ul><li>" . _("A DCSS tournament lasting 5 weeks with a different Crawl Unique combo to play each week. You only get one try!") . "</li>";
+?>
 		 <li>CCSDT#3 for DCSS v0.34 starts on Friday May 15th, 2026.
 			 (Estimated local date & time: <a id='local-time'></a>)</li></ul>
 
@@ -42,6 +43,7 @@
   document.getElementById('local-time').innerHTML = localDate.toLocaleString();
 </script>
 
+<?php
    	echo '<h3><a href="/cctt">' . _("Crawl Cosplay Trunk Tournament") . "</a> (CCTT)</h3>";
    	echo "<ul><li>" . _("A DCSS tournament lasting about a month with each week highlighting some of the latest Trunk changes.") . "</li>";
    	echo     "<li>" . _("Read") . ': <a href="/cctt/about_cctt">' . _("About CCTT") . "</a>.</li>";
