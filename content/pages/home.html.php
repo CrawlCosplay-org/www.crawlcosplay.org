@@ -30,7 +30,7 @@
 	echo "<ul><li>" . _("A DCSS tournament lasting 5 weeks with a different Crawl Unique combo to play each week. You only get one try!") . "</li>";
 ?>
 		 <li>CCSDT#3 for DCSS v0.34 starts Friday May 15th, 2026 @ 00:00 UTC.<br>
-			 (Estimated local date & time: <b id='local-time'></b)</li></ul>
+			 (Estimated local date & time: <b id='local-time'></b>)</li></ul>
 
 <script>
   // Your UTC time string (must end in 'Z' for UTC)
