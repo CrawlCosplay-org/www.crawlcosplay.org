@@ -2,9 +2,21 @@
 <h2 style="color:rgb(69, 136, 5);">Welcome to the <b>Crawl Cosplay Sudden Death Tournament</b> (CCSDT)</h2>
 
 <h2>Next Tournament</h2>
-<ul><li><a href="/ccsdt/0.34/index.html">CCSDT#3</a> for DCSS v0.34 starts on Friday May 15th, 2026 at 00:00 UTC.</li>
+<ul><li><a href="/ccsdt/0.34/index.html">CCSDT#3 for DCSS v0.34</a>.</li>
+    <li>Starts: Friday May 15th, 2026 at 00:00 UTC. (Estimated local date & time: <a id="local-time"></a></li>
     <li><a href="/ccsdt/0.34/rules.html">Tournament Details</a>.</li>
 </ul>
+
+<script>
+  // Your UTC time string (must end in 'Z' for UTC)
+  const utcDate = '2026-05-15T00:00:00Z';
+  
+  // Create a Date object; it automatically converts to local time
+  const localDate = new Date(utcDate);
+  
+  // Display it in a readable local format
+  document.getElementById('local-time').innerHTML = localDate.toLocaleString();
+</script>
 
 <h2>Testing Phase of Python Scripts</h2>
 <ul><li><a href="/ccsdt/0.34test/standings.html">Tryout NOW</a> the major changes to the scoring and bonuses.</li>
