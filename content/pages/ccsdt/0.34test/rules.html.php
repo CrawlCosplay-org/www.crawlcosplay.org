@@ -1,8 +1,8 @@
-<title><h2 style='color:rgb(69, 136, 5);'>About CCSDT#3</h2></title>
+<title><h2 style='color:rgb(69, 136, 5);'>Details for CCSDT#3</h2></title>
     <?php $this->layout = 'ccsdt'; ?>
     <div id="title">
     <h2 id="sdc"><center>Testing prior to CCSDT#3 for DCSS v0.34</center></h2>
-    <h2><h2 style='color:rgb(69, 136, 5);'>About CCSDT#3</h2></h2></div><div id="content">
+    <h2><h2 style='color:rgb(69, 136, 5);'>Details for CCSDT#3</h2></h2></div><div id="content">
 <h3>Rules</h3>
         <ol>
 <li>Each weekly challenge consists of playing a randomly chosen 
