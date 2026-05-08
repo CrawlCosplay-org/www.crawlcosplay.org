@@ -28,7 +28,18 @@
 
 	echo '<h3><a href="/ccsdt">' . _("Crawl Cosplay Sudden Death Tournament") . "</a> (CCSDT) - STARTING SOON</h3>";
 	echo "<ul><li>" . _("A DCSS tournament lasting 5 weeks with a different Crawl Unique combo to play each week. You only get one try!") . "</li>";
-	echo     "<li>" . _("CCSDT#3 for DCSS v0.34 starts on Friday May 15th, 2026.") . "</li></ul>";
+	echo     "<li>" . _("CCSDT#3 for DCSS v0.34 starts on Friday May 15th, 2026.") . _("(Estimated local date & time: <a id='local-time'></a>)") . </li></ul>";
+
+<script>
+  // Your UTC time string (must end in 'Z' for UTC)
+  const utcDate = '2026-05-15T00:00:00Z';
+  
+  // Create a Date object; it automatically converts to local time
+  const localDate = new Date(utcDate);
+  
+  // Display it in a readable local format
+  document.getElementById('local-time').innerHTML = localDate.toLocaleString();
+</script>
 
    	echo '<h3><a href="/cctt">' . _("Crawl Cosplay Trunk Tournament") . "</a> (CCTT)</h3>";
    	echo "<ul><li>" . _("A DCSS tournament lasting about a month with each week highlighting some of the latest Trunk changes.") . "</li>";
