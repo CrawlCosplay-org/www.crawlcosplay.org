@@ -1,11 +1,12 @@
 <?php $this->layout = 'ccsdt'; ?>
 <h2 style="color:rgb(69, 136, 5);">Welcome to the <b>Crawl Cosplay Sudden Death Tournament</b> (CCSDT)</h2>
 
-<h2>Next Tournament</h2>
-<ul><li><a href="/ccsdt/0.34/index.html">Overview of CCSDT#3 for DCSS v0.34</a>.</li>
+<h2>Next Tournament <b>CCSDT#3 for DCSS v0.34</b></h2>
+<ul>
     <li>Starts: Friday May 15th, 2026 at 00:00 UTC. (Estimated local date & time: <a id="local-time"></a>)</li>
+    <li><a href="/ccsdt/0.34/index.html">Tournament Overview</a>.</li>
     <li><a href="/ccsdt/0.34/rules.html">Tournament Details</a>.</li>
-    <li>NOTE: Once you make your way to either of the linked pages above, use the nav bar at the bottom of the page to navigate to all the pages.</li>
+    <li>NOTE: Once you make your way to either of the pages linked above, use the nav bar at the bottom of the page to navigate to all of the available pages.</li>
 </ul>
 
 <script>
