@@ -4,7 +4,7 @@
     <h2 id="sdc"><center>Testing prior to CCSDT#3 for DCSS v0.34</center></h2>
     <h2>Week 5 &mdash; Geryon (NaGl)</h2></div><div id="content"><div id="times"><span class="label">Week of: </span>2026-05-08 (ends at start of 2026-05-15 00:00 UTC)</div><div id="combo"><span class="label">Character: </span>Naga Gladiator</div>
 <div id="bonus"><span class="label">Bonus 1: </span>Reach the 10th floor of a Ziggurat.<br/>
-<span class="label">Bonus 2: </span>Enter the final floor of Gehenna (Geh:7) in under 27,000 turns.</div>
+<span class="label">Bonus 2: </span>Get the Abyssal rune in under 27,000 turns.</div>
 <div id="gods"><span class="label">Gods: </span>Hepliaklqana, Hepliaklqana, Hepliaklqana</div><br><pre>LEGEND<br>------<br>Green = Won<br>Red   = Died<br>Grey  = ongoing or did not finish before end of the week</right></pre><div class="card"><table><tr class="head">
     <th>Player</th>
     <th>Reach XL5</th>
@@ -49,4 +49,4 @@
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Caterwaul</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">krsz</td>
                 <td colspan="15"></td><td class="total">0</td></tr></table></div></div>
-    <div id="bottomtext"><span class="menu">CCSDT #3 for v0.34</a> : </span><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="rules.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu">Week 1 - </span><span class="menu">Week 2 - </span><span class="menu"><a href="3.html">Week 3</a> - </span><span class="menu"><a href="4.html">Week 4</a> - </span><span class="menu">Week 5 - </span><span id="updated"><span class="label">Updates every 10 mins. Last Update: </span>2026-05-09 11:48 UTC</span></div>
+    <div id="bottomtext"><span class="menu">CCSDT #3 for v0.34</a> : </span><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="rules.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu">Week 1 - </span><span class="menu">Week 2 - </span><span class="menu"><a href="3.html">Week 3</a> - </span><span class="menu"><a href="4.html">Week 4</a> - </span><span class="menu">Week 5 - </span><span id="updated"><span class="label">Updates every 10 mins. Last Update: </span>2026-05-09 11:51 UTC</span></div>
