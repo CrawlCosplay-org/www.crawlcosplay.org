@@ -2,8 +2,6 @@
 
 <h3>List of new-version DCSS tournament banners to be programmed</h3>
 <ul>
-   <li>Tier 3: Enter Tomb for the first time after picking up the Orb of Zot, and then get the golden rune.</li>
-   <li>Tier 3: Find the iron rune in Dis before entering Pandemonium or any branch of the dungeon containing any other rune.</li>
    <li><s>Tier 2: Reach the last level of the Depths without having entered the Lair.</s></li>
    <li>Tier 3: Win a game without having entered the Lair, the Orcish Mines, or the Vaults.</li>
    <li>Tier 2: Achieve a score of >9,000,000.</li>
@@ -23,7 +21,7 @@
    <li>Bai Suzhen:      Reach skill level 27 in invocations, before you reach XL27.</li>
    <li>Frederick:       Get at least one Hell rune, and one Pan rune other than the demonic rune.</li>
    <li>The Moon Troll:  Win the game without entering the Vaults.</li>
-   <li>Nergalle:        Enter the Orcish Mines before reaching XL10.</li>
+   <li><s>Nergalle:        Enter the Orcish Mines before reaching XL10.</s></li>
    <li>Maurice:         Get the Abyssal rune during the orb run.</li>
    <li>Vashnia:         Don't enter any of Swamp, Shoals, Snake Pit, or Spider Nest, until you have the Silver rune (the Vaults)</li>
    <li>Cerebov:         Kill Cerebov in Pandemonium.</li>
