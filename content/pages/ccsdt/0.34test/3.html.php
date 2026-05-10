@@ -46,6 +46,7 @@
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Archion</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">ASCIIPhilia</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">yakattack</td>
+                <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Hungry0364</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Caterwaul</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">krsz</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">RoGGaTestCCO</td>
@@ -53,4 +54,4 @@
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Quoth</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">RoGGaTestCXC</td>
                 <td colspan="15"></td><td class="total">0</td></tr></table></div></div>
-    <div id="bottomtext"><span class="menu">CCSDT #3 for v0.34</a> : </span><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="rules.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu">Week 1 - </span><span class="menu">Week 2 - </span><span class="menu">Week 3 - </span><span class="menu"><a href="4.html">Week 4</a> - </span><span class="menu"><a href="5.html">Week 5</a> - </span><span id="updated"><span class="label">Updates every 10 mins. Last Update: </span>2026-05-10 01:49 UTC</span></div>
+    <div id="bottomtext"><span class="menu">CCSDT #3 for v0.34</a> : </span><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="rules.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu">Week 1 - </span><span class="menu">Week 2 - </span><span class="menu">Week 3 - </span><span class="menu"><a href="4.html">Week 4</a> - </span><span class="menu"><a href="5.html">Week 5</a> - </span><span id="updated"><span class="label">Updates every 10 mins. Last Update: </span>2026-05-10 01:58 UTC</span></div>
