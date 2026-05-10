@@ -9,7 +9,7 @@
         </div>
 	<div class="fineprint" align="right">
 	</div>
-        <img src="/img/HR-right.png"><br>
+        <center><img src="/img/HR-right.png"></center><br>
         <div class="content" onclick="window.location = '/dismiss';">
         <?php if ($msg = $this->request->session()->get('message')) : ?>
             <div class="message"><?=$msg?> <br /><br /><a href="/dismiss">--more--</a></div>
