@@ -25,8 +25,8 @@
 </ul>
 
 <h2>Past Tournaments Results</h2>
-<ul><li><a href="/ccsdt/0.32/standings.html">CCSDT#1</a> for DCSS v0.32</li>
-    <li><a href="/ccsdt/0.33/standings.html">CCSDT#2</a> for DCSS v0.33</li>
+<ul><li><a href="/ccsdt/0.33/standings.html">CCSDT#2</a> for DCSS v0.33</li>
+    <li><a href="/ccsdt/0.32/standings.html">CCSDT#1</a> for DCSS v0.32</li>
 </ul>
 
 <h2>Python Volunteers Needed!</h2>
