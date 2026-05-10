@@ -105,7 +105,8 @@ more_gem_info = true</pre>
    <li>Collect a rune without dying (felids).</li>
    <li><b>NEW</b>: Collect at least 3 gems. (they don't need to stay intact)</li>
    <li><b>NEW</b>: Get the Abyssal rune in under 27,000 turns.</li>
+   <li><b>NEW</b>: Reach the last level of the Depths without having entered the Lair.</li>
 </ol>
    
 </div>
-    <div id="bottomtext"><span class="menu"><img src="/img/animated-arrow.gif" width="40" height="10">CCSDT #3 for v0.34</a> : </span><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="rules.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu">Week 1 - </span><span class="menu">Week 2 - </span><span class="menu"><a href="3.html">Week 3</a> - </span><span class="menu"><a href="4.html">Week 4</a> - </span><span class="menu"><a href="5.html">Week 5</a> - </span></div>
+    <div id="bottomtext"><span class="menu"><img src="/img/animated-arrow.gif" width="40" height="10">CCSDT #3 for v0.34</a> : </span><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="rules.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu"><a href="1.html">Week 1</a> - </span><span class="menu">Week 2 - </span><span class="menu"><a href="3.html">Week 3</a> - </span><span class="menu"><a href="4.html">Week 4</a> - </span><span class="menu"><a href="5.html">Week 5</a> - </span></div>
