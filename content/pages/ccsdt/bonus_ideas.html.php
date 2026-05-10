@@ -4,7 +4,7 @@
 <ul>
    <li>Tier 3: Enter Tomb for the first time after picking up the Orb of Zot, and then get the golden rune.</li>
    <li>Tier 3: Find the iron rune in Dis before entering Pandemonium or any branch of the dungeon containing any other rune.</li>
-   <li>Tier 2: Reach the last level of the Depths without having entered the Lair.</li>
+   <li><s>Tier 2: Reach the last level of the Depths without having entered the Lair.</s></li>
    <li>Tier 3: Win a game without having entered the Lair, the Orcish Mines, or the Vaults.</li>
    <li>Tier 2: Achieve a score of >9,000,000.</li>
    <li>Tier 2: Reach the last level of the Lair of Beasts without using any potions or scrolls.</li>
