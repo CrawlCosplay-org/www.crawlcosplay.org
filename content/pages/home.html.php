@@ -69,5 +69,5 @@
 	echo "<p>"  . _("See the") . ' <a href="/cc_streamers"><b>' . _("Crawl Cosplay Streamers") . "</b></a>' "  
 		    . _("webpage for info on current and past streamers as well as links to their CC playlists.") . "</p>";
 	echo "<p>" . _("Happy Crawling,") . "</p>";
-	echo "<p>" . _("from RoGGa your host, our webdev team, and the @VIPs members who all help make this site what it is.") . " :-D</p>";
+	echo "<p>" . _("from RoGGa your host, and the @VIPs members who all help make this site what it is.") . " :-D</p>";
 ?>
