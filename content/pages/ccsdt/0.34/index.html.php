@@ -42,7 +42,7 @@ points by reaching various in-game milestones.</li>
 
 <h2>Sign Up</h2>
 
-<p>In order to sign up, set the first line of your 0.34 RC file to</p> 
+<p>In order to sign up, set the first line of your DCSS v0.34 RC file to</p> 
 <pre id="rc"># ccsdt</pre>
 <p>on <a href="https://www.dungeoncrawlcentral.org/online_servers.html" target="_blank">any of the DCSS online servers</a> 
 at any point during tournament. Your name will appear in the standings once
