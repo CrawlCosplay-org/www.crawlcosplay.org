@@ -1,8 +1,8 @@
-<title><h2 style='color:rgb(69, 136, 5);'><img src='/img/arrow-flashing-right-1.gif'>Details for CCSDT#3</h2></title>
+<title><h2 style='color:rgb(69, 136, 5);'>Details for CCSDT#3</h2></title>
     <?php $this->layout = 'ccsdt'; ?>
     <div id="title">
     <h2 id="sdc"><center>Testing prior to CCSDT#3 for DCSS v0.34</center></h2>
-    <h2><h2 style='color:rgb(69, 136, 5);'><img src='/img/arrow-flashing-right-1.gif'>Details for CCSDT#3</h2></h2></div><div id="content">
+    <h2><h2 style='color:rgb(69, 136, 5);'>Details for CCSDT#3</h2></h2></div><div id="content">
 <h3>Rules</h3>
         <ol>
 <li>Each weekly challenge consists of playing a randomly chosen 
@@ -108,4 +108,4 @@ more_gem_info = true</pre>
 </ol>
    
 </div>
-    <div id="bottomtext"><span class="menu">CCSDT #3 for v0.34</a> : </span><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="rules.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu">Week 1 - </span><span class="menu">Week 2 - </span><span class="menu"><a href="3.html">Week 3</a> - </span><span class="menu"><a href="4.html">Week 4</a> - </span><span class="menu"><a href="5.html">Week 5</a> - </span></div>
+    <div id="bottomtext"><span class="menu"><img src="/img/arrow-flashing-right-1.gif">CCSDT #3 for v0.34</a> : </span><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="rules.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu">Week 1 - </span><span class="menu">Week 2 - </span><span class="menu"><a href="3.html">Week 3</a> - </span><span class="menu"><a href="4.html">Week 4</a> - </span><span class="menu"><a href="5.html">Week 5</a> - </span></div>
