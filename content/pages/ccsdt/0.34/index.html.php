@@ -44,8 +44,8 @@ points by reaching various in-game milestones.</li>
 
 <p>In order to sign up, set the first line of your 0.34 RC file to</p> 
 <pre id="rc"># ccsdt</pre>
-<p>on <a href="https://crawl.develz.org/play.htm" target="_blank">any of the official online servers</a>
-or CCO ( <a href="https://cco.crawlcosplay.org/" target="_blank">cco.crawlcosplay.org</a> ) at any point during tournament. Your name will appear in the standings once
+<p>on <a href="https://www.dungeoncrawlcentral.org/online_servers.html" target="_blank">any of the DCSS online servers</a> 
+at any point during tournament. Your name will appear in the standings once
 you've done this correctly and started at least one 0.34 game (though it may take about 15 minutes before it does).</p>
 
 <h2>Credits</h2>
