@@ -66,7 +66,7 @@ week)</th><th>Points</th></tr>
 <tr><td class="name">2. Clear a Ziggurat</td><td class="pt">4</td></tr>
 <tr><td class="name">3. Enter Zot at XL 20 or lower</td><td class="pt">5</td></tr>
 <tr><td class="name">4. Win a game without entering lair</td><td class="pt">6</td></tr>
-<tr><td class="name">5. Get a rune without using potions or scrolls (aesetic rune)</td><td class="pt">7</td></tr>
+<tr><td class="name">5. Get a rune without using potions or scrolls (ascetic rune)</td><td class="pt">7</td></tr>
 </table>
 <p>¹ 5 new milestones were created for CCSDT#3 along with 
 the removal of 1 one-time point: Win a game in under 40,000 turns</p>
