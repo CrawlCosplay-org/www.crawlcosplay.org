@@ -14,8 +14,7 @@ make the choices random.</li>
 <li>Participants have one week to finish a game using that combo. 
 Only milestones recorded during the week (from 00:00 UTC on the 
 start date until 00:00 UTC on the end date) will count for scoring.</li>
-<li>Your first 0.34 game started on an <a href="https://crawl.develz.org/play.htm" target="_blank">official DCSS server</a> 
-( or CCO: <a href="https://cco.crawlcosplay.org/" target="_blank">cco.crawlcosplay.org/</a> ) 
+<li>Your first DCSS v0.34 game started on an <a href="https://www.dungeoncrawlcentral.org/online_servers.html" target="_blank">DCSS Webtiles server</a>  
 during the week will count for scoring. This is the only allowed attempt, subject to rule 4 below.
 <li>One redo per week is allowed if your first game ended in death with player
 XL < 5 (i.e., no redo once you hit XL 5). The redo game must be started after
