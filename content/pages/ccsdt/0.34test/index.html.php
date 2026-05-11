@@ -32,7 +32,7 @@ points by reaching various in-game milestones.</li>
 
 <h2>Schedule</h2>
 
-<ul id="schedule"><li><span class="label"><a href="1.html">Week 1 &mdash; Antaeus (OnAE)</a>:</span> 2026-05-10 to 2026-05-15<li><span class="label"><a href="2.html">Week 2 &mdash; Asmodeus (TeFE)</a>:</span> 2026-05-11 to 2026-05-15<li><span class="label"><a href="3.html">Week 3 &mdash; Dispater (GrEE)</a>:</span> 2026-05-01 to 2026-05-08<li><span class="label"><a href="4.html">Week 4 &mdash; Ereshkigal (PoEn)</a>:</span> 2026-05-07 to 2026-05-15<li><span class="label"><a href="5.html">Week 5 &mdash; Geryon (NaGl)</a>:</span> 2026-05-08 to 2026-05-15</ul>
+<ul id="schedule"><li><span class="label"><a href="1.html">Week 1 &mdash; Donald (MfFi)</a>:</span> 2026-05-10 to 2026-05-15<li><span class="label"><a href="2.html">Week 2 &mdash; Asmodeus (TeFE)</a>:</span> 2026-05-11 to 2026-05-15<li><span class="label"><a href="3.html">Week 3 &mdash; Dispater (GrEE)</a>:</span> 2026-05-01 to 2026-05-08<li><span class="label"><a href="4.html">Week 4 &mdash; Ereshkigal (PoEn)</a>:</span> 2026-05-07 to 2026-05-15<li><span class="label"><a href="5.html">Week 5 &mdash; Geryon (NaGl)</a>:</span> 2026-05-08 to 2026-05-15</ul>
 
 
 <h2>Sign Up</h2>
