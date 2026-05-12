@@ -104,7 +104,7 @@ more_gem_info = true</pre>
    <li>Collect at least 5 runes before entering the Depths.</li>
    <li>Collect a rune without dying (felids).</li>
    <li><b>NEW</b>: Collect at least 3 gems. (they don't need to stay intact)</li>
-   <li><b>NEW</b>: Get the Abyssal rune in under 27,000 turns.</li>
+   <li><b>NEW</b>: Exit the Abyss in under 27,000 turns.</li>
    <li><b>NEW</b>: Reach the last level of the Depths without having entered the Lair.</li>
 </ol>
    
