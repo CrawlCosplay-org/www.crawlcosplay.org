@@ -89,6 +89,7 @@ more_gem_info = true</pre>
    <li><b>NEW</b>: Reach the 10th floor of a Ziggurat.</li>
    <li><b>NEW</b>: Enter the bottom floor of the Orcish Mines before XL11.</li>
    <li><b>NEW</b>: Kill a unique in tree form (using lignification potion).</li>
+   <li><b>NEW</b>: Pickup the gem in Crypt:3. (it doesn't need to stay intact)</li>
    <li>Collect two runes without dying twice (felids).</li>
 </ol>
 
