@@ -78,7 +78,7 @@ more_gem_info = true</pre>
 <ol>
    <li>Enter a rune branch with all base skills < 11.</li>
    <li><s>Enter Slime as your second multi-level branch (don't get banished).</s><br>
-       <b>REPLACED BY</b>: Pickup the gem in Slime:5. (it doesn't need to stay intact)</li>
+       <b>REPLACED BY</b>: Pickup the rune in Slime:5. (it doesn't need to stay intact)</li>
    <li>Enter the Temple in less than 4,000 turns.</li>
    <li>Reach the end of Lair at XL &leq; 12.</li>
    <li>Reach the end of Elf before entering a rune branch (excluding getting banished to the Abyss).</li>
