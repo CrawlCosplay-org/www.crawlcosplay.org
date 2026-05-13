@@ -24,6 +24,7 @@
     <th>Bonus #2</th>
     <th>Week's Total (max=15)</th>
     </tr><tr class="dead"><td class="name"><a href="http://crawl.xtahua.com/crawl/morgue/THILQ/morgue-THILQ-20260511-140308.txt">THILQ</a></td><td class="pt">1</td><td class="pt">1</td><td class="pt">1</td><td class="pt">1</td><td class="pt">1</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="total">5</td></tr>
+<tr class="alive"><td class="name">RoGGaTestCCO</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="total">0</td></tr>
 <tr class="none"><td class="name">RoGGaTest</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">RoGGaTestCRG</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Jannitor</td>
@@ -51,11 +52,10 @@
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Caterwaul</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">RoGGaTestCBRG</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">krsz</td>
-                <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">RoGGaTestCCO</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">RoGGaTestCBRO</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Quoth</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">RoGGaTestCXC</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">RoGGaTestCAO</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">RoGGaTestCDI</td>
                 <td colspan="15"></td><td class="total">0</td></tr></table></div></div>
-    <div id="bottomtext"><span class="menu"><img src="/img/animated-arrow.gif" width="40" height="10">CCSDT #3 for v0.34</a> : </span><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="rules.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu">Week 1 - </span><span class="menu"><a href="2.html">Week 2</a> - </span><span class="menu"><a href="3.html">Week 3</a> - </span><span class="menu"><a href="4.html">Week 4</a> - </span><span class="menu"><a href="5.html">Week 5</a> - </span><span id="updated"><span class="label">Updates every 10 mins. Last Update: </span>2026-05-13 12:48 UTC</span></div>
+    <div id="bottomtext"><span class="menu"><img src="/img/animated-arrow.gif" width="40" height="10">CCSDT #3 for v0.34</a> : </span><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="rules.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu">Week 1 - </span><span class="menu"><a href="2.html">Week 2</a> - </span><span class="menu"><a href="3.html">Week 3</a> - </span><span class="menu"><a href="4.html">Week 4</a> - </span><span class="menu"><a href="5.html">Week 5</a> - </span><span id="updated"><span class="label">Updates every 10 mins. Last Update: </span>2026-05-13 12:58 UTC</span></div>
