@@ -90,7 +90,7 @@ more_gem_info = true</pre>
    <li><b>NEW</b>: Reach the 10th floor of a Ziggurat.</li>
    <li><b>NEW</b>: Enter the bottom floor of the Orcish Mines before XL11.</li>
    <li><b>NEW</b>: Kill a unique in tree form (using lignification potion).</li>
-   <li><b>NEW</b>: Pickup the rune in Crypt:3. (it doesn't need to stay intact)</li>
+   <li><b>NEW</b>: Pickup the gem in Crypt:3. (it doesn't need to stay intact)</li>
    <li>Collect two runes without dying twice (felids).</li>
 </ol>
 
@@ -102,7 +102,7 @@ more_gem_info = true</pre>
    <li>Collect a rune in less than 15,000 turns.</li>
    <li>Reach the end of the Vaults at XL &leq; 18.</li>
    <li>Kill or slimify Geryon before entering a rune branch (excluding the Abyss).</li>
-   <li>Get a rune from Hell or Pan before entering any other rune branch (excluding the Abyss).</li>
+   <li>Get a rune from Pan before entering any other rune branch (excluding the Abyss).</li>
    <li>Get a rune from Hell before entering any other rune branch (excluding the Abyss).</li>
    <li>Collect at least 5 runes before entering the Depths.</li>
    <li><b>NEW</b>: Collect at least 3 gems. (they don't need to stay intact)</li>
