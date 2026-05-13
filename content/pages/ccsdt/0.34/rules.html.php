@@ -77,7 +77,8 @@ more_gem_info = true</pre>
 <h3>Bonus 1 list</h3>
 <ol>
    <li>Enter a rune branch with all base skills < 11.</li>
-   <li>Enter Slime as your second multi-level branch (don't get banished).</li>
+   <li><s>Enter Slime as your second multi-level branch (don't get banished).</s><br>
+       <b>REPLACED BY</b>: Pickup the rune in Slime:5. (it doesn't need to stay intact)</li>
    <li>Enter the Temple in less than 4,000 turns.</li>
    <li>Reach the end of Lair at XL &leq; 12.</li>
    <li>Reach the end of Elf before entering a rune branch (excluding getting banished to the Abyss).</li>
@@ -85,9 +86,12 @@ more_gem_info = true</pre>
    <li>Collect a rune before entering Shoals, Snake, Spider, or Swamp.</li>
    <li>Collect a rune before entering Lair.</li>
    <li>Collect a rune before reaching XL17.</li>
-   <li>Collect two runes without dying twice (felids).</li>
    <li><b>NEW</b>: Enter Elf:3 in under 12,000 turns.</li>
    <li><b>NEW</b>: Reach the 10th floor of a Ziggurat.</li>
+   <li><b>NEW</b>: Enter the bottom floor of the Orcish Mines before XL11.</li>
+   <li><b>NEW</b>: Kill a unique in tree form (using lignification potion).</li>
+   <li><b>NEW</b>: Pickup the rune in Crypt:3. (it doesn't need to stay intact)</li>
+   <li>Collect two runes without dying twice (felids).</li>
 </ol>
 
 <h3>Bonus 2 list</h3>
@@ -101,9 +105,13 @@ more_gem_info = true</pre>
    <li>Get a rune from Hell or Pan before entering any other rune branch (excluding the Abyss).</li>
    <li>Get a rune from Hell before entering any other rune branch (excluding the Abyss).</li>
    <li>Collect at least 5 runes before entering the Depths.</li>
-   <li>Collect a rune without dying (felids).</li>
    <li><b>NEW</b>: Collect at least 3 gems. (they don't need to stay intact)</li>
-   <li><b>NEW</b>: Enter the final floor of Gehenna (Geh:7) in under 27,000 turns.</li>
+   <li><b>NEW</b>: Exit the Abyss in under 27,000 turns.</li>
+   <li><b>NEW</b>: Reach the last level of the Depths without having entered the Lair.</li>
+   <li><b>NEW</b>: Kill a Pan Lord unique.</li>
+   <li><b>NEW</b>: Kill a Hell Lord unique. (Geryon does not count)</li>
+   <li><b>NEW</b>: Pickup the gem in Slime:5.</li>
+   <li>Collect a rune without dying (felids).</li>
 </ol>
    
 </div>
