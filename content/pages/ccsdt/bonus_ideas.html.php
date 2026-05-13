@@ -36,3 +36,4 @@
 <ul>
    <li>Bonus 1: Kill 5 uniques.</li>
    <li>Bonus 2: Kill 10 uniques.</li>
+</ul>
