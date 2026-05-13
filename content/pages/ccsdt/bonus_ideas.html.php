@@ -31,3 +31,8 @@
    <li>The Enchantress: Win before you reach XL25.</li>
    <li>Xak:             Get 3 gems other than the dungeon one. The gems do not need to stay intact.</li>
 </ul>
+
+<h3>Random list of Bonus Ideas</h3>
+<ul>
+   <li>Bonus 1: Kill 5 uniques.</li>
+   <li>Bonus 2: Kill 10 uniques.</li>
