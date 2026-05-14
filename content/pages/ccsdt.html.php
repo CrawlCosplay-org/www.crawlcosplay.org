@@ -20,9 +20,10 @@
   document.getElementById('local-time').innerHTML = localDate.toLocaleString();
 </script>
 
-<h2>Testing Phase of Python Scripts</h2>
+<!-- <h2>Testing Phase of Python Scripts</h2>
 <ul><li><a href="/ccsdt/0.34test/standings.html">Tryout NOW</a> the major changes to the scoring and bonuses during our testing phase.</li>
 </ul>
+-->
 
 <h2>Past Tournaments Results</h2>
 <ul><li><a href="/ccsdt/0.33/standings.html">CCSDT#2</a> for DCSS v0.33</li>
