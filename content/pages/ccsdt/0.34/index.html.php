@@ -32,35 +32,21 @@ points by reaching various in-game milestones.</li>
 
 <h2>Schedule</h2>
 
-<ul id="schedule">
-  <li><span class="label">Week 1:</span> 2026-05-15 to 2026-05-22 UTC<li>
-      <span class="label">Week 2:</span> 2026-05-22 to 2026-05-29 UTC<li>
-      <span class="label">Week 3:</span> 2026-05-29 to 2026-06-05 UTC<li>
-      <span class="label">Week 4:</span> 2026-06-05 to 2026-06-12 UTC<li>
-      <span class="label">Week 5:</span> 2026-06-12 to 2026-06-19 UTC</ul>
+<ul id="schedule"><li><span class="label">Week 1:</span> 2026-05-15 to 2026-05-22<li><span class="label">Week 2:</span> 2026-05-22 to 2026-05-29<li><span class="label">Week 3:</span> 2026-05-29 to 2026-06-05<li><span class="label">Week 4:</span> 2026-06-05 to 2026-06-12<li><span class="label">Week 5:</span> 2026-06-12 to 2026-06-19</ul>
 
 
 <h2>Sign Up</h2>
 
-<p>In order to sign up, set the first line of your DCSS v0.34 RC file to</p> 
+<p>In order to sign up, set the first line of your DCSS 0.34 RC file to</p>
 <pre id="rc"># ccsdt</pre>
 <p>on <a href="https://www.dungeoncrawlcentral.org/online_servers.html" target="_blank">any of the DCSS online servers</a> 
-at any point during tournament. Your name will appear in the standings once
-you've done this correctly and started at least one 0.34 game (though it may take about 15 minutes before it does).</p>
+ at any point during tournament. Your name will appear in the standings once
+you've done this correctly and started at least one 0.34 game (though it may take about 10-15 minutes before it does).</p>
 
 <h2>Credits</h2>
 
 <p>Original CSDC rules and organization by <a href="http://crawl.akrasiac.org/scoring/players/walkerboh.html">WalkerBoh</a> and 
-<a href="http://crawl.akrasiac.org/scoring/players/ebering.html">ebering</a>.</p>
-<p>Thank you to scrubbdaddy/scrubbuddy (CCSDT#1&3) & grumposus (CCSDT#2) for python assistance.</p>
+<a href="http://crawl.akrasiac.org/scoring/players/ebering.html">ebering</a>.
+Thank you to scrubbdaddy/scrubbuddy (CCSDT#1&3) & grumposus (CCSDT#2) for python assistance.</p>
 <p>I am your host, RoGGa.</p></div>
-    <div id="bottomtext"><span class="menu">CCSDT #3 for v0.34</a> : </span>
-                         <span class="menu"><a href="index.html">Overview</a> - </span>
-                         <span class="menu"><a href="rules.html">Details</a> - </span>
-                         <span class="menu">Standings</span>
-                         <span class="menuspacer"></span>
-                         <span class="menu">Week 1 - </span>
-                         <span class="menu">Week 2 - </span>
-                         <span class="menu">Week 3 - </span>
-                         <span class="menu">Week 4 - </span>
-                         <span class="menu">Week 5</span></div>
+    <div id="bottomtext"><span class="menu">CCSDT for v0.34</a> : </span><span class="menu"><img src="/img/animated-arrow.gif" width="40" height="10"></span><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="rules.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu">Week 1 - </span><span class="menu">Week 2 - </span><span class="menu">Week 3 - </span><span class="menu">Week 4 - </span><span class="menu">Week 5 - </span></div>

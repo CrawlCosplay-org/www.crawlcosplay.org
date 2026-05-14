@@ -1,8 +1,8 @@
-<title><h2 style='color:rgb(69, 136, 5);'>About CCSDT#3</h2></title>
+<title><h2 style='color:rgb(69, 136, 5);'>Details for CCSDT#3</h2></title>
     <?php $this->layout = 'ccsdt'; ?>
     <div id="title">
     <h2 id="sdc"><center>CCSDT#3 for DCSS v0.34</center></h2>
-    <h2><h2 style='color:rgb(69, 136, 5);'>About CCSDT#3</h2></h2></div><div id="content">
+    <h2><h2 style='color:rgb(69, 136, 5);'>Details for CCSDT#3</h2></h2></div><div id="content">
 <h3>Rules</h3>
         <ol>
 <li>Each weekly challenge consists of playing a randomly chosen 
@@ -14,7 +14,7 @@ make the choices random.</li>
 <li>Participants have one week to finish a game using that combo. 
 Only milestones recorded during the week (from 00:00 UTC on the 
 start date until 00:00 UTC on the end date) will count for scoring.</li>
-<li>Your first DCSS v{} game started on an <a href="https://www.dungeoncrawlcentral.org/online_servers.html" target="_blank">DCSS Webtiles server</a>  
+<li>Your first DCSS v0.34 game started on an <a href="https://www.dungeoncrawlcentral.org/online_servers.html" target="_blank">DCSS Webtiles server</a>  
 during the week will count for scoring. This is the only allowed attempt, subject to rule 4 below.
 <li>One redo per week is allowed if your first game ended in death with player
 XL < 5 (i.e., no redo once you hit XL 5). The redo game must be started after
@@ -65,7 +65,7 @@ week)</th><th>Points</th></tr>
 <tr><td class="name">2. Clear a Ziggurat</td><td class="pt">4</td></tr>
 <tr><td class="name">3. Enter Zot at XL 20 or lower</td><td class="pt">5</td></tr>
 <tr><td class="name">4. Win a game without entering lair</td><td class="pt">6</td></tr>
-<tr><td class="name">5. Get a rune without using potions or scrolls (aesetic rune)</td><td class="pt">7</td></tr>
+<tr><td class="name">5. Get a rune without using potions or scrolls (ascetic rune)</td><td class="pt">7</td></tr>
 </table>
 <p>¹ 5 new milestones were created for CCSDT#3 along with 
 the removal of 1 one-time point: Win a game in under 40,000 turns</p>
@@ -108,21 +108,11 @@ more_gem_info = true</pre>
    <li><b>NEW</b>: Collect at least 3 gems. (they don't need to stay intact)</li>
    <li><b>NEW</b>: Exit the Abyss in under 27,000 turns.</li>
    <li><b>NEW</b>: Reach the last level of the Depths without having entered the Lair.</li>
-   <li><b>NEW</b>: Kill a Pan Lord unique.</li>
+   <li><b>NEW</b>: Kill a non-random Pan Lord unique. (Cerebov, Mnoleg, Lom Lobon, or Gloorx Vloq).</li>
    <li><b>NEW</b>: Kill a Hell Lord unique. (Geryon does not count)</li>
    <li><b>NEW</b>: Pickup the gem in Slime:5. (it doesn't need to stay intact)</li>
    <li>Collect a rune without dying (felids).</li>
 </ol>
-   
-</div>
 
-    <div id="bottomtext"><span class="menu">CCSDT #3 for v0.34</a> : </span>
-                         <span class="menu"><a href="index.html">Overview</a> - </span>
-                         <span class="menu"><a href="rules.html">Details</a> - </span>
-                         <span class="menu">Standings</span>
-                         <span class="menuspacer"></span>
-                         <span class="menu">Week 1 - </span>
-                         <span class="menu">Week 2 - </span>
-                         <span class="menu">Week 3 - </span>
-                         <span class="menu">Week 4 - </span>
-                         <span class="menu">Week 5</span></div>
+</div>
+    <div id="bottomtext"><span class="menu">CCSDT for v0.34</a> : </span><span class="menu"><img src="/img/animated-arrow.gif" width="40" height="10"></span><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="rules.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu">Week 1 - </span><span class="menu">Week 2 - </span><span class="menu">Week 3 - </span><span class="menu">Week 4 - </span><span class="menu">Week 5 - </span></div>
