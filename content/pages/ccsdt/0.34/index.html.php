@@ -32,7 +32,7 @@ points by reaching various in-game milestones.</li>
 
 <h2>Schedule</h2>
 
-<ul id="schedule"><li><span class="label">Week 1:</span> 2026-05-15 to 2026-05-22<li><span class="label">Week 2:</span> 2026-05-22 to 2026-05-29<li><span class="label">Week 3:</span> 2026-05-29 to 2026-06-05<li><span class="label">Week 4:</span> 2026-06-05 to 2026-06-12<li><span class="label">Week 5:</span> 2026-06-12 to 2026-06-19</ul>
+<ul id="schedule"><li><span class="label"><a href="1.html">Week 1 &mdash; Gargoyle (GrFi)</a>:</span> 2026-05-15 to 2026-05-22<li><span class="label">Week 2:</span> 2026-05-22 to 2026-05-29<li><span class="label">Week 3:</span> 2026-05-29 to 2026-06-05<li><span class="label">Week 4:</span> 2026-06-05 to 2026-06-12<li><span class="label">Week 5:</span> 2026-06-12 to 2026-06-19</ul>
 
 
 <h2>Sign Up</h2>
@@ -50,4 +50,4 @@ you've done this correctly and started at least one 0.34 game (though it may tak
 Thank you to scrubbdaddy/scrubbuddy (CCSDT#1&3) & grumposus (CCSDT#2) for python assistance.</p>
 <p>I am your host,</p>
 <p>RoGGa ;-p</p></div>
-    <div id="bottomtext"><span class="menu">CCSDT for v0.34</a> : </span><span class="menu"><img src="/img/animated-arrow.gif" width="40" height="10"></span><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="rules.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu">Week 1 - </span><span class="menu">Week 2 - </span><span class="menu">Week 3 - </span><span class="menu">Week 4 - </span><span class="menu">Week 5 - </span></div>
+    <div id="bottomtext"><span class="menu">CCSDT for v0.34</a> : </span><span class="menu"><img src="/img/animated-arrow.gif" width="40" height="10"></span><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="rules.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu"><a href="1.html">Week 1</a> - </span><span class="menu">Week 2 - </span><span class="menu">Week 3 - </span><span class="menu">Week 4 - </span><span class="menu">Week 5 - </span></div>

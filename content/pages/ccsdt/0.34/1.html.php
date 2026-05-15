@@ -1,0 +1,63 @@
+<title>Week 1 &mdash; Gargoyle (GrFi)</title>
+    <?php $this->layout = 'ccsdt'; ?>
+    <meta http-equiv="refresh" content="240"><div id="title">
+    <h2 id="sdc"><center>CCSDT#3 for DCSS v0.34</center></h2>
+    <h2>Week 1 &mdash; Gargoyle (GrFi)</h2></div><div id="content"><div id="times"><span class="label">Week of: </span>2026-05-15 (ends at start of 2026-05-22 00:00 UTC)</div><div id="combo"><span class="label">Character: </span>Gargoyle Fighter</div>
+<div id="bonus"><span class="label">Bonus 1: </span>Kill a non-random Pan Lord unique. (Cerebov, Mnoleg, Lom Lobon, or Gloorx Vloq)<br/>
+<span class="label">Bonus 2: </span>Kill a Hell Lord unique. (Geryon does not count)</div>
+<div id="gods"><span class="label">Gods: </span>Sif Muna, Okawaru, Jiyva</div><br><pre>LEGEND<br>------<br>Green = Won<br>Red   = Died<br>Grey  = ongoing or did not finish before end of the week</right></pre><div class="card"><table><tr class="head">
+    <th>Player</th>
+    <th>Reach XL5</th>
+    <th>Kill a Unique</th>
+    <th>Worship a Valid God</th>
+    <th>Reach XL10</th>
+    <th>Branch Enter</th>
+    <th>Branch End</th>
+    <th>Champion a Valid God</th>
+    <th><abbr title="Does not need to stay intact">Collect 1 Gem</abbr></th>
+    <th>Collect 1 Rune</th>
+    <th>Collect 2 Runes</th>
+    <th>Collect 3 Runes</th>
+    <th>Obtain Orb of Zot</th>
+    <th>Win</th>
+    <th>Bonus #1</th>
+    <th>Bonus #2</th>
+    <th>Week's Total (max=15)</th>
+    </tr><tr class="none"><td class="name">RoGGa</td>
+                <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">kuniqs</td>
+                <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Hasart</td>
+                <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Jannitor</td>
+                <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Salticid</td>
+                <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">predelnik</td>
+                <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">baljet</td>
+                <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">agentchuck</td>
+                <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Midpoint</td>
+                <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">TheMeInTeam</td>
+                <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Nonny</td>
+                <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Astinus</td>
+                <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Strat</td>
+                <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Galadan</td>
+                <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Platt</td>
+                <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Myro</td>
+                <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Patrick2011b</td>
+                <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">rago</td>
+                <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Kergan</td>
+                <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">THILQ</td>
+                <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">jt</td>
+                <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Shym</td>
+                <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Fougere</td>
+                <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Colgate</td>
+                <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">ThePixelVillain</td>
+                <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Quoth</td>
+                <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Blyxx</td>
+                <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Archion</td>
+                <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">TooFastSpriggan</td>
+                <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">ASCIIPhilia</td>
+                <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">yakattack</td>
+                <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Hungry0364</td>
+                <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">ElricMelnibone</td>
+                <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Caterwaul</td>
+                <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">krsz</td>
+                <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">tmoiynmwg</td>
+                <td colspan="15"></td><td class="total">0</td></tr></table></div></div>
+    <div id="bottomtext"><span class="menu">CCSDT for v0.34</a> : </span><span class="menu"><img src="/img/animated-arrow.gif" width="40" height="10"></span><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="rules.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu">Week 1 - </span><span class="menu">Week 2 - </span><span class="menu">Week 3 - </span><span class="menu">Week 4 - </span><span class="menu">Week 5 - </span><span id="updated"><span class="label">Updates every 10 mins. Last Update: </span>2026-05-15 00:00 UTC</span></div>
