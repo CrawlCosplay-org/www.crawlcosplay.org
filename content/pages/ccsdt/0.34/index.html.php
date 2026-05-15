@@ -32,7 +32,7 @@ points by reaching various in-game milestones.</li>
 
 <h2>Schedule</h2>
 
-<ul id="schedule"><li><span class="label"><a href="1.html">Week 1 &mdash; Gargoyle (GrFi)</a>:</span> 2026-05-15 to 2026-05-22<li><span class="label">Week 2:</span> 2026-05-22 to 2026-05-29<li><span class="label">Week 3:</span> 2026-05-29 to 2026-06-05<li><span class="label">Week 4:</span> 2026-06-05 to 2026-06-12<li><span class="label">Week 5:</span> 2026-06-12 to 2026-06-19</ul>
+<ul id="schedule"><li><span class="label"><a href="1.html">Week 1 &mdash; Dowan (DECj)</a>:</span> 2026-05-15 to 2026-05-22<li><span class="label">Week 2:</span> 2026-05-22 to 2026-05-29<li><span class="label">Week 3:</span> 2026-05-29 to 2026-06-05<li><span class="label">Week 4:</span> 2026-06-05 to 2026-06-12<li><span class="label">Week 5:</span> 2026-06-12 to 2026-06-19</ul>
 
 
 <h2>Sign Up</h2>
