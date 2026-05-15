@@ -27,7 +27,7 @@ reaching ****** piety (or on worship with Gozag or Xom) with one of the listed
 gods. The point is lost if you ever abandon your god or are excommunicated. If
 the combo for the week is a zealot background, god points are only for sticking
 with the starting god. If the combo for the week is a demigod, the god point is automatically awarded.</li>
-<li>CLARIFICATION: If you worship another good before one of the 3 gods yoou lose your 2  good points. 
+<li><b>CLARIFICATION</b>: If you worship another good before one of the 3 gods yoou lose your 2  good points. 
 (This needs to  be confirmed in the code by someone more knowledgable of Python than me).</li>
 <li>The season consists of 5 challenges total (i.e., 5 different combos). Each
 race and background will be selected at most once during the competition.</li>
