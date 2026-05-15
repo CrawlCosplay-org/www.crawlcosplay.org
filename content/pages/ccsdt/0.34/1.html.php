@@ -23,7 +23,9 @@
     <th>Bonus #1</th>
     <th>Bonus #2</th>
     <th>Week's Total (max=15)</th>
-    </tr><tr class="none"><td class="name">RoGGa</td>
+    </tr><tr class="alive"><td class="name">Colgate</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="total">0</td></tr>
+<tr class="alive"><td class="name">Platt</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="total">0</td></tr>
+<tr class="none"><td class="name">RoGGa</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">kuniqs</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Hasart</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Jannitor</td>
@@ -37,7 +39,6 @@
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Astinus</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Strat</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Galadan</td>
-                <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Platt</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Myro</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Patrick2011b</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">rago</td>
@@ -46,7 +47,6 @@
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">jt</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Shym</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Fougere</td>
-                <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Colgate</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">ThePixelVillain</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Quoth</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Blyxx</td>
@@ -60,4 +60,4 @@
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">krsz</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">tmoiynmwg</td>
                 <td colspan="15"></td><td class="total">0</td></tr></table></div></div>
-    <div id="bottomtext"><span class="menu">CCSDT for v0.34</a> : </span><span class="menu"><img src="/img/animated-arrow.gif" width="40" height="10"></span><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="rules.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu">Week 1 - </span><span class="menu">Week 2 - </span><span class="menu">Week 3 - </span><span class="menu">Week 4 - </span><span class="menu">Week 5 - </span><span id="updated"><span class="label">Updates every 10 mins. Last Update: </span>2026-05-15 00:02 UTC</span></div>
+    <div id="bottomtext"><span class="menu">CCSDT for v0.34</a> : </span><span class="menu"><img src="/img/animated-arrow.gif" width="40" height="10"></span><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="rules.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu">Week 1 - </span><span class="menu">Week 2 - </span><span class="menu">Week 3 - </span><span class="menu">Week 4 - </span><span class="menu">Week 5 - </span><span id="updated"><span class="label">Updates every 10 mins. Last Update: </span>2026-05-15 00:12 UTC</span></div>
