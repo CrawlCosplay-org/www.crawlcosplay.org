@@ -46,8 +46,8 @@ you've done this correctly and started at least one 0.34 game (though it may tak
 <h2>Credits</h2>
 
 <p>Original CSDC rules and organization by <a href="http://crawl.akrasiac.org/scoring/players/walkerboh.html">WalkerBoh</a> and 
-<a href="http://crawl.akrasiac.org/scoring/players/ebering.html">ebering</a>.
-Thank you to scrubbdaddy/scrubbuddy (CCSDT#1&3), grumposus (CCSDT#2) angentchuck (CCSDT#3) for python assistance.</p>
+<a href="http://crawl.akrasiac.org/scoring/players/ebering.html">ebering</a>.<br>
+Thank you to scrubbdaddy/scrubbuddy (CCSDT#1&3), grumposus (CCSDT#2) & angentchuck (CCSDT#3) for python assistance.</p>
 <p>I am your host,</p>
 <p>RoGGa ;-p</p></div>
     <div id="bottomtext"><span class="menu">CCSDT for v0.34</a> : </span><span class="menu"><img src="/img/animated-arrow.gif" width="40" height="10"></span><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="rules.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu"><a href="1.html">Week 1</a> - </span><span class="menu">Week 2 - </span><span class="menu">Week 3 - </span><span class="menu">Week 4 - </span><span class="menu">Week 5 - </span></div>
