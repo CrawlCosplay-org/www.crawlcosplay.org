@@ -32,6 +32,16 @@
 	<li>Crawl Cosplay playlists: 	<a href="https://www.youtube.com/playlist?list=PLUKw51t06kZs9PFpTB1MMvd9972qIbklG" target="_blank">CCSDT#3</a>
 </ul>
 
+<p><b>Jonny Community</b>: the latest on the block!!!</p>
+<ul>	<li>Active Channel:		<a href="https://www.youtube.com/@JonnyCommunity" target="_blank">www.youtube.com/@JonnyCommunity</a></li>
+	<li>Crawl Cosplay playlists: 	<a href="https://www.youtube.com/watch?v=JXiU0H6BRgk&list=PLCW8Hl_ZRlsFgaBZ1myFZjsxRiGInqWWk" target="_blank">CCSDT#3</a>
+</ul>
+
+<p><b>ThePixelVilain</b>: Mr CCA roulette!</p>
+<ul>	<li>Active Channels:		<a href="https://www.twitch.tv/thepixelvillain" target="_blank">www.twitch.tv/thepixelvillain</a> &
+									<a href="https://www.youtube.com/@ThePixelVillain" target="_blank">www.youtube.com/@ThePixelVillain</a></li>
+</ul>
+
 <p><b>ContrarianOrange</b>: the cautious with 2 wins!</p>
 <ul>	<li>Active Channels:		<a href="https://www.twitch.tv/contrarianorange" target="_blank">www.twitch.tv/contrarianorange</a></li>
 	<li>Plays at random times but more often than not during the evenings eastern timezone.</li>
@@ -40,11 +50,6 @@
 <p><b>Planckenstein</b>: Mr CCSDT#2!</p>
 <ul>	<li>Active Channels:		<a href="https://www.twitch.tv/planckenstein" target="_blank">www.twitch.tv/planckenstein</a> &
 									<a href="https://www.youtube.com/@planckenstein" target="_blank">www.youtube.com/@planckenstein</a></li>
-</ul>
-
-<p><b>ThePixelVilain</b>: Mr CCA roulette!</p>
-<ul>	<li>Active Channels:		<a href="https://www.twitch.tv/thepixelvillain" target="_blank">www.twitch.tv/thepixelvillain</a> &
-									<a href="https://www.youtube.com/@ThePixelVillain" target="_blank">www.youtube.com/@ThePixelVillain</a></li>
 </ul>
 
 <p><b>Wizard1ke</b>: our favourite Kiwi</p>
