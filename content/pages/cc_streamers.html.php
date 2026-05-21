@@ -14,11 +14,10 @@
 	<li>He has also been one of the few to complete !progress (winning all 665 playable DCSS combos). </li>
 </ul>
 
-<p><b>Arcadio</b> (in french): le semi-pro et demi-dieu des roguelikes!</p>
-<ul>	<li>Active Channels:		<a href="https://www.twitch.tv/arcadiorl" target="_blank">www.twitch.tv/arcadiorl</a> & 
-					<a href="https://www.youtube.com/@arcadiorl" target="_blank">www.youtube.com/@arcadiorl</a> & 
-					<a href="https://discord.gg/p8S4sb8yab" target="_blank">Discord server</a></li>
-	<li>Crawl Cosplay playlists: 	<a href="https://www.youtube.com/playlist?list=PLOHsyPzEhlNSOcOw2njsqfN5eQ8KJ4is5" target="_blank">CCTT</a></li>
+<p><b>Wizard1ke</b>: our favourite Kiwi</p>
+<ul>	<li>Active Channels:	<a href="https://www.twitch.tv/wizardike" target="_blank">www.twitch.tv/wizardike</a> & 
+					<a href="https://www.youtube.com/@WizardIke" target="_blank">www.youtube.com/@WizardIke</a></li>
+	<li>Crawl Cosplay playlists: 	<a href="https://www.youtube.com/playlist?list=PLU5PEZPkft5vBlJp5H6e4WQUa-W5DV--m" target="_blank">CCC</a></li>
 </ul>
 
 <p><b>ThePixelVilain</b>: Mr CCA roulette!</p>
@@ -32,31 +31,32 @@
 	<li>Crawl Cosplay playlists: 	<a href="https://www.youtube.com/playlist?list=PLUKw51t06kZs9PFpTB1MMvd9972qIbklG" target="_blank">CCSDT#3</a></li>
 </ul>
 
+<p><b>Jonny Community</b>: the latest on the block!!!</p>
+<ul>	<li>Active Channel:		<a href="https://www.youtube.com/@JonnyCommunity" target="_blank">www.youtube.com/@JonnyCommunity</a></li>
+	<li>Crawl Cosplay playlists: 	<a href="https://www.youtube.com/playlist?list=PLCW8Hl_ZRlsFgaBZ1myFZjsxRiGInqWWk" target="_blank">CCSDT#3</a></li>
+</ul>
+
+<p><b>Arcadio</b> (in french): le semi-pro et demi-dieu des roguelikes!</p>
+<ul>	<li>Active Channels:		<a href="https://www.twitch.tv/arcadiorl" target="_blank">www.twitch.tv/arcadiorl</a> & 
+					<a href="https://www.youtube.com/@arcadiorl" target="_blank">www.youtube.com/@arcadiorl</a> & 
+					<a href="https://discord.gg/p8S4sb8yab" target="_blank">Discord server</a></li>
+	<li>Crawl Cosplay playlists: 	<a href="https://www.youtube.com/playlist?list=PLOHsyPzEhlNSOcOw2njsqfN5eQ8KJ4is5" target="_blank">CCTT</a></li>
+</ul>
+
 <p><b>Mr and Mrs Platt</b>: both with 1 WIN!!!</p>
 <ul>	<li>Active Channels:		<a href="https://www.twitch.tv/platt_mallar" target="_blank">www.twitch.tv/platt_mallar</a> &
 									<a href="https://www.youtube.com/@platt_mallar" target="_blank">www.youtube.com/@platt_mallar</a></li>
 	<li>Mr sPlatt normally streams on Saturdays and Sundays.</li>
 </ul>
 
-<p><b>Jonny Community</b>: the latest on the block!!!</p>
-<ul>	<li>Active Channel:		<a href="https://www.youtube.com/@JonnyCommunity" target="_blank">www.youtube.com/@JonnyCommunity</a></li>
-	<li>Crawl Cosplay playlists: 	<a href="https://www.youtube.com/playlist?list=PLCW8Hl_ZRlsFgaBZ1myFZjsxRiGInqWWk" target="_blank">CCSDT#3</a></li>
-</ul>
-
 <p><b>Planckenstein</b>: Mr CCSDT#2!</p>
-<ul>	<li>Semi-Active Channels:		<a href="https://www.twitch.tv/planckenstein" target="_blank">www.twitch.tv/planckenstein</a> &
+<ul>	<li>Semi-Active Channels:	<a href="https://www.twitch.tv/planckenstein" target="_blank">www.twitch.tv/planckenstein</a> &
 									<a href="https://www.youtube.com/@planckenstein" target="_blank">www.youtube.com/@planckenstein</a></li>
 </ul>
 
 <p><b>ContrarianOrange</b>: the cautious with 2 wins!</p>
 <ul>	<li>Semi-Active Channels:		<a href="https://www.twitch.tv/contrarianorange" target="_blank">www.twitch.tv/contrarianorange</a></li>
 	<li>Plays at random times but more often than not during the evenings eastern timezone.</li>
-</ul>
-
-<p><b>Wizard1ke</b>: our favourite Kiwi</p>
-<ul>	<li>Non-Active Channels:	<a href="https://www.twitch.tv/wizardike" target="_blank">www.twitch.tv/wizardike</a> & 
-					<a href="https://www.youtube.com/@WizardIke" target="_blank">www.youtube.com/@WizardIke</a></li>
-	<li>Crawl Cosplay playlists: 	<a href="https://www.youtube.com/playlist?list=PLU5PEZPkft5vBlJp5H6e4WQUa-W5DV--m" target="_blank">CCC</a></li>
 </ul>
 
 <p><b>Dumalacath</b>: CCA Master and aspiring CCC demi-god!</p>
