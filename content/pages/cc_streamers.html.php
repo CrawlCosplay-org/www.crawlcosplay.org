@@ -17,7 +17,8 @@
 <p><b>Wizard1ke</b>: our favourite Kiwi</p>
 <ul>	<li>Active Channels:	<a href="https://www.twitch.tv/wizardike" target="_blank">www.twitch.tv/wizardike</a> & 
 					<a href="https://www.youtube.com/@WizardIke" target="_blank">www.youtube.com/@WizardIke</a></li>
-	<li>Crawl Cosplay playlists: 	<a href="https://www.youtube.com/playlist?list=PLU5PEZPkft5vBlJp5H6e4WQUa-W5DV--m" target="_blank">CCC</a></li>
+	<li>Crawl Cosplay playlists: 	<a href="https://www.youtube.com/playlist?list=PLU5PEZPkft5vBlJp5H6e4WQUa-W5DV--m" target="_blank">CCC</a>, 
+									<a href="https://www.youtube.com/playlist?list=PLU5PEZPkft5s68e3hPH2ClHuuk9rYDIPZ" target="_blank">CCSDT#3</a></li>
 </ul>
 
 <p><b>ThePixelVilain</b>: Mr CCA roulette!</p>
