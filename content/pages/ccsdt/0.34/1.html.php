@@ -124,6 +124,7 @@
 <tr class="alive"><td class="name">Fougere</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="total">0</td></tr>
 <tr class="none"><td class="name">Pascal76</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">James</td>
+                <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">mihai</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">kuniqs</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Jannitor</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Salticid</td>
@@ -142,4 +143,4 @@
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Hungry0364</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Caterwaul</td>
                 <td colspan="15"></td><td class="total">0</td></tr></table></div></div>
-    <div id="bottomtext"><span class="menu">CCSDT for v0.34</a> : </span><span class="menu"><img src="/img/animated-arrow.gif" width="40" height="10"></span><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="rules.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu">Week 1 - </span><span class="menu"><a href="2.html">Week 2</a> - </span><span class="menu">Week 3 - </span><span class="menu">Week 4 - </span><span class="menu">Week 5 - </span><span id="updated"><span class="label">Updates every 10 mins. Last Update: </span>2026-05-22 06:10 UTC</span></div>
+    <div id="bottomtext"><span class="menu">CCSDT for v0.34</a> : </span><span class="menu"><img src="/img/animated-arrow.gif" width="40" height="10"></span><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="rules.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu">Week 1 - </span><span class="menu"><a href="2.html">Week 2</a> - </span><span class="menu">Week 3 - </span><span class="menu">Week 4 - </span><span class="menu">Week 5 - </span><span id="updated"><span class="label">Updates every 10 mins. Last Update: </span>2026-05-22 06:20 UTC</span></div>
