@@ -32,6 +32,9 @@
 <tr class="alive"><td class="name">krsz</td><td class="pt">1</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">1</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="total">2</td></tr>
 <tr class="dead"><td class="name"><a href="https://data.crawlcosplay.org/morgue//RoGGaTestCCO/morgue-RoGGaTestCCO-20260522-014310.txt">RoGGaTestCCO</a></td><td class="pt">1</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="total">1</td></tr>
 <tr class="alive"><td class="name">Astinus</td><td class="pt">0</td><td class="pt">1</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="total">1</td></tr>
+<tr class="alive"><td class="name">aj12037</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="total">0</td></tr>
+<tr class="alive"><td class="name">Galadan</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="total">0</td></tr>
+<tr class="alive"><td class="name">vayu</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="total">0</td></tr>
 <tr class="none"><td class="name">RoGGa</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Jaredude</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">justinlove</td>
@@ -66,7 +69,6 @@
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">particleface</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Strat</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Larett</td>
-                <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Galadan</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Platt</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">croikle</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">attentat</td>
@@ -92,7 +94,6 @@
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">eccles</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Nebesus</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Endy73</td>
-                <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">aj12037</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Wolffangen</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">emiel</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">InabaYap</td>
@@ -121,7 +122,6 @@
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">dizzi</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">tmoiynmwg</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">BlueFrogs</td>
-                <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">vayu</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">prygans</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">XavTav</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">haldagan</td>
@@ -141,4 +141,4 @@
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Wizard1ke</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">vayu1</td>
                 <td colspan="15"></td><td class="total">0</td></tr></table></div></div>
-    <div id="bottomtext"><span class="menu">CCSDT for v0.34</a> : </span><span class="menu"><img src="/img/animated-arrow.gif" width="40" height="10"></span><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="rules.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu"><a href="1.html">Week 1</a> - </span><span class="menu">Week 2 - </span><span class="menu">Week 3 - </span><span class="menu">Week 4 - </span><span class="menu">Week 5 - </span><span id="updated"><span class="label">Updates every 10 mins. Last Update: </span>2026-05-22 03:10 UTC</span></div>
+    <div id="bottomtext"><span class="menu">CCSDT for v0.34</a> : </span><span class="menu"><img src="/img/animated-arrow.gif" width="40" height="10"></span><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="rules.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu"><a href="1.html">Week 1</a> - </span><span class="menu">Week 2 - </span><span class="menu">Week 3 - </span><span class="menu">Week 4 - </span><span class="menu">Week 5 - </span><span id="updated"><span class="label">Updates every 10 mins. Last Update: </span>2026-05-22 03:20 UTC</span></div>
