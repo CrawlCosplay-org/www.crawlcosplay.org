@@ -30,7 +30,7 @@
 	echo "<ul><li>" . _("A DCSS tournament lasting 5 weeks with a different Crawl Unique combo to play each week. You only get one try!") . "</li>";
 ?>
 		 <li>CCSDT#3 for DCSS v0.34 started <b>Friday May 15th, 2026 @ 00:00 UTC</b>.</li>
-		 <li>Each of the 5 weeks start on the <b>Friday 00:00 UTC</b>.</li>
+		 <li>Each of the 5 weeks start on the <b>Friday @ 00:00 UTC</b>.</li>
 </ul>
 
 <script>
