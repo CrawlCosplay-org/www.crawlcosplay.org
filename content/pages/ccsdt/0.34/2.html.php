@@ -23,7 +23,9 @@
     <th>Bonus #1</th>
     <th>Bonus #2</th>
     <th>Week's Total (max=15)</th>
-    </tr><tr class="none"><td class="name">RoGGaTestCCO</td>
+    </tr><tr class="alive"><td class="name">PieDemon</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="total">0</td></tr>
+<tr class="alive"><td class="name">krsz</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="total">0</td></tr>
+<tr class="none"><td class="name">RoGGaTestCCO</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">RoGGa</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Jaredude</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">justinlove</td>
@@ -54,7 +56,6 @@
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Midpoint</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">TheMeInTeam</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Nonny</td>
-                <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">PieDemon</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">community</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">quinnr</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Astinus</td>
@@ -116,7 +117,6 @@
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">ElricMelnibone</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Caterwaul</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">dizzi</td>
-                <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">krsz</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">tmoiynmwg</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">BlueFrogs</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">vayu</td>
@@ -141,4 +141,4 @@
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">vayu1</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">icedessert</td>
                 <td colspan="15"></td><td class="total">0</td></tr></table></div></div>
-    <div id="bottomtext"><span class="menu">CCSDT for v0.34</a> : </span><span class="menu"><img src="/img/animated-arrow.gif" width="40" height="10"></span><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="rules.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu"><a href="1.html">Week 1</a> - </span><span class="menu">Week 2 - </span><span class="menu">Week 3 - </span><span class="menu">Week 4 - </span><span class="menu">Week 5 - </span><span id="updated"><span class="label">Updates every 10 mins. Last Update: </span>2026-05-22 00:00 UTC</span></div>
+    <div id="bottomtext"><span class="menu">CCSDT for v0.34</a> : </span><span class="menu"><img src="/img/animated-arrow.gif" width="40" height="10"></span><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="rules.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu"><a href="1.html">Week 1</a> - </span><span class="menu">Week 2 - </span><span class="menu">Week 3 - </span><span class="menu">Week 4 - </span><span class="menu">Week 5 - </span><span id="updated"><span class="label">Updates every 10 mins. Last Update: </span>2026-05-22 00:05 UTC</span></div>
