@@ -8,7 +8,7 @@ hopefully win many games sooner than later, while playing characters based on
 <a href="http://crawl.chaosforge.org/Unique_monster" target="_blank">DCSS Uniques</a> such as our maskot, <b><i>Snorg</b></i>:
 
 <h3>The gists</h3>
-The <b>Crawl Cosplay Academy</b> is intended as a prequel to the weekly <a href="/ccc/ccc" target="_blank">Crawl Cosplay Challenge</a> (CCC) and yet, 
+The <b>Crawl Cosplay Academy</b> is intended as a prequel to the weekly <a href="/ccc" target="_blank">Crawl Cosplay Challenge</a> (CCC) and yet, 
 on its own, it is so much more.
 <p>As a prequel, it's for players who don't feel they have the skills necessary to compete in the Crawl Cosplay Challenge at a level that isn't just beginner.</p>
 <p>In general though, the audience is <abbr title="Dungeon Craw: Stone Soup">DCSS</abbr> players who are fairly new to the game or 
@@ -62,7 +62,7 @@ After you complete a good game (with either a <abbr title="aka Yet Another Victo
 <h3>Need more help than what's on the challenge details' page?</h3>
 <p>Ask all your questions to the Crawl Cosplay community on our <a href="https://discord.gg/pW7nqC8Wu3" target="_blank">Discord server<img src="/img/discord_transparent_border.png" width="18" height="18"></a>. Our @VIPs group will likely be available to help!</p><br>
 <h3>When should I start playing the weekly Crawl Cosplay Challenges?</h3>
-<p>You can start whenever but once you have 4 wins with one in each of the 4 playstyles, you'll likely feel ready to <b>compete</b> at an intermediate level in the weekly <a href="/ccc/ccc">Crawl Cosplay Challenge</a>.</p>
+<p>You can start whenever but once you have 4 wins with one in each of the 4 playstyles, you'll likely feel ready to <b>compete</b> at an intermediate level in the weekly <a href="/ccc">Crawl Cosplay Challenge</a>.</p>
 <h2>Miscellaneous</h3>
 <ul> to view your morgue/dump press the # key in-game.</ul>
 <ul> add the following to you RCfile (online) or your init.txt file (offline) to have intermediate monsters show up with a yellow backgroung:</ul>
