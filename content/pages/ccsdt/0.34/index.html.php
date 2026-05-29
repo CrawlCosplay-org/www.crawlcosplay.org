@@ -43,6 +43,8 @@ points by reaching various in-game milestones.</li>
  at any point during tournament. Your name will appear in the standings once
 you've done this correctly and started at least one 0.34 game (though it may take about 10-15 minutes before it does).</p>
 
+<p>NOTE: Removing the entry you added to your RC file does nothing afer you have been added to the website. If you want to do practice runs, play under Trink or v0.33!</p>
+
 <h2>Credits</h2>
 
 <p>Original CSDC rules and organization by <a href="http://crawl.akrasiac.org/scoring/players/walkerboh.html">WalkerBoh</a> and 
