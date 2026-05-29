@@ -8,6 +8,9 @@
 	</div>
 </div>
 </div>
+
+ <?php echo $this->part('GlaomVaultAd'); ?>
+
 <div id="page_footer">&nbsp;</div>
 </body>
 </html>
