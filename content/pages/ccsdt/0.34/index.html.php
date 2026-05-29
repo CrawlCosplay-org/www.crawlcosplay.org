@@ -43,7 +43,9 @@ points by reaching various in-game milestones.</li>
  at any point during tournament. Your name will appear in the standings once
 you've done this correctly and started at least one 0.34 game (though it may take about 10-15 minutes before it does).</p>
 
-<p>NOTE: Removing the entry you added to your RC file does nothing afer you have been added to the website. If you want to do practice runs, play under Trunk or v0.33!</p>
+<p>NOTE:<br>
+Adding the above entry to your RC file adds your player name to the tournament's system, if you remove the entry later and start a run it will be still counted as part of the tournament.<br>
+If you want to do practice runs play under Trunk or v0.33!</p>
 
 <h2>Credits</h2>
 
