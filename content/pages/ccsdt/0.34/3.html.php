@@ -74,6 +74,8 @@
 <tr class="alive"><td class="name">drwombats</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="total">0</td></tr>
 <tr class="alive"><td class="name">Larett</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="total">0</td></tr>
 <tr class="alive"><td class="name">mobilemanners</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="total">0</td></tr>
+<tr class="alive"><td class="name">jaccarmac</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="total">0</td></tr>
+<tr class="alive"><td class="name">jt</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="total">0</td></tr>
 <tr class="none"><td class="name">RoGGaTestCCO</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Jaredude</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">stinkchinker</td>
@@ -112,7 +114,6 @@
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">THILQ</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">ventricule</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Arcadio</td>
-                <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">jt</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Fougere</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Colgate</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Voda</td>
@@ -124,7 +125,6 @@
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">InabaYap</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Damoeire</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Quoth</td>
-                <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">jaccarmac</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">AutarchDCSS</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Blyxx</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Archion</td>
@@ -165,4 +165,4 @@
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">authentic</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">diiiiiane</td>
                 <td colspan="15"></td><td class="total">0</td></tr></table></div></div>
-    <div id="bottomtext"><span class="menu">CCSDT for v0.34</a> : </span><span class="menu"><img src="/img/animated-arrow.gif" width="40" height="10"></span><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="rules.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu"><a href="1.html">Week 1</a> - </span><span class="menu"><a href="2.html">Week 2</a> - </span><span class="menu">Week 3 - </span><span class="menu">Week 4 - </span><span class="menu">Week 5 - </span><span id="updated"><span class="label">Updates every 10 mins. Last Update: </span>2026-05-29 20:09 UTC</span></div>
+    <div id="bottomtext"><span class="menu">CCSDT for v0.34</a> : </span><span class="menu"><img src="/img/animated-arrow.gif" width="40" height="10"></span><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="rules.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu"><a href="1.html">Week 1</a> - </span><span class="menu"><a href="2.html">Week 2</a> - </span><span class="menu">Week 3 - </span><span class="menu">Week 4 - </span><span class="menu">Week 5 - </span><span id="updated"><span class="label">Updates every 10 mins. Last Update: </span>2026-05-29 20:19 UTC</span></div>
