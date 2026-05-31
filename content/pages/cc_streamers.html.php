@@ -45,8 +45,8 @@
 </ul>
 
 <p><b>Enki</b>: aka Enkixyz & D1NKI</p>
-<ul>	<li>Active Channels:		<a href="https://www.twitch.tv/enkixyz" target="_blank">www.twitch.tv/enkixyz</a></li> & 
-					<a href="https://www.youtube.com/@enki_xyz" target="_blank">www.youtube.com/@enki_xyz</a>
+<ul>	<li>Active Channels:		<a href="https://www.twitch.tv/enkixyz" target="_blank">www.twitch.tv/enkixyz</a> & 
+					<a href="https://www.youtube.com/@enki_xyz" target="_blank">www.youtube.com/@enki_xyz</a></li>
 </ul>
 
 <p><b>Planckenstein</b>: Mr CCSDT#2!</p>
