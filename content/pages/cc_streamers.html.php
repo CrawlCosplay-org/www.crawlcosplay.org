@@ -44,10 +44,8 @@
 	<li>Crawl Cosplay playlists: 	<a href="https://www.youtube.com/playlist?list=PLOHsyPzEhlNSOcOw2njsqfN5eQ8KJ4is5" target="_blank">CCTT</a></li>
 </ul>
 
-<p><b>Mr and Mrs Platt</b>: both with 1 WIN!!!</p>
-<ul>	<li>Active Channels:		<a href="https://www.twitch.tv/platt_mallar" target="_blank">www.twitch.tv/platt_mallar</a> &
-									<a href="https://www.youtube.com/@platt_mallar" target="_blank">www.youtube.com/@platt_mallar</a></li>
-	<li>Mr sPlatt normally streams on Saturdays and Sundays.</li>
+<p><b>EnkiDinki</b>: aka _Enki, Enkixyz & D1nki</p>
+<ul>	<li>Active Channels:		<a href="https://www.twitch.tv/enkixyz" target="_blank">www.twitch.tv/enkixyz</a></li>
 </ul>
 
 <p><b>Planckenstein</b>: Mr CCSDT#2!</p>
