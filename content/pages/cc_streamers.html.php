@@ -44,7 +44,7 @@
 	<li>Crawl Cosplay playlists: 	<a href="https://www.youtube.com/playlist?list=PLOHsyPzEhlNSOcOw2njsqfN5eQ8KJ4is5" target="_blank">CCTT</a></li>
 </ul>
 
-<p><b>EnkiDinki</b>: aka _Enki, Enkixyz & D1nki</p>
+<p><b>EnkiDinki</b>: aka _Enki, Enkixyz & D1NKI</p>
 <ul>	<li>Active Channels:		<a href="https://www.twitch.tv/enkixyz" target="_blank">www.twitch.tv/enkixyz</a></li>
 </ul>
 
