@@ -5,11 +5,11 @@
 		<p style="text-align:right;">You are too berserk; please calm down first!</p></footer>
 		</div>
 	</div>
-</div>
-</div>
 
  <?php echo $this->part('GloamVaultAd'); ?>
 
+</div>
+</div>
 <div id="page_footer">&nbsp;</div>
 </body>
 </html>
