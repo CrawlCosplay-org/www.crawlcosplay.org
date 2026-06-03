@@ -51,7 +51,7 @@ use app\models\{Challenge, Submission, Player};
 				}
 
 				echo '<th>' . $e($c->week) . '. ';
-				if ($cha->icon) echo '<a href="/cctt/tchallengedetails?id='.$c->id.'"><img src="'.$e($c->icon).'" style="height: 1.5em" /></a>';
+				if ($cha->icon) echo '<a href="/ccft/tchallengedetails?id='.$c->id.'"><img src="'.$e($c->icon).'" style="height: 1.5em" /></a>';
 				echo "</th>";
 			}
 			?>
