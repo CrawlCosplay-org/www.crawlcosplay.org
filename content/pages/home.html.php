@@ -27,7 +27,7 @@
    	echo     "<li>" . _("Read") . ': <a href="/ccc/about_ccc">' . _("About CCC") . "</a>.</li>";
    	echo     "<li>" . _("See") . ': <a href="/ccc/all_ccc_history">' . _("all 100+ challenges") . "</a></li></ul>";
 
-	echo '<h3><a href="/ccsdt">' . _("Crawl Cosplay Sudden Death Tournament") . "</a> (CCSDT) - LIVE  <img src="/img/misc/arrow-flashing-left.gif" width="30"></h3>";
+	echo '<h3><a href="/ccsdt">' . _("Crawl Cosplay Sudden Death Tournament") . '</a> (CCSDT) - LIVE  <img src="/img/misc/arrow-flashing-left.gif" width="30"></h3>';
 	echo "<ul><li>" . _("A DCSS tournament lasting 5 weeks with a different Crawl Unique combo to play each week. You only get one try!") . "</li>";
 ?>
 		 <li>CCSDT#3 for DCSS v0.34 started <b>Friday May 15th, 2026 @ 00:00 UTC</b>.</li>
