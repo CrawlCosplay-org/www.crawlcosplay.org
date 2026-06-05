@@ -23,10 +23,12 @@
     <th>Bonus #1</th>
     <th>Bonus #2</th>
     <th>Week's Total (max=15)</th>
-    </tr><tr class="alive"><td class="name">Patrick2011b</td><td class="pt">1</td><td class="pt">1</td><td class="pt">1</td><td class="pt">1</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="total">4</td></tr>
+    </tr><tr class="alive"><td class="name">Patrick2011b</td><td class="pt">1</td><td class="pt">1</td><td class="pt">1</td><td class="pt">1</td><td class="pt">0</td><td class="pt">0</td><td class="pt">1</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="total">5</td></tr>
 <tr class="alive"><td class="name">De02</td><td class="pt">1</td><td class="pt">0</td><td class="pt">1</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="total">2</td></tr>
+<tr class="alive"><td class="name">DraconiusTourney</td><td class="pt">1</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="total">1</td></tr>
 <tr class="dead"><td class="name"><a href="http://crawl.akrasiac.org/rawdata/krsz/morgue-krsz-20260605-001852.txt">krsz</a></td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="total">0</td></tr>
-<tr class="alive"><td class="name">DraconiusTourney</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="total">0</td></tr>
+<tr class="alive"><td class="name">tmoiynmwg</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="total">0</td></tr>
+<tr class="alive"><td class="name">Haldmier</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="total">0</td></tr>
 <tr class="none"><td class="name">RoGGaTestCCO</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">RoGGa</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Jaredude</td>
@@ -103,7 +105,6 @@
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Wolffangen</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">emiel</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">InabaYap</td>
-                <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Haldmier</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Damoeire</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Quoth</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">jaccarmac</td>
@@ -132,7 +133,6 @@
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">badboneX</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">dizzi</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">adinsx</td>
-                <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">tmoiynmwg</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">BlueFrogs</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">vayu</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">prygans</td>
@@ -168,4 +168,4 @@
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">eachpiece</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Swimfan</td>
                 <td colspan="15"></td><td class="total">0</td></tr></table></div></div>
-    <div id="bottomtext"><span class="menu">CCSDT for v0.34</a> : </span><span class="menu"><img src="/img/animated-arrow.gif" width="40" height="10"></span><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="rules.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu"><a href="1.html">Week 1</a> - </span><span class="menu"><a href="2.html">Week 2</a> - </span><span class="menu"><a href="3.html">Week 3</a> - </span><span class="menu">Week 4 - </span><span class="menu">Week 5 - </span><span id="updated"><span class="label">Updates every 10 mins. Last Update: </span>2026-06-05 00:49 UTC</span></div>
+    <div id="bottomtext"><span class="menu">CCSDT for v0.34</a> : </span><span class="menu"><img src="/img/animated-arrow.gif" width="40" height="10"></span><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="rules.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu"><a href="1.html">Week 1</a> - </span><span class="menu"><a href="2.html">Week 2</a> - </span><span class="menu"><a href="3.html">Week 3</a> - </span><span class="menu">Week 4 - </span><span class="menu">Week 5 - </span><span id="updated"><span class="label">Updates every 10 mins. Last Update: </span>2026-06-05 00:59 UTC</span></div>
