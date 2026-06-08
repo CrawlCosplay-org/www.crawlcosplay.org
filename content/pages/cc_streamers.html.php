@@ -50,7 +50,11 @@
 </ul>
 
 <p><b>Red Eye</b>: loves BBBoulder!</p>
-<ul>	<li>Active Channels:		<a href="https://www.twitch.tv/enkixyz" target="_blank">www.twitch.tv/guildmasterredeye</a></li>
+<ul>	<li>Active Channels:		<a href="https://www.twitch.tv/guildmasterredeye" target="_blank">www.twitch.tv/guildmasterredeye</a></li>
+</ul>
+
+<p><b>RoGGa</b>: a grinder with over 100 wins but only a 1.3% winrate!</p>
+<ul>	<li>Active Channels:		<a href="https://www.twitch.tv/rogga_likes_dcss" target="_blank">www.twitch.tv/rogga_likes_dcss</a></li>
 </ul>
 
 <p><b>Planckenstein</b>: Mr CCSDT#2!</p>
@@ -59,7 +63,7 @@
 </ul>
 
 <p><b>ContrarianOrange</b>: the cautious with 2 wins!</p>
-<ul>	<li>Semi-Active Channels:		<a href="https://www.twitch.tv/contrarianorange" target="_blank">www.twitch.tv/contrarianorange</a></li>
+<ul>	<li>Non-Active Channels:		<a href="https://www.twitch.tv/contrarianorange" target="_blank">www.twitch.tv/contrarianorange</a></li>
 	<li>Plays at random times but more often than not during the evenings eastern timezone.</li>
 </ul>
 
