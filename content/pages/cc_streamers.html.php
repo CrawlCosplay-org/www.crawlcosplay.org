@@ -49,6 +49,10 @@
 					<a href="https://www.youtube.com/@enki_xyz" target="_blank">www.youtube.com/@enki_xyz</a></li>
 </ul>
 
+<p><b>Red Eye</b>: loves BBBoulder!</p>
+<ul>	<li>Active Channels:		<a href="https://www.twitch.tv/enkixyz" target="_blank">www.twitch.tv/guildmasterredeye</a></li>
+</ul>
+
 <p><b>Planckenstein</b>: Mr CCSDT#2!</p>
 <ul>	<li>Semi-Active Channels:	<a href="https://www.twitch.tv/planckenstein" target="_blank">www.twitch.tv/planckenstein</a> &
 									<a href="https://www.youtube.com/@planckenstein" target="_blank">www.youtube.com/@planckenstein</a></li>
