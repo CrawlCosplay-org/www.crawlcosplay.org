@@ -37,3 +37,6 @@
                      <span class="menu"><a href="/ccsdt/0.34/4.html">Week 4</a> - </span>
                      <span class="menu"><a href="/ccsdt/0.34/5.html">Week 5</a></span><span id="updated">
 </div>
+<div class="floating-arrow-container">
+  <div class="flashing-arrow">&darr;</div>
+</div>
