@@ -37,7 +37,7 @@
         <img src="/img/discord_transparent_border.png" width="18" height="18" ></a>.</li>
 </ul>
 <div id="bottomtext"><span class="menu">CCSDT for v0.34</a> : </span>
-                     <span class="menu"><img src="/img/animated-arrow.gif" width="40" height="10"></span>
+                     <span class="menu"><img src="/img/misc/arrow-flashing-right.gif" width="40" height="10"></span>
                      <span class="menu"><a href="/ccsdt/0.34/index.html">Overview</a> - </span>
                      <span class="menu"><a href="/ccsdt/0.34/rules.html">Details</a> - </span>
                      <span class="menu"><a href="/ccsdt/0.34/standings.html">Standings</a></span>
