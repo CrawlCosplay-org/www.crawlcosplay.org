@@ -31,19 +31,8 @@
 	echo "<ul><li>" . _("A DCSS tournament lasting 5 weeks with a different Crawl Unique combo to play each week. You only get one try!") . "</li>";
 ?>
 		 <li>CCSDT#3 for DCSS v0.34 started <b>Friday May 15th, 2026 @ 00:00 UTC</b>.</li>
-		 <li>Each of the 5 weeks start on the <b>Friday @ 00:00 UTC</b>.</li>
+		 <li>Each of the 5 weeks starts on the <b>Friday @ 00:00 UTC</b>.</li>
 </ul>
-
-<script>
-  // Your UTC time string (must end in 'Z' for UTC)
-  const utcDate = '2026-05-15T00:00:00Z';
-  
-  // Create a Date object; it automatically converts to local time
-  const localDate = new Date(utcDate);
-  
-  // Display it in a readable local format
-  document.getElementById('local-time').innerHTML = localDate.toLocaleString();
-</script>
 
 <?php
    	echo '<h3><a href="/cctt">' . _("Crawl Cosplay Trunk Tournament") . "</a> (CCTT)</h3>";
@@ -53,7 +42,8 @@
 
 	echo '<h3><a href="/ccft">' . _("Crawl Cosplay Forks Tournament") . "</a> (CCFT) </h3>";
 	echo "<ul><li>" . _("A tournament lasting 4 weeks with each week highlighting a different Dungeon Crawl fork.") . "</li>";
-	echo     "<li>" . _("Read ") . ' <a href="/ccft/about_ccft">' . _("About CCFT") . "</a>.</li></ul>";
+	echo     "<li>" . _("Read ") . ' <a href="/ccft/about_ccft">' . _("About CCFT") . "</a>.</li>";
+	echo     "<li>" . _("CCFT#2 is likely to start in August 2026.") . </li></ul>";
 
 	echo '<img src="'.$dir_path."/".$filename2.'" alt="'.$filename2.'"  width="350"  style="float:right">';
 
