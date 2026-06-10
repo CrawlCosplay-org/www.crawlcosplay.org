@@ -7,8 +7,8 @@
         <ol>
 <li>Each weekly challenge consists of playing a randomly chosen 
 Crawl Unqiue's starting combo (e.g. Snorg, a TrBe). 
-The chosen combo for each week of the competition will streamed on 
-Twitch.tv by RoGGa ( <a href="https://www.twitch.tv/rogga_likes_dcss" target="_blank">www.twitch.tv/rogga_likes_dcss</a> ) 30 minutes before 
+The chosen combo for each week of the competition will be streamed on 
+Twitch.tv by RoGGa ( <a href="https://www.twitch.tv/rogga_likes_dcss" target="_blank">www.twitch.tv/rogga_likes_dcss</a> ) 15 minutes before 
 the start of the new week. A spin-the-wheel format will be used to 
 make the choices random.</li>
 <li>Participants have one week to finish a game using that combo. 
