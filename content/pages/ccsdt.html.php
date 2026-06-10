@@ -46,5 +46,5 @@
                      <span class="menu"><a href="/ccsdt/0.34/2.html">Week 2</a> - </span>
                      <span class="menu"><a href="/ccsdt/0.34/3.html">Week 3</a> - </span>
                      <span class="menu"><a href="/ccsdt/0.34/4.html">Week 4</a> - </span>
-                     <span class="menu"><a href="/ccsdt/0.34/5.html">Week 5</a> - </span><span id="updated">
+                     <span class="menu"><a href="/ccsdt/0.34/5.html">Week 5</a></span><span id="updated">
 </div>
