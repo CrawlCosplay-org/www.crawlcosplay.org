@@ -37,4 +37,4 @@
                      <span class="menu"><a href="/ccsdt/0.34/4.html">Week 4</a> - </span>
                      <span class="menu"><a href="/ccsdt/0.34/5.html">Week 5</a></span><span id="updated">
 </div>
-<img src="/img/misc/arrow-flashing-down.gif" class="floating-left-gif" alt="Floating GIF" title="Use the navigation bar at the bottom to switch pages quickly.>
+<img src="/img/misc/arrow-flashing-down.gif" class="floating-left-gif" alt="Floating GIF" title="Use the navigation bar at the bottom to switch pages quickly.">
