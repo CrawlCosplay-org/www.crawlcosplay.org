@@ -3,23 +3,12 @@
 
 <h2>Current Tournament <b>CCSDT#3 for DCSS v0.34</b> - <b>LIVE NOW!</b></h2>
 <ul>
-    <li>Starts: Friday May 15th, 2026 at 00:00 UTC. (Estimated local date & time: <a id="local-time"></a>)</li>
+    <li>Starts: Friday May 15th, 2026 at 00:00 UTC.</li>
     <li><a href="/ccsdt/0.34/index.html">Tournament Overview</a>.</li>
     <li><a href="/ccsdt/0.34/rules.html">Tournament Details</a>.</li>
     <li>NOTE: Once you make your way to either of the pages linked above, use the navigation bar at the bottom of the page to navigate to all of the available pages.</li>
     <li>There is no deadline to be included during the torunament; you can skip week 1 and still join.</li>
 </ul>
-
-<script>
-  // Your UTC time string (must end in 'Z' for UTC)
-  const utcDate = '2026-05-15T00:00:00Z';
-  
-  // Create a Date object; it automatically converts to local time
-  const localDate = new Date(utcDate);
-  
-  // Display it in a readable local format
-  document.getElementById('local-time').innerHTML = localDate.toLocaleString();
-</script>
 
 <!-- <h2>Testing Phase of Python Scripts</h2>
 <ul><li><a href="/ccsdt/0.34test/standings.html">Tryout NOW</a> the major changes to the scoring and bonuses during our testing phase.</li>
