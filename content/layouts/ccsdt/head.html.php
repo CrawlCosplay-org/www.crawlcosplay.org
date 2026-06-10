@@ -11,7 +11,7 @@
 
 .floating-left-gif {
   position: fixed;
-  top: 50%; /* Vertically centers the GIF */
+  top: 90%; /* Vertically centers the GIF */
   left: 64px; /* Distance from the left edge of the screen */
   transform: translateY(-50%); /* Ensures perfect vertical centering */
   z-index: 9999; /* Ensures it stays on top of other elements */
