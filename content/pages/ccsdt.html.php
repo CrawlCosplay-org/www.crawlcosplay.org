@@ -36,3 +36,4 @@
         <a href="https://discord.gg/pW7nqC8Wu3" target="_blank">Crawl Cosplay 2.0 community discord server
         <img src="/img/discord_transparent_border.png" width="18" height="18" ></a>.</li>
 </ul>
+<div id="bottomtext"><span class="menu">CCSDT for v0.34</a> : </span><span class="menu"><img src="/img/animated-arrow.gif" width="40" height="10"></span><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="rules.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu"><a href="1.html">Week 1</a> - </span><span class="menu"><a href="2.html">Week 2</a> - </span><span class="menu"><a href="3.html">Week 3</a> - </span><span class="menu"><a href="4.html">Week 4</a> - </span><span class="menu">Week 5 - </span><span id="updated"><span class="label">Updates every 10 mins. Last Update: </span>2026-06-10 03:30 UTC</span></div>
