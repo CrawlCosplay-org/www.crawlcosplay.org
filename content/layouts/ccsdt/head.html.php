@@ -9,33 +9,13 @@
 
 <style>
 
-.floating-arrow-container {
+.floating-left-gif {
   position: fixed;
-  left: 20px; /* Distance from the left margin */
-  top: 50%; /* Center it vertically */
-  transform: translateY(-50%);
-  z-index: 9999; /* Keeps it on top of other content */
-}
-
-.flashing-arrow {
-  font-size: 3rem; /* Size of the arrow */
-  color: #ff4757; /* Change arrow color here */
-  animation: floatAndFlash 1.5s infinite ease-in-out;
-}
-
-@keyframes floatAndFlash {
-  0% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-  50% {
-    transform: translateY(15px); /* Moves the arrow down and up */
-    opacity: 0.3; /* Flashes/fades the arrow */
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
+  top: 50%; /* Vertically centers the GIF */
+  left: 64px; /* Distance from the left edge of the screen */
+  transform: translateY(-50%); /* Ensures perfect vertical centering */
+  z-index: 9999; /* Ensures it stays on top of other elements */
+  pointer-events: none; /* Allows clicks to pass through the GIF to the text */
 }
 
 html, body {
