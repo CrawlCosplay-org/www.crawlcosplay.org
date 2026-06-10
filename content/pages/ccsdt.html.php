@@ -6,8 +6,8 @@
     <li>Starts: Friday May 15th, 2026 at 00:00 UTC.</li>
     <li><a href="/ccsdt/0.34/index.html">Tournament Overview</a>.</li>
     <li><a href="/ccsdt/0.34/rules.html">Tournament Details</a>.</li>
-    <li>NOTE: Once you make your way to either of the pages linked above, use the navigation bar at the bottom of the page to navigate to all of the available pages.</li>
-    <li>There is no deadline to be included during the torunament; you can skip week 1 and still join.</li>
+    <li>NOTE: Use the navigation bar at the bottom of the page to navigate to all of the available tournament pages.</li>
+    <li>There is no deadline to join during the tournament; you can skip week 1 and still join.</li>
 </ul>
 
 <!-- <h2>Testing Phase of Python Scripts</h2>
