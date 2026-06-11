@@ -110,7 +110,7 @@ if ($active) :
 	echo '<ul><li><a href="/ccft/tresults.html?set=-1">CCFT#1</a> June 2025</li>';
 	echo "</ul>";
  	echo '<h4>Next Tournament</h4>';
-  	echo '<p>Will likely start in early 2026.</p>';
+  	echo '<p>Will likely start in August 2026.</p>';
   	echo '<h2>General Rules, Scoring and Credits</h2>';
   	echo 'See the <a href="/ccft/about_ccft.html">CCFT About page</a>.';
 	echo "<br>";
