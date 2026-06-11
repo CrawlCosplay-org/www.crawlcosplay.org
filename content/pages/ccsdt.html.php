@@ -6,7 +6,7 @@
     <li>Starts: Friday May 15th, 2026 at 00:00 UTC.</li>
     <li><a href="/ccsdt/0.34/index.html">Tournament Overview</a>.</li>
     <li><a href="/ccsdt/0.34/rules.html">Tournament Details</a>.</li>
-    <li>NOTE: Use the navigation bar at the bottom of the page to navigate to all of the available tournament pages.</li>
+    <li>NOTE: Use the navigation bar at the bottom of the page to jump to any of the available tournament pages.</li>
     <li>There is no deadline to join during the tournament; you can skip week 1 and still join.</li>
 </ul>
 
