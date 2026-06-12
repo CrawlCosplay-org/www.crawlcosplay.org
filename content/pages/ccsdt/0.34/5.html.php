@@ -1,11 +1,11 @@
-<title>Week 5 &mdash; Donald3 (MfFi)</title>
+<title>Week 5 &mdash; Wiglaf (MDFE)</title>
     <?php $this->layout = 'ccsdt'; ?>
     <meta http-equiv="refresh" content="240"><div id="title">
     <h2 id="sdc"><center>CCSDT#3 for DCSS v0.34</center></h2>
-    <h2>Week 5 &mdash; Donald3 (MfFi)</h2></div><div id="content"><div id="times"><span class="label">Week of: </span>2026-06-12 (ends at start of 2026-06-19 00:00 UTC)</div><div id="combo"><span class="label">Character: </span>Merfolk Fighter</div>
-<div id="bonus"><span class="label">Bonus 1: </span>Kill a non-random Pan Lord unique. (Cerebov, Mnoleg, Lom Lobon, or Gloorx Vloq)<br/>
-<span class="label">Bonus 2: </span>Kill a Hell Lord unique. (Geryon does not count)</div>
-<div id="gods"><span class="label">Gods: </span>Okawaru, Okawaru, Okawaru</div><br><pre>LEGEND<br>------<br>Green = Won<br>Red   = Died<br>Grey  = ongoing or did not finish<br>        before end of the week</right></pre><pre>SPECIAL NOTE<br>------------<br>None</pre><div class="card"><table><tr class="head">
+    <h2>Week 5 &mdash; Wiglaf (MDFE)</h2></div><div id="content"><div id="times"><span class="label">Week of: </span>2026-06-12 (ends at start of 2026-06-19 00:00 UTC)</div><div id="combo"><span class="label">Character: </span>Mountain Dwarf Fire Elementalist</div>
+<div id="bonus"><span class="label">Bonus 1: </span>Kill a unique in tree form (using lignification potion).<br/>
+<span class="label">Bonus 2: </span>Reach the end of the Vaults at XL &leq; 18.</div>
+<div id="gods"><span class="label">Gods: </span>Lugonu, Fedhas Madash, The Shining One</div><br><pre>LEGEND<br>------<br>Green = Won<br>Red   = Died<br>Grey  = ongoing or did not finish<br>        before end of the week</right></pre><pre>SPECIAL NOTE<br>------------<br>None</pre><div class="card"><table><tr class="head">
     <th>Player</th>
     <th>Reach XL5</th>
     <th>Kill a Unique</th>

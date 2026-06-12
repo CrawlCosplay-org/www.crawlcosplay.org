@@ -32,7 +32,7 @@ points by reaching various in-game milestones.</li>
 
 <h2>Schedule</h2>
 
-<ul id="schedule"><li><span class="label"><a href="1.html">Week 1 &mdash; Dowan (DECj)</a>:</span> 2026-05-15 to 2026-05-22<li><span class="label"><a href="2.html">Week 2 &mdash; Erica (OpEn)</a>:</span> 2026-05-22 to 2026-05-29<li><span class="label"><a href="3.html">Week 3 &mdash; Lodul (OnAE)</a>:</span> 2026-05-29 to 2026-06-05<li><span class="label"><a href="4.html">Week 4 &mdash; Roxanne (FoEE)</a>:</span> 2026-06-05 to 2026-06-12<li><span class="label"><a href="5.html">Week 5 &mdash; Donald3 (MfFi)</a>:</span> 2026-06-12 to 2026-06-19</ul>
+<ul id="schedule"><li><span class="label"><a href="1.html">Week 1 &mdash; Dowan (DECj)</a>:</span> 2026-05-15 to 2026-05-22<li><span class="label"><a href="2.html">Week 2 &mdash; Erica (OpEn)</a>:</span> 2026-05-22 to 2026-05-29<li><span class="label"><a href="3.html">Week 3 &mdash; Lodul (OnAE)</a>:</span> 2026-05-29 to 2026-06-05<li><span class="label"><a href="4.html">Week 4 &mdash; Roxanne (FoEE)</a>:</span> 2026-06-05 to 2026-06-12<li><span class="label"><a href="5.html">Week 5 &mdash; Wiglaf (MDFE)</a>:</span> 2026-06-12 to 2026-06-19</ul>
 
 
 <h2>Sign Up</h2>
