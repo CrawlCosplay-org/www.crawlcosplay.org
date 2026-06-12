@@ -23,7 +23,9 @@
     <th>Bonus #1</th>
     <th>Bonus #2</th>
     <th>Week's Total (max=15)</th>
-    </tr><tr class="alive"><td class="name">Patrick2011b</td><td class="pt">0</td><td class="pt">1</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="total">1</td></tr>
+    </tr><tr class="dead"><td class="name"><a href="https://archive.nemelex.cards/morgue//vayu/morgue-vayu-20260612-002011.txt">vayu</a></td><td class="pt">1</td><td class="pt">1</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="total">2</td></tr>
+<tr class="alive"><td class="name">Patrick2011b</td><td class="pt">1</td><td class="pt">1</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="total">2</td></tr>
+<tr class="alive"><td class="name">brinewave</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="pt">0</td><td class="total">0</td></tr>
 <tr class="none"><td class="name">RoGGa</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">PieDemon</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Blyxx</td>
@@ -148,13 +150,11 @@
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Mumonspawn</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">De02</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">nodap</td>
-                <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">vayu</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">vayu1</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">icedessert</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">eachpiece</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">bizarrehands</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">yakattack</td>
-                <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">brinewave</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Abbadon</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">wagawaga</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Hungry0364</td>
@@ -170,4 +170,4 @@
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Th3BaraKing</td>
                 <td colspan="15"></td><td class="total">0</td></tr><tr class="none"><td class="name">Dracia</td>
                 <td colspan="15"></td><td class="total">0</td></tr></table></div></div>
-    <div id="bottomtext"><span class="menu">CCSDT for v0.34</a> : </span><span class="menu"><img src="/img/animated-arrow.gif" width="40" height="10"></span><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="rules.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu"><a href="1.html">Week 1</a> - </span><span class="menu"><a href="2.html">Week 2</a> - </span><span class="menu"><a href="3.html">Week 3</a> - </span><span class="menu"><a href="4.html">Week 4</a> - </span><span class="menu">Week 5 - </span><span id="updated"><span class="label">Updates every 10 mins. Last Update: </span>2026-06-12 00:10 UTC</span></div>
+    <div id="bottomtext"><span class="menu">CCSDT for v0.34</a> : </span><span class="menu"><img src="/img/animated-arrow.gif" width="40" height="10"></span><span class="menu"><a href="index.html">Overview</a> - </span><span class="menu"><a href="rules.html">Details</a> - </span><span class="menu"><a href="standings.html">Standings</a></span><span class="menuspacer"></span><span class="menu"><a href="1.html">Week 1</a> - </span><span class="menu"><a href="2.html">Week 2</a> - </span><span class="menu"><a href="3.html">Week 3</a> - </span><span class="menu"><a href="4.html">Week 4</a> - </span><span class="menu">Week 5 - </span><span id="updated"><span class="label">Updates every 10 mins. Last Update: </span>2026-06-12 00:20 UTC</span></div>
