@@ -11,7 +11,7 @@
 	echo '<img src="'.$dir_path."/".$filename.'" alt="'.$filename.'"  width="350"  style="float:right">';
 
 	echo '<h3>' . _("<b>BACKGROUND:</b> Dungeon Crawl (DC) is the game with many forks to choose from.") . "</h3>";
-	echo '<ul><li><a href="https://www.dungeoncrawlforks.org/" target="_blank">Dungeon Crawl Central</a> ' . _("is the NEW website with all the details about DC forks currently being developed.") . "</li>";
+	echo '<ul><li><a href="https://www.dungeoncrawlforks.org/" target="_blank">Dungeon Crawl Forks</a> ' . _("is the NEW website with all the details about DC forks currently being developed.") . "</li>";
  	echo	 '<li><a href="https://www.dungeoncrawlforks.org/online_servers.html" target="_blank">' . _("Play online") . "</a>" . _(" on a Webtiles server.") . "</li>";
 	echo     '<li><a href="https://www.dungeoncrawlforks.org/download.html" target="_blank">' . _("Download") . "</a>" . _(" an offline version of one of the DC forks.") . "</li>";
 	echo     "<li>" . _("Join our ") . '<a href="https://discord.gg/gMnE5JFcB7" target="_blank">' . _("Dungeon Crawl community") . "</a>". _(" discord server; the only place to discuss all DC forks!") . "</li>";
