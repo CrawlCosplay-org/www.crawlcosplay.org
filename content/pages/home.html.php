@@ -20,6 +20,7 @@
 	echo "<h2>" . _("The latest NEWS") . "</h2>";
 	echo "<ul><li>" . _("The ") . '<a href="/ccsdt">' . _("Crawl Cosplay Sudden Death Tournament") . '</a>' . _(" is currently ") . '<b>LIVE</b>&nbsp<img src="/img/misc/arrow-flashing-left.gif" width="30">';
 	echo     "<li>" . _("A new fork was just launched named: ") . "<a href='https://www.dungeoncrawlforks.org/forks/chili' target='_blank'><b>Dungeon Crawl Chili</b></a></li>";
+	echo     "<li>" . _("The CNC 2nd Anniversary Tournament will be held for two weeks starting at 00:00 on the 18th (KST):") . "<a href='https://refracta.github.io/nemelex.cards/cnc-2nd-anniversary-tournament/details.html' target='_blank'> Website's Details</a></li>";
 	echo     "<li>" . _("Before the end of July, the following will likely be happening:") . "</li>";
 	echo     "<ul><li>" . _("In order to reduce costs, the webtiles server CCO (cco.crawlcosplay.org) will be moved to a European server.") . "</li>";
 	echo     	 "<li>" . _("A new Webtiles server will be setup in Ontario, Canada to be called: DCF (dcf.dungeoncrawlforks.org).") . "</li></ul>";
