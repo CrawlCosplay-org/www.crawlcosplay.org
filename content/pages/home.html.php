@@ -9,7 +9,7 @@
 
 	echo "<h2>" . _("Welcome to Crawl Cosplay; a 5-in-1 website!") . "</h2>";
 #	echo '<img src="'.$dir_path."/".$filename.'" alt="'.$filename.'"  width="350"  style="float:right">';
-	echo '<a href="https://www.dungeoncrawlforks.org/forks/chili"><img src="/img/misc/DungeonCrawlChili_icon-512x512.png" style="float:right"></a>';
+	echo '<a href="https://www.dungeoncrawlforks.org/forks/chili"><img src="/img/misc/DungeonCrawlChili_icon-512x512.png"  width="256" style="float:right"></a>';
 	
 	echo '<h3>' . _("<b>BACKGROUND:</b> Dungeon Crawl (DC) is the game with many forks to choose from.") . "</h3>";
 	echo '<ul><li><a href="https://www.dungeoncrawlforks.org/" target="_blank">Dungeon Crawl Forks</a> ' . _("is the NEW website with all the details about DC forks currently being developed.") . "</li>";
