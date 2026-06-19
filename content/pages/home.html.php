@@ -38,14 +38,10 @@
    	echo     "<li>" . _("Read") . ': <a href="/ccc/about_ccc">' . _("About CCC") . "</a>.</li>";
    	echo     "<li>" . _("See") . ': <a href="/ccc/all_ccc_history">' . _("all 100+ challenges") . "</a></li></ul>";
 
-	echo '<h3><a href="/ccsdt">' . _("Crawl Cosplay Sudden Death Tournament") . '</a> (CCSDT) - LIVE  <img src="/img/misc/arrow-flashing-left.gif" width="30"></h3>';
+	echo '<h3><a href="/ccsdt">' . _("Crawl Cosplay Sudden Death Tournament") . '</a> (CCSDT)</h3>';
 	echo "<ul><li>" . _("A DCSS tournament lasting 5 weeks with a different Crawl Unique combo to play each week. You only get one try!") . "</li>";
-?>
-		 <li>CCSDT#3 for DCSS v0.34 started <b>Friday May 15th, 2026 @ 00:00 UTC</b>.</li>
-		 <li>Each of the 5 weeks starts on the <b>Friday @ 00:00 UTC</b>.</li>
-</ul>
+	echo     "<li>" . _("CCSDT#$ will likely start in January or February 2027") . "</li></ul>";
 
-<?php
 	echo '<h3><a href="/ccft">' . _("Crawl Cosplay Forks Tournament") . "</a> (CCFT) </h3>";
 	echo "<ul><li>" . _("A tournament lasting 4 weeks with each week highlighting a different Dungeon Crawl fork.") . "</li>";
 	echo     "<li>" . _("Read ") . ' <a href="/ccft/about_ccft">' . _("About CCFT") . "</a>.</li>";
