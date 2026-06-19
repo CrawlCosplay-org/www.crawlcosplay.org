@@ -1,13 +1,14 @@
 <?php $this->layout = 'ccsdt'; ?>
 <h2 style="color:rgb(69, 136, 5);">Welcome to the <b>Crawl Cosplay Sudden Death Tournament</b> (CCSDT)</h2>
 
-<h2>Current Tournament <b>CCSDT#3 for DCSS v0.34</b> - <b>LIVE NOW!</b></h2>
+<h2>Next Tournament <b>CCSDT#4 for DCSS v0.35</b></h2>
 <ul>
-    <li>Starts: Friday May 15th, 2026 at 00:00 UTC.</li>
-    <li><a href="/ccsdt/0.34/index.html">Tournament Overview</a>.</li>
+    <li>CCSDT#4 will likely start in January or February 2027</li>
+<!--     <li><a href="/ccsdt/0.34/index.html">Tournament Overview</a>.</li>
     <li><a href="/ccsdt/0.34/rules.html">Tournament Details</a>.</li>
     <li>NOTE: Use the navigation bar at the bottom of the page to jump to any of the available tournament pages.</li>
     <li>There is no deadline to join during the tournament; you can skip week 1 and still join.</li>
+-->
 </ul>
 
 <!-- <h2>Testing Phase of Python Scripts</h2>
@@ -16,7 +17,8 @@
 -->
 
 <h2>Past Tournaments Results</h2>
-<ul><li><a href="/ccsdt/0.33/standings.html">CCSDT#2</a> for DCSS v0.33</li>
+<ul><li><a href="/ccsdt/0.34/standings.html">CCSDT#3</a> for DCSS v0.34</li>
+    <li><a href="/ccsdt/0.33/standings.html">CCSDT#2</a> for DCSS v0.33</li>
     <li><a href="/ccsdt/0.32/standings.html">CCSDT#1</a> for DCSS v0.32</li>
 </ul>
 
@@ -25,7 +27,7 @@
         <a href="https://discord.gg/pW7nqC8Wu3" target="_blank">Crawl Cosplay 2.0 community discord server
         <img src="/img/discord_transparent_border.png" width="18" height="18" ></a>.</li>
 </ul>
-<div id="bottomtext"><span class="menu">CCSDT for v0.34</a> : </span>
+<div id="bottomtext"><span class="menu">CCSDT#3 for v0.34</a> : </span>
                      <span class="menu"><img src="/img/misc/arrow-flashing-right.gif" width="40" height="10"></span>
                      <span class="menu"><a href="/ccsdt/0.34/index.html">Overview</a> - </span>
                      <span class="menu"><a href="/ccsdt/0.34/rules.html">Details</a> - </span>
