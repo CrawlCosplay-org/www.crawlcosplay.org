@@ -23,7 +23,7 @@
 </ul>
 
 <h2>Python Volunteers Needed!</h2>
-<ul><li>Are you Python savvy? Contact us in our
+<ul><li>Are you Python savvy? Contact RoGGa in our
         <a href="https://discord.gg/pW7nqC8Wu3" target="_blank">Crawl Cosplay 2.0 community discord server
         <img src="/img/discord_transparent_border.png" width="18" height="18" ></a>.</li>
 </ul>
