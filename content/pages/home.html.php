@@ -23,7 +23,7 @@
 	echo     "<li>" . _("During July, the webtiles server <a href='https://cco.crawlcosplay.org' target='_blank'><b>CCO</b></a> will be moving to a European server in order to reduce monthly costs and will also be hosting Dungeon Crawl Chili.") . "</li>";
 	echo 	 "<li>" . _("The ") . '<a href="/ccft">' . _("Crawl Cosplay Forks Tournament") . '</a> (CCFT#2) ' . _("will likely start in August.") . "</li></ul>";
 
-	echo "<p style='color:orange'>" . _("Please select your Crawl Cosplay pleasure among the following 5 options") . ":</p>";
+	echo "<h3 style='color:orange'>" . _("Please select your Crawl Cosplay pleasure among the following 5 options") . ":</h3>";
 
 	echo '<img src="'.$dir_path."/".$filename.'" alt="'.$filename.'"  width="350"  style="float:right">';
 
