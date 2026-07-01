@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title><?=$page_title ?? 'DCF Webtiles - Dungeon Crawl Fajita Webtiles server'?></title>
-    <link rel="icon" href="/img/dcf_icon-32x32.gif" type="image/gif">
+    <link rel="icon" href="/img/dcf.favicon.png" type="image/png">
     <link rel="stylesheet" href="/css/dcf.css?v=<?=time()?>">
 <style>
 
