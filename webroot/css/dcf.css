@@ -292,10 +292,10 @@ div.fineprint p {
     background: #000;
     background-image: url("/img/backgrounds/bg_trees_corrupted_border.gif");
     margin: 0;
-    padding-top: 32px;
-    padding-right: 32px;
+    padding-top: 28px;
+    padding-right: 28px;
     padding-bottom: 0;
-    padding-left: 32px;
+    padding-left: 28px;
 }
 .page_floor {
     background: #ccc;
