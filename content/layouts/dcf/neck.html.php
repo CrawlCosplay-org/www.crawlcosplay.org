@@ -2,18 +2,14 @@
 	<div class="dropdown" style="float:left;">
 		<button class="dropbtn">Menu</button>
 		<div class="dropdown-content" style="left:0;">
-			<a href="/">Crawl Cosplay Home</a>
-			<a href="/cco">CCO Home</a>
-			<a href="/cco/lobby"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#8627; CCO webtiles server</a>
-			<a href="/cco/code_of_conduct"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#8627; CCO Code of Conduct</a>
+			<a href="https://www.crawlcosplay.org">Crawl Cosplay Home</a>
 		</div>
 	</div>
 
 	<div class="dropdown" style="float:right;">
 		<button class="dropbtn">Donate!</button>
 		<div class="dropdown-content" style="right:0;">
-			The new webhosting cost of ~$11can/month has been covered.<br>
-			Please donate for the cost of the CCO.CrawlCosplay.Org webtiles server at:<br>
+			Please donate for the website hosting costs for DC and CC websites at:<br>
 			<a href="https://patreon.com/rogga" target="_blank"><b style="color:yellow">RoGGa's Patreon</b></a>
 		</div>
 	</div>    <div class="toplinks"><br></div>
