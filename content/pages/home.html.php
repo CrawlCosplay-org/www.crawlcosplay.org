@@ -10,7 +10,7 @@
 
 echo	"<h2>Welcome to Crawl Cosplay; a 5-in-1 website!</h2>";
 
-echo	"<img src="'.$dir_path."/".$filename.'" alt="'.$filename.'"  width="350"  style="float:right">";
+echo	'<img src="'.$dir_path."/".$filename.'" alt="'.$filename.'"  width="350"  style="float:right">';
 ?>
 
 <h3><b>BACKGROUND:</b> Dungeon Crawl (DC) is the game with many forks to choose from.</h3>
