@@ -10,9 +10,7 @@
 	echo '<img src="'.$dir_path."/".$filename.'" alt="'.$filename.'"  width="350"  style="float:right">';
 ?>
 
-<h2>Welcome to Crawl Cosplay; a 5-in-1 website!</h2>
-a href="https://www.dungeoncrawlforks.org/forks/chili" target="_blank"><img src="/img/news/DungeonCrawlChiliOrg-YourLogoHere.gif"  width="256" style="float:right" title="Want your logo here? Contant RoGGa!"></a>';
-	
+<h2>Welcome to Crawl Cosplay; a 5-in-1 website!</h2>	
 <h3><b>BACKGROUND:</b> Dungeon Crawl (DC) is the game with many forks to choose from.</h3>
 <ul><li><a href="https://www.dungeoncrawlforks.org/" target="_blank">Dungeon Crawl Forks</a> is the NEW website with all the details about DC forks currently being developed.</li>
  	<li><a href="https://www.dungeoncrawlforks.org/online_servers.html" target="_blank">Play online</a> on a Webtiles server.</li>
