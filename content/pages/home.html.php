@@ -21,7 +21,7 @@ echo	'<img src="'.$dir_path."/".$filename.'" alt="'.$filename.'"  width="350"  s
 	<li>Post to and read from Reddit in <a href="https://www.reddit.com/r/dungeoncrawl/" target="_blank">r/dungeoncrawl</a></li>
 </ul>
 	<h2>The latest NEWS</h2>
-	Now on it's <a href="/news">dedicated webpage</a>.
+	<p>Now on it's <a href="/news">dedicated webpage</a>.</p>
 
 <?php
 	echo "<h3 style='color:orange'>" . _("Please select your Crawl Cosplay pleasure among the following 5 options") . ":</h3>";
