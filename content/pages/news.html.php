@@ -2,8 +2,8 @@
 <h3>Crawl Cosplay related news</h3>
 <ul><li>During July, the leadership of Crawl Cosplay will be handed over progressively from RoGGa to Colgate, with Draconius offering support to Colgate for external PR things, especially for communications with the DCSS team. 
         FYI, the primary purpose of this leadership transfer is to try to achieve the remaining 2026 ojectives for Crawl Cosplay in regards to interactions with the DCSS team.</li>
-    <li>The<a href="/ccft">Crawl Cosplay Forks Tournament</a> (CCFT#2) will start in August.</li>
-	  <li>The<a href="/cctt">Crawl Cosplay Trunk Tournament</a> (CCTT#4) will likely start in October.</li>
+    <li>The <a href="/ccft">Crawl Cosplay Forks Tournament</a> (CCFT#2) will start in August.</li>
+	<li>The <a href="/cctt">Crawl Cosplay Trunk Tournament</a> (CCTT#4) will likely start in October.</li>
 </ul>
 
 <h3>General Dungeon Crawl news</h3>
