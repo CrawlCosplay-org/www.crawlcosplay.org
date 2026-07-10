@@ -7,27 +7,26 @@
 	$index2 = rand(2, ($count-1));
 	$filename2 = $files[$index2];
 
-	echo "<h2>" . _("Welcome to Crawl Cosplay; a 5-in-1 website!") . "</h2>";
-	echo '<a href="https://www.dungeoncrawlforks.org/forks/chili" target="_blank"><img src="/img/news/DungeonCrawlChiliOrg-YourLogoHere.gif"  width="256" style="float:right" title="Want your logo here? Contant RoGGa!"></a>';
+	echo '<img src="'.$dir_path."/".$filename.'" alt="'.$filename.'"  width="350"  style="float:right">';
+?>
+
+<h2>Welcome to Crawl Cosplay; a 5-in-1 website!</h2>
+a href="https://www.dungeoncrawlforks.org/forks/chili" target="_blank"><img src="/img/news/DungeonCrawlChiliOrg-YourLogoHere.gif"  width="256" style="float:right" title="Want your logo here? Contant RoGGa!"></a>';
 	
-	echo '<h3>' . _("<b>BACKGROUND:</b> Dungeon Crawl (DC) is the game with many forks to choose from.") . "</h3>";
-	echo '<ul><li><a href="https://www.dungeoncrawlforks.org/" target="_blank">Dungeon Crawl Forks</a> ' . _("is the NEW website with all the details about DC forks currently being developed.") . "</li>";
- 	echo	 '<li><a href="https://www.dungeoncrawlforks.org/online_servers.html" target="_blank">' . _("Play online") . "</a>" . _(" on a Webtiles server.") . "</li>";
-	echo     '<li><a href="https://www.dungeoncrawlforks.org/download.html" target="_blank">' . _("Download") . "</a>" . _(" an offline version of one of the DC forks.") . "</li>";
-	echo     "<li>" . _("Join our ") . '<a href="https://discord.gg/gMnE5JFcB7" target="_blank">' . _("Dungeon Crawl community") . "</a>". _(" discord server; the only place to discuss all DC forks!") . "</li>";
-	echo     "<li>" . _("Post to Reddit in ") . '<a href="https://www.reddit.com/r/dungeoncrawl/" target="_blank">' . _("r/dungeoncrawl") . "</a></li></ul>";
+<h3><b>BACKGROUND:</b> Dungeon Crawl (DC) is the game with many forks to choose from.</h3>
+<ul><li><a href="https://www.dungeoncrawlforks.org/" target="_blank">Dungeon Crawl Forks</a> is the NEW website with all the details about DC forks currently being developed.</li>
+ 	<li><a href="https://www.dungeoncrawlforks.org/online_servers.html" target="_blank">Play online</a> on a Webtiles server.</li>
+	<li><a href="https://www.dungeoncrawlforks.org/download.html" target="_blank">Download</a> an offline version of one of the DC forks.</li>
+	<li>Join our <a href="https://discord.gg/gMnE5JFcB7" target="_blank">Dungeon Crawl community</a> discord server; the only place to discuss all DC forks!</li>
+	<li>Post to and read from Reddit in <a href="https://www.reddit.com/r/dungeoncrawl/" target="_blank">r/dungeoncrawl</a></li>
+</ul>
+	<h2>The latest NEWS</h2>
+	Now on it's <a href="/news">dedicated webpage</a>.
 
-	echo "<h2>" . _("The latest NEWS") . "</h2>";
-	echo "<ul><li>" . _("A new Dungeon Crawl fork was launched in June and it is named: ") . "<a href='https://www.dungeoncrawlforks.org/forks/chili' target='_blank'><b>Dungeon Crawl Chili</b></a> (DC Chili)</li>";
-	echo     "<li>" . _("DC Chili is available to play online on the new Webtiles server <a href='https://dcf.dungeoncrawlforks.org/' target='_blank'><b>Dungeon Crawl Fajita (DCF)</b></a> located in Ontario Canada</li>");
-	echo     "<li>" . _("During July, the webtiles server <a href='https://cco.crawlcosplay.org' target='_blank'><b>CCO</b></a> will be moving to a European server in order to reduce monthly costs and will also be hosting Dungeon Crawl Chili.") . "</li>";
-	echo     "<li>" . _("Also during July, the leadership of Crawl Cosplay will be handed over progressively from RoGGa to Colgate, with Draconius offering support to Colgate for external PR things, especially for communications with the DCSS team. FYI, the primary purpose of this leadership transfer is to try to achieve the remaining 2026 ojectives for Crawl Cosplay in regards to interactions with the DCSS team.</li>");
-	echo 	 "<li>" . _("The ") . '<a href="/ccft">' . _("Crawl Cosplay Forks Tournament") . '</a> (CCFT#2) ' . _("will start in August.") . "</li>";
-	echo 	 "<li>" . _("The ") . '<a href="/cctt">' . _("Crawl Cosplay Trunk Tournament") . '</a> (CCTT#4) ' . _("will likely start in October.") . "</li></ul>";
-
+<?php
 	echo "<h3 style='color:orange'>" . _("Please select your Crawl Cosplay pleasure among the following 5 options") . ":</h3>";
 
-	echo '<img src="'.$dir_path."/".$filename.'" alt="'.$filename.'"  width="350"  style="float:right">';
+	echo '<img src="'.$dir_path."/".$filename2.'" alt="'.$filename2.'"  width="350"  style="float:right">';
 
 	echo '<h3><a href="/cca">' . _("Crawl Cosplay Academy") . "</a> (CCA)</h3>";
 	echo "<ul><li>" . _("For those new to DC or who haven't yet won a couple of times.") . "</li>";
