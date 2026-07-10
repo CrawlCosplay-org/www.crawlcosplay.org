@@ -9,5 +9,6 @@
 <h3>General Dungeon Crawl news</h3>
 <ul><li>A new Dungeon Crawl fork was launched in June and it is named: <a href='https://www.dungeoncrawlforks.org/forks/chili' target='_blank'><b>Dungeon Crawl Chili</b></a> (DC Chili)</li>
     <li>DC Chili is available to play online on the new Webtiles server <a href='https://dcf.dungeoncrawlforks.org/' target='_blank'><b>Dungeon Crawl Fajita (DCF)</b></a> located in Ontario Canada</li>
-    <li>During July, the webtiles server <a href='https://cco.crawlcosplay.org' target='_blank'><b>CCO</b></a> will be moving to a European server in order to reduce monthly costs and will also be hosting Dungeon Crawl Chili.</li>
+    <li>During July, the webtiles server <a href='https://cco.crawlcosplay.org' target='_blank'><b>CCO</b></a> will be moving to a European server in order to reduce monthly costs and will also be hosting Dungeon Crawl Chili.
+	    It will also be renamed to fall under the .dungeoncrawlforks.org domain name structure.</li>
 </ul>
