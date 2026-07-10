@@ -26,7 +26,7 @@ echo	'<img src="'.$dir_path."/".$filename.'" alt="'.$filename.'"  width="350"  s
 <?php
 	echo "<h3 style='color:orange'>" . _("Please select your Crawl Cosplay pleasure among the following 5 options") . ":</h3>";
 
-	echo '<img src="'.$dir_path."/".$filename2.'" alt="'.$filename2.'"  width="350"  style="float:right">';
+#	echo '<img src="'.$dir_path."/".$filename2.'" alt="'.$filename2.'"  width="350"  style="float:right">';
 
 	echo '<h3><a href="/cca">' . _("Crawl Cosplay Academy") . "</a> (CCA)</h3>";
 	echo "<ul><li>" . _("For those new to DC or who haven't yet won a couple of times.") . "</li>";
