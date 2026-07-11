@@ -41,7 +41,7 @@ echo	'<img src="'.$dir_path."/".$filename.'" alt="'.$filename.'"  width="350"  s
 	echo "<ul><li>" . _("A tournament lasting 4 weeks with each week highlighting a different Dungeon Crawl fork.") . "</li>";
 	echo     "<li>" . _("Read ") . ' <a href="/ccft/about_ccft">' . _("About CCFT") . "</a>.</li>";
 	echo     "<li>" . _("CCFT#2 is likely to start in August 2026.") . "</li></ul>";
-	echo     "<li>" . _("Check out")  . ': <a href="https://www.dungeoncrawlforks.org/" target="_blank">Dungeon Crawl Forks</a> , the NEW website with all the details about DC forks currently being developed. ") . "</li>";
+	echo     "<li>" . _("Read")  . ': <a href="https://www.dungeoncrawlforks.org/" target="_blank">' . _("About Dungeon Crawl Forks") . "</a>.</li>";
 
 	echo '<h3><a href="/cctt">' . _("Crawl Cosplay Trunk Tournament") . "</a> (CCTT)</h3>";
    	echo "<ul><li>" . _("A DCSS tournament lasting about a month with each week highlighting some of the latest Trunk changes.") . "</li>";
