@@ -14,7 +14,7 @@ echo "<p>" . _("We're a community built around creative challenges, learning, an
 	Whether you're taking your first steps into the dungeon, or looking for fresh ways to test your skills, Crawl Cosplay 
 	offers a welcoming environment where players can learn from one another, share their adventures, and discover new ways to play.") . "</p>";
 
-echo	'<img src="'.$dir_path."/".$filename.'" alt="'.$filename.'"  width="350"  style="float:right">';
+echo	'<img src="/img/cc_stone_soup_icon-512x512.png"  width="350"  style="float:right">';
 ?>
 
 <?php
