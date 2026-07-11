@@ -10,16 +10,12 @@
 
 echo	"<h2>Welcome to Crawl Cosplay; a 5-in-1 website!</h2>";
 
+echo "<p>" . _("Welcome to Crawl Cosplay, a community built around creative challenges, learning, and improving at Dungeon Crawl Stone Soup and its various Forks. 
+	Whether you're taking your first steps into the dungeon, or looking for fresh ways to test your skills, Crawl Cosplay 
+	offers a welcoming environment where players can learn from one another, share their adventures, and discover new ways to play.") . "</p>";
+
 echo	'<img src="'.$dir_path."/".$filename.'" alt="'.$filename.'"  width="350"  style="float:right">';
 ?>
-
-<h3><b>BACKGROUND:</b> Dungeon Crawl (DC) is the game with many forks to choose from.</h3>
-<ul><li><a href="https://www.dungeoncrawlforks.org/" target="_blank">Dungeon Crawl Forks</a> is the NEW website with all the details about DC forks currently being developed.</li>
- 	<li><a href="https://www.dungeoncrawlforks.org/online_servers.html" target="_blank">Play online</a> on a Webtiles server.</li>
-	<li><a href="https://www.dungeoncrawlforks.org/download.html" target="_blank">Download</a> an offline version of one of the DC forks.</li>
-	<li>Join our <a href="https://discord.gg/gMnE5JFcB7" target="_blank">Dungeon Crawl community</a> discord server; the only place to discuss all DC forks!</li>
-	<li>Post to and read from Reddit in <a href="https://www.reddit.com/r/dungeoncrawl/" target="_blank">r/dungeoncrawl</a></li>
-</ul>
 
 <?php
 	echo "<h3 style='color:orange'>" . _("Please select your Crawl Cosplay pleasure among the following 5 options") . ":</h3>";
@@ -64,11 +60,11 @@ echo	'<img src="'.$dir_path."/".$filename.'" alt="'.$filename.'"  width="350"  s
 		   . _("with over 300 members!") . "</p>";
 	
 	echo "<h2>" . _("Crawl Cosplay Streamers") . "</h2>";
-	echo "<p>"  . _("See the") . ' <a href="/cc_streamers"><b>' . _("Crawl Cosplay Streamers") . "</b></a>' "  
+	echo "<p>"  . _("See the") . ' <a href="/cc_streamers"><b>' . _("Crawl Cosplay Streamers") . "</b></a>"  
 		    . _("webpage for info on current and past streamers as well as links to their CC playlists.") . "</p>";
 
 	echo "<h2>" . _("The Latest News") . "</h2>";
-	echo "<p>"  . _("See the") . ' <a href="/news"><b>' . _("Dedicated Webpage") . "</b></a>' "  
+	echo "<p>"  . _("See the") . ' <a href="/news"><b>' . _("Dedicated Webpage") . "</b></a>"  
 		    . _("for the latest updates.") . "</p>";
 	echo "<p>" . _("Happy Crawling,") . "</p>";
 	echo "<p>" . _("from RoGGa your host, and the @VIPs members who all help make this site what it is.") . " :-D</p>";
