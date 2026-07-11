@@ -7,17 +7,6 @@
 	$index2 = rand(2, ($count-1));
 	$filename2 = $files[$index2];
 
-<head>
-	<meta property="og:type" content="website">
-	<meta property="og:title" content="Crawl Cosplay: A DCSS Meta-Challenge Community">
-	<meta name="robots" content="index, follow">
-    <meta name="description" content="Crawl Cosplay is a Dungeon Crawl Stone Soup (DCSS) community featuring challenges, guides, tournaments, and resources for both new and experienced players.">
-	<meta property="og:description" content="Crawl Cosplay is a Dungeon Crawl Stone Soup (DCSS) community featuring challenges, guides, tournaments, and resources for both new and experienced players.">
-	<meta property="og:image" content="https://www.crawlcosplay.org/webroot/img/cc_stone_soup_icon-512x512.png">
-	<meta property="og:url" content="https://www.crawlcosplay.org/">
-    <title>Crawl Cosplay: DCSS Challenges, Guides & Community</title>
-</head>
-
 echo	"<h2>Welcome to Crawl Cosplay: Learn, Compete, Improve!</h2>";
 
 echo "<p>" . _("We're a community built around creative challenges, learning, and improving at Dungeon Crawl Stone Soup and its various Forks. 
