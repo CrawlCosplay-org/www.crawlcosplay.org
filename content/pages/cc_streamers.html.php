@@ -28,7 +28,7 @@
 </ul>
 
 <p><b>Draconius</b>: with 84 GnIE wins!!!</p>
-<ul>	<li>Active Channel:		<a href="https://www.youtube.com/@DraconiusRogueLike" target="_blank">www.youtube.com/@DraconiusRogueLike</a></li>
+<ul>	<li>Active Channel:		<a href="https://www.youtube.com/@DraconiusHC" target="_blank">www.youtube.com/@DraconiusHC</a></li>
 	<li>Crawl Cosplay playlists: 	<a href="https://www.youtube.com/playlist?list=PLUKw51t06kZs9PFpTB1MMvd9972qIbklG" target="_blank">CCSDT#3</a></li>
 </ul>
 
