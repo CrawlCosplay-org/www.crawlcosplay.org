@@ -20,8 +20,6 @@ echo	'<img src="'.$dir_path."/".$filename.'" alt="'.$filename.'"  width="350"  s
 	<li>Join our <a href="https://discord.gg/gMnE5JFcB7" target="_blank">Dungeon Crawl community</a> discord server; the only place to discuss all DC forks!</li>
 	<li>Post to and read from Reddit in <a href="https://www.reddit.com/r/dungeoncrawl/" target="_blank">r/dungeoncrawl</a></li>
 </ul>
-	<h2>The latest NEWS</h2>
-	<p>Now on it's <a href="/news">dedicated webpage</a>.</p>
 
 <?php
 	echo "<h3 style='color:orange'>" . _("Please select your Crawl Cosplay pleasure among the following 5 options") . ":</h3>";
@@ -68,6 +66,10 @@ echo	'<img src="'.$dir_path."/".$filename.'" alt="'.$filename.'"  width="350"  s
 	echo "<h2>" . _("Crawl Cosplay Streamers") . "</h2>";
 	echo "<p>"  . _("See the") . ' <a href="/cc_streamers"><b>' . _("Crawl Cosplay Streamers") . "</b></a>' "  
 		    . _("webpage for info on current and past streamers as well as links to their CC playlists.") . "</p>";
+
+	echo "<h2>" . _("The Latest News") . "</h2>";
+	echo "<p>"  . _("See the") . ' <a href="/news"><b>' . _("Dedicated Webpage") . "</b></a>' "  
+		    . _("for the latest updates.") . "</p>";
 	echo "<p>" . _("Happy Crawling,") . "</p>";
 	echo "<p>" . _("from RoGGa your host, and the @VIPs members who all help make this site what it is.") . " :-D</p>";
 ?>
