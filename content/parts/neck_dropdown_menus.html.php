@@ -14,14 +14,14 @@
 			<a href="/cctt/past_cctt_results"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#8627; Past CCTT results</a>
 			<a href="/ccft">Crawl Cosplay Forks Tournament (CCFT)</a>
 			<a href="/ccft/about_ccft"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#8627; About CCFT</a>
-			<a href="https://www.dungeoncrawlcentral.org/" target="_blank">Dungeon Crawl Central</a>
+			<a href="https://www.dungeoncrawlcentral.org/" target="_blank">Dungeon Crawl Forks</a>
 		</div>
 	</div>
 
 	<div class="dropdown" style="float:right;">
 		<button class="dropbtn">Donate!</button>
 		<div class="dropdown-content" style="right:0;">
-			Please make a one-time donattion or a take a monthly "membership" at:<br>
+			Please make a one-time donation or take a monthly "membership" at:<br>
 			<a href="https://patreon.com/rogga" target="_blank"><b style="color:yellow">RoGGa's Patreon</b></a>
 		</div>
 	</div>
