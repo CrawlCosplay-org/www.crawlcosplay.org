@@ -3,6 +3,7 @@
 		<div class="dropdown-content" style="left:0;">
 			<a href="/">Crawl Cosplay Home</a>
 			<a href="/cc_streamers"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#8627; CC Streamers</a>
+			<a href="/news">News</a>
 			<a href="/cca">Crawl Cosplay Academy (CCA)</a>
 			<a href="/cca/about_cca"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#8627; About CCA</a>
 			<a href="/ccc">Crawl Cosplay Challenge (CCC)</a>
