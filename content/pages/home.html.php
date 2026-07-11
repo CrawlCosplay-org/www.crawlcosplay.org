@@ -7,6 +7,16 @@
 	$index2 = rand(2, ($count-1));
 	$filename2 = $files[$index2];
 
+<head>
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Crawl Cosplay: A DCSS Meta-Challenge Community">
+	<meta name="robots" content="index, follow">
+    <meta name="description" content="Crawl Cosplay is a Dungeon Crawl Stone Soup (DCSS) community featuring challenges, guides, tournaments, and resources for both new and experienced players.">
+	<meta property="og:description" content="Crawl Cosplay is a Dungeon Crawl Stone Soup (DCSS) community featuring challenges, guides, tournaments, and resources for both new and experienced players.">
+	<meta property="og:image" content="https://www.crawlcosplay.org/webroot/img/cc_stone_soup_icon-512x512.png">
+	<meta property="og:url" content="https://www.crawlcosplay.org/">
+    <title>Crawl Cosplay: DCSS Challenges, Guides & Community</title>
+</head>
 
 echo	"<h2>Welcome to Crawl Cosplay: Learn, Compete, Improve!</h2>";
 
@@ -66,6 +76,7 @@ echo	'<img src="/img/cc_stone_soup_icon-512x512.png"  width="350"  style="float:
 	echo "<h2>" . _("The Latest News") . "</h2>";
 	echo "<p>"  . _("See the") . ' <a href="/news"><b>' . _("Dedicated Webpage") . "</b></a> "  
 		    . _("for the latest updates.") . "</p>";
+
 	echo "<h3 style='color:orange'>" . _("On behalf of the Crawl Cosplay community, thank you, Rogga, for the years of dedication to Crawl Cosplay") . "!</h3>";
 	echo "<p>" . _("And Happy Crawling!") . "</p>";
 ?>
