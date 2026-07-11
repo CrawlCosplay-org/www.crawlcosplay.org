@@ -9,16 +9,18 @@
 
 echo	"<h2>Welcome to Crawl Cosplay: Learn, Compete, Improve!</h2>";
 
-echo "<p>" . _("We're a community built around creative challenges, learning, and improving at Dungeon Crawl Stone Soup and its various Forks. 
-	Whether you're taking your first steps into the dungeon, or looking for fresh ways to test your skills, Crawl Cosplay 
-	offers a welcoming environment where players can learn from one another, share their adventures, and discover new ways to play.") . "</p>";
+echo "<p>" . _("We're a community built around creative challenges, learning, and improving at Dungeon Crawl Stone Soup and its many forks. 
+Whether you're taking your first steps into the dungeon or looking for a fresh challenge after hundreds of wins, Crawl Cosplay is a welcoming place to learn, share your adventures, and grow alongside other players.
+
+Our mission is simple: help more people enjoy DCSS. Through guides, tournaments, discussions, and carefully designed challenges, we aim to be the community's 
+launchpad — a place where new players build confidence, experienced players push their limits, and everyone discovers new ways to play.") . "</p>";
 
 echo	'<img src="/img/cc_stone_soup_icon-512x512.png"  width="350"  style="float:right">';
 ?>
 
 <?php
-	echo "<h3 style='color:orange'>" . _("How to get started or find your next challenge") . ":</h3>";
-
+	echo "<h3 style='color:orange'>" . _("Find Your Next Adventure") . ":</h3>";
+	echo "<p>" . _("Choose the path that best matches where you are in your Crawl journey - from your first victory to your next great challenge!") . "</p>";
 #	echo '<img src="'.$dir_path."/".$filename2.'" alt="'.$filename2.'"  width="350"  style="float:right">';
 
 	echo '<h3><a href="/cca">' . _("Crawl Cosplay Academy") . "</a> (CCA)</h3>";
