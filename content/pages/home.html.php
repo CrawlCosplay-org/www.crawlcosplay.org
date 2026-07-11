@@ -18,7 +18,7 @@ echo	'<img src="/img/cc_stone_soup_icon-512x512.png"  width="350"  style="float:
 ?>
 
 <?php
-	echo "<h3 style='color:orange'>" . _("Please select your Crawl Cosplay pleasure among the following 5 options") . ":</h3>";
+	echo "<h3 style='color:orange'>" . _("How to get started or find your next challenge") . ":</h3>";
 
 #	echo '<img src="'.$dir_path."/".$filename2.'" alt="'.$filename2.'"  width="350"  style="float:right">';
 
@@ -27,7 +27,7 @@ echo	'<img src="/img/cc_stone_soup_icon-512x512.png"  width="350"  style="float:
 	echo     "<li>" . _("Read") . ' <a href="/cca/about_cca">' . _("About CCA") . "</a></li></ul>";
 
 	echo '<h3><a href="/ccc">' . _("Crawl Cosplay Challenges") . "</a> (CCC)</h3>";
-	echo "<ul><li>" . _("The original weekly challenge posted on Reddit since 2019!") . "</li>";
+	echo "<ul><li>" . _("Looking for a real challenge? Get a new one each week!") . "</li>";
    	echo     "<li>" . _("Read") . ': <a href="/ccc/about_ccc">' . _("About CCC") . "</a>.</li>";
    	echo     "<li>" . _("See") . ': <a href="/ccc/all_ccc_history">' . _("all 100+ challenges") . "</a></li></ul>";
 
@@ -50,7 +50,7 @@ echo	'<img src="/img/cc_stone_soup_icon-512x512.png"  width="350"  style="float:
 	echo '<img src="'.$dir_path."/".$filename2.'" alt="'.$filename2.'"  width="350"  style="float:right">';
 
 	echo "<h2>" . _("Watch a video about the Crawl Cosplay website") . "</h2>";
-	echo "<p>" . _("For indepth details about the Crawl Cosplay website, see:")
+	echo "<p>" . _("For in depth details about the Crawl Cosplay website, see:")
 		   . ' <a href="https://www.youtube.com/watch?v=x7u0PwESwPM&t=39s" target="_blank">' . _("Dumalacath's CC video") . "</a></p>";
 
 	echo "<h2>" . _("Want to chat?") . "</h2>";
@@ -66,8 +66,8 @@ echo	'<img src="/img/cc_stone_soup_icon-512x512.png"  width="350"  style="float:
 	echo "<h2>" . _("The Latest News") . "</h2>";
 	echo "<p>"  . _("See the") . ' <a href="/news"><b>' . _("Dedicated Webpage") . "</b></a> "  
 		    . _("for the latest updates.") . "</p>";
-	echo "<p>" . _("Happy Crawling,") . "</p>";
-	echo "<p>" . _("from RoGGa your host, and the @VIPs members who all help make this site what it is.") . " :-D</p>";
+	echo "<h3 style='color:orange'>" . _("On behalf of the Crawl Cosplay community, thank you, Rogga, for the years of dedication to Crawl Cosplay") . "!</h3>";
+	echo "<p>" . _("And Happy Crawling!") . "</p>";
 ?>
 <h3><b><center>Unique Visitors since June 2026</center></b></h3>
 <p><center><script type="text/javascript" src="https://counter.websiteout.com/js/2/5/-1/1"></script></center></p>
