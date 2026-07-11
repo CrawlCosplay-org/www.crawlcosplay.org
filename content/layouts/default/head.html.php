@@ -4,8 +4,14 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title><?=$page_title ?? 'Crawl Cosplay - the 5-in-1 website'?></title>
+    <title><?=$page_title ?? 'Crawl Cosplay: DCSS Challenges, Guides & Community'?></title>
     <link rel="icon" href="/img/cc_stone_soup_icon-64x64.png" type="image/png">
+	<meta property="og:title" content="Crawl Cosplay: A DCSS Meta-Challenge Community">
+	<meta name="robots" content="index, follow">
+    <meta name="description" content="Crawl Cosplay is a Dungeon Crawl Stone Soup (DCSS) community featuring challenges, guides, tournaments, and resources for both new and experienced players.">
+	<meta property="og:description" content="Crawl Cosplay is a Dungeon Crawl Stone Soup (DCSS) community featuring challenges, guides, tournaments, and resources for both new and experienced players.">
+	<meta property="og:image" content="https://www.crawlcosplay.org/webroot/img/cc_stone_soup_icon-512x512.png">
+	<meta property="og:url" content="https://www.crawlcosplay.org/">
     <!-- <link rel="stylesheet" 	href="/css/reset.css"> -->
     <link rel="stylesheet" href="/css/cosplay.css?v=<?=time()?>">
     <!-- <link rel="stylesheet" href="https://crawl.develz.org/tournament/0.23/tourney-score.css"> -->
