@@ -10,9 +10,9 @@
 echo	"<h2>Welcome to Crawl Cosplay: Learn, Compete, Improve!</h2>";
 
 echo "<p>" . _("We're a community built around creative challenges, learning, and improving at Dungeon Crawl Stone Soup and its many forks. 
-Whether you're taking your first steps into the dungeon or looking for a fresh challenge after hundreds of wins, Crawl Cosplay is a welcoming place to learn, share your adventures, and grow alongside other players.
+Whether you're taking your first steps into the dungeon or looking for a fresh challenge after hundreds of wins, Crawl Cosplay is a welcoming place to learn, share your adventures, and grow alongside other players.") . "</p>";
 
-Our mission is simple: help more people enjoy DCSS. Through guides, tournaments, discussions, and carefully designed challenges, we aim to be the community's 
+echo "<p>" . _("Our mission is simple: help more people enjoy DCSS. Through guides, tournaments, discussions, and carefully designed challenges, we aim to be the community's 
 launchpad — a place where new players build confidence, experienced players push their limits, and everyone discovers new ways to play.") . "</p>";
 
 echo	'<img src="/img/cc_stone_soup_icon-512x512.png"  width="350"  style="float:right">';
