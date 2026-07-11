@@ -8,9 +8,9 @@
 	$filename2 = $files[$index2];
 
 
-echo	"<h2>Welcome to Crawl Cosplay; a 5-in-1 website!</h2>";
+echo	"<h2>Welcome to Crawl Cosplay: Learn, Compete, Improve!</h2>";
 
-echo "<p>" . _("Welcome to Crawl Cosplay, a community built around creative challenges, learning, and improving at Dungeon Crawl Stone Soup and its various Forks. 
+echo "<p>" . _("We're a community built around creative challenges, learning, and improving at Dungeon Crawl Stone Soup and its various Forks. 
 	Whether you're taking your first steps into the dungeon, or looking for fresh ways to test your skills, Crawl Cosplay 
 	offers a welcoming environment where players can learn from one another, share their adventures, and discover new ways to play.") . "</p>";
 
@@ -23,7 +23,7 @@ echo	'<img src="'.$dir_path."/".$filename.'" alt="'.$filename.'"  width="350"  s
 #	echo '<img src="'.$dir_path."/".$filename2.'" alt="'.$filename2.'"  width="350"  style="float:right">';
 
 	echo '<h3><a href="/cca">' . _("Crawl Cosplay Academy") . "</a> (CCA)</h3>";
-	echo "<ul><li>" . _("For those new to DC or who haven't yet won a couple of times.") . "</li>";
+	echo "<ul><li>" . _("For those new to DC or still trying to get the first few wins.") . "</li>";
 	echo     "<li>" . _("Read") . ' <a href="/cca/about_cca">' . _("About CCA") . "</a></li></ul>";
 
 	echo '<h3><a href="/ccc">' . _("Crawl Cosplay Challenges") . "</a> (CCC)</h3>";
@@ -60,11 +60,11 @@ echo	'<img src="'.$dir_path."/".$filename.'" alt="'.$filename.'"  width="350"  s
 		   . _("with over 300 members!") . "</p>";
 	
 	echo "<h2>" . _("Crawl Cosplay Streamers") . "</h2>";
-	echo "<p>"  . _("See the") . ' <a href="/cc_streamers"><b>' . _("Crawl Cosplay Streamers") . "</b></a>"  
+	echo "<p>"  . _("See the") . ' <a href="/cc_streamers"><b>' . _("Crawl Cosplay Streamers") . "</b></a> "  
 		    . _("webpage for info on current and past streamers as well as links to their CC playlists.") . "</p>";
 
 	echo "<h2>" . _("The Latest News") . "</h2>";
-	echo "<p>"  . _("See the") . ' <a href="/news"><b>' . _("Dedicated Webpage") . "</b></a>"  
+	echo "<p>"  . _("See the") . ' <a href="/news"><b>' . _("Dedicated Webpage") . "</b></a> "  
 		    . _("for the latest updates.") . "</p>";
 	echo "<p>" . _("Happy Crawling,") . "</p>";
 	echo "<p>" . _("from RoGGa your host, and the @VIPs members who all help make this site what it is.") . " :-D</p>";
