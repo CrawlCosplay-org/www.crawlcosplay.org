@@ -4,8 +4,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title><?=$page_title ?? 'Crawl Cosplay: DCSS Challenges, Guides & Community'?></title>
+	<title><?=$page_title ?? 'Crawl Cosplay: DCSS Challenges, Guides & Community'?></title>
     <link rel="icon" href="/img/cc_stone_soup_icon-64x64.png" type="image/png">
 	<meta property="og:title" content="Crawl Cosplay: A DCSS Meta-Challenge Community">
 	<meta name="robots" content="index, follow">
