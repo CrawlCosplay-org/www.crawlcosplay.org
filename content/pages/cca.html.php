@@ -9,6 +9,7 @@ use app\models\{Challenge, Submission, Player};
 ?>
 <h2 style="color:rgb(69, 136, 5);">Welcome green Crawler!</h2>
 <h3>Ready?</h3>
+<p>Whether you're chasing your first win, or simply looking for a fresh way to experience DCSS, Crawl Cosplay Academy offers a guided introduction to several major build archetypes.</p>
 <p>Want to know more before jumping in? Read the <a href="/cca/about_cca">About CCA</a> webpage.</p>
 <p>Want to see a run in action? See: </p>
 	- <a href="https://www.youtube.com/playlist?list=PLY2Drf0NBvk-TkLUf7T9Ceg_HtoPwOHtT" target="_blank">Particleface's CCA tutorial videos</a>.</br>
