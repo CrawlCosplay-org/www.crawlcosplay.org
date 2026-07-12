@@ -1,17 +1,17 @@
 <?php $this->layout = 'cca'; ?>
 <h2 style="color:rgb(69, 136, 5);">About Crawl Cosplay Academy (CCA)</h2>
-
+<br>
 <h3>Learn DCSS the Fun Way</h3>
 <p><img src="/img/uniques/Snorg.png" width="72" height="72" style="float:right">Want to improve your gameplay and have fun doing it? 
 <b>Crawl Cosplay Academy (CCA)</b> is a guided series of approachable challenges designed to teach core skills from a diverse range of builds while playing characters inspired by iconic
 <a href="http://crawl.chaosforge.org/Unique_monster" target="_blank">DCSS Uniques,</a> such as our mascot, <b><i>Snorg</b></i>:
-
+<br>
 <h3>Who is CCA For?</h3>
 Whether you're chasing your first win, or simply looking for a fresh way to experience DCSS, Crawl Cosplay Academy offers a guided introduction to several major build archetypes.
 <p>Each challenge is designed to teach and test, helping newer players build confidence while allowing experienced players to step outside their comfort zone and master unfamiliar strategies and playstyles.</p>
 <p>CCA also serves as a natural stepping stone into the weekly <a href="/ccc" target="_blank">Crawl Cosplay Challenges</a> (CCC). By the time you've completed the Academy, you'll have
   strengthened your fundamentals, found a character style that suits you, and will be well prepared to tackle the weekly challenges with confidence.</p>
-
+<br>
 <h3>Your Process</h3>
 <p>There are 4 playstyles with 3 uniques each:
   <b>Strength based</b>, <b>Dexterity based</b>, <b>Intelligence based</b>, and <b>Miscellaneous</b>. </p>
@@ -43,13 +43,13 @@ Whether you're chasing your first win, or simply looking for a fresh way to expe
 <p>Conducts 1 & 2 will usually be related to decisions you need to take in the early game, and the 3rd conduct will usually be a small challenge to add some fun.</p>
 <p>The 1st bonus can usually be accomplished by the time you've cleared the Dungeon (D), Lair (L) & the Orcish Mines (O), while the 2nd bonus will be a bit more challenging and will usually end with something like: "...and get your first rune!" as a caveat.</p>
 <p>All of the conducts and bonuses are optional.</p>
-
+<br>
 <h3>How to Get Credit for your Game</h3>
 After you complete a good game (with either a <abbr title="aka Yet Another Victory Post (YAVP)">win</abbr> or <abbr title="Yet Another Sad Death">YASD</abbr>), just <b>submit your morgue</b> on the Unique's challenge details webpage. To track your progress, click on your name on that last page mentioned.
 <br />
 <p>Feel free to submit a morgue as soon as you've improved your score. Your best 2 runs for a specific challenge will be kept in the website's database.</p>
 <p>These challenges are built around a best-practice approach. If you broke some conduct or bonus because it was "better" to do so, explain why you did when you submit your morgue.</p>
-
+<br>
 <h2>Q&A</h2>
 <h3>How Can I Look Like My Unique?</h3>
 <p>If you'd like to change the player doll to the Unique's tile, add the following to your RC/init.txt file:</p>
@@ -65,6 +65,7 @@ After you complete a good game (with either a <abbr title="aka Yet Another Victo
 <ul> -Add the following to your RCfile (online) or your init.txt file (offline) to have intermediate monsters show up with a yellow background:</ul>
 <br>
 <centre><pre><b>    tile_show_threat_levels = tough,nasty,unusual</b>    </pre></centre>
+<br>
 <p>Happy Crawling!</p>
 <p>RoGGa, PieDemon (aka Tsarmina) for most of the 12 challenges' write-ups, our webdev team and the @VIPs in Discord.</p>
 <br>
