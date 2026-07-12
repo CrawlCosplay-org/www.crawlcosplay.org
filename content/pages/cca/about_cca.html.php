@@ -1,10 +1,9 @@
 <?php $this->layout = 'cca'; ?>
 <h2 style="color:rgb(69, 136, 5);">About Crawl Cosplay Academy (CCA)</h2>
-<br>
 <h3>Learn DCSS the Fun Way</h3>
 <p><img src="/img/uniques/Snorg.png" width="72" height="72" style="float:right">Want to improve your gameplay and have fun doing it? 
 <b>Crawl Cosplay Academy (CCA)</b> is a guided series of approachable challenges designed to teach core skills from a diverse range of builds while playing characters inspired by iconic
-<a href="http://crawl.chaosforge.org/Unique_monster" target="_blank">DCSS Uniques,</a> such as our mascot, <b><i>Snorg</b></i>:
+<a href="http://crawl.chaosforge.org/Unique_monster" target="_blank">DCSS Uniques,</a> such as our mascot, <b><i>Snorg</b></i></p>
 <br>
 <h3>Who is CCA For?</h3>
 Whether you're chasing your first win, or simply looking for a fresh way to experience DCSS, Crawl Cosplay Academy offers a guided introduction to several major build archetypes.
@@ -66,6 +65,7 @@ After you complete a good game (with either a <abbr title="aka Yet Another Victo
 <br>
 <centre><pre><b>    tile_show_threat_levels = tough,nasty,unusual</b>    </pre></centre>
 <br>
+<br> 
 <p>Happy Crawling!</p>
 <p>RoGGa, PieDemon (aka Tsarmina) for most of the 12 challenges' write-ups, our webdev team and the @VIPs in Discord.</p>
 <br>
