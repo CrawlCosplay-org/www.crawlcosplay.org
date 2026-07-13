@@ -26,7 +26,10 @@ if ($active) :
 <div class="special_rule"><p><?=$em($active->special_rule)?></p></div>
 <?php endif; ?>
 
-<img src="/img/HR-right.png"><br />
+<div class="liner">
+			<img src="/img/HR-right.png" style="width:100%; height:auto;><br />
+				<br />
+				</div>
 
 <!-- disable video news bar for now
 <!-- ?php echo $this->part('latest_twitch'); ?> -->
