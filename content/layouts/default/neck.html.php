@@ -5,7 +5,7 @@
     	<div class="page_content">
         	<div class="heading">
             		<h1><center><img src="/img/cc_stone_soup_icon-64x64.png" width="48" height="48" /> Crawl Cosplay <img src="/img/cc_stone_soup_icon-64x64.png" width="48" height="48" /></center></h1>
-			<div class="fineprint"><center>Come chat with us in our <a href="https://discord.gg/pW7nqC8Wu3" target="_blank">Crawl Cosplay 2.0 community discord server<img src="/img/discord_transparent_border.png" width="18" height="18" ></a></center></div>
+			<div class="fineprint"><h3><center>Come chat with us in our <a href="https://discord.gg/pW7nqC8Wu3" target="_blank">Crawl Cosplay 2.0 community discord server<img src="/img/discord_transparent_border.png" width="18" height="18" ></a></center><h3></div>
         	</div>
 		<div class="fineprint" align="right">
    			To be Moderated: <?php echo app\models\Submission::getNumberOfUnscoredSubmissions() ?>
