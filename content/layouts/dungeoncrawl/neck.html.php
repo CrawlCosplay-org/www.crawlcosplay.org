@@ -23,7 +23,7 @@
     <div class="page_content">
         <div class="heading">
             <h1><img src="/img/feat-dg_entrance.png"> <a href="https://www.DungeonCrawlCentral.org">www.DungeonCrawlCentral.org</a> <img src="/img/feat-dg_entrance.png"></h1>
-	          <div class="fineprint"><center>Come chat with us in our new <a href="https://discord.gg/gMnE5JFcB7" target="_blank">Dungeon Crawl community discord server<img src="/img/discord_transparent_border.png" width="18" height="18"></a></center></div>
+	          <div class="fineprint"><h3><center>Come chat with us in our new <a href="https://discord.gg/gMnE5JFcB7" target="_blank">Dungeon Crawl community discord server<img src="/img/discord_transparent_border.png" width="18" height="18"></a></center><h3></div>
         </div>
 	<br>
         <img src="/img/HR-right.png"><br>
