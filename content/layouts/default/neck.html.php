@@ -19,7 +19,6 @@
 			<?php endif; ?>
 		</div>
 			<div class="liner">
-				<br />
 			<img src="/img/HR-right.png" style="width:100%; height:auto;><br />
 				<br />
 				</div>
