@@ -68,7 +68,7 @@ echo	'<img src="/img/cc_stone_soup_icon-512x512.png"  width="350"  style="float:
 	echo "<p>"  . _("See the") . ' <a href="/news"><b>' . _("Dedicated Webpage") . "</b></a> "  
 		    . _("for the latest updates.") . "</p><br>";
 
-	echo "<h3 style='color:orange'>" . _("On behalf of the Crawl Cosplay community, thank you, Rogga, for the years of dedication to Crawl Cosplay") . "!</h3>"<br>;
+	echo "<h3 style='color:orange'>" . _("On behalf of the Crawl Cosplay community, thank you, Rogga, for the years of dedication to Crawl Cosplay") . "!</h3><br>";
 ?>
 
 <br>
