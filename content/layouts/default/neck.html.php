@@ -18,9 +18,11 @@
           			| <a href="/backoffice">Admin</a>
 			<?php endif; ?>
 		</div>
+			<div class="liner">
 				<br />
 			<img src="/img/HR-right.png" style="width:100%; height:auto;><br />
 				<br />
+				</div>
 			<div class="content" onclick="window.location = '/dismiss';">
         		<?php if ($msg = $this->request->session()->get('message')) : ?>
             			<div class="message"><?=$msg?> <br /><br /><a href="/dismiss">--more--</a></div>
