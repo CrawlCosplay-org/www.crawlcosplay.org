@@ -18,7 +18,7 @@
           			| <a href="/backoffice">Admin</a>
 			<?php endif; ?>
 		</div>
-			<img src="/img/HR-right.png"><br />
+			<img src="/img/HR-right.png" style="width:100%; height:auto;><br />
 			<div class="content" onclick="window.location = '/dismiss';">
         		<?php if ($msg = $this->request->session()->get('message')) : ?>
             			<div class="message"><?=$msg?> <br /><br /><a href="/dismiss">--more--</a></div>
