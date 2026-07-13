@@ -26,7 +26,7 @@ if ($active) :
 <div class="special_rule"><p><?=$em($active->special_rule)?></p></div>
 <?php endif; ?>
 
-<div class="liner">
+<!--<div class="liner">
 			<img src="/img/HR-right.png" style="width:100%; height:auto;><br />
 				<br />
 				</div>
