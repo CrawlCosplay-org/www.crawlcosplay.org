@@ -24,4 +24,3 @@
             			<div class="message"><?=$msg?> <br /><br /><a href="/dismiss">--more--</a></div>
         		<?php endif; ?>
         	</div>
-</div>
