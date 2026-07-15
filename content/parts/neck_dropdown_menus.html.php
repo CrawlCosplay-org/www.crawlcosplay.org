@@ -19,10 +19,10 @@
 		</div>
 	</div>
 
-	<div class="dropdown" style="float:right;">
+	<!-- <div class="dropdown" style="float:right;">
 		<button class="dropbtn">Donate!</button>
 		<div class="dropdown-content" style="right:0;">
 			Please make a one-time donation or take a monthly "membership" at:<br>
 			<a href="https://patreon.com/rogga" target="_blank"><b style="color:yellow">RoGGa's Patreon</b></a>
 		</div>
-	</div>
+	</div> -->
