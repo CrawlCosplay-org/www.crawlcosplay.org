@@ -1,4 +1,4 @@
-<div class="ad-banner">
+<!--<div class="ad-banner">
 	<h4>This site is partially funded by the game GloamVault.</h4>
   <a href="https://store.steampowered.com/app/3460840/Gloamvault/?utm_source=dcss_site&utm_medium=referral&utm_campaign=dcss_site" target="_blank">
     <img src="/img/ads/gloamvault-lowerbanner.jpg" alt="Ad to GloamVault on Steam" loading="lazy">
