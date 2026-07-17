@@ -69,6 +69,12 @@ echo	'<img src="/img/cc_stone_soup_icon-512x512.png"  width="350"  style="float:
 		    . _("for the latest updates.") . "</p><br>";
 
 	echo "<h3 style='color:orange'>" . _("On behalf of the Crawl Cosplay community, thank you, Rogga, for the years of dedication to Crawl Cosplay") . "!</h3><br>";
+
+    echo "<h2>" . _("Credits") . "</h2>";
+	echo "<ul><li>" . _("This website was developed by Alkemann with assistance from RoGGA, Kitchen_Ace, and Draconius") . "</li>";
+	echo "<li>" . _("You are viewing this website ad-free thanks to funding from:")
+		   . ' <a href="https://www.youtube.com/@DraconiusHC" target="_blank">' . _("Draconius' YouTube Channel") . "</a></li>";
+	echo "<li>" . _("The Crawl Cosplay Challenges were created mostly by Alkemann with assistance from RoGGA and Kitchen_Ace and are currently run by Colgate") . "</li></ul><br>";
 ?>
 
 <br>
