@@ -1,6 +1,6 @@
-<h2>All Crawl Cosplay Streamers</h2>
+<h2>All Crawl Cosplay Content Creators</h2>
 
-<p>Please <b>Follow</b> / <b>Subscribe</b> to these streamers' channels, and <b>Like</b> their Crawl Cosplay videos; 
+<p>Please <b>Follow</b> / <b>Subscribe</b> to these channels, and <b>Like</b> their Crawl Cosplay videos; 
 	it motivates them to make more great Crawl Cosplay content!</p>
 
 <p><b>particleface</b>: Mr. !Progress and CCA master.</p>
@@ -14,30 +14,30 @@
 	<li>He has also been one of the few to complete !progress (winning all 665 playable DCSS combos). </li>
 </ul>
 
-<p><b>Wizard1ke</b>: our favourite Kiwi</p>
+<p><b>Wizard1ke</b>: Our favourite Kiwi</p>
 <ul>	<li>Active Channels:	<a href="https://www.twitch.tv/wizardike" target="_blank">www.twitch.tv/wizardike</a> & 
 					<a href="https://www.youtube.com/@WizardIke" target="_blank">www.youtube.com/@WizardIke</a></li>
 	<li>Crawl Cosplay playlists: 	<a href="https://www.youtube.com/playlist?list=PLU5PEZPkft5vBlJp5H6e4WQUa-W5DV--m" target="_blank">CCC</a>, 
 									<a href="https://www.youtube.com/playlist?list=PLU5PEZPkft5s68e3hPH2ClHuuk9rYDIPZ" target="_blank">CCSDT#3</a></li>
 </ul>
 
-<p><b>ThePixelVilain</b>: Mr CCA roulette!</p>
+<p><b>ThePixelVilain</b>: Mr. CCA roulette!</p>
 <ul>	<li>Active Channels:		<a href="https://www.twitch.tv/thepixelvillain" target="_blank">www.twitch.tv/thepixelvillain</a> &
 									<a href="https://www.youtube.com/@ThePixelVillain" target="_blank">www.youtube.com/@ThePixelVillain</a></li>
 	<li>Crawl Cosplay playlists: 	<a href="https://www.youtube.com/playlist?list=PLVoeP_4GJsHXFH70YSlY1-PLA_IXtZiO5" target="_blank">CCSDT#3</a>
 </ul>
 
-<p><b>Draconius</b>: with 84 GnIE wins!!!</p>
+<p><b>Draconius</b>: The 61-Streak Gnoll Guy! </p>
 <ul>	<li>Active Channel:		<a href="https://www.youtube.com/@DraconiusHC" target="_blank">www.youtube.com/@DraconiusHC</a></li>
 	<li>Crawl Cosplay playlists: 	<a href="https://www.youtube.com/playlist?list=PLUKw51t06kZs9PFpTB1MMvd9972qIbklG" target="_blank">CCSDT#3</a></li>
 </ul>
 
-<p><b>Jonny Community</b>: the latest on the block!!!</p>
+<p><b>Jonny Community</b>: The latest on the block!!!</p>
 <ul>	<li>Active Channel:		<a href="https://www.youtube.com/@JonnyCommunity" target="_blank">www.youtube.com/@JonnyCommunity</a></li>
 	<li>Crawl Cosplay playlists: 	<a href="https://www.youtube.com/playlist?list=PLCW8Hl_ZRlsFgaBZ1myFZjsxRiGInqWWk" target="_blank">CCSDT#3</a></li>
 </ul>
 
-<p><b>Arcadio</b> (in french): le semi-pro et demi-dieu des roguelikes!</p>
+<p><b>Arcadio</b> (in French): le semi-pro et demi-dieu des roguelikes!</p>
 <ul>	<li>Active Channels:		<a href="https://www.twitch.tv/arcadiorl" target="_blank">www.twitch.tv/arcadiorl</a> & 
 					<a href="https://www.youtube.com/@arcadiorl" target="_blank">www.youtube.com/@arcadiorl</a> & 
 					<a href="https://discord.gg/p8S4sb8yab" target="_blank">Discord server</a></li>
@@ -49,20 +49,20 @@
 					<a href="https://www.youtube.com/@enki_xyz" target="_blank">www.youtube.com/@enki_xyz</a></li>
 </ul>
 
-<p><b>Red Eye</b>: loves BBBoulder!</p>
+<p><b>Red Eye</b>: Loves BBBoulder!</p>
 <ul>	<li>Active Channels:		<a href="https://www.twitch.tv/guildmasterredeye" target="_blank">www.twitch.tv/guildmasterredeye</a></li>
 </ul>
 
-<p><b>RoGGa</b>: a grinder with over 100 wins but only a 1.3% winrate!</p>
+<p><b>RoGGa</b>: A grinder with over 100 wins but only a 1.3% winrate!</p>
 <ul>	<li>Active Channels:		<a href="https://www.twitch.tv/rogga_likes_dcss" target="_blank">www.twitch.tv/rogga_likes_dcss</a></li>
 </ul>
 
-<p><b>Planckenstein</b>: Mr CCSDT#2!</p>
+<p><b>Planckenstein</b>: Mr. CCSDT#2!</p>
 <ul>	<li>Semi-Active Channels:	<a href="https://www.twitch.tv/planckenstein" target="_blank">www.twitch.tv/planckenstein</a> &
 									<a href="https://www.youtube.com/@planckenstein" target="_blank">www.youtube.com/@planckenstein</a></li>
 </ul>
 
-<p><b>ContrarianOrange</b>: the cautious with 2 wins!</p>
+<p><b>ContrarianOrange</b>: The cautious with 2 wins!</p>
 <ul>	<li>Non-Active Channels:		<a href="https://www.twitch.tv/contrarianorange" target="_blank">www.twitch.tv/contrarianorange</a></li>
 	<li>Plays at random times but more often than not during the evenings eastern timezone.</li>
 </ul>
