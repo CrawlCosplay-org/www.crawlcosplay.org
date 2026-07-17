@@ -56,14 +56,6 @@
 
 <p>It is possible, and even likely, that several players will end up with a perfect score. This is not considered a problem, and there is no tie-breaker.</p>
 
-<h3>Credits</h3>
-
-<p>The Crawl Cosplay Challenges were created mostly by <a href="https://www.reddit.com/user/kitchen_ace/" target="_blank">kitchen_ace</a> and are currently run by <a href="https://www.reddit.com/user/RoGGa_69/" target="_blank">RoGGa</a>.</p>
-
-<p>This website was developed by <a href="https://github.com/alkemann" target="_blank">Alkemann</a>, with assistance from RoGGa and kitchen_ace. CSS by kitchen_ace and Alkemann, loosely based on the one from the <a href="https://github.com/zxc23/dcss-scoreboard" target="_blank">DCSS Scoreboard</a>, with images from DCSS.</p>
-
-<p>A big thank you to Floraline for hosting CCC on the CKO server.
-
 <h4>Inspiration and influences:</h4>
 
 <ul><li>Casual League challenges by <a href="http://crawl.akrasiac.org/scoring/players/miek.html" target="_blank">triorph aka miek</a></li>
