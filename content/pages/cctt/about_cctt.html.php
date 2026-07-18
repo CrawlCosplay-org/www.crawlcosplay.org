@@ -84,13 +84,3 @@
   Completing a bonus challenge doesn't affect your score, but gets you a <strong>star</strong>, a small trophy to recognize your skill.
   Each week has one star that requires you to win the game or is to be done on the Orb rune, and another that doesn't. 
   You don't need to follow any of the cosplay conducts to earn stars.</p>
-
-<h3>Credits</h3>
-
-<p>The Crawl Cosplay Trunk Tournament was created and is run by <a href="https://www.reddit.com/user/RoGGa_69/" target="_blank">RoGGa</a>
-  with the help from our Crawl Cosplay @VIPs in our CC Discord server.</p>
-
-<p>The CCTT part of the website was developed by <a href="https://github.com/alkemann" target="_blank">Alkemann</a>, with assistance from RoGGa.</p>
-<p>A big thank you to floraline for hosting CC on the old CKO server.</p>
-
-<p>See the <a href="/ccc/about_ccc">CCC about page</a> for more detailed credits about the original website live since 2019.</p>
