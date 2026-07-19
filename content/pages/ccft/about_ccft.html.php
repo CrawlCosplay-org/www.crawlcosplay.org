@@ -16,7 +16,7 @@
 <h2>About Crawl Cosplay Fork Tournament (CCFT)</h2>
 <?php    echo '<img src="/'.$dir_path."/".$filename1.'" alt="'.$filename1.'" width="72" height="72" style="float:right">'; ?>
 
-<p>The <b>Crawl Cosplay Forks Tournament</b> is a 4-week long tournament with a different fork each week highlighting some important changes.
+<p>The <b>Crawl Cosplay Forks Tournament</b> is a 5-week-long tournament with a different fork each week, highlighting some of the important changes.
 
 <p>Each week will feature a fork's Unique combo for you to play, with one or more options for starting species and background, as well as which god you must worship.
    These are all mandatory and you must worship your god before entering any multi-level branch besides the dungeon (e.g. Lair, Orc, Depths). 
@@ -31,6 +31,7 @@
     <li><a href="/ccft/fork_bcadren.html">BCadren</a></li>
     <li><a href="/ccft/fork_bcrawl.html">BCrawl</a></li>
     <li><a href="/ccft/fork_stoatsoup.html">Stoat Soup</a></li>
+    <li><a href="https://www.dungeoncrawlforks.org/forks/chili">Chilli</a></li>
     <li><a href="/ccft/fork_stonesoup.html">Stone Soup (DCSS)</a></li>
 </ul>
 
@@ -86,10 +87,3 @@
   Completing a bonus challenge doesn't affect your score, but gets you a <strong>star</strong>, a small trophy to recognize your skill.
   Each week has one star that requires you to win the game or is to be done on the Orb rune, and another that doesn't. 
   You don't need to follow any of the cosplay conducts to earn stars.</p>
-
-<h3>Credits</h3>
-
-<p>The Crawl Cosplay Fork Tournament was created and is run by <a href="https://www.reddit.com/user/RoGGa_69/" target="_blank">RoGGa</a>
-  with the help from our Crawl Cosplay @VIPs in our CC Discord server.</p>
-<p>The CCFT part of the website was created by copying the CCTT format.</p>
-<p>See the <a href="/ccc/about_ccc">CCC about page</a> for more detailed credits about the original website live since 2019.</p>
