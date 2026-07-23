@@ -35,7 +35,7 @@ echo	'<img src="/img/cc_stone_soup_icon-512x512.png"  width="350"  style="float:
 	echo '<h3><a href="/ccft">' . _("Crawl Cosplay Forks Tournament") . "</a> (CCFT) </h3>";
 	echo "<ul><li>" . _("A tournament lasting 5 weeks with each week highlighting a different Dungeon Crawl fork.") . "</li>";
 	echo     "<li>" . _("Read ") . ' <a href="/ccft/about_ccft">' . _("About CCFT") . "</a>.</li>";
-	echo     "<li>" . _("CCFT#2 is likely to start in August 2026.") . "</li>";
+	echo     "<li>" . _("CCFT#2 will start on July 31.") . <img src="/img/misc/arrow-flashing-left.gif" width="40" height="10"> . "</li>";
 	echo     "<li>" . _("Read about the current and upcoming")  . ': <a href="https://www.dungeoncrawlforks.org/" target="_blank">' . _("Dungeon Crawl Forks") . "</a>.</li></ul><br>";
 
 	echo '<h3><a href="/cctt">' . _("Crawl Cosplay Trunk Tournament") . "</a> (CCTT)</h3>";
