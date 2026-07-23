@@ -14,7 +14,7 @@
 			<a href="/cctt">Crawl Cosplay Trunk Tournament (CCTT)</a>
 			<a href="/cctt/about_cctt"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#8627; About CCTT</a>
 			<a href="/cctt/past_cctt_results"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#8627; Past CCTT results</a>
-			<a href="/news">News</a>
+			<a href="/news">News- CCFT starting Friday July 31st</a>
 			<a href="https://www.dungeoncrawlcentral.org/" target="_blank">Dungeon Crawl Forks</a>
 		</div>
 	</div>
