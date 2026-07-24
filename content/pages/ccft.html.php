@@ -107,7 +107,7 @@ if ($active) :
 	echo '<h2 style="color:rgb(69, 136, 5);">Welcome to the <b>Crawl Cosplay Forks Tournament</b> (CCFT)</h2>';
 	echo '<img src="img/uniques/Medusa.png" width="250" height="250" style="float:right" alt="Medusa">';
 	echo "<h3>There is currently no active Crawl Cosplay Forks Tournament (CCFT)</h3>";
-	echo '<ul>This page will update with full challenge details when the Tournament goes live!<br></ul>';
+	echo 'This page will update with full challenge details when the Tournament goes live!<br>';
 	echo 'For previous tournament results, see:';
 	echo '<ul><li><a href="/ccft/tresults.html?set=-1">CCFT#1</a> June 2025</li>';
 	echo "</ul>";
@@ -116,8 +116,8 @@ if ($active) :
 	echo "</ul>";
  	echo '<h2>Next Tournament</h2>';
   	echo '<p>We plan to start on July 31st! <img src="/img/misc/arrow-flashing-left.gif" width="40" height="10"> </p>';
-  	echo '<h3>General Rules, Scoring and Credits</h3>';
-  	echo '<ul>See the <a href="/ccft/about_ccft.html">CCFT About page</a>.</ul>';
+  	echo '<h3>General Rules, Scoring and Credits</h3><br>';
+  	echo 'See the <a href="/ccft/about_ccft.html">CCFT About page</a>.';
 	echo "<br>";
 endif;
 ?>
