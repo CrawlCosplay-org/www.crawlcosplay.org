@@ -105,13 +105,17 @@ if ($active) :
 
 <?php else : // no active challenge
 	echo '<h2 style="color:rgb(69, 136, 5);">Welcome to the <b>Crawl Cosplay Forks Tournament</b> (CCFT)</h2>';
-	echo '<img src="img/uniques/Medusa.png" width="300" height="300" style="float:right" alt="Medusa">';
+	echo '<img src="img/uniques/Medusa.png" width="250" height="250" style="float:right" alt="Medusa">';
 	echo "<h3>There is currently no active Crawl Cosplay Forks Tournament (CCFT)</h3>";
+	echo 'This page will update with full challenge details when the Tournament goes live!';
 	echo 'For previous tournament results, see:';
 	echo '<ul><li><a href="/ccft/tresults.html?set=-1">CCFT#1</a> June 2025</li>';
 	echo "</ul>";
+	echo 'To play any of the 5 forks, see:';
+	echo '<ul><li><a href="https://www.dungeoncrawlforks.org/">The DC Forks Page</a></li>';
+	echo "</ul>";
  	echo '<h4>Next Tournament</h4>';
-  	echo '<p>We plan to start on July 31st!</p>';
+  	echo '<p>We plan to start on July 31st! <img src="/img/misc/arrow-flashing-left.gif" width="40" height="10"> </p>';
   	echo '<h2>General Rules, Scoring and Credits</h2>';
   	echo 'See the <a href="/ccft/about_ccft.html">CCFT About page</a>.';
 	echo "<br>";
