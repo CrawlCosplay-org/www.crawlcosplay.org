@@ -117,7 +117,7 @@ if ($active) :
  	echo '<h2>Next Tournament</h2>';
   	echo '<p>We plan to start on July 31st! <img src="/img/misc/arrow-flashing-left.gif" width="40" height="10"> </p>';
   	echo '<h3>General Rules, Scoring and Credits</h3>';
-  	echo 'See the <a href="/ccft/about_ccft.html">CCFT About page</a>.';
+  	echo '<ul>See the <a href="/ccft/about_ccft.html">CCFT About page</a>.</ul>';
 	echo "<br>";
 endif;
 ?>
