@@ -83,7 +83,7 @@
 <?php
     echo '<img src="/'.$dir_path."/".$filename4.'" alt="'.$filename4.'" width="72" height="72" style="float:right">'; 
 ?>
-<p>Each of the 4 challenges will also have two <em>optional</em> bonus challenges, that are usually difficult or unconventional.
+<p>Each of the 5 challenges will also have two <em>optional</em> bonus challenges, that are usually difficult or unconventional.
   Completing a bonus challenge doesn't affect your score, but gets you a <strong>star</strong>, a small trophy to recognize your skill.
   Each week has one star that requires you to win the game or is to be done on the Orb rune, and another that doesn't. 
   You don't need to follow any of the cosplay conducts to earn stars.</p>
