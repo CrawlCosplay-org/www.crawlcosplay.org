@@ -31,7 +31,7 @@
     <li><a href="/ccft/fork_bcadren.html">BCadren</a></li>
     <li><a href="/ccft/fork_bcrawl.html">BCrawl</a></li>
     <li><a href="/ccft/fork_stoatsoup.html">Stoat Soup</a></li>
-    <li><a href="https://www.dungeoncrawlforks.org/forks/chili">Chili</a></li>
+    <li><a href="https://www.dungeoncrawlforks.org/forks/chili"> Dungeon Crawl Chili (aka DC Chili)</a></li>
     <li><a href="/ccft/fork_stonesoup.html">Stone Soup (DCSS)</a></li>
 </ul>
 
