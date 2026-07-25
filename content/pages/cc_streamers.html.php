@@ -37,29 +37,31 @@
 	<li>Crawl Cosplay playlists: 	<a href="https://www.youtube.com/playlist?list=PLCW8Hl_ZRlsFgaBZ1myFZjsxRiGInqWWk" target="_blank">CCSDT#3</a></li>
 </ul>
 
-<p><b>Arcadio</b> (in French): le semi-pro et demi-dieu des roguelikes!</p>
-<ul>	<li>Active Channels:		<a href="https://www.twitch.tv/arcadiorl" target="_blank">www.twitch.tv/arcadiorl</a> & 
-					<a href="https://www.youtube.com/@arcadiorl" target="_blank">www.youtube.com/@arcadiorl</a> & 
-					<a href="https://discord.gg/p8S4sb8yab" target="_blank">Discord server</a></li>
-	<li>Crawl Cosplay playlists: 	<a href="https://www.youtube.com/playlist?list=PLOHsyPzEhlNSOcOw2njsqfN5eQ8KJ4is5" target="_blank">CCTT</a></li>
-</ul>
-
-<p><b>Enki</b>: aka Enkixyz & D1NKI</p>
-<ul>	<li>Active Channels:		<a href="https://www.twitch.tv/enkixyz" target="_blank">www.twitch.tv/enkixyz</a> & 
-					<a href="https://www.youtube.com/@enki_xyz" target="_blank">www.youtube.com/@enki_xyz</a></li>
-</ul>
-
 <p><b>Red Eye</b>: Loves BBBoulder!</p>
 <ul>	<li>Active Channels:		<a href="https://www.twitch.tv/guildmasterredeye" target="_blank">www.twitch.tv/guildmasterredeye</a></li>
 </ul>
 
-<p><b>RoGGa</b>: A grinder with over 100 wins but only a 1.3% winrate!</p>
+<p><b>RoGGa</b>: A grinder with over 100 wins but only a 1.3% win rate!</p>
 <ul>	<li>Active Channels:		<a href="https://www.twitch.tv/rogga_likes_dcss" target="_blank">www.twitch.tv/rogga_likes_dcss</a></li>
 </ul>
 
 <p><b>Planckenstein</b>: Mr. CCSDT#2!</p>
 <ul>	<li>Semi-Active Channels:	<a href="https://www.twitch.tv/planckenstein" target="_blank">www.twitch.tv/planckenstein</a> &
 									<a href="https://www.youtube.com/@planckenstein" target="_blank">www.youtube.com/@planckenstein</a></li>
+</ul>
+
+<h4>Older Crawl Cosplay Videos (May Be Inactive)</h4>
+
+<p><b>Arcadio</b> (in French): le semi-pro et demi-dieu des roguelikes!</p>
+<ul>	<li>Non-Active Channels:		<a href="https://www.twitch.tv/arcadiorl" target="_blank">www.twitch.tv/arcadiorl</a> & 
+					<a href="https://www.youtube.com/@arcadiorl" target="_blank">www.youtube.com/@arcadiorl</a> & 
+					<a href="https://discord.gg/p8S4sb8yab" target="_blank">Discord server</a></li>
+	<li>Crawl Cosplay playlists: 	<a href="https://www.youtube.com/playlist?list=PLOHsyPzEhlNSOcOw2njsqfN5eQ8KJ4is5" target="_blank">CCTT</a></li>
+</ul>
+
+<p><b>Enki</b>: aka Enkixyz & D1NKI</p>
+<ul>	<li>Non-Active Channels:		<a href="https://www.twitch.tv/enkixyz" target="_blank">www.twitch.tv/enkixyz</a> & 
+					<a href="https://www.youtube.com/@enki_xyz" target="_blank">www.youtube.com/@enki_xyz</a></li>
 </ul>
 
 <p><b>ContrarianOrange</b>: The cautious with 2 wins!</p>
