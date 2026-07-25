@@ -1,9 +1,9 @@
 <h2>The latest NEWS</h2>
 <h3>Crawl Cosplay related news</h3>
-<ul><li>During July, Crawl Cosplay will begin a planned leadership transition, with Colgate progressively assuming the public leadership role from RoGGa. Draconius will provide support with external communications and community outreach, particularly regarding the DCSS development team and the Roguelikes Discord.
-        This transition is part of Crawl Cosplay's broader effort to strengthen relationships across the wider DCSS community and support the project's long-term growth.</li>
-    <li>The <a href="/ccft"><b>Crawl Cosplay Forks Tournament</b></a> (CCFT#2) will start in August.</li>
+<ul><li>The <a href="/ccft"><b>Crawl Cosplay Forks Tournament</b></a> (CCFT#2) will start July 31st.</li>
 	<li>The <a href="/cctt"><b>Crawl Cosplay Trunk Tournament</b></a> (CCTT#4) will likely start in October.</li>
+	<li>During July, Crawl Cosplay is undergoing a leadership transition with RoGGa stepping down and passing leadership to a delegated team structure led by Draconius and Colgate.
+        This transition is part of Crawl Cosplay's broader effort to strengthen relationships across the wider DCSS community and support the project's long-term growth.</li>
 </ul>
 
 <h3>General Dungeon Crawl news</h3>
