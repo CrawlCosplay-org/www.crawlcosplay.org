@@ -50,9 +50,11 @@ use app\models\Submission;
 			</td>
 			<td><?=$s->online==1?'ON':'OF'?> <?=$s->accepted==1?'AC':'---'?> <?=$s->comment?'CO':'---'?></td>
 			<td class="actions-td">
-				<a href="/admin/submissions/edit?id=<?=$s->id?>">Edit</a> | <a href="/admin/submissions/delete?id=<?=$s->id?>">Remove</a>
-			</td>
-		</tr>
+				 <a href="/admin/submissions/edit?id=<?=$s->id?>">Edit</a> |
+  				 <a href="/admin/submissions/delete?id=<?=$s->id?>"
+      			  onclick="return confirm('Are you sure you want to delete this submission?');">Remove</a>
+</td>
+</tr>
 
 	<?php
 		endforeach;
