@@ -32,7 +32,7 @@
     <li><a href="/ccft/fork_bcrawl.html">BCrawl</a></li>
     <li><a href="/ccft/fork_stoatsoup.html">Stoat Soup</a></li>
     <li><a href="https://www.dungeoncrawlforks.org/forks/chili"> Dungeon Crawl Chili (aka DC Chili)</a></li>
-    <li><a href="/ccft/fork_stonesoup.html">Stone Soup (DCSS)</a></li>
+    <li><a href="https://crawl.develz.org/">Stone Soup (DCSS)</a></li>
 </ul>
 
 <h3>How to Enter</h3>
