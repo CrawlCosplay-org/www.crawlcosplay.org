@@ -19,7 +19,7 @@ echo	'<img src="/img/cc_stone_soup_icon-512x512.png"  width="350"  style="float:
 ?>
 <br>
 <?php
-	echo "<h3 style='color:orange'>" . _("Find Your Next Adventure") . ":</h3>";
+	echo "<h2>" . _("Find Your Next Adventure:") . "</h2>";
 	echo "<p>" . _("Choose the path that best matches where you are in your Crawl journey - from your first victory to your next great challenge!") . "</p><br>";
 #	echo '<img src="'.$dir_path."/".$filename2.'" alt="'.$filename2.'"  width="350"  style="float:right">';
 
@@ -51,7 +51,7 @@ echo '
     </div>
 </div><br>';
 
-	echo "<h3 style='color:orange'>" . _("Look forward to more tournaments") . ":</h3>";
+	echo "<h2>" . _("Look Forward to Future Tournaments!") . "</h2>";
 	echo '<h3><a href="/cctt">' . _("Crawl Cosplay Trunk Tournament") . "</a> (CCTT)</h3>";
    	echo "<ul><li>" . _("A DCSS tournament lasting about a month with each week highlighting some of the latest Trunk changes.") . "</li>";
    	echo     "<li>" . _("Read") . ': <a href="/cctt/about_cctt">' . _("About CCTT") . "</a>.</li>";
