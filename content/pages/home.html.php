@@ -49,8 +49,9 @@ echo '
             allowfullscreen>
         </iframe>
     </div>
-</div>';
+</div><br>';
 
+	echo "<h3 style='color:orange'>" . _("Look forward to more tournaments") . ":</h3>";
 	echo '<h3><a href="/cctt">' . _("Crawl Cosplay Trunk Tournament") . "</a> (CCTT)</h3>";
    	echo "<ul><li>" . _("A DCSS tournament lasting about a month with each week highlighting some of the latest Trunk changes.") . "</li>";
    	echo     "<li>" . _("Read") . ': <a href="/cctt/about_cctt">' . _("About CCTT") . "</a>.</li>";
