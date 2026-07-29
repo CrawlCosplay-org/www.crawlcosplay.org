@@ -38,6 +38,17 @@ echo	'<img src="/img/cc_stone_soup_icon-512x512.png"  width="350"  style="float:
 	echo     "<li>" . _("CCFT#2 will start on July 31.") . ' <img src="/img/misc/arrow-flashing-left.gif" width="40" height="10">' . "</li>";
 	echo     "<li>" . _("For information about the 5 Dungeon Crawl forks taking part in CCFT#2, see")  . ': <a href="https://www.dungeoncrawlforks.org/forks_details" target="_blank">' . _("Dungeon Crawl Forks") . "</a>.</li></ul><br>";
 
+echo '
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;">
+    <iframe
+        src="https://www.youtube.com/embed/awknvDg5gGM"
+        title="Crawl Cosplay Forks Tournament"
+        style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe>
+</div><br>';
+
 	echo '<h3><a href="/cctt">' . _("Crawl Cosplay Trunk Tournament") . "</a> (CCTT)</h3>";
    	echo "<ul><li>" . _("A DCSS tournament lasting about a month with each week highlighting some of the latest Trunk changes.") . "</li>";
    	echo     "<li>" . _("Read") . ': <a href="/cctt/about_cctt">' . _("About CCTT") . "</a>.</li>";
