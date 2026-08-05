@@ -32,10 +32,9 @@ echo	'<img src="/img/cc_stone_soup_icon-512x512.png"  width="350"  style="float:
    	echo     "<li>" . _("Read") . ': <a href="/ccc/about_ccc">' . _("About CCC") . "</a>.</li>";
    	echo     "<li>" . _("See") . ': <a href="/ccc/all_ccc_history">' . _("all 100+ challenges") . "</a></li></ul><br>";
 
-	echo '<h3><a href="/ccft">' . _("Crawl Cosplay Forks Tournament") . "</a> (CCFT) </h3>";
+	echo '<h3>(Active!) <a href="/ccft">' . _("Crawl Cosplay Forks Tournament") . '</a> (CCFT) <img src="/img/misc/arrow-flashing-left.gif" width="40" height="10"></h3>';
 	echo "<ul><li>" . _("A tournament lasting 5 weeks with each week highlighting a different Dungeon Crawl fork.") . "</li>";
 	echo     "<li>" . _("Read ") . ' <a href="/ccft/about_ccft">' . _("About CCFT") . "</a>.</li>";
-	echo     "<li>" . _("CCFT#2 will start on July 31.") . ' <img src="/img/misc/arrow-flashing-left.gif" width="40" height="10">' . "</li>";
 	echo     "<li>" . _("For information about the 5 Dungeon Crawl forks taking part in CCFT#2, see")  . ': <a href="https://www.dungeoncrawlforks.org/forks_details" target="_blank">' . _("Dungeon Crawl Forks") . "</a>.</li></ul><br>";
 
 echo '
