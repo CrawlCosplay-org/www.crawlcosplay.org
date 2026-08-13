@@ -2,7 +2,7 @@
 
 <h2>About fork BCadren</h2>
 
-<p>The <a href="http://github.com/Bcadren/crawl" target="_blank"><b>BCaadren Fork</b></a> is full of changes but retains the food consumption aspect.</p>
+<p>The <a href="http://github.com/Bcadren/crawl" target="_blank"><b>BCadren Fork</b></a> is full of changes but retains the food consumption aspect.</p>
 <p>For a text- and graphics-friendly write-up, see the README tab on 
    <a href="https://github.com/Bcadren/crawl?tab=readme-ov-file" target="_blank">github.com/Bcadren/crawl</a></p>
 
