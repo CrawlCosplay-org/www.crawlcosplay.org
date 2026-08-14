@@ -19,7 +19,7 @@ if ($active) :
 <p>  <a href="/ccft/fchallengedetails?id=<?=$e($active->id)?>">Challenge details</a>  
    | <a href="/ccft/submit_ccft?id=<?=$e($active->id)?>">Submit a CCFT run</a> 
    | <a href="https://discord.gg/pW7nqC8Wu3">Discuss it in CC's Discord</a> 
-   | <a href="https://www.crawlcosplay.org/ccft/fork_bcrawl.html">Fork details</a>
+   | <a href="https://www.crawlcosplay.org/ccft/about_ccft">Fork details</a>
    | Challenges start each Friday at 00:00 UTC.</p>
 <table class="table_for_layout">
 	<tr><th>Species</th><th>Background<th>Gods</th></tr>
@@ -28,6 +28,35 @@ if ($active) :
 <?php if ($active->special_rule) : ?>
 <div class="special_rule"><p><?=$em($active->special_rule)?></p></div>
 <?php endif; ?>
+
+<script>
+const target = 1787270400 * 1000;
+
+function updateCountdown() {
+    const remaining = target - Date.now();
+
+    if (remaining <= 0) {
+        document.getElementById("countdown").textContent = "Week complete!";
+        return;
+    }
+
+    const totalSeconds = Math.floor(remaining / 1000);
+
+    const days = Math.floor(totalSeconds / 86400);
+    const hours = Math.floor((totalSeconds % 86400) / 3600);
+    const minutes = Math.floor((totalSeconds % 3600) / 60);
+    const seconds = totalSeconds % 60;
+
+    document.getElementById("countdown").textContent =
+        days + "d " +
+        hours.toString().padStart(2, "0") + "h " +
+        minutes.toString().padStart(2, "0") + "m " +
+        seconds.toString().padStart(2, "0") + "s";
+}
+
+updateCountdown();
+setInterval(updateCountdown, 1000);
+</script>
 
 <img src="/img/HR-right.png"><br />
 
