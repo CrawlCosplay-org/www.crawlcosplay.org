@@ -21,7 +21,7 @@ if ($active) :
    | <a href="https://discord.gg/pW7nqC8Wu3">Discuss it in CC's Discord</a> 
    | <a href="https://www.crawlcosplay.org/ccft/about_ccft">Fork details</a>
    | Challenges start each Friday at 00:00 UTC.</p>
-<b><h3>Week ends in: <span id="countdown"></span></b></h3></p>
+
 
 <table class="table_for_layout">
 	<tr><th>Species</th><th>Background<th>Gods</th></tr>
@@ -31,6 +31,11 @@ if ($active) :
 <div class="special_rule"><p><?=$em($active->special_rule)?></p></div>
 <?php endif; ?>
 
+	<!-- Weekly timer, update each week -->
+<div style="text-align:center;">
+    <h3>Week 3 ends in:</h3>
+    <div id="countdown" style="font-size:24px; font-weight:bold;"></div>
+</div>
 <script>
 const target = 1787270400 * 1000;
 
