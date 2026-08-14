@@ -30,12 +30,13 @@ if ($active) :
 <?php if ($active->special_rule) : ?>
 <div class="special_rule"><p><?=$em($active->special_rule)?></p></div>
 <?php endif; ?>
-
+<br>
 	<!-- Weekly timer, update each week -->
 <div style="text-align:center;">
     <h3>Week 3 ends in:</h3>
     <div id="countdown" style="font-size:24px; font-weight:bold;"></div>
 </div>
+<br>
 <script>
 const target = 1787270400 * 1000;
 
