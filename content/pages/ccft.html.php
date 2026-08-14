@@ -21,7 +21,7 @@ if ($active) :
    | <a href="https://discord.gg/pW7nqC8Wu3">Discuss it in CC's Discord</a> 
    | <a href="https://www.crawlcosplay.org/ccft/about_ccft">Fork details</a>
    | Challenges start each Friday at 00:00 UTC.</p>
-<b>Week ends in: <span id="countdown"></span></b></p>
+<b><h3>Week ends in: <span id="countdown"></span></b></h3></p>
 
 <table class="table_for_layout">
 	<tr><th>Species</th><th>Background<th>Gods</th></tr>
