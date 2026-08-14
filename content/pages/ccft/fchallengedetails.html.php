@@ -32,6 +32,7 @@ $this->setData("meta", ['filename' => $cha->icon]);
 <!-- shortform field is used for Monster Speak -->
 <p style="text-align:right;"><span style="font-size: smaller"><?=$e($cha->shortform)?></span></p>
 
+<!-- Update Fork Details link with each week -->
 <p>
 	<?php if ($cha->active) : ?>
 		<a href="/ccft/submit_ccft?id=<?=$cha->id?>">Submit a CCFT run</a>
@@ -40,7 +41,7 @@ $this->setData("meta", ['filename' => $cha->icon]);
 	<?php endif;?>
 	<?php if ($cha->wiki): ?> |
 	<a href="<?=$e($cha->wiki)?>" target="_blank">Wiki page</a><?php endif; ?>
-	| <a href="<?=$e($cha->reddit)?>">Fork's details</a>
+	| <a href="https://www.crawlcosplay.org/ccft/fork_bcrawl.html">Fork details</a>
 </p>
 
 <?php if ($cha->icon) : ?><img src="<?=$e($cha->icon)?>" class="detail" /><?php endif; ?>
