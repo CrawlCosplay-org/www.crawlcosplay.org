@@ -106,12 +106,12 @@ $this->setData("meta", ['filename' => $cha->icon]);
 </table>
 </div>
 
+<!-- Adds countdown timer, update Epoch time each week! -->
+	
 <div style="text-align:center;">
-    <h3>Week 1 ends in:</h3>
+    <h3>Week 3 ends in:</h3>
     <div id="countdown" style="font-size:24px; font-weight:bold;"></div>
 </div>
-
-<!-- Adds countdown timer, update Epoch time each week! -->
 <script>
 const target = 1787270400 * 1000;
 
