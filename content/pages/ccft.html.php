@@ -33,12 +33,12 @@ if ($active) :
 <br>
 	<!-- Weekly timer, update each week -->
 <div style="text-align:center;">
-    <h3>Week 3 ends in:</h3>
+    <h3>Week 4 ends in:</h3>
     <div id="countdown" style="font-size:24px; font-weight:bold;"></div>
 </div>
 <br>
 <script>
-const target = 1787270400 * 1000;
+const target = 1787875200 * 1000;
 
 function updateCountdown() {
     const remaining = target - Date.now();
