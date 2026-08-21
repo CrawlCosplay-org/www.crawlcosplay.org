@@ -41,7 +41,7 @@ $this->setData("meta", ['filename' => $cha->icon]);
 	<?php endif;?>
 	<?php if ($cha->wiki): ?> |
 	<a href="<?=$e($cha->wiki)?>" target="_blank">Wiki page</a><?php endif; ?>
-	| <a href="https://www.crawlcosplay.org/ccft/fork_bcrawl.html">Fork details</a>
+	| <a href="https://www.crawlcosplay.org/ccft/fork_bcadren.html">Fork details</a>
 </p>
 
 <?php if ($cha->icon) : ?><img src="<?=$e($cha->icon)?>" class="detail" /><?php endif; ?>
