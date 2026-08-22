@@ -7,9 +7,11 @@
    <a href="https://github.com/Bcadren/crawl?tab=readme-ov-file" target="_blank">github.com/Bcadren/crawl</a></p>
 
 <h4>BCadren Webtiles servers:</h4>
-<ul><li><a href="https://crawl.nemelex.cards/" target="_blank">CNC in South Korea</a></li>
-    <li><a href="http://cco.crawlcosplay.org/" target="_blank">CCO Toronto</a></li>
-    <li><a href="https://crawl.project357.org/" target="_blank">CPO in Australia</a></li>
+<ul><li><a href="https://crawl.nemelex.cards/" target="_blank">South Korea</a></li>
+    <li><a href="https://dcf.dungeoncrawlforks.org/" target="_blank">Canada</a></li>
+    <li><a href="https://dct.dungeoncrawlforks.org/" target="_blank">Germany</a></li>
+    <li><a href="https://crawl.project357.org/" target="_blank">Australia</a></li>
+    <li><a href="https://crawl.xtahua.com/" target="_blank">France</a></li>
 </ul>
 
 <p>Join the <a href="https://discord.gg/JyRcec3WaS" target="_blank">bcadren discord server<img src="/img/discord_transparent_border.png" width="18" height="18"></a></p>
