@@ -41,7 +41,7 @@ $this->setData("meta", ['filename' => $cha->icon]);
 	<?php endif;?>
 	<?php if ($cha->wiki): ?> |
 	<a href="<?=$e($cha->wiki)?>" target="_blank">Wiki page</a><?php endif; ?>
-	| <a href="https://www.crawlcosplay.org/ccft/fork_bcadren.html">Fork details</a>
+	| <a href="https://dungeoncrawlchili.org/">Fork details</a>
 </p>
 
 <?php if ($cha->icon) : ?><img src="<?=$e($cha->icon)?>" class="detail" /><?php endif; ?>
@@ -110,11 +110,11 @@ $this->setData("meta", ['filename' => $cha->icon]);
 <!-- Adds countdown timer, update Epoch time each week! -->
 	
 <div style="text-align:center;">
-    <h3>Week 4 ends in:</h3>
+    <h3>Week 5 ends in:</h3>
     <div id="countdown" style="font-size:24px; font-weight:bold;"></div>
 </div>
 <script>
-const target = 1787875200 * 1000;
+const target = 1788480000 * 1000;
 
 function updateCountdown() {
     const remaining = target - Date.now();
