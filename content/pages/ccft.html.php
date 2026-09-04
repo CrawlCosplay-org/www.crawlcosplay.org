@@ -44,7 +44,7 @@ function updateCountdown() {
     const remaining = target - Date.now();
 
     if (remaining <= 0) {
-        document.getElementById("countdown").textContent = "Week complete!";
+        document.getElementById("countdown").textContent = "Tournament Complete!";
         return;
     }
 
