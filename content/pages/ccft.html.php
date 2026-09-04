@@ -148,7 +148,7 @@ setInterval(updateCountdown, 1000);
 	echo "<br>";
 	echo 'For previous tournament results, see:';
 	echo '<ul><li><a href="/ccft/tresults.html?set=-1">CCFT#1</a> June 2025</li>';
-	echo '<li><a href="/ccft/tresults.html?set=-2">CCFT#1</a> August 2026</li>';
+	echo '<li><a href="/ccft/tresults.html?set=-2">CCFT#2</a> August 2026</li>';
 	echo "</ul>";
 	echo 'To play any of the 5 forks, see:';
 	echo '<ul><li><a href="https://www.dungeoncrawlforks.org/">The DC Forks Page</a></li>';
