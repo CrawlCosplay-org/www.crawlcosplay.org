@@ -32,11 +32,7 @@ echo	'<img src="/img/cc_stone_soup_icon-512x512.png"  width="350"  style="float:
    	echo     "<li>" . _("Read") . ': <a href="/ccc/about_ccc">' . _("About CCC") . "</a>.</li>";
    	echo     "<li>" . _("See") . ': <a href="/ccc/all_ccc_history">' . _("all 100+ challenges") . "</a></li></ul><br>";
 
-	echo '<h3>(Active!) <a href="/ccft">' . _("Crawl Cosplay Forks Tournament") . '</a> (CCFT) <img src="/img/misc/arrow-flashing-left.gif" width="40" height="10"></h3>';
-	echo "<ul><li>" . _("A tournament lasting 5 weeks with each week highlighting a different Dungeon Crawl fork.") . "</li>";
-	echo     "<li>" . _("Read ") . ' <a href="/ccft/about_ccft">' . _("About CCFT") . "</a>.</li>";
-	echo     "<li>" . _("For information about the 5 Dungeon Crawl forks taking part in CCFT#2, see")  . ': <a href="https://www.dungeoncrawlforks.org/forks_details" target="_blank">' . _("Dungeon Crawl Forks") . "</a>.</li></ul><br>";
-
+/*
 echo '
 <div style="width:80%; max-width:800px; margin:0 auto;">
     <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden;">
@@ -49,9 +45,10 @@ echo '
         </iframe>
     </div>
 </div><br>';
-
+*/
+/* <img src="/img/misc/arrow-flashing-left.gif" width="40" height="10"> */
 	echo "<h2>" . _("Look Forward to Future Tournaments!") . "</h2>";
-	echo '<h3><a href="/cctt">' . _("Crawl Cosplay Trunk Tournament") . "</a> (CCTT)</h3>";
+	echo '<h3>(Starting Soon!) <a href="/cctt">' . _("Crawl Cosplay Trunk Tournament") . "</a> (CCTT)</h3>";
    	echo "<ul><li>" . _("A DCSS tournament lasting about a month with each week highlighting some of the latest Trunk changes.") . "</li>";
    	echo     "<li>" . _("Read") . ': <a href="/cctt/about_cctt">' . _("About CCTT") . "</a>.</li>";
 	echo     "<li>" . _("CCTT#4 for trunk v0.35 will likely start in October 2026.");
@@ -60,6 +57,11 @@ echo '
 	echo '<h3><a href="/ccsdt">' . _("Crawl Cosplay Sudden Death Tournament") . '</a> (CCSDT)</h3>';
 	echo "<ul><li>" . _("A DCSS tournament lasting 5 weeks with a different Crawl Unique combo to play each week. You only get one try!") . "</li>";
 	echo     "<li>" . _("CCSDT#4 will likely start in January or February 2027.") . "</li></ul><br>";
+
+	echo '<h3><a href="/ccft">' . _("Crawl Cosplay Forks Tournament") . '</a> (CCFT)</h3>';
+	echo "<ul><li>" . _("A tournament lasting 5 weeks with each week highlighting a different Dungeon Crawl fork.") . "</li>";
+	echo     "<li>" . _("Read ") . ' <a href="/ccft/about_ccft">' . _("About CCFT") . "</a>.</li>";
+	echo     "<li>" . _("For information about the 5 Dungeon Crawl forks taking part in CCFT#2, see")  . ': <a href="https://www.dungeoncrawlforks.org/forks_details" target="_blank">' . _("Dungeon Crawl Forks") . "</a>.</li></ul><br>";
 
 	echo '<img src="'.$dir_path."/".$filename2.'" alt="'.$filename2.'"  width="350"  style="float:right">';
 
