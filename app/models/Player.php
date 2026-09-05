@@ -74,11 +74,11 @@ class Player extends BaseModel
     $s = (int) $set;
 
     $tie_breaker = Challenge::findAsArray(
-        ['setnr' => $s, 'draft' => 0, 'bonus' => 0],
-        ['order' => '`week` DESC', 'limit' => 1]
-    );
+    ['setnr' => $s, 'draft' => 0, 'bonus' => 0],
+    ['order' => '`week` DESC', 'limit' => 1]
+);
 
-    $tie_breaker_id = !empty($tie_breaker) ? (int) $tie_breaker[0]->id : 0;
+$tie_breaker_id = !empty($tie_breaker) ? (int) $tie_breaker[0]->id : 0;
 
     $q = "SELECT `p`.`id` AS `pid`, `name` AS `player`, `total`, `sky` AS `stars`,
                  (
