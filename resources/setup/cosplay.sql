@@ -69,6 +69,7 @@ CREATE TABLE `submissions` (
   `challenge_id` int(11) NOT NULL,
   `player_id` int(11) NOT NULL,
   `score` int(11) DEFAULT '0',
+  `game_score` int(11) DEFAULT NULL,
   `stars` tinyint(4) DEFAULT '0',
   `morgue_url` varchar(512) DEFAULT NULL,
   `morgue_text` text,
