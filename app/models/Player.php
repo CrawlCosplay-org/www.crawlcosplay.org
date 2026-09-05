@@ -69,7 +69,7 @@ class Player extends BaseModel
         return $all;
     }
 
-   public static function scoreboardForSet($set)
+  public static function scoreboardForSet($set)
 {
     $s = (int) $set;
 
@@ -81,7 +81,14 @@ class Player extends BaseModel
     $tie_breaker_id = !empty($tie_breaker) ? (int) $tie_breaker[0]->id : 0;
 
     $q = "SELECT `p`.`id` AS `pid`, `name` AS `player`, `total`, `sky` AS `stars`,
-                 `tie_breaker`.`game_score`
+                 (
+                    SELECT `s2`.`game_score`
+                    FROM `submissions` AS `s2`
+                    WHERE `s2`.`player_id` = `p`.`id`
+                      AND `s2`.`challenge_id` = {$tie_breaker_id}
+                      AND `s2`.`accepted` = 1
+                      AND `s2`.`hs` = 1
+                 ) AS `game_score`
             FROM `players` AS `p`
             LEFT JOIN (
                 SELECT `s`.`player_id` AS `pid`,
@@ -95,13 +102,8 @@ class Player extends BaseModel
                   AND `c`.`bonus` = 0
                 GROUP BY `s`.`player_id`
             ) AS `inner` ON (`p`.`id` = `inner`.`pid`)
-            LEFT JOIN `submissions` AS `tie_breaker`
-                ON (`tie_breaker`.`player_id` = `p`.`id`
-                    AND `tie_breaker`.`challenge_id` = {$tie_breaker_id}
-                    AND `tie_breaker`.`accepted` = 1
-                    AND `tie_breaker`.`hs` = 1)
             WHERE `inner`.`total` > 0
-            ORDER BY `total` DESC, `stars` DESC, `tie_breaker`.`game_score` DESC,
+            ORDER BY `total` DESC, `stars` DESC, `game_score` DESC,
                      `player` ASC";
 
     $result = static::db()->query($q);
