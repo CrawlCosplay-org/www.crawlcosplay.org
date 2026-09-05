@@ -1,14 +1,10 @@
 <h2>The latest NEWS</h2>
-<h3>Crawl Cosplay related news</h3>
-<ul><li>The <a href="/ccft"><b>Crawl Cosplay Forks Tournament</b></a> (CCFT#2) will start July 31st.</li>
-	<li>The <a href="/cctt"><b>Crawl Cosplay Trunk Tournament</b></a> (CCTT#4) will likely start in October.</li>
-	<li>During July, Crawl Cosplay is undergoing a leadership transition with RoGGa stepping down and passing leadership to a delegated team structure led by Draconius and Colgate.
-        This transition is part of Crawl Cosplay's broader effort to strengthen relationships across the wider DCSS community and support the project's long-term growth.</li>
+<h3>Crawl Cosplay-Related News</h3>
+<ul><li>The <a href="/cctt"><b>Crawl Cosplay Trunk Tournament</b></a> (CCTT#4) will likely start in September!</li>
+	<li>The <a href="/ccft"><b>Crawl Cosplay Forks Tournament</b></a> (CCFT#2) has finished - congratulations to Kuniqs on the win and to all the players who more than doubled participation over the first Forks Tournament!</li>
 </ul>
 
-<h3>General Dungeon Crawl news</h3>
-<ul><li>A new Dungeon Crawl fork was launched in June and it is named: <a href='https://www.dungeoncrawlforks.org/forks/chili' target='_blank'><b>Dungeon Crawl Chili</b></a> (DC Chili)</li>
-    <li>DC Chili is available to play online on the new Webtiles server <a href='https://dcf.dungeoncrawlforks.org/' target='_blank'><b>Dungeon Crawl Fajita (DCF)</b></a> located in Ontario Canada</li>
-    <li>During July, the webtiles server <a href='https://cco.crawlcosplay.org' target='_blank'><b>CCO</b></a> will be moving to a European server in order to reduce monthly costs and will also be hosting Dungeon Crawl Chili.
-	    It will also be renamed to fall under the .dungeoncrawlforks.org domain name structure.</li>
+<h3>General Dungeon Crawl News</h3>
+<ul><li>A new Dungeon Crawl fork was launched in June, named: <a href='https://www.dungeoncrawlforks.org/forks/chili' target='_blank'><b>Dungeon Crawl Chili</b></a> (DC Chili)</li>
+    <li>DC Chili is available to play online on the new Webtiles server <a href='https://dcf.dungeoncrawlforks.org/' target='_blank'><b>Dungeon Crawl Fajita (DCF)</b></a> located in Ontario Canada along with CPO in Australia and CXC in France.</li>
 </ul>
