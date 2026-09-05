@@ -31,6 +31,7 @@ use app\models\{Challenge, Submission, Player};
 
 <table class="bordered">
 		<tr>
+			<th>Rank</th>
 			<th>Player</th>
 			<th>Total<span class="star">&#9733;</span></th>
 			<?php
@@ -49,8 +50,9 @@ use app\models\{Challenge, Submission, Player};
 			?>
 		</tr>
 	<?php $r = 0;
-	foreach ($scores as $row) : ?>
-		<tr class="<?=$r++%2==0?'odd':'even'?>">
+foreach ($scores as $row) : ?>
+    <tr class="<?=$r%2==0?'odd':'even'?>">
+       		<td><?=++$r?></td>
 			<td><a href="/player?id=<?=$row['pid']?>"><?=$row['player']?></a></td>
 			<td><?=$row['total']?> <?=$row['stars']?><span class="star">&#9733;</span></td>
 			<?php 
