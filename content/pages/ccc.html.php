@@ -56,6 +56,7 @@ if ($active) :
 
 <table class="bordered">
 	<tr>
+		<th>Rank</th>
 		<th>Player</th>
 		<th>Total <span class="star">&#9733;</span></th>
 		<?php
@@ -74,7 +75,8 @@ if ($active) :
 	</tr>
 	<?php
 	foreach ($scores as $i => $row) : ?>
-		<tr class="<?=$i%2==0?'odd':'even'?>">
+		<tr class="<?=$r%2==0?'odd':'even'?>">
+			<td><?=++$r?></td>
 			<td><a href="/player?id=<?=$e($row['pid'])?>"><?=$e($row['player'])?></a></td>
 			<td><?=$e($row['total'])?> <?=$e($row['stars'])?><span class="star">&#9733;</span></td>
 			<?php
