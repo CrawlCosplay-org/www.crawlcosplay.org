@@ -17,6 +17,7 @@ if (!$sub) {
 if ($data = $this->request->getPostData()) {
     $data['score'] = (int) $data['score'];
     $data['stars'] = (int) $data['stars'];
+	$data['game_score'] = $data['game_score'] !== '' ? (int) $data['game_score'] : null;
     if ($sub->save($data)) {
         return $this->request->redirect('/admin/submissions/moderate');
     }
@@ -56,6 +57,14 @@ if ($data = $this->request->getPostData()) {
             <span>Score</span><br />
             <input type="number" name="score" value="<?=$sub->score?>" min="0" max="50" />
         </label>
+		<br />
+        <br />
+        <label>
+            <span>In-Game Score (optional tiebreak)</span><br />
+            <input type="number" name="game_score" value="<?=$sub->game_score?>" min="0" />
+        </label>
+        <br />
+        <br />
         <span>Stars</span>
         <label><input type="radio" name="stars" value="0" <?=($sub->stars == 0)?'checked="checked"':''?> /> None</label> &nbsp;
         <label><input type="radio" name="stars" value="1" <?=($sub->stars == 1)?'checked="checked"':''?> /> One<span class="star">&#9733;</span></label> &nbsp;
