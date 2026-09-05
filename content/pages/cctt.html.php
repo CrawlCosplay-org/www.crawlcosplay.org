@@ -113,7 +113,7 @@ if ($active) :
 	echo "<h2>There is currently no active Crawl Cosplay Trunk Tournament (CCTT)</h2>";
 	echo "The next CCTT for trunk v0.35 will likely start in September 2026!<br><br>";
 	echo 'For previous tournament results, see:';
-	echo '<img src="'.$dir_path."/".$filename2.'" alt="'.$filename2.'"  width="350"  style="float:right">';
+	echo '<img src="' . $dir_path . '/' . $filename2 . '" alt="' . $filename2 . '" width="350" style="float:right">';
 	echo '<ul><li><a href="/cctt/tresults.html?set=32">CCTT#1</a> June 2024</li>';
 	echo     '<li><a href="/cctt/tresults.html?set=33">CCTT#2</a> March 2025</li>';
 	echo     '<li><a href="/cctt/tresults.html?set=34">CCTT#3</a> December 2025</li>';
