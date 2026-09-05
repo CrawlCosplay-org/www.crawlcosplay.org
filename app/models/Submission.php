@@ -22,7 +22,7 @@ class Submission extends BaseModel
         $id = (int) $challenge_id;
         return static::findAsArray(
             ['challenge_id' => $id, 'accepted' => 1, 'hs' => 1],
-            ['order' => '`score` DESC, `stars` DESC, `created` ASC']);
+            ['order' => '`score` DESC, `stars` DESC, `game_score` DESC, `created` ASC']);
     }
 
     public static function sendToModeration(array $conditions): bool
