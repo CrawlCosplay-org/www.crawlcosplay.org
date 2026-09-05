@@ -69,16 +69,22 @@ class Player extends BaseModel
         return $all;
     }
 
-  public static function scoreboardForSet($set)
+ public static function scoreboardForSet($set)
 {
     $s = (int) $set;
 
-    $tie_breaker = Challenge::findAsArray(
-    ['setnr' => $s, 'draft' => 0, 'bonus' => 0],
-    ['order' => '`week` DESC', 'limit' => 1]
-);
+    $challenges_in_set = Challenge::findAsArray(
+        ['setnr' => $set, 'draft' => 0],
+        ['order' => '`week` ASC']
+    );
 
-$tie_breaker_id = !empty($tie_breaker) ? (int) $tie_breaker[0]->id : 0;
+    $tie_breaker_id = 0;
+
+    foreach ($challenges_in_set as $c) {
+        if (!$c->bonus) {
+            $tie_breaker_id = (int) $c->id;
+        }
+    }
 
     $q = "SELECT `p`.`id` AS `pid`, `name` AS `player`, `total`, `sky` AS `stars`,
                  (
@@ -107,11 +113,6 @@ $tie_breaker_id = !empty($tie_breaker) ? (int) $tie_breaker[0]->id : 0;
                      `player` ASC";
 
     $result = static::db()->query($q);
-
-    $challenges_in_set = Challenge::findAsArray(
-        ['setnr' => $set, 'draft' => 0],
-        ['order' => '`week` ASC']
-    );
 
     $scoreboards = [];
     foreach ($challenges_in_set as $c) {
