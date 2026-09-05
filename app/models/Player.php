@@ -69,47 +69,80 @@ class Player extends BaseModel
         return $all;
     }
 
-    public static function scoreboardForSet($set)
-    {
-        $s = (int) $set;
-        $q = "SELECT `p`.`id` AS `pid`, `name` AS `player`, `total`, `sky` AS `stars` FROM `players` AS `p`
-                LEFT JOIN (
-                    SELECT `s`.`player_id` AS `pid`, SUM(`s`.`score`) AS `total`, SUM(`s`.`stars`) AS `sky`
-                    FROM `submissions` AS `s`
-                    LEFT JOIN `challenges` AS `c` ON (`s`.`challenge_id` = `c`.`id`)
-                    WHERE `s`.`accepted` = 1 AND `s`.`hs` = 1 AND `c`.`setnr` = {$s} AND `c`.`bonus` = 0
-                    GROUP BY `s`.`player_id`
-                ) AS `inner` ON (`p`.`id` = `inner`.`pid`)
-                WHERE `inner`.`total` > 0 ORDER BY `total` DESC, `stars` DESC, `player` ASC";
-        $result = static::db()->query($q);
+   public static function scoreboardForSet($set)
+{
+    $s = (int) $set;
 
-        $challenges_in_set = Challenge::findAsArray(['setnr' => $set, 'draft' => 0], ['order' => '`week` ASC']);
-        $scoreboards = [];
-        foreach ($challenges_in_set as $c) {
-            $scoreboards[$c->id] = Submission::scoreboard($c->id);
-        }
-        $out = [];
-        foreach ($result as $row) {
-            $row['week'] = [];
-            foreach ($scoreboards as $cid => $scores) {
-                $in = false;
-                foreach ($scores as $sub) {
-                    if ($row['pid'] == $sub->player_id) {
-                        $row['week'][$cid] = [
-                            'score' => $sub->score,
-                            'stars' => $sub->stars,
-                            'morgue' => $sub->morgue_url
-                        ];
-                        $in = true;
-                        break;
-                    }
-                }
-                if (!$in) {
-                    $row['week'][$cid] = null;
+    $tie_breaker = Challenge::findAsArray(
+        ['setnr' => $s, 'draft' => 0, 'bonus' => 0],
+        ['order' => '`week` DESC', 'limit' => 1]
+    );
+
+    $tie_breaker_id = !empty($tie_breaker) ? (int) $tie_breaker[0]->id : 0;
+
+    $q = "SELECT `p`.`id` AS `pid`, `name` AS `player`, `total`, `sky` AS `stars`,
+                 `tie_breaker`.`game_score`
+            FROM `players` AS `p`
+            LEFT JOIN (
+                SELECT `s`.`player_id` AS `pid`,
+                       SUM(`s`.`score`) AS `total`,
+                       SUM(`s`.`stars`) AS `sky`
+                FROM `submissions` AS `s`
+                LEFT JOIN `challenges` AS `c` ON (`s`.`challenge_id` = `c`.`id`)
+                WHERE `s`.`accepted` = 1
+                  AND `s`.`hs` = 1
+                  AND `c`.`setnr` = {$s}
+                  AND `c`.`bonus` = 0
+                GROUP BY `s`.`player_id`
+            ) AS `inner` ON (`p`.`id` = `inner`.`pid`)
+            LEFT JOIN `submissions` AS `tie_breaker`
+                ON (`tie_breaker`.`player_id` = `p`.`id`
+                    AND `tie_breaker`.`challenge_id` = {$tie_breaker_id}
+                    AND `tie_breaker`.`accepted` = 1
+                    AND `tie_breaker`.`hs` = 1)
+            WHERE `inner`.`total` > 0
+            ORDER BY `total` DESC, `stars` DESC, `tie_breaker`.`game_score` DESC,
+                     `player` ASC";
+
+    $result = static::db()->query($q);
+
+    $challenges_in_set = Challenge::findAsArray(
+        ['setnr' => $set, 'draft' => 0],
+        ['order' => '`week` ASC']
+    );
+
+    $scoreboards = [];
+    foreach ($challenges_in_set as $c) {
+        $scoreboards[$c->id] = Submission::scoreboard($c->id);
+    }
+
+    $out = [];
+    foreach ($result as $row) {
+        $row['week'] = [];
+
+        foreach ($scoreboards as $cid => $scores) {
+            $in = false;
+
+            foreach ($scores as $sub) {
+                if ($row['pid'] == $sub->player_id) {
+                    $row['week'][$cid] = [
+                        'score' => $sub->score,
+                        'stars' => $sub->stars,
+                        'morgue' => $sub->morgue_url
+                    ];
+                    $in = true;
+                    break;
                 }
             }
-            $out[] = $row;
+
+            if (!$in) {
+                $row['week'][$cid] = null;
+            }
         }
-        return $out;
+
+        $out[] = $row;
     }
+
+    return $out;
+}
 }
