@@ -74,6 +74,7 @@ if ($active) :
 		?>
 	</tr>
 	<?php
+	$r = 0;
 	foreach ($scores as $i => $row) : ?>
 		<tr class="<?=$r%2==0?'odd':'even'?>">
 			<td><?=++$r?></td>
