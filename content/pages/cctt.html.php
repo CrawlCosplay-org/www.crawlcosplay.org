@@ -158,6 +158,8 @@ setInterval(updateCountdown, 1000);
 </script>
 
 <?php
+	echo '<h2>See the <a href="/cctt/about_cctt">About Page</a> to learn more!</h2>';
+	echo '<div style="margin-bottom: 20px;"></div>';
 	echo 'For previous tournament results, see:';
 	echo '<ul><li><a href="/cctt/tresults.html?set=32">CCTT#1</a> June 2024</li>';
 	echo '<li><a href="/cctt/tresults.html?set=33">CCTT#2</a> March 2025</li>';
