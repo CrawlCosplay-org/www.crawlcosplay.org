@@ -26,7 +26,40 @@
 <p>In the event of a tie for top spot, the last week's challenge will be a very difficult challenge. 
    The highest score for that last week will be used to determine the winner.</p>
 
-<p>The next tournament challenge will be posted Friday at 0:00 UTC.</p>
+<!-- Adds countdown timer, update Epoch time each week! -->
+	
+<div style="text-align:center;">
+    <h3>Tournament starts in:</h3>
+    <div id="countdown" style="font-size:24px; font-weight:bold;"></div>
+</div>
+<script>
+const target = 1789689600 * 1000;
+
+function updateCountdown() {
+    const remaining = target - Date.now();
+
+    if (remaining <= 0) {
+        document.getElementById("countdown").textContent = "Tournament has started!";
+        return;
+    }
+
+    const totalSeconds = Math.floor(remaining / 1000);
+
+    const days = Math.floor(totalSeconds / 86400);
+    const hours = Math.floor((totalSeconds % 86400) / 3600);
+    const minutes = Math.floor((totalSeconds % 3600) / 60);
+    const seconds = totalSeconds % 60;
+
+    document.getElementById("countdown").textContent =
+        days + "d " +
+        hours.toString().padStart(2, "0") + "h " +
+        minutes.toString().padStart(2, "0") + "m " +
+        seconds.toString().padStart(2, "0") + "s";
+}
+
+updateCountdown();
+setInterval(updateCountdown, 1000);
+</script>
 
 <h3>Previous Tournament Results</h3>
 <p><a href="/cctt/past_cctt_results.html">CCTT results</a>.</p>
