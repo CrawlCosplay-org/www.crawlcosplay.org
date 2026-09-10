@@ -56,8 +56,8 @@ echo '
 	
 <!-- Adds countdown timer, update Epoch time each week! -->
 	
-<div style="text-align:center;">
-    <h3>Tournament starts in:</h3>
+<div style="text-align:center; margin-top:-10px; margin-bottom:30px;">
+    <h3 style="margin-bottom:5px;">Tournament starts in:</h3>
     <div id="countdown" style="font-size:24px; font-weight:bold;"></div>
 </div>
 	
@@ -89,7 +89,7 @@ function updateCountdown() {
 updateCountdown();
 setInterval(updateCountdown, 1000);
 </script>
-<div style="margin-bottom: 20px;"></div>
+
 <?php
 
 	echo '<h3><a href="/ccsdt">' . _("Crawl Cosplay Sudden Death Tournament") . '</a> (CCSDT)</h3>';
