@@ -48,11 +48,49 @@ echo '
 */
 /* <img src="/img/misc/arrow-flashing-left.gif" width="40" height="10"> */
 	echo "<h2>" . _("Look Forward to Future Tournaments!") . "</h2>";
-	echo '<h3>(Starting Soon!) <a href="/cctt">' . _("Crawl Cosplay Trunk Tournament") . "</a> (CCTT)</h3>";
+	echo '<h3>(Starting Soon!) <a href="/cctt">' . _("Crawl Cosplay Trunk Tournament") . "</a> (CCTT)</h3><img src="/img/misc/arrow-flashing-left.gif" width="40" height="10">";
    	echo "<ul><li>" . _("A DCSS tournament lasting about a month with each week highlighting some of the latest Trunk changes.") . "</li>";
    	echo     "<li>" . _("Read") . ': <a href="/cctt/about_cctt">' . _("About CCTT") . "</a>.</li>";
-	echo     "<li>" . _("CCTT#4 for trunk v0.35 will likely start in October 2026.");
    	echo 	 '<li><a href="/cctt/past_cctt_results">' . _("Past CCTT Results") . "</a></li></ul><br>";
+?>
+	
+<!-- Adds countdown timer, update Epoch time each week! -->
+	
+<div style="text-align:center;">
+    <h3>Tournament starts in:</h3>
+    <div id="countdown" style="font-size:24px; font-weight:bold;"></div>
+</div>
+	<div style="margin-bottom: 20px;"></div>
+<script>
+const target = 1789689600 * 1000;
+
+function updateCountdown() {
+    const remaining = target - Date.now();
+
+    if (remaining <= 0) {
+        document.getElementById("countdown").textContent = "Tournament has started!";
+        return;
+    }
+
+    const totalSeconds = Math.floor(remaining / 1000);
+
+    const days = Math.floor(totalSeconds / 86400);
+    const hours = Math.floor((totalSeconds % 86400) / 3600);
+    const minutes = Math.floor((totalSeconds % 3600) / 60);
+    const seconds = totalSeconds % 60;
+
+    document.getElementById("countdown").textContent =
+        days + "d " +
+        hours.toString().padStart(2, "0") + "h " +
+        minutes.toString().padStart(2, "0") + "m " +
+        seconds.toString().padStart(2, "0") + "s";
+}
+
+updateCountdown();
+setInterval(updateCountdown, 1000);
+</script>
+
+<?php
 
 	echo '<h3><a href="/ccsdt">' . _("Crawl Cosplay Sudden Death Tournament") . '</a> (CCSDT)</h3>';
 	echo "<ul><li>" . _("A DCSS tournament lasting 5 weeks with a different Crawl Unique combo to play each week. You only get one try!") . "</li>";
