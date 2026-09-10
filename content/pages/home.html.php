@@ -60,7 +60,7 @@ echo '
     <h3>Tournament starts in:</h3>
     <div id="countdown" style="font-size:24px; font-weight:bold;"></div>
 </div>
-	<div style="margin-bottom: 20px;"></div>
+	
 <script>
 const target = 1789689600 * 1000;
 
@@ -89,7 +89,7 @@ function updateCountdown() {
 updateCountdown();
 setInterval(updateCountdown, 1000);
 </script>
-
+<div style="margin-bottom: 20px;"></div>
 <?php
 
 	echo '<h3><a href="/ccsdt">' . _("Crawl Cosplay Sudden Death Tournament") . '</a> (CCSDT)</h3>';
