@@ -56,7 +56,7 @@ echo '
 	
 <!-- Adds countdown timer, update Epoch time each week! -->
 	
-<div style="text-align:center; margin-top:-10px; margin-bottom:30px;">
+<div style="text-align:center; margin-top:-10px; margin-bottom:60px;">
     <h3 style="margin-bottom:5px;">Tournament starts in:</h3>
     <div id="countdown" style="font-size:24px; font-weight:bold;"></div>
 </div>
