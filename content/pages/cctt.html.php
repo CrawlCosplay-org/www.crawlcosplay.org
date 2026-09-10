@@ -127,6 +127,7 @@ if ($active) :
     <h3>Tournament starts in:</h3>
     <div id="countdown" style="font-size:24px; font-weight:bold;"></div>
 </div>
+	<div style="margin-bottom: 20px;"></div>
 <script>
 const target = 1789689600 * 1000;
 
