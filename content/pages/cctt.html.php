@@ -119,7 +119,44 @@ if ($active) :
 	}
 
 	echo "<h2>There is currently no active Crawl Cosplay Trunk Tournament (CCTT)</h2>";
-	echo "The next CCTT for trunk v0.35 will likely start in September 2026!<br><br>";
+	?>
+	
+<!-- Adds countdown timer, update Epoch time each week! -->
+	
+<div style="text-align:center;">
+    <h3>Tournament starts in:</h3>
+    <div id="countdown" style="font-size:24px; font-weight:bold;"></div>
+</div>
+<script>
+const target = 1789689600 * 1000;
+
+function updateCountdown() {
+    const remaining = target - Date.now();
+
+    if (remaining <= 0) {
+        document.getElementById("countdown").textContent = "Tournament has started!";
+        return;
+    }
+
+    const totalSeconds = Math.floor(remaining / 1000);
+
+    const days = Math.floor(totalSeconds / 86400);
+    const hours = Math.floor((totalSeconds % 86400) / 3600);
+    const minutes = Math.floor((totalSeconds % 3600) / 60);
+    const seconds = totalSeconds % 60;
+
+    document.getElementById("countdown").textContent =
+        days + "d " +
+        hours.toString().padStart(2, "0") + "h " +
+        minutes.toString().padStart(2, "0") + "m " +
+        seconds.toString().padStart(2, "0") + "s";
+}
+
+updateCountdown();
+setInterval(updateCountdown, 1000);
+</script>
+
+<?php
 	echo 'For previous tournament results, see:';
 	echo '<ul><li><a href="/cctt/tresults.html?set=32">CCTT#1</a> June 2024</li>';
 	echo '<li><a href="/cctt/tresults.html?set=33">CCTT#2</a> March 2025</li>';
