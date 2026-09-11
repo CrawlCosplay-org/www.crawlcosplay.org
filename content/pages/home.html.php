@@ -131,7 +131,8 @@ setInterval(updateCountdown, 1000);
 	echo "<h3 style='color:orange'>" . _("On behalf of the Crawl Cosplay community, thank you, Rogga, for the years of dedication to Crawl Cosplay") . "!</h3><br>";
 ?>
 
-<br>
+<!-- <br>
 <h3><b><center>Unique Visitors since June 2026</center></b></h3>
 <p><center><script type="text/javascript" src="https://counter.websiteout.com/js/2/5/-1/1"></script></center></p>
 <br>
+	-->
