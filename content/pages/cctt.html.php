@@ -113,10 +113,10 @@ if ($active) :
 
 	$images = glob(__DIR__ . '/../../webroot/img/titles/*.{jpg,jpeg,png,gif,webp}', GLOB_BRACE);
 
-	if ($images) {
-		$image = str_replace(__DIR__ . '/../../webroot', '', $images[array_rand($images)]);
-		echo '<img src="'.$e($image).'" width="350" style="float:right">';
-	}
+	//if ($images) {
+		//$image = str_replace(__DIR__ . '/../../webroot', '', $images[array_rand($images)]);
+		//echo '<img src="'.$e($image).'" width="350" style="float:right">';
+	//}
 
 	echo "<h2>There is currently no active Crawl Cosplay Trunk Tournament (CCTT)</h2>";
 	?>
@@ -159,6 +159,20 @@ setInterval(updateCountdown, 1000);
 
 <?php
 	echo '<h2>See the <a href="/cctt/about_cctt">About Page</a> to learn more!</h2>';
+	
+echo '
+<div style="width:80%; max-width:800px; margin:0 auto;">
+    <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden;">
+        <iframe
+            src="https://www.youtube.com/embed/rH1KmbgpboA?si=kFqUzUg1W6h0hq0W"
+            title="Crawl Cosplay Forks Tournament"
+            style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+        </iframe>
+    </div>
+</div><br>';
+
 	echo '<div style="margin-bottom: 20px;"></div>';
 	echo 'For previous tournament results, see:';
 	echo '<ul><li><a href="/cctt/tresults.html?set=32">CCTT#1</a> June 2024</li>';
