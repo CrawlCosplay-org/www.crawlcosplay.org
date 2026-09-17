@@ -40,7 +40,6 @@ $this->setData("meta", ['filename' => $cha->icon]);
 	<?php endif;?>
 	<?php if ($cha->wiki): ?> |
 	<a href="<?=$e($cha->wiki)?>" target="_blank">Wiki page</a><?php endif; ?>
-	| <a href="<?=$e($cha->reddit)?>" target="_blank">See Reddit post</a> <span style="font-size: smaller">with links to streamers & videos.</span>
 </p>
 
 <?php if ($cha->icon) : ?><img src="<?=$e($cha->icon)?>" class="detail" /><?php endif; ?>
