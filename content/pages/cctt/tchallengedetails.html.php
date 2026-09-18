@@ -53,7 +53,42 @@ $this->setData("meta", ['filename' => $cha->icon]);
 <p class="info">IMPORTANT NOTES:<br>
 	- Except for Beogh, Ignis, Jiyva and Lugonu, an altar for the other gods will ALWAYS show up by D:10.<br>
 	- Small mistakes will likely NOT be forgiven unless they are minute. (If you are unsure please ask ASAP if you are forgiven in our CC Discord linked above.)</p>
+<br>
+	<!-- Weekly timer, update each week -->
+<div style="text-align:center;">
+    <h3>Week 1 ends in:</h3>
+    <div id="countdown" style="font-size:24px; font-weight:bold;"></div>
+</div>
+<br>
+<script>
+const target = 1790294400 * 1000;
 
+function updateCountdown() {
+    const remaining = target - Date.now();
+
+    if (remaining <= 0) {
+        document.getElementById("countdown").textContent = "Week Complete!";
+        return;
+    }
+
+    const totalSeconds = Math.floor(remaining / 1000);
+
+    const days = Math.floor(totalSeconds / 86400);
+    const hours = Math.floor((totalSeconds % 86400) / 3600);
+    const minutes = Math.floor((totalSeconds % 3600) / 60);
+    const seconds = totalSeconds % 60;
+
+    document.getElementById("countdown").textContent =
+        days + "d " +
+        hours.toString().padStart(2, "0") + "h " +
+        minutes.toString().padStart(2, "0") + "m " +
+        seconds.toString().padStart(2, "0") + "s";
+}
+
+updateCountdown();
+setInterval(updateCountdown, 1000);
+</script>
+	
 <?php if ($cha->special_rule) : ?>
 <h3>Special Rule or Notes</h3>
 <div class="special_rule"><p><?=$em($cha->special_rule)?></p></div>
