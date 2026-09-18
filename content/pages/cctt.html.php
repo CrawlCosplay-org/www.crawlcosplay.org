@@ -92,7 +92,7 @@ setInterval(updateCountdown, 1000);
 
 <table class="bordered">
 	<tr>
-		<th>count</th>
+		<th>Count</th>
 		<th>Player</th>
 		<th>Total <span class="star">&#9733;</span></th>
 		<?php
