@@ -92,7 +92,7 @@ setInterval(updateCountdown, 1000);
 
 <table class="bordered">
 	<tr>
-		<th>Count</th>
+		<th>Rank</th>
 		<th>Player</th>
 		<th>Total <span class="star">&#9733;</span></th>
 		<?php
@@ -108,7 +108,7 @@ setInterval(updateCountdown, 1000);
 			echo "</th>";
 		}
 		?>
-		<th>Rank</th>
+
 	</tr>
 	<?php
 	foreach ($scores as $i => $row) : ?>
