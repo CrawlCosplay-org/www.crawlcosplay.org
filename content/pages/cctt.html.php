@@ -31,7 +31,7 @@ if ($active) :
 <?php if ($active->special_rule) : ?>
 <div class="special_rule"><p><?=$em($active->special_rule)?></p></div>
 <?php endif; ?>
-
+<br>
 <img src="/img/HR-right.png"><br />
 <br>
 	<!-- Weekly timer, update each week -->
