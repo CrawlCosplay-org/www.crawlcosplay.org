@@ -69,7 +69,10 @@ class Player extends BaseModel
         return $all;
     }
 
- public static function scoreboardForSet($set)
+
+
+		
+public static function scoreboardForSet($set)
 {
     $s = (int) $set;
 
@@ -78,76 +81,175 @@ class Player extends BaseModel
         ['order' => '`week` ASC']
     );
 
+    /*
+     * Find the Week 5 challenge for the final game-score tie-break.
+     */
     $tie_breaker_id = 0;
 
     foreach ($challenges_in_set as $c) {
-        if (!$c->bonus) {
+        if ((int) $c->week === 5 && !$c->bonus) {
             $tie_breaker_id = (int) $c->id;
+            break;
         }
     }
 
-    $q = "SELECT `p`.`id` AS `pid`, `name` AS `player`, `total`, `sky` AS `stars`,
-                 (
-                    SELECT `s2`.`game_score`
-                    FROM `submissions` AS `s2`
-                    WHERE `s2`.`player_id` = `p`.`id`
-                      AND `s2`.`challenge_id` = {$tie_breaker_id}
-                      AND `s2`.`accepted` = 1
-                      AND `s2`.`hs` = 1
-					   ORDER BY `s2`.`score` DESC, `s2`.`stars` DESC, `s2`.`created` ASC
-   					   LIMIT 1
-                 ) AS `game_score`
-            FROM `players` AS `p`
-            LEFT JOIN (
-                SELECT `s`.`player_id` AS `pid`,
-                       SUM(`s`.`score`) AS `total`,
-                       SUM(`s`.`stars`) AS `sky`
-                FROM `submissions` AS `s`
-                LEFT JOIN `challenges` AS `c` ON (`s`.`challenge_id` = `c`.`id`)
-                WHERE `s`.`accepted` = 1
-                  AND `s`.`hs` = 1
-                  AND `c`.`setnr` = {$s}
-                  AND `c`.`bonus` = 0
-                GROUP BY `s`.`player_id`
-            ) AS `inner` ON (`p`.`id` = `inner`.`pid`)
-            WHERE `inner`.`total` > 0
-            ORDER BY `total` DESC, `stars` DESC, `game_score` DESC,
-                     `player` ASC";
+    /*
+     * Get all accepted submissions in this tournament.
+     *
+     * For each player + challenge, keep only the best submission each week:
+     *
+     *   1. Highest meta score
+     *   2. Highest stars
+     *   3. Earliest created
+     *
+     * The hs flag is deliberately not used here. The best submission
+     * is now selected automatically instead of manually.
+     */
+    $q = "
+        SELECT
+            `p`.`id` AS `pid`,
+            `p`.`name` AS `player`,
+            `s`.`id` AS `submission_id`,
+            `s`.`challenge_id`,
+            `s`.`score`,
+            `s`.`stars`,
+            `s`.`game_score`,
+            `s`.`morgue_url`,
+            `s`.`created`,
+            `c`.`bonus`
+        FROM `submissions` AS `s`
+        INNER JOIN `challenges` AS `c`
+            ON `s`.`challenge_id` = `c`.`id`
+        INNER JOIN `players` AS `p`
+            ON `s`.`player_id` = `p`.`id`
+        WHERE `s`.`accepted` = 1
+          AND `c`.`setnr` = {$s}
+          AND `c`.`draft` = 0
+          AND NOT EXISTS (
+              SELECT 1
+              FROM `submissions` AS `s2`
+              WHERE `s2`.`player_id` = `s`.`player_id`
+                AND `s2`.`challenge_id` = `s`.`challenge_id`
+                AND `s2`.`accepted` = 1
+                AND (
+                    `s2`.`score` > `s`.`score`
+                    OR (
+                        `s2`.`score` = `s`.`score`
+                        AND `s2`.`stars` > `s`.`stars`
+                    )
+                    OR (
+                        `s2`.`score` = `s`.`score`
+                        AND `s2`.`stars` = `s`.`stars`
+                        AND `s2`.`created` < `s`.`created`
+                    )
+                )
+          )
+        ORDER BY
+            `p`.`name` ASC,
+            `c`.`week` ASC
+    ";
 
     $result = static::db()->query($q);
 
-    $scoreboards = [];
-    foreach ($challenges_in_set as $c) {
-        $scoreboards[$c->id] = Submission::scoreboard($c->id);
-    }
+    /*
+     * Build the scoreboard from the selected best submission
+     * for each player + challenge.
+     */
+    $players = [];
 
-    $out = [];
     foreach ($result as $row) {
-        $row['week'] = [];
+        $pid = (int) $row['pid'];
+        $cid = (int) $row['challenge_id'];
 
-        foreach ($scoreboards as $cid => $scores) {
-            $in = false;
-
-            foreach ($scores as $sub) {
-                if ($row['pid'] == $sub->player_id) {
-                    $row['week'][$cid] = [
-                        'score' => $sub->score,
-                        'stars' => $sub->stars,
-                        'morgue' => $sub->morgue_url
-                    ];
-                    $in = true;
-                    break;
-                }
-            }
-
-            if (!$in) {
-                $row['week'][$cid] = null;
-            }
+        if (!isset($players[$pid])) {
+            $players[$pid] = [
+                'pid' => $pid,
+                'player' => $row['player'],
+                'total' => 0,
+                'stars' => 0,
+                'game_score' => null,
+                'week' => []
+            ];
         }
 
-        $out[] = $row;
+        /*
+         * Store the selected best submission for this week.
+         */
+        $players[$pid]['week'][$cid] = [
+            'score' => $row['score'],
+            'stars' => $row['stars'],
+            'morgue' => $row['morgue_url']
+        ];
+
+        /*
+         * Bonus challenges are displayed but do not contribute
+         * to the tournament total or total stars.
+         */
+        if (!$row['bonus']) {
+            $players[$pid]['total'] += (int) $row['score'];
+            $players[$pid]['stars'] += (int) $row['stars'];
+        }
+
+        /*
+         * Week 5 game score comes from the SAME selected Week 5
+         * submission. We do not independently select the highest
+         * game_score.
+         */
+        if ($cid === $tie_breaker_id) {
+            $players[$pid]['game_score'] = $row['game_score'];
+        }
     }
 
+    /*
+     * Add null entries for challenges where a player has no submission.
+     */
+    foreach ($players as &$player) {
+        foreach ($challenges_in_set as $c) {
+            $cid = (int) $c->id;
+
+            if (!isset($player['week'][$cid])) {
+                $player['week'][$cid] = null;
+            }
+        }
+    }
+    unset($player);
+
+    /*
+     * Sort:
+     *
+     *   1. Total meta score descending
+     *   2. Total stars descending
+     *   3. Week 5 game score descending
+     *   4. Player name ascending
+     */
+    $out = array_values($players);
+
+    usort($out, function ($a, $b) {
+        if ($a['total'] != $b['total']) {
+            return ($a['total'] > $b['total']) ? -1 : 1;
+        }
+
+        if ($a['stars'] != $b['stars']) {
+            return ($a['stars'] > $b['stars']) ? -1 : 1;
+        }
+
+        $a_game = ($a['game_score'] === null) ? null : (int) $a['game_score'];
+        $b_game = ($b['game_score'] === null) ? null : (int) $b['game_score'];
+
+        if ($a_game !== $b_game) {
+            if ($a_game === null) {
+                return 1;
+            }
+
+            if ($b_game === null) {
+                return -1;
+            }
+
+            return ($a_game > $b_game) ? -1 : 1;
+        }
+
+        return strcasecmp($a['player'], $b['player']);
+    });
+
     return $out;
-}
 }
