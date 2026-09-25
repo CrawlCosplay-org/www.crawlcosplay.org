@@ -13,7 +13,7 @@
 			<a href="/ccft">Crawl Cosplay Forks Tournament (CCFT)</a>
 			<a href="/ccft/about_ccft"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#8627; About CCFT</a>
 			<a href="/ccsdt">Crawl Cosplay Sudden Death Tournament (CCSDT)</a>
-			<a href="/news">News - Trunk Tourney Starting Soon!</a>
+			<a href="/news">News - Trunk Tourney Has Started!</a>
 		</div>
 	</div>
 
