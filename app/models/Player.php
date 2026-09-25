@@ -253,3 +253,5 @@ public static function scoreboardForSet($set)
 
     return $out;
 }
+	}
+	
