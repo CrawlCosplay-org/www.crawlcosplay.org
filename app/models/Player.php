@@ -94,6 +94,8 @@ class Player extends BaseModel
                       AND `s2`.`challenge_id` = {$tie_breaker_id}
                       AND `s2`.`accepted` = 1
                       AND `s2`.`hs` = 1
+					   ORDER BY `s2`.`score` DESC, `s2`.`stars` DESC, `s2`.`created` ASC
+   					   LIMIT 1
                  ) AS `game_score`
             FROM `players` AS `p`
             LEFT JOIN (
