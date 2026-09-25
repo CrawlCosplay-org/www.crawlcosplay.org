@@ -60,7 +60,7 @@ if ($data = $this->request->getPostData()) {
 		<br />
         <br />
         <label>
-            <span>In-Game Score (optional tiebreak)</span><br />
+            <span>In-Game Score (optional tiebreak, final week only)</span><br />
             <input type="number" name="game_score" value="<?=$sub->game_score?>" min="0" />
         </label>
         <br />
@@ -84,7 +84,7 @@ if ($data = $this->request->getPostData()) {
         <label>
             <input type="hidden" name="hs" value="0" />
             <input type="checkbox" name="hs" value="1" <?=$sub->hs?'checked="checked"':''?>  autofocus />
-            <span>Highscore (use for multiple submissions)</span>
+            <span>Highscore (use for multiple submissions, not used for Tournaments)</span>
         </label>
         <br />
         <br />
