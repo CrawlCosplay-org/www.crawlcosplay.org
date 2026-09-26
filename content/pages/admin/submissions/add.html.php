@@ -15,6 +15,8 @@ if ($data = $this->request->getPostData()) {
     }
 
     $sub = new Submission($data);
+/*
+*This section was previously used to reset old submissions when new ones came in. The system now auto-sorts for the highest score (keeping code for use elsewhere if needed).
 
     $existing = Submission::findAsArray(['challenge_id' => $sub->challenge_id, 'player_id' => $sub->player_id]);
     if ($existing) {
@@ -30,6 +32,8 @@ if ($data = $this->request->getPostData()) {
             $ex->save($exd);
         }
     }
+    */
+    
     if ($sub->save()) {
         return $this->request->redirect('/admin/submissions/list');
     }
