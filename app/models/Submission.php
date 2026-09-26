@@ -17,44 +17,28 @@ class Submission extends BaseModel
         'challenge' => ['type' => 'belongs_to', 'class' => Challenge::class, 'local' => 'challenge_id', 'foreign' => 'id']
     ];
 
+
 public static function scoreboard($challenge_id)
- {
+{
     $id = (int) $challenge_id;
 
-    $q = "
-        SELECT
-            `s`.*
-        FROM `submissions` AS `s`
-        WHERE `s`.`challenge_id` = {$id}
-          AND `s`.`accepted` = 1
-          AND NOT EXISTS (
-              SELECT 1
-              FROM `submissions` AS `s2`
-              WHERE `s2`.`challenge_id` = `s`.`challenge_id`
-                AND `s2`.`player_id` = `s`.`player_id`
-                AND `s2`.`accepted` = 1
-                AND (
-                    `s2`.`score` > `s`.`score`
-                    OR (
-                        `s2`.`score` = `s`.`score`
-                        AND `s2`.`stars` > `s`.`stars`
-                    )
-                    OR (
-                        `s2`.`score` = `s`.`score`
-                        AND `s2`.`stars` = `s`.`stars`
-                        AND `s2`.`created` < `s`.`created`
-                    )
-                )
-          )
-        ORDER BY
-            `s`.`score` DESC,
-            `s`.`stars` DESC,
-            `s`.`game_score` DESC,
-            `s`.`created` ASC
-    ";
+    $all = static::findAsArray(
+        ['challenge_id' => $id, 'accepted' => 1],
+        ['order' => '`score` DESC, `stars` DESC, `created` ASC']
+    );
 
-    return static::db()->query($q);
- }
+    $best = [];
+
+    foreach ($all as $submission) {
+        $player_id = $submission->player_id;
+
+        if (!isset($best[$player_id])) {
+            $best[$player_id] = $submission;
+        }
+    }
+
+    return array_values($best);
+}
 
 
     public static function sendToModeration(array $conditions): bool
