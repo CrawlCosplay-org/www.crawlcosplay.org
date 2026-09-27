@@ -7,7 +7,7 @@ use app\models\{Challenge, Submission, Player};
 	$challenges_in_set = Challenge::findAsArray(['setnr' => $set, 'draft' => 0], ['order' => '`week` ASC']);
 	$weeks = sizeof($challenges_in_set);
 ?>
-<h2 style="color:rgb(69, 136, 5);">Welcome green Crawler!</h2>
+<h2 style="color:rgb(69, 136, 5);">Welcome New Crawlers!</h2>
 <h3>Ready?</h3>
 <p>Whether you're chasing your first win, or simply looking for a fresh way to experience DCSS, Crawl Cosplay Academy offers a guided introduction to several major build archetypes.</p>
 <p>Want to know more before jumping in? Read the <a href="/cca/about_cca">About CCA</a> webpage.</p>
@@ -17,7 +17,7 @@ use app\models\{Challenge, Submission, Player};
 <h3>Set...</h3>
 <p>If you have never won a game, your first Academy goal is to play one of the <b>"Strength Brutes"</b> listed below since they are considered to be the
 <b><i>easier</i></b> combos of the easiest category.</p>
-<p>Just click on one of the Uniques for the challenge's details listing the suggested 3 conducts and 2 bonuses.</p>
+<p>Just click on one of the Uniques for the challenge's details, listing the suggested 3 conducts and 2 bonuses.</p>
 
 <h4><b>Strength Brutes</b></h4>
   <p>Focus primarily on the Strength attribute, prefer to wear heavy armor, and typically spend most of their time in melee combat. Skills to focus on are your primary weapon, fighting, armour, shields, throwing, evocations, and invocations (if applicable).</p>
@@ -29,7 +29,7 @@ use app\models\{Challenge, Submission, Player};
   <p> <a href="/cca/achallengedetails?id=929" title="Donald, the Merfolk Monk (MfMo)"><img src="/img/uniques/Donald.png" width="72" height="72"></a>
       <a href="/cca/achallengedetails?id=930" title="Sonja, the Kobold Brigand (KoBr)"><img src="/img/uniques/Sonja.png" width="72" height="72"></a>
       <a href="/cca/achallengedetails?id=931" title="Vashnia, the Naga Hunter (NaHu)"><img src="/img/uniques/Vashnia.png" width="72" height="72"></a> </p>
-<h4><b>Mages: Mostly Magic</b></h4>
+<h4><b>Mages/Mostly Magic</b></h4>
   <p>Focus primarily on the Intelligence attribute, prefer to wear light armor (robes in particular), and often but not always fight at long range. Skills to focus on are roughly two magic school(s), spellcasting, fighting, stealth, evocations, and invocations (if applicable).</p>
   <p> <a href="/cca/achallengedetails?id=935" title="Frederick, the Demigod Conjurer (DgCj)"><img src="/img/uniques/Frederick.png" width="72" height="72"></a>
       <a href="/cca/achallengedetails?id=936" title="Aantaeus, the Oni Ice Elementalist (OnIE)"><img src="/img/uniques/Antaeus.png" width="60" height="72"></a> 
@@ -42,6 +42,7 @@ use app\models\{Challenge, Submission, Player};
 <h3>GO!</h3>
 Play a game of your favourite DCSS Uniques and once you have completed one of your better games, <b>Submit your Morgue</b> on the challenge's detail page and a moderator will approve it.
 Your best 2 runs for each challenge will be kept in the website's database...so submit as often as you like.
+<br>
 <br>
 <h3>Need more help?...or have some questions</h3>
 <p>Come chat with us on our <a href="https://discord.gg/pW7nqC8Wu3" target="_blank">Crawl Cosplay Discord server</a> in the <b>#academy_cca</b> text channel.</p>
