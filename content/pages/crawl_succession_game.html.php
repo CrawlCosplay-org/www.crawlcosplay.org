@@ -6,7 +6,7 @@ use app\models\CrawlSuccessionUser;
 
 session_start();
 
-$id = (int) ($this->request->get['id'] ?? 0);
+$id = (int) ($this->request->getQueryData()['id'] ?? 0);
 
 $db = CrawlSuccessionGame::db();
 
