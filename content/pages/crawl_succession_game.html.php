@@ -6,19 +6,15 @@ use app\models\CrawlSuccessionUser;
 
 session_start();
 
-var_dump($this->request);
-exit;
+$id = (int) ($this->request->get['id'] ?? 0);
 
-$db = CrawlSuccessionGame::db();
-
-$rows = $db->query(
-    "SELECT * FROM `crawl_succession_games` WHERE `id` = {$id} LIMIT 1"
-);
+$games = CrawlSuccessionGame::find(['id' => $id]);
 
 $game = null;
 
-if (!empty($rows)) {
-    $game = new CrawlSuccessionGame($rows[0]);
+foreach ($games as $found_game) {
+    $game = $found_game;
+    break;
 }
 
 if (!$game) {
