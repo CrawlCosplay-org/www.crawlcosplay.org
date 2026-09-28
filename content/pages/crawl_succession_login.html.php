@@ -10,7 +10,12 @@ if ($data = $this->request->getPostData()) {
     $password = $data['password'] ?? '';
 
     $users = CrawlSuccessionUser::find(['username' => $username]);
-    $user = !empty($users) ? $users[0] : null;
+    $user = null;
+
+    foreach ($users as $found_user) {
+        $user = $found_user;
+        break;
+    }
 
     if ($user && password_verify($password, $user->password_hash)) {
 
