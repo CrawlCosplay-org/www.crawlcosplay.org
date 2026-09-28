@@ -8,12 +8,16 @@ session_start();
 
 $id = (int) ($this->request->get['id'] ?? 0);
 
-$games = CrawlSuccessionGame::find(['id' => $id]);
+$db = CrawlSuccessionGame::db();
+
+$rows = $db->query(
+    "SELECT * FROM `crawl_succession_games` WHERE `id` = {$id} LIMIT 1"
+);
+
 $game = null;
 
-foreach ($games as $found_game) {
-    $game = $found_game;
-    break;
+if (!empty($rows)) {
+    $game = new CrawlSuccessionGame($rows[0]);
 }
 
 if (!$game) {
@@ -21,6 +25,7 @@ if (!$game) {
 }
 
 $current_user_id = $_SESSION['user_id'] ?? null;
+
 
 /*
  * Handle joining the queue.
