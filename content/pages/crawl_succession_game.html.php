@@ -21,7 +21,7 @@ if (!empty($rows)) {
 }
 
 if (!$game) {
-    return $this->request->redirect('/crawl_succession');
+    die('Game not found. ID = ' . $id);
 }
 
 $current_user_id = $_SESSION['user_id'] ?? null;
