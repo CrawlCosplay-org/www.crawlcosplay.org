@@ -6,7 +6,8 @@ use app\models\CrawlSuccessionUser;
 
 session_start();
 
-$id = (int) ($this->request->getQueryData()['id'] ?? 0);
+var_dump($this->request);
+exit;
 
 $db = CrawlSuccessionGame::db();
 
