@@ -27,7 +27,7 @@ $current_user_id = $_SESSION['user_id'] ?? null;
 /*
  * Handle joining the queue.
  */
-if ($current_user_id && $game->status === 'planned' && $this->request->getPostData()) {
+if ($current_user_id && $game->status === 'planned' && $_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $queue = CrawlSuccessionQueue::find([
         'game_id' => $game->id,
