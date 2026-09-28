@@ -1,5 +1,3 @@
-<?php $this->layout = 'cca'; ?>
-
 <?php
 
 use app\models\CrawlSuccessionGame;
