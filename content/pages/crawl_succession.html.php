@@ -38,6 +38,9 @@ unset($list);
         <thead>
             <tr>
                 <th>Character</th>
+                <th>Species</th>
+                <th>Background</th>
+                <th>God(s)</th>
                 <th>Server</th>
                 <th>Turn</th>
                 <th>Current Player</th>
@@ -49,10 +52,13 @@ unset($list);
 
             <tr>
                 <td>
-                    <a href="/crawl_succession/game?id=<?=$e($game->id)?>">
+                    <a href="/crawl_succession_game?id=<?=$e($game->id)?>">
                         <?=$e($game->character_name)?>
                     </a>
                 </td>
+                <td><?=$e($game->species)?></td>
+                <td><?=$e($game->background)?></td>
+                <td><?=$e($game->god)?></td>
                 <td><?=$e($game->server)?></td>
                 <td><?=$e($game->turn_number)?></td>
                 <td>
@@ -84,6 +90,9 @@ unset($list);
         <thead>
             <tr>
                 <th>Character</th>
+                <th>Species</th>
+                <th>Background</th>
+                <th>God(s)</th>
                 <th>Server</th>
                 <th>Players</th>
                 <th>Submitted By</th>
@@ -95,10 +104,13 @@ unset($list);
 
             <tr>
                 <td>
-                    <a href="/crawl_succession/game?id=<?=$e($game->id)?>">
+                    <a href="/crawl_succession_game?id=<?=$e($game->id)?>">
                         <?=$e($game->character_name)?>
                     </a>
                 </td>
+                <td><?=$e($game->species)?></td>
+                <td><?=$e($game->background)?></td>
+                <td><?=$e($game->god)?></td>
                 <td><?=$e($game->server)?></td>
                 <td>
                     0 / <?=$e($game->max_players)?>
@@ -126,6 +138,9 @@ unset($list);
         <thead>
             <tr>
                 <th>Character</th>
+                <th>Species</th>
+                <th>Background</th>
+                <th>God(s)</th>
                 <th>Server</th>
                 <th>Result</th>
                 <th>Turns</th>
@@ -137,10 +152,13 @@ unset($list);
 
             <tr>
                 <td>
-                    <a href="/crawl_succession/game?id=<?=$e($game->id)?>">
+                    <a href="/crawl_succession_game?id=<?=$e($game->id)?>">
                         <?=$e($game->character_name)?>
                     </a>
                 </td>
+                <td><?=$e($game->species)?></td>
+                <td><?=$e($game->background)?></td>
+                <td><?=$e($game->god)?></td>
                 <td><?=$e($game->server)?></td>
                 <td><?=$e($game->result ?? '-')?></td>
                 <td><?=$e($game->turn_number)?></td>
