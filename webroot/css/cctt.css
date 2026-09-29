@@ -138,7 +138,9 @@ table.challenges_list img {
     margin-bottom: 0.75em;
 }
 .challenge img {
-    float:right;
+    float: right;
+    height: 192px;
+    width: auto;
     margin: 0 2em 5em 5em;
 }
 tr.active {
