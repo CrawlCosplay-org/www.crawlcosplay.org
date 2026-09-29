@@ -5,6 +5,14 @@ use app\models\CCCSeasons;
 
 <h2>CCC Seasons</h2>
 
+IMPORTANT ADMIN NOTES: 
+<p>- This list is for the 2027 rework of CCC Seasonal Challenges. Use the link at the top of the page to create NEW CCC Seasons Challenges and talk with others re: balance, etc.</p>
+<p>- Each year will be broken into 4 seasons with roughly challenges per season (so we aim to make at least 36 challenges here).</p>
+<p>- DO NOT set any challenge to ACTIVE; keep them as DRAFTS until we are ready to launch this in 2027.</p>
+<p>- Please enjoy yourselves by being creative with naming, challenges, etc!</p>
+
+<br>
+
 <table class="challenges_list bordered">
 	<thead>
 		<tr>
