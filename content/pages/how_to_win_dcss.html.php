@@ -49,8 +49,8 @@
 
 <br>
 
-<h3>4. Learn the Identification Minigame</h3> < p> Consumable items in DCSS are initially unidentified.</p>
-
+<h3>4. Master the Identification Minigame</h3> 
+<p> Consumable items in DCSS are initially unidentified.</p>
 <p>Learning how to identify items efficiently can give you access to useful resources earlier.</p>
 
 <ul>
@@ -90,7 +90,7 @@
 
 <br>
 
-<h3>Continue Learning</h3>
+<h3>Resources</h3>
 
 <p>Want to learn more? These resources cover DCSS strategy from a few different angles.</p>
 
