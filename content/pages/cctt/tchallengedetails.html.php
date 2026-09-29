@@ -43,7 +43,7 @@ $this->setData("meta", ['filename' => $cha->icon]);
 </p>
 
 <?php if ($cha->icon) : ?>
-    <img src="<?=$e($cha->icon)?>" class="detail" style="height:192px !important; width:auto !important;" />
+    <img src="<?=$e($cha->icon)?>" class="detail" style="height:192px; width:auto; image-rendering:pixelated;" />
 <?php endif; ?>
 <table class="table_for_layout">
 	<tr><th>Species</th><th>Background<th>Gods</th></tr>
