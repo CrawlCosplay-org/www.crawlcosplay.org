@@ -11,7 +11,7 @@ IMPORTANT ADMIN NOTES:
 <p>- Each year will be broken into 4 seasons with roughly challenges per season (so we aim to make at least 36 challenges here).</p>
 <p>- Each challenge starts at "Season 1 Week 1" until filled with 9 weeks, then "Season 2" restarts at week 1.</p>
 <p>- DO NOT set any challenge to ACTIVE; keep them as DRAFTS until we are ready to launch this in 2027.</p>
-<p>- Please enjoy yourselves by being creative with naming, challenges, etc! Ask in Discord with questions regarding balance or How-To.</p>
+<p>- Enjoy yourselves; be creative with naming, challenges, etc! Ask in Discord with questions regarding balance + How-To.</p>
 
 <br>
 
