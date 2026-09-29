@@ -31,9 +31,8 @@ $this->setData("meta", ['filename' => $cha->icon]);
 <!-- shortform field is used for Monster Speak -->
 <p style="text-align:right;"><span style="font-size: smaller"><?=$e($cha->shortform)?></span></p>
 <?php if ($cha->icon) : ?>
-	<img src="<?=$e($cha->icon)?>" />
+	<img src="<?=$e($cha->icon)?>" style="height:192px; width:auto; image-rendering:pixelated;" />
 <?php endif; ?>
-
 <p>
 	<?php if ($cha->active) : ?>
 		<a href="/ccc/submit_ccc">Submit a CCC run</a> 
