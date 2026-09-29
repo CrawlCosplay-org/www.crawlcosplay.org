@@ -24,9 +24,9 @@ use app\models\CCCSeasons;
 
 		<tr class="<?=$r++%2==0?'odd':'even'?> <?=($c->active)?'active':''?>">
 			<td><?=$c->year?>.<?=$c->season?>.<?=$c->week?></td>
-			<td><a href="/ccc/challengedetails?id=<?=$c->id?>"><img src="<?=$c->icon?>" /></a></td>
-			<td class="actions-td">
-				<a href="/ccc/challengedetails?id=<?=$c->id?>"><?=$c->name?></a>
+			<td><a href="/ccc/seasonchallenge.html?id=<?=$c->id?>"><img src="<?=$c->icon?>" /></a></td>
+            <td class="actions-td">
+			<a href="/ccc/seasonchallenge.html?id=<?=$c->id?>"><?=$c->name?></a>
 				<br /><?=($c->species), ", ", ($c->background), ", ", ($c->gods)?>
 			</td>
 			<td class="actions-td">
