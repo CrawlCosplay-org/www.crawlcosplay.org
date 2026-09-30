@@ -12,8 +12,8 @@ use app\models\{Challenge, Submission, Player};
 <p>Whether you're chasing your first win, or simply looking for a fresh way to experience DCSS, Crawl Cosplay Academy offers a guided introduction to several major build archetypes.</p>
 <p>Want to know more before jumping in? Read the <a href="/cca/about_cca">About CCA</a> webpage.</p>
 <p>Want to see a run in action? See: </p>
-	- <a href="https://www.youtube.com/playlist?list=PLY2Drf0NBvk-TkLUf7T9Ceg_HtoPwOHtT" target="_blank">Particleface's CCA tutorial videos</a>.</br>
-	- <a href="https://www.youtube.com/playlist?list=PLy8-17WgznzHupXlm9SbgNVWfeF46Yvku" target="_blank">Dumacalath's CCA videos</a>.</br>
+	- <a href="https://www.youtube.com/playlist?list=PLY2Drf0NBvk-TkLUf7T9Ceg_HtoPwOHtT" target="_blank">Particleface's CCA tutorial videos</a>.<br>
+	- <a href="https://www.youtube.com/playlist?list=PLy8-17WgznzHupXlm9SbgNVWfeF46Yvku" target="_blank">Dumacalath's CCA videos</a>.<br>
 <h3>Set...</h3>
 <p>If you have never won a game, your first Academy goal is to play one of the <b>"Strength Brutes"</b> listed below since they are considered to be the
 <b><i>easier</i></b> combos of the easiest category.</p>
@@ -40,11 +40,14 @@ use app\models\{Challenge, Submission, Player};
       <a href="/cca/achallengedetails?id=933" title="Bai Suzhen, the Draconian Shapeshifter (DrSh)"><img src="/img/uniques/Bai_Suzhen.png" width="72" height="72"></a> 
       <a href="/cca/achallengedetails?id=944" title="The Enchantress, the Spriggan Enchanter (SpEn)"><img src="/img/uniques/the_Enchantress.png" width="72" height="72"></a> </p>
 <h3>GO!</h3>
-Play a game of your favourite DCSS Uniques and once you have completed one of your better games, <b>Submit your Morgue</b> on the challenge's detail page and a moderator will approve it.
-Your best 2 runs for each challenge will be kept in the website's database...so submit as often as you like.
+<p>Play a game with your favourite DCSS Unique: CCA challenges can be played in either standard DCSS or <a href="https://dungeoncrawlchili.org/" target="_blank">DC Chili</a>.</p>
+<p>If you're still working toward your first win, DC Chili is an easier version of DCSS focused on making the early game more approachable and helping newer players reach areas such as the Lair and Orcish Mines more consistently.</p>
+
+<p>Once you've completed a run you're happy with, <b>Submit your Morgue</b> on the challenge's detail page and a moderator will approve it.
+Your best 2 runs for each challenge will be kept in the website's database, so submit as often as you like.</p>
 <br>
 <br>
-<h3>Need more help?...or have some questions</h3>
+<h3>Need more help, or have questions?</h3>
 <p>Come chat with us on our <a href="https://discord.gg/pW7nqC8Wu3" target="_blank">Crawl Cosplay Discord server</a> in the <b>#academy_cca</b> text channel.</p>
 
 <h2>Crawl Cosplay Academy Scoreboard</h2>
