@@ -49,7 +49,29 @@
 
 <br>
 
-<h3>4. Master the Identification Minigame</h3> 
+<h3>4. Choosing Your God</h3>
+<p>One of the biggest decisions you'll make in DCSS is choosing a god. It can be tempting to look for a simple rule like "this god is for melee" or "that god is for casters," but many gods don't fit neatly into a single category.</p>
+
+<p>Some gods are <b>specialists</b> that strongly encourage a particular style of play. Others are <b>generalists</b> that can work well with a wide variety of characters, but change how you approach the game in different ways.</p>
+
+<p>When choosing a god, don't just ask <b>"Is this god strong?"</b> Ask <b>"What does this god want me to do?" and decide whether or not that matches your own goals.</b></p>
+
+<ul>
+<li><b>Specialist gods</b> tend to reward a particular playstyle. For example, a god that rewards making many attacks early and often (like Uskayaw) needs you to lean into any number of ranged/melee/spellcaster types that do that.</li>
+<li><b>Generalist gods</b> can support many different characters, but each uses a different approach to make you stronger. Some improve your skills and flexibility (such as Ashenzari and Cheibriados), some provide powerful consumables or resources (Gozag and Nemelex), while others ask you to sacrifice some options in exchange for powerful abilities (Ru).</li>
+<li><b>God abilities shape your playstyle.</b> Some gods will offer panic buttons that should be used early like consummables </li>
+<li><b>Species and background matter too</b>, but they don't have to determine your entire build. A character's god, skills, equipment and abilities all work together to create its playstyle.</li>
+</ul>
+
+<p>You also don't need to understand every god before choosing one. Early on, it's often better to pick a god and learn <b>how that god wants you to play</b> than to try to memorise which god is theoretically optimal for every species and background.</p>
+
+<p>As you play more characters, you'll start to recognise which gods complement the characters you're building and which ones offer a playstyle you enjoy.</p>
+
+<p><b><a href="https://youtu.be/pzrhpdN3xBg?si=d0Kq9mum1hhDH2rL&t=38" target="_blank">Watch: Which God Should I Choose?</a></b></p>
+
+<br>
+
+<h3>5. Master the Identification Minigame</h3> 
 <p> Consumable items in DCSS are initially unidentified.</p>
 <p>Learning how to identify items efficiently can give you access to useful resources earlier.</p>
 
@@ -65,7 +87,7 @@
 
 <br>
 
-<h3>5. Learn From Your Deaths</h3>
+<h3>6. Learn From Your Deaths</h3>
 <p>Early on, you're going to die. A lot.</p>
 
 <p>After a death, ask yourself:</p>
@@ -82,8 +104,8 @@
 
 <br>
 
-<h3>6. Get Your First Win</h3>
-<p>Your first win doesn't require perfect knowledge of DCSS. It requires putting together enough good decisions to survive all the way to the end.</p>
+<h3>7. Get Your First Win</h3>
+<p>Your first win doesn't require perfect knowledge of DCSS. It just requires putting together enough good decisions to survive all the way to the end.</p>
 
 <p>Once you've won, you'll have a much better understanding of how the game works and can start experimenting with more unusual characters and strategies.</p>
 <p>Choose a character that lets you concentrate on learning the fundamentals of DCSS rather than managing a complicated collection of abilities.</p>
@@ -96,6 +118,14 @@
 
 <div style="display:flex; flex-wrap:wrap; gap:20px; margin:20px 0;">
 
+<div style="max-width:300px;">
+<a href="http://crawl.chaosforge.org/Strategy_guides" target="_blank">
+<img src="/img/misc/DC Wiki Logo.png" alt="CrawlWiki Strategy Guides" style="width:100%; height:auto;">
+</a>
+<h4><a href="http://crawl.chaosforge.org/Strategy_guides" target="_blank">CrawlWiki Strategy Guides</a></h4>
+<p>Written strategy guides covering a wide range of DCSS topics, characters and gameplay techniques.</p>
+</div>
+  
 <div style="max-width:300px;">
 <a href="https://youtube.com/playlist?list=PLUKw51t06kZusqEFEupN9Ssb5c5zEn90K" target="_blank">
 <img src="/img/dcss_logo.png" alt="DCSS Strategy Guides" style="width:100%; height:auto;">
@@ -110,14 +140,6 @@
 </a>
 <h4><a href="https://youtube.com/playlist?list=PLY2Drf0NBvk-qO3BxxmlKxasCh-zROFa8" target="_blank">Particleface's Beginner Tutorials</a></h4>
 <p>A series of beginner-friendly tutorials covering the fundamentals of playing DCSS.</p>
-</div>
-
-<div style="max-width:300px;">
-<a href="http://crawl.chaosforge.org/Strategy_guides" target="_blank">
-<img src="/img/dcss_logo.png" alt="CrawlWiki Strategy Guides" style="width:100%; height:auto;">
-</a>
-<h4><a href="http://crawl.chaosforge.org/Strategy_guides" target="_blank">CrawlWiki Strategy Guides</a></h4>
-<p>Written strategy guides covering a wide range of DCSS topics, characters and gameplay techniques.</p>
 </div>
 
 </div>
