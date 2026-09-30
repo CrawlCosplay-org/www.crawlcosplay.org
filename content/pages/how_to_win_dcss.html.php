@@ -28,7 +28,7 @@
 <p>DCSS rewards careful decision-making rather than clearing every monster from every level. Learn to recognise which enemies you can safely fight and which are better avoided.</p>
 
 <ul>
-<li>When you see a dangerous threat, press <b>'X'</b> to enter selection mode. Highlight the enemy and press <b>'v'</b> to examine it and learn what it does.</li>
+<li>When you see a dangerous threat, press <b>'X'</b> to enter selection mode. Highlight the enemy and press <b>'v'</b> to examine it and learn what it does. You can learn its max melee damage, the spells that can be cast and what they do, and resistances among other details.</li>
 <li>Use <b>'e'</b> from this select mode to exclude dangerous enemies and tiles in their line of sight.</li>
 <li>If you're unlikely to win an engagement, don't take it. Walk away and come back when you're stronger, or avoid it entirely.</li>
 </ul>
@@ -44,6 +44,7 @@
 <li>Prioritise the skills that give you the most immediate benefit, rather than trying to train everything equally. Most agree that you should train your "Kill dudes" skills first.</li>
 <li>It's generally better to train 1 or 2 skills at a time so they hit their breakpoints faster rather than having many skills slowly coming online.</li>
 <li>Once an important skill has reached a useful level, consider training something else that will provide a greater benefit. Training new skills, in a strategic manner and only once your build works, is a great way to add utility and survivability.</li>
+<li>Aim for at least 1.0 attack delay for your weapon (look at the weapon or use <b>'@'</b>), and eventually the weapon's minimum attack delay, 10% fail chance or less for spells, and always have a few points in stealth to help you avoid fights you don't want to take!</li>
 </ul>
 
 <p>Your goal isn't to maximise every skill. It's to spend your experience where it makes your character better at doing what you need them to do at the time.</p>
