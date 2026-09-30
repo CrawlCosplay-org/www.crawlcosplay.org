@@ -1,5 +1,3 @@
-<meta name="robots" content="noindex, nofollow">
-
 <h1 style="color:rgb(69, 136, 5);">How to Win DCSS</h1>
 
 <br>
@@ -41,7 +39,7 @@
 <p>As you explore, you'll gain experience that can be used to improve your skills. Learning how to spend that experience efficiently is important for keeping up with the difficulty curve through the game.</p>
 
 <ul>
-<li>Use the skill menu to manually control which skills receive experience, rather than leaving every skill training automatically.</li>  
+<li>Use the skill menu to <b>manually control</b> which skills receive experience, rather than leaving every skill training automatically.</li>  
 <li>Focus your training on the skills that support how your character actually fights.</li>
 <li>Prioritise the skills that give you the most immediate benefit, rather than trying to train everything equally. Most agree that you should train your "Kill dudes" skills first.</li>
 <li>It's generally better to train 1 or 2 skills at a time so they hit their breakpoints faster rather than having many skills slowly coming online.</li>
@@ -57,16 +55,16 @@
 
 <p>Some gods are <b>specialists</b> that strongly encourage a particular style of play. Others are <b>generalists</b> that can work well with a wide variety of characters, but change how you approach the game in different ways.</p>
 
-<p>When choosing a god, don't just ask <b>"Is this god strong?"</b> Ask <b>"What does this god want me to do?" and decide whether or not that matches your own goals.</b></p>
+<p>When choosing a god, don't just ask "Is this god strong?" Ask "What does this god want me to do?" and decide whether or not that matches your own goals.</p>
 
 <ul>
 <li><b>Specialist gods</b> tend to reward a particular playstyle. For example, a god that rewards making many attacks early and often (like Uskayaw) needs you to lean into any number of ranged/melee/spellcaster types that do that.</li>
 <li><b>Generalist gods</b> can support many different characters, but each uses a different approach to make you stronger. Some improve your skills and flexibility (such as Ashenzari and Cheibriados), some provide powerful consumables or resources (Gozag and Nemelex), while others ask you to sacrifice some options in exchange for powerful abilities (Ru).</li>
-<li><b>God abilities shape your playstyle.</b> Some gods will offer panic buttons that should be used early, like consumables </li>
-<li><b>Species and background matter too</b>, but they don't have to determine your entire build. A character's god, skills, equipment and abilities all work together to create its playstyle.</li>
+<li>God abilities shape your playstyle. Some gods will offer panic buttons that should be used early, like consumables. </li>
+<li>Species and background matter too, but they don't have to determine your entire build. A character's god, skills, equipment, and abilities all work together to create its playstyle.</li>
 </ul>
 
-<p>You also don't need to understand every god before choosing one. Early on, it's often better to pick a god and learn <b>how that god wants you to play</b> than to try to memorise which god is theoretically optimal for every species and background.</p>
+<p>You also don't need to understand every god before choosing one. Early on, it's often better to pick a god and learn how that god wants you to play than to try to memorise which god is theoretically optimal for every species and background.</p>
 
 <p>As you play more characters, you'll start to recognise which gods complement the characters you're building and which ones offer a playstyle you enjoy.</p>
 
@@ -75,7 +73,7 @@
 <br>
 
 <h3>5. Master the Identification Minigame</h3> 
-<p> Consumable items in DCSS are initially unidentified.</p>
+<p><b>Consumable items</b> in DCSS are initially unidentified.</p>
 <p>Learning how to identify items efficiently can give you access to useful resources earlier.</p>
 
 <ul>
