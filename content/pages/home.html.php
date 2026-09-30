@@ -42,7 +42,7 @@ echo	'<img src="/img/cc_stone_soup_icon-512x512.png"  width="350"  style="float:
    	echo     "<li>" . _("Read") . ': <a href="/ccc/about_ccc">' . _("About CCC") . "</a>.</li>";
    	echo     "<li>" . _("See") . ': <a href="/ccc/all_ccc_history">' . _("all 100+ challenges") . "</a></li></ul><br>";
 
-	echo '<h3>' . _("Crawl Succession") . " (Coming Soon!)</h3>";
+	echo '<h3><span style="color:white;">' . _("Crawl Succession") . '</span> (Coming Soon!)</h3>';
 	echo "<ul><li>" . _("Starting after the release of 0.35, Crawl Succession will be opening up for group DCSS games - multiple players, one account!") . "</li>";
 	echo "<li>" . _("The planned system will allow players to submit characters they want to run or sign up for characters others have submitted.") . "</li>";
 	echo "<li>" . _("You'll play on shared accounts focused on Win Rates, Challenge Runs, New Players, Fun Runs, and More.") . "</li>";	
