@@ -37,6 +37,7 @@ use app\models\{Challenge, Submission, Player};
   <p> <a href="/cca/achallengedetails?id=932" title="Jeremiah, the Barachi Summoner (BaSu)"><img src="/img/uniques/Jeremiah.png" width="72" height="72"></a> 
       <a href="/cca/achallengedetails?id=933" title="Bai Suzhen, the Draconian Shapeshifter (DrSh)"><img src="/img/uniques/Bai_Suzhen.png" width="72" height="72"></a> 
       <a href="/cca/achallengedetails?id=944" title="The Enchantress, the Spriggan Enchanter (SpEn)"><img src="/img/uniques/the_Enchantress.png" width="72" height="72"></a> </p>
+<br>
 <h2>GO!</h2>
 <p>Play a game with your favourite DCSS Unique: CCA challenges can be played in either standard DCSS or <a href="https://dungeoncrawlchili.org/" target="_blank">DC Chili</a>.</p>
 <p>If you're still working toward your first win, DC Chili is an easier version of DCSS focused on making the early game more approachable and helping newer players reach areas such as the Lair and Orcish Mines more consistently.</p>
