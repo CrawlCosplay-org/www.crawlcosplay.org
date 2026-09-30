@@ -1,17 +1,21 @@
 <?php $this->layout = 'cca'; ?>
-<h2 style="color:rgb(69, 136, 5);">About Crawl Cosplay Academy (CCA)</h2>
-<h3>Learn DCSS the Fun Way</h3>
+<h1 style="color:rgb(69, 136, 5);">About Crawl Cosplay Academy (CCA)</h1>
+<h2>Learn DCSS the Fun Way</h2>
 <p><img src="/img/uniques/Snorg.png" width="72" height="72" style="float:right">Want to improve your gameplay and have fun doing it? 
 <b>Crawl Cosplay Academy (CCA)</b> is a guided series of approachable challenges designed to teach core skills from a diverse range of builds while playing characters inspired by iconic
 <a href="http://crawl.chaosforge.org/Unique_monster" target="_blank">DCSS Uniques,</a> such as our mascot, <b><i>Snorg</b></i></p>
+
 <br>
-<h3>Who is CCA For?</h3>
-Whether you're chasing your first win, or simply looking for a fresh way to experience DCSS, Crawl Cosplay Academy offers a guided introduction to several major build archetypes.
+  
+<h2>Who is CCA For?</h2>
+<p>Whether you're chasing your first win or simply looking for a fresh way to experience DCSS, Crawl Cosplay Academy offers a guided introduction to several major build archetypes.</p>
 <p>Each challenge is designed to teach and test, helping newer players build confidence while allowing experienced players to step outside their comfort zone and master unfamiliar strategies and playstyles.</p>
-<p>CCA also serves as a natural stepping stone into the weekly <a href="/ccc" target="_blank">Crawl Cosplay Challenges</a> (CCC). By the time you've completed the Academy, you'll have
-  strengthened your fundamentals, found a character style that suits you, and will be well prepared to tackle the weekly challenges with confidence.</p>
+<p>CCA challenges can be played in either standard DCSS or <a href="https://dungeoncrawlchili.org/" target="_blank">DC Chili</a>, an easier version of DCSS focused on making the early game more approachable. If you're still working toward your first win, DC Chili can help you reach areas such as the Lair and Orcish Mines more consistently.</p>
+<p>CCA also serves as a natural stepping stone into the weekly <a href="/ccc" target="_blank">Crawl Cosplay Challenges</a> (CCC). By the time you've completed the Academy, you'll have strengthened your fundamentals, found a character style that suits you, and will be well prepared to tackle the weekly challenges with confidence.</p>
+
 <br>
-<h3>Your Process</h3>
+  
+<h2>Your Process</h2>
 <p>There are 4 playstyles with 3 uniques each:
   <b>Strength based</b>, <b>Dexterity based</b>, <b>Intelligence based</b>, and <b>Miscellaneous</b>. </p>
   Hover over a Unique's graphic to see their descriptions, click on them to open the Unique's challenge details page.
