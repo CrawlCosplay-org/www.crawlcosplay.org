@@ -130,13 +130,13 @@
 <a href="https://youtube.com/playlist?list=PLUKw51t06kZusqEFEupN9Ssb5c5zEn90K" target="_blank">
 <img src="/img/dcss_logo.png" alt="DCSS Strategy Guides" style="width:100%; height:auto;">
 </a>
-<h4><a href="https://youtube.com/playlist?list=PLUKw51t06kZusqEFEupN9Ssb5c5zEn90K" target="_blank">DCSS Strategy Guides</a></h4>
+<h4><a href="https://youtube.com/playlist?list=PLUKw51t06kZusqEFEupN9Ssb5c5zEn90K" target="_blank">Draconius' Strategy Guides</a></h4>
 <p>Video guides covering practical strategy and decision-making to help you become a better DCSS player.</p>
 </div>
 
 <div style="max-width:300px;">
 <a href="https://youtube.com/playlist?list=PLY2Drf0NBvk-qO3BxxmlKxasCh-zROFa8" target="_blank">
-<img src="/img/dcss_logo.png" alt="Particleface's Beginner Tutorials" style="width:100%; height:auto;">
+<img src="/img/misc/ParticleFace Logo.jpg" alt="Particleface's Beginner Tutorials" style="width:100%; height:auto;">
 </a>
 <h4><a href="https://youtube.com/playlist?list=PLY2Drf0NBvk-qO3BxxmlKxasCh-zROFa8" target="_blank">Particleface's Beginner Tutorials</a></h4>
 <p>A series of beginner-friendly tutorials covering the fundamentals of playing DCSS.</p>
