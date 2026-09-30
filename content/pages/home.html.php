@@ -7,7 +7,7 @@
 	$index2 = rand(2, ($count-1));
 	$filename2 = $files[$index2];
 
-echo	"<h2>Welcome to Crawl Cosplay: Learn, Compete, Improve!</h2>";
+echo	"<h1>Welcome to Crawl Cosplay: Learn, Improve, Compete!</h1>";
 
 echo "<p>" . _("We're a community built around creative challenges, learning, and improving at Dungeon Crawl Stone Soup and its many forks. 
 Whether you're taking your first steps into the dungeon or looking for a fresh challenge after hundreds of wins, Crawl Cosplay is a welcoming place to learn, share your adventures, and grow alongside other players.") . "</p>";
@@ -15,22 +15,38 @@ Whether you're taking your first steps into the dungeon or looking for a fresh c
 echo "<p>" . _("Our mission is simple: help more people enjoy DCSS. Through guides, tournaments, discussions, and carefully designed challenges, we aim to be the community's 
 launchpad — a place where new players build confidence, experienced players push their limits, and everyone discovers new ways to play.") . "</p>";
 
+echo "<p>" . _("Choose the path that best matches where you are in your Crawl journey: learning the game, looking to improve and have fun, or ready to compete!") . "</p><br>";
+
 echo	'<img src="/img/cc_stone_soup_icon-512x512.png"  width="350"  style="float:right">';
 ?>
 <br>
 <?php
-	echo "<h2>" . _("Find Your Next Adventure:") . "</h2>";
-	echo "<p>" . _("Choose the path that best matches where you are in your Crawl journey - from your first victory to your next great challenge!") . "</p><br>";
+	echo "<h2>" . _("Learn The Game:") . "</h2>";
+	
 #	echo '<img src="'.$dir_path."/".$filename2.'" alt="'.$filename2.'"  width="350"  style="float:right">';
 
+	echo '<h3><a href="/how_to_win_dcss">' . _("How to Win DCSS") . "</a> <small>(New!)</small></h3>";
+	echo "<ul><li>" . _("If you're asking how to survive the dungeon, pick a god, or identify your consumables - this is where to start!") . "</li>";
+	echo     "<li>" . _("Includes references to several outside resources to continue learning the basics.") . "</li></ul><br>";
+
 	echo '<h3><a href="/cca">' . _("Crawl Cosplay Academy") . "</a> (CCA)</h3>";
-	echo "<ul><li>" . _("For those new to DC or still trying to get the first few wins.") . "</li>";
+	echo "<ul><li>" . _("For those new to DCSS, or still trying to get the first few wins.") . "</li>";
+	echo "<li>" . _("These straightforward, guided challenges are designed to show you the ropes with characters who highlight the main playstyles in DCSS.") . "</li>";
 	echo     "<li>" . _("Read") . ' <a href="/cca/about_cca">' . _("About CCA") . "</a></li></ul><br>";
+
+
+	echo "<h2>" . _("Improve & Have Fun:") . "</h2>";
 
 	echo '<h3><a href="/ccc">' . _("Crawl Cosplay Challenges") . "</a> (CCC)</h3>";
 	echo "<ul><li>" . _("Looking for a real challenge? Get a new one each week!") . "</li>";
    	echo     "<li>" . _("Read") . ': <a href="/ccc/about_ccc">' . _("About CCC") . "</a>.</li>";
    	echo     "<li>" . _("See") . ': <a href="/ccc/all_ccc_history">' . _("all 100+ challenges") . "</a></li></ul><br>";
+
+	echo '<h3>(Coming Soon!) ' . _("Crawl Succession") . "</h3>";
+	echo "<ul><li>" . _("Starting after the release of 0.35, Crawl Succession will be opening up for group DCSS games - multiple players, one account!") . "</li>";
+	echo "<li>" . _("The planned system will allow players to submit characters they want to run or sign up for characters others have submitted.") . "</li>";
+	echo "<li>" . _("You'll play on shared accounts focused on Win Rates, Challenge Runs, New Players, Fun Runs, and More.") . "</li>";	
+	echo "<li>" . _("Head to Discord and give feedback on what you would like to see in this project!") . "</li></ul><br>";
 
 /*
 echo '
@@ -47,7 +63,8 @@ echo '
 </div><br>';
 */
 /* <img src="/img/misc/arrow-flashing-left.gif" width="40" height="10"> */
-	echo "<h2>" . _("Look Forward to Future Tournaments!") . "</h2>";
+
+	echo "<h2>" . _("Compete For Glory!") . "</h2>";
 	echo '<h3>(Active!) <a href="/cctt">' . _("Crawl Cosplay Trunk Tournament") . "</a> (CCTT) &nbsp;<img src=\"/img/misc/arrow-flashing-left.gif\" width=\"40\" height=\"10\"></h3>";
    	echo "<ul><li>" . _("A DCSS tournament lasting about a month with each week highlighting some of the latest Trunk changes.") . "</li>";
    	echo     "<li>" . _("Read") . ': <a href="/cctt/about_cctt">' . _("About CCTT") . "</a>.</li>";
@@ -98,6 +115,7 @@ setInterval(updateCountdown, 1000);
 
 	echo '<h3><a href="/ccft">' . _("Crawl Cosplay Forks Tournament") . '</a> (CCFT)</h3>';
 	echo "<ul><li>" . _("A tournament lasting 5 weeks with each week highlighting a different Dungeon Crawl fork.") . "</li>";
+	echo 	 "<li>" . _("Our next Forks Tournament will likely start in mid-2027.") . "</li>";
 	echo     "<li>" . _("Read ") . ' <a href="/ccft/about_ccft">' . _("About CCFT") . "</a>.</li>";
 	echo     "<li>" . _("For information about the 5 Dungeon Crawl forks taking part in CCFT#2, see")  . ': <a href="https://www.dungeoncrawlforks.org/forks_details" target="_blank">' . _("Dungeon Crawl Forks") . "</a>.</li></ul><br>";
 
@@ -127,8 +145,6 @@ setInterval(updateCountdown, 1000);
 		   . ' <a href="https://www.youtube.com/@DraconiusHC" target="_blank">' . _("Draconius' YouTube Channel.") . "</a></li>";
 	echo "<li>" . _("The majority of the Crawl Cosplay Challenges were originally developed by Kitchen_Ace, founder of Crawl Cosplay, with many others contributing over the years. 
 				They are currently maintained by Colgate, MrSquiggles, and Draconius.") . "</li></ul><br>";
-
-	echo "<h3 style='color:orange'>" . _("On behalf of the Crawl Cosplay community, thank you, Rogga, for the years of dedication to Crawl Cosplay") . "!</h3><br>";
 ?>
 
 <!-- <br>
