@@ -9,11 +9,9 @@ use app\models\{Challenge, Submission, Player};
 ?>
 <h1 style="color:rgb(69, 136, 5);">Welcome New Crawlers!</h1>
 <h3>Ready?</h3>
-<p>Whether you're chasing your first win, or simply looking for a fresh way to experience DCSS, Crawl Cosplay Academy offers a guided introduction to several major build archetypes.</p>
-<p>Want to know more before jumping in? Read the <a href="/cca/about_cca">About CCA</a> webpage.</p>
-<p>Want to see a run in action? See: </p>
-	- <a href="https://www.youtube.com/playlist?list=PLY2Drf0NBvk-TkLUf7T9Ceg_HtoPwOHtT" target="_blank">Particleface's CCA tutorial videos</a>.<br>
-	- <a href="https://www.youtube.com/playlist?list=PLy8-17WgznzHupXlm9SbgNVWfeF46Yvku" target="_blank">Dumacalath's CCA videos</a>.<br>
+<p>Whether you're chasing your first win or simply looking for a fresh way to experience DCSS, Crawl Cosplay Academy offers a guided introduction to several major build archetypes.</p>
+<p>Want to know more before jumping in? Read the <a href="/cca/about_cca">About CCA</a> webpage.</p><br>
+
 <h3>Set...</h3>
 <p>If you have never won a game, your first Academy goal is to play one of the <b>"Strength Brutes"</b> listed below since they are considered to be the
 <b><i>easier</i></b> combos of the easiest category.</p>
@@ -32,7 +30,7 @@ use app\models\{Challenge, Submission, Player};
 <h4><b>Mages/Mostly Magic</b></h4>
   <p>Focus primarily on the Intelligence attribute, prefer to wear light armor (robes in particular), and often but not always fight at long range. Skills to focus on are roughly two magic school(s), spellcasting, fighting, stealth, evocations, and invocations (if applicable).</p>
   <p> <a href="/cca/achallengedetails?id=935" title="Frederick, the Demigod Conjurer (DgCj)"><img src="/img/uniques/Frederick.png" width="72" height="72"></a>
-      <a href="/cca/achallengedetails?id=936" title="Aantaeus, the Oni Ice Elementalist (OnIE)"><img src="/img/uniques/Antaeus.png" width="60" height="72"></a> 
+      <a href="/cca/achallengedetails?id=936" title="Antaeus, the Oni Ice Elementalist (OnIE)"><img src="/img/uniques/Antaeus.png" width="60" height="72"></a> 
       <a href="/cca/achallengedetails?id=937" title="Roxanne, the Gargoyle Earth Elementalist (GrEE)"><img src="/img/uniques/Roxanne.png" width="72" height="72"></a></p>
 <h4><b>Miscellaneous</b></h4>
   <p>An assortment of less straightforward builds including Summoner, Shapeshifter, and Enchanter</p>
@@ -47,9 +45,14 @@ use app\models\{Challenge, Submission, Player};
 Your best 2 runs for each challenge will be kept in the website's database, so submit as often as you like.</p>
 <br>
 <br>
-<h3>Need more help, or have questions?</h3>
-<p>Come chat with us on our <a href="https://discord.gg/pW7nqC8Wu3" target="_blank">Crawl Cosplay Discord server</a> in the <b>#academy_cca</b> text channel.</p>
-
+<h3>Need more help or have questions?</h3>
+<p>Come chat with us on our <a href="https://discord.gg/pW7nqC8Wu3" target="_blank">Crawl Cosplay Discord server</a> in the <b>#academy_cca</b> text channel.</p><br>
+<h3>Want to see a run in action?</h3>
+<ul>
+	<li><a href="https://www.youtube.com/playlist?list=PLY2Drf0NBvk-TkLUf7T9Ceg_HtoPwOHtT" target="_blank">Particleface's CCA tutorial videos</a></li>
+	<li><a href="https://www.youtube.com/playlist?list=PLy8-17WgznzHupXlm9SbgNVWfeF46Yvku" target="_blank">Dumacalath's CCA videos</a></li>
+</ul>
+<br>
 <h2>Crawl Cosplay Academy Scoreboard</h2>
 <table class="bordered">
 	<tr>
