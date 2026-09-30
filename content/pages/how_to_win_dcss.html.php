@@ -2,6 +2,8 @@
 
 <h1 style="color:rgb(69, 136, 5);">How to Win DCSS</h1>
 
+<br>
+
 <h3>So, How Do You Actually Win?</h3>
 <p>Dungeon Crawl Stone Soup (DCSS) can seem overwhelming when you're starting out. There are dozens of species, backgrounds, and gods, with even more spells, weapons, and strategies to learn.</p>
 
