@@ -1,24 +1,25 @@
 <meta name="robots" content="noindex, nofollow">
 
-<h2 style="color:rgb(69, 136, 5);">How to Win DCSS</h2>
+<h1 style="color:rgb(69, 136, 5);">How to Win DCSS</h1>
 
 <h3>So, How Do You Actually Win?</h3>
-<p>Dungeon Crawl Stone Soup (DCSS) can seem overwhelming when you're starting out. There are dozens of species, backgrounds, gods, spells, weapons and strategies to learn.</p>
+<p>Dungeon Crawl Stone Soup (DCSS) can seem overwhelming when you're starting out. There are dozens of species, backgrounds, and gods, with even more spells, weapons, and strategies to learn.</p>
 
-<p>The good news is that you don't need to understand everything to win. You need to learn a few important fundamentals and gradually build on them.</p>
+<p>The good news is that you don't need to understand everything to win. You need to learn a few important fundamentals, and gradually build on them.</p>
 
-<p>This guide focuses on the things that will help you survive, improve, and eventually get your first win.</p>
+<p>This guide focuses on the things that will help you survive, improve, and eventually get your first win with a few resources to help you along the way.</p>
 
 <br>
 
 <h3>1. Learn to Stay Alive</h3>
-<p>The most important skill in DCSS isn't killing monsters. It's knowing how to survive when things go wrong.</p>
+<p>The most important skill in DCSS isn't killing monsters. It's knowing how to survive.</p>
 
 <ul>
-<li>Don't fight every monster you encounter.</li>
+<li>You don't need to fight every monster you encounter.</li>
 <li>Avoid fighting while surrounded. Fight in corridors so you face one enemy at a time.</li>
 <li>Keep an escape option available. Always know where the stairs are relative to your position.</li>
 <li>Use consumables before the last possible turn. Using them early means you survive long enough to find more.</li>
+<li>Don't auto-explore until your character feels stronger than the average monster in the zone.</li>
 </ul>
 
 <br>
@@ -27,22 +28,22 @@
 <p>DCSS rewards careful decision-making rather than clearing every monster from every level. Learn to recognise which enemies you can safely fight and which are better avoided.</p>
 
 <ul>
-<li>When you see a dangerous threat, press <b>'x'</b> to enter selection mode. Highlight the enemy and press <b>'v'</b> to examine it and learn what it does.</li>
-<li>Use <b>'e'</b> to exclude dangerous enemies and their line of sight from consideration when exploring.</li>
+<li>When you see a dangerous threat, press <b>'X'</b> to enter selection mode. Highlight the enemy and press <b>'v'</b> to examine it and learn what it does.</li>
+<li>Use <b>'e'</b> from this select mode to exclude dangerous enemies and tiles in their line of sight.</li>
 <li>If you're unlikely to win an engagement, don't take it. Walk away and come back when you're stronger, or avoid it entirely.</li>
 </ul>
 
 <br>
 
 <h3>3. Make Your Character Stronger Through Skilling</h3>
-<p>As you explore, you'll gain experience that can be used to improve your skills. Learning how to spend that experience efficiently is an important part of becoming stronger.</p>
+<p>As you explore, you'll gain experience that can be used to improve your skills. Learning how to spend that experience efficiently is important for keeping up with the difficulty curve through the game.</p>
 
 <ul>
+<li>Use the skill menu to manually control which skills receive experience, rather than leaving every skill training automatically.</li>  
 <li>Focus your training on the skills that support how your character actually fights.</li>
-<li>Prioritise the skills that give you the most immediate benefit, rather than trying to train everything equally.</li>
+<li>Prioritise the skills that give you the most immediate benefit, rather than trying to train everything equally. Most agree that you should train your "Kill dudes" skills first.</li>
 <li>It's generally better to train 1 or 2 skills at a time so they hit their breakpoints faster rather than having many skills slowly coming online.</li>
-<li>Once an important skill has reached a useful level, consider training something else that will provide a greater benefit.</li>
-<li>Use the skill menu to manually control which skills receive experience, rather than leaving every skill training automatically.</li>
+<li>Once an important skill has reached a useful level, consider training something else that will provide a greater benefit. Training new skills, in a strategic manner and only once your build works, is a great way to add utility and survivability.</li>
 </ul>
 
 <p>Your goal isn't to maximise every skill. It's to spend your experience where it makes your character better at doing what you need them to do at the time.</p>
@@ -59,7 +60,7 @@
 <ul>
 <li><b>Specialist gods</b> tend to reward a particular playstyle. For example, a god that rewards making many attacks early and often (like Uskayaw) needs you to lean into any number of ranged/melee/spellcaster types that do that.</li>
 <li><b>Generalist gods</b> can support many different characters, but each uses a different approach to make you stronger. Some improve your skills and flexibility (such as Ashenzari and Cheibriados), some provide powerful consumables or resources (Gozag and Nemelex), while others ask you to sacrifice some options in exchange for powerful abilities (Ru).</li>
-<li><b>God abilities shape your playstyle.</b> Some gods will offer panic buttons that should be used early like consummables </li>
+<li><b>God abilities shape your playstyle.</b> Some gods will offer panic buttons that should be used early, like consumables </li>
 <li><b>Species and background matter too</b>, but they don't have to determine your entire build. A character's god, skills, equipment and abilities all work together to create its playstyle.</li>
 </ul>
 
@@ -108,13 +109,13 @@
 <p>Your first win doesn't require perfect knowledge of DCSS. It just requires putting together enough good decisions to survive all the way to the end.</p>
 
 <p>Once you've won, you'll have a much better understanding of how the game works and can start experimenting with more unusual characters and strategies.</p>
-<p>Choose a character that lets you concentrate on learning the fundamentals of DCSS rather than managing a complicated collection of abilities.</p>
+<p>Choose a character that lets you concentrate on learning the fundamentals of DCSS, work on seeing more of the game more often, and you'll solve the puzzle before you know it!</p>
 
 <br>
 
 <h3>Resources</h3>
 
-<p>Want to learn more? These resources cover DCSS strategy from a few different angles.</p>
+<p>Want to learn more? These resources cover DCSS strategy from a few different angles:</p>
 
 <div style="display:flex; flex-wrap:wrap; justify-content:space-between; gap:20px; margin:20px 0;">
 
