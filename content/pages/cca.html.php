@@ -8,11 +8,11 @@ use app\models\{Challenge, Submission, Player};
 	$weeks = sizeof($challenges_in_set);
 ?>
 <h1 style="color:rgb(69, 136, 5);">Welcome New Crawlers!</h1>
-<h3>Ready?</h3>
+<h2>Ready?</h2>
 <p>Whether you're chasing your first win or simply looking for a fresh way to experience DCSS, Crawl Cosplay Academy offers a guided introduction to several major build archetypes.</p>
 <p>Want to know more before jumping in? Read the <a href="/cca/about_cca">About CCA</a> webpage.</p><br>
 
-<h3>Set...</h3>
+<h2>Set...</h2>
 <p>If you have never won a game, your first Academy goal is to play one of the <b>"Strength Brutes"</b> listed below since they are considered to be the
 <b><i>easier</i></b> combos of the easiest category.</p>
 <p>Just click on one of the Uniques for the challenge's details, listing the suggested 3 conducts and 2 bonuses.</p>
@@ -37,7 +37,7 @@ use app\models\{Challenge, Submission, Player};
   <p> <a href="/cca/achallengedetails?id=932" title="Jeremiah, the Barachi Summoner (BaSu)"><img src="/img/uniques/Jeremiah.png" width="72" height="72"></a> 
       <a href="/cca/achallengedetails?id=933" title="Bai Suzhen, the Draconian Shapeshifter (DrSh)"><img src="/img/uniques/Bai_Suzhen.png" width="72" height="72"></a> 
       <a href="/cca/achallengedetails?id=944" title="The Enchantress, the Spriggan Enchanter (SpEn)"><img src="/img/uniques/the_Enchantress.png" width="72" height="72"></a> </p>
-<h3>GO!</h3>
+<h2>GO!</h2>
 <p>Play a game with your favourite DCSS Unique: CCA challenges can be played in either standard DCSS or <a href="https://dungeoncrawlchili.org/" target="_blank">DC Chili</a>.</p>
 <p>If you're still working toward your first win, DC Chili is an easier version of DCSS focused on making the early game more approachable and helping newer players reach areas such as the Lair and Orcish Mines more consistently.</p>
 
