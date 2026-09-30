@@ -65,7 +65,7 @@ if ($data = $this->request->getPostData()) {
 		<br />
 		<label>
 			<span>Year</span><br />
-			<input type="number" name="year" value="<?=$season->year?>" />
+			<input type="number" name="year" value="<?=$season->year?>" style="width: 5em;" />
 		</label>
 		<br />
 		<br />
