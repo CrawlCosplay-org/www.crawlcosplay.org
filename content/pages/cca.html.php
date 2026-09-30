@@ -7,7 +7,7 @@ use app\models\{Challenge, Submission, Player};
 	$challenges_in_set = Challenge::findAsArray(['setnr' => $set, 'draft' => 0], ['order' => '`week` ASC']);
 	$weeks = sizeof($challenges_in_set);
 ?>
-<h2 style="color:rgb(69, 136, 5);">Welcome New Crawlers!</h2>
+<h1 style="color:rgb(69, 136, 5);">Welcome New Crawlers!</h1>
 <h3>Ready?</h3>
 <p>Whether you're chasing your first win, or simply looking for a fresh way to experience DCSS, Crawl Cosplay Academy offers a guided introduction to several major build archetypes.</p>
 <p>Want to know more before jumping in? Read the <a href="/cca/about_cca">About CCA</a> webpage.</p>
