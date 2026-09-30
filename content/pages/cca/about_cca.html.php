@@ -1,5 +1,8 @@
 <?php $this->layout = 'cca'; ?>
 <h1 style="color:rgb(69, 136, 5);">About Crawl Cosplay Academy (CCA)</h1>
+
+<br>
+
 <h2>Learn DCSS the Fun Way</h2>
 <p><img src="/img/uniques/Snorg.png" width="72" height="72" style="float:right">Want to improve your gameplay and have fun doing it? 
 <b>Crawl Cosplay Academy (CCA)</b> is a guided series of approachable challenges designed to teach core skills from a diverse range of builds while playing characters inspired by iconic
@@ -71,5 +74,4 @@ After you complete a good game (with either a <abbr title="aka Yet Another Victo
 <br>
 <br> 
 <p>Happy Crawling!</p>
-<p>RoGGa, PieDemon (aka Tsarmina) for most of the 12 challenges' write-ups, our webdev team and the @VIPs in Discord.</p>
 <br>
