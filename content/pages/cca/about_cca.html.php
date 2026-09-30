@@ -30,7 +30,7 @@
     </td>
     <td><p><b>--------------Dexterity-------------</b></p><p></p>
       <a href="/cca/achallengedetails?id=929" title="Donald, the Merfolk Monk (MfMo)"><img src="/img/uniques/Donald.png" width="72" height="72"></a>
-      <a href="/cca/achallengedetails?id=930" title="Sonja, the Kobole Brigan (KoBr)"><img src="/img/uniques/Sonja.png" width="72" height="72"></a>
+      <a href="/cca/achallengedetails?id=930" title="Sonja, the Kobold Brigand (KoBr)"><img src="/img/uniques/Sonja.png" width="72" height="72"></a>
       <a href="/cca/achallengedetails?id=931" title="Vashnia, the Naga Hunter (NaHu)"><img src="/img/uniques/Vashnia.png" width="72" height="72"></a>
     </td>
     <td><p><b>------------Mostly Magic------------</b></p>
@@ -40,7 +40,7 @@
     </td>
     <td><p><b>------------Miscellaneous-----------</b></p><p></p>
       <a href="/cca/achallengedetails?id=932" title="Jeremiah, the Barachi Summoner (BaSu)"><img src="/img/uniques/Jeremiah.png" width="72" height="72"></a>
-      <a href="/cca/achallengedetails?id=933" title="Bai Suzhen, the Draconaian Shapeshifter (DrSh)"><img src="/img/uniques/Bai_Suzhen.png" width="72" height="72"></a>
+      <a href="/cca/achallengedetails?id=933" title="Bai Suzhen, the Draconian Shapeshifter (DrSh)"><img src="/img/uniques/Bai_Suzhen.png" width="72" height="72"></a>
       <a href="/cca/achallengedetails?id=944" title="The Enchantress, the Spriggan Enchanter (SpEn)"><img src="/img/uniques/the_Enchantress.png" width="72" height="72"></a>
     </td>
 </table>
@@ -59,8 +59,9 @@ After you complete a good game (with either a <abbr title="aka Yet Another Victo
 <h2>Q&A</h2>
 <h3>How Can I Look Like My Unique?</h3>
 <p>If you'd like to change the player doll to the Unique's tile, add the following to your RC/init.txt file:</p>
-<centre><pre><b>    tile_player_tile = tile:MONS_WIGLAF</b>    </pre></centre>
-<br>
+<div style="text-align:center">
+<pre><b>tile_player_tile = tile:MONS_WIGLAF</b></pre>
+</div>
 <br> 
 <h3>Why aren't easy combos like Minotaur Berserker (MiBe) not one of the 12 CCA challenges?</h3>
 <p>Simple, you won't find some of the easiest combos, such as MiBe, because there are no DCSS Uniques that fill those combos.</p><br>
@@ -68,12 +69,14 @@ After you complete a good game (with either a <abbr title="aka Yet Another Victo
 <p>Ask all your questions to the Crawl Cosplay community on our <a href="https://discord.gg/pW7nqC8Wu3" target="_blank">Discord server<img src="/img/discord_transparent_border.png" width="18" height="18"></a>. Our @VIPs group will likely be available to help!</p><br>
 <h3>When should I start playing the weekly Crawl Cosplay Challenges?</h3>
 <p>You can start whenever but once you have 4 wins with one in each of the 4 playstyles, you'll likely feel ready to <b>compete</b> at an intermediate level in the weekly <a href="/ccc">Crawl Cosplay Challenge</a>.</p>
-<h2>Miscellaneous</h3>
-<ul> -To view your morgue/dump press the # key in-game.</ul>
-<ul> -Add the following to your RCfile (online) or your init.txt file (offline) to have intermediate monsters show up with a yellow background:</ul>
-<br>
-<centre><pre><b>    tile_show_threat_levels = tough,nasty,unusual</b>    </pre></centre>
-<br>
+<h2>Miscellaneous</h2>
+<ul>
+  <li>To view your morgue/dump, press the <b>#</b> key in-game.</li>
+  <li>Add the following to your RCfile (online) or your init.txt file (offline) to have intermediate monsters show up with a yellow background:</li>
+</ul>
+<div style="text-align:center">
+<pre><b>tile_show_threat_levels = tough,nasty,unusual</b></pre>
+</div>
 <br> 
 <p>Happy Crawling!</p>
 <br>
