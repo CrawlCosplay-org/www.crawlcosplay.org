@@ -60,6 +60,7 @@ After you complete a good game (with either a <abbr title="aka Yet Another Victo
 <h3>How Can I Look Like My Unique?</h3>
 <p>If you'd like to change the player doll to the Unique's tile, add the following to your RC/init.txt file:</p>
 <centre><pre><b>    tile_player_tile = tile:MONS_WIGLAF</b>    </pre></centre>
+<br>
 <h3>Why aren't easy combos like Minotaur Berserker (MiBe) not one of the 12 CCA challenges?</h3>
 <p>Simple, you won't find some of the easiest combos, such as MiBe, because there are no DCSS Uniques that fill those combos.</p><br>
 <h3>Need more help than what's on the challenge details' page?</h3>
