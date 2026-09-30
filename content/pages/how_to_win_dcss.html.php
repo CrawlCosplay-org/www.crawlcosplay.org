@@ -116,27 +116,27 @@
 
 <p>Want to learn more? These resources cover DCSS strategy from a few different angles.</p>
 
-<div style="display:flex; flex-wrap:wrap; gap:20px; margin:20px 0;">
+<div style="display:flex; flex-wrap:wrap; justify-content:space-between; gap:20px; margin:20px 0;">
 
-<div style="max-width:300px;">
+<div style="flex:1; min-width:200px; max-width:260px; text-align:center;">
 <a href="http://crawl.chaosforge.org/Strategy_guides" target="_blank">
-<img src="/img/misc/DC Wiki Logo.png" alt="CrawlWiki Strategy Guides" style="width:100%; height:auto;">
+<img src="/img/misc/DC Wiki Logo.png" alt="CrawlWiki Strategy Guides" style="width:100%; max-width:220px; height:120px; object-fit:contain;">
 </a>
 <h4><a href="http://crawl.chaosforge.org/Strategy_guides" target="_blank">CrawlWiki Strategy Guides</a></h4>
 <p>Written strategy guides covering a wide range of DCSS topics, characters, and gameplay techniques.</p>
 </div>
-  
-<div style="max-width:300px;">
+
+<div style="flex:1; min-width:200px; max-width:260px; text-align:center;">
 <a href="https://youtube.com/playlist?list=PLUKw51t06kZusqEFEupN9Ssb5c5zEn90K" target="_blank">
-<img src="/img/misc/Draconius Logo.jpg" alt="DCSS Strategy Guides" style="width:100%; height:auto;">
+<img src="/img/misc/Draconius Logo.jpg" alt="DCSS Strategy Guides" style="width:100%; max-width:220px; height:120px; object-fit:contain;">
 </a>
 <h4><a href="https://youtube.com/playlist?list=PLUKw51t06kZusqEFEupN9Ssb5c5zEn90K" target="_blank">Draconius' Strategy Guides</a></h4>
 <p>Video guides covering practical strategy and decision-making to help you become a better DCSS player.</p>
 </div>
 
-<div style="max-width:300px;">
+<div style="flex:1; min-width:200px; max-width:260px; text-align:center;">
 <a href="https://youtube.com/playlist?list=PLY2Drf0NBvk-qO3BxxmlKxasCh-zROFa8" target="_blank">
-<img src="/img/misc/ParticleFace Logo.jpg" alt="Particleface's Beginner Tutorials" style="width:100%; height:auto;">
+<img src="/img/misc/ParticleFace Logo.jpg" alt="Particleface's Beginner Tutorials" style="width:100%; max-width:220px; height:120px; object-fit:contain;">
 </a>
 <h4><a href="https://youtube.com/playlist?list=PLY2Drf0NBvk-qO3BxxmlKxasCh-zROFa8" target="_blank">Particleface's Beginner Tutorials</a></h4>
 <p>A series of beginner-friendly tutorials covering specific character guides and the fundamentals of playing DCSS.</p>
