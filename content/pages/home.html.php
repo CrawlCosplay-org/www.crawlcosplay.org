@@ -7,7 +7,7 @@
 	$index2 = rand(2, ($count-1));
 	$filename2 = $files[$index2];
 
-echo	"<h1>Welcome to Crawl Cosplay: Learn, Improve, Compete!</h1>";
+echo	"<h1>Welcome to Crawl Cosplay:<br>Learn, Improve, Compete!</h1><br>";
 
 echo "<p>" . _("We're a community built around creative challenges, learning, and improving at Dungeon Crawl Stone Soup and its many forks. 
 Whether you're taking your first steps into the dungeon or looking for a fresh challenge after hundreds of wins, Crawl Cosplay is a welcoming place to learn, share your adventures, and grow alongside other players.") . "</p>";
@@ -25,7 +25,7 @@ echo	'<img src="/img/cc_stone_soup_icon-512x512.png"  width="350"  style="float:
 	
 #	echo '<img src="'.$dir_path."/".$filename2.'" alt="'.$filename2.'"  width="350"  style="float:right">';
 
-	echo '<h3><a href="/how_to_win_dcss">' . _("How to Win DCSS") . "</a> <small>(New!)</small></h3>";
+	echo '<h3><a href="/how_to_win_dcss">' . _("How to Win DCSS") . "</a> (New!)</h3>";
 	echo "<ul><li>" . _("If you're asking how to survive the dungeon, pick a god, or identify your consumables - this is where to start!") . "</li>";
 	echo     "<li>" . _("Includes references to several outside resources to continue learning the basics.") . "</li></ul><br>";
 
@@ -42,7 +42,7 @@ echo	'<img src="/img/cc_stone_soup_icon-512x512.png"  width="350"  style="float:
    	echo     "<li>" . _("Read") . ': <a href="/ccc/about_ccc">' . _("About CCC") . "</a>.</li>";
    	echo     "<li>" . _("See") . ': <a href="/ccc/all_ccc_history">' . _("all 100+ challenges") . "</a></li></ul><br>";
 
-	echo '<h3>(Coming Soon!) ' . _("Crawl Succession") . "</h3>";
+	echo '<h3>' . _("Crawl Succession") . " (Coming Soon!)</h3>";
 	echo "<ul><li>" . _("Starting after the release of 0.35, Crawl Succession will be opening up for group DCSS games - multiple players, one account!") . "</li>";
 	echo "<li>" . _("The planned system will allow players to submit characters they want to run or sign up for characters others have submitted.") . "</li>";
 	echo "<li>" . _("You'll play on shared accounts focused on Win Rates, Challenge Runs, New Players, Fun Runs, and More.") . "</li>";	
