@@ -4,6 +4,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+	<meta name="google-site-verification" content="qlKvL8v72Mcm-SpnCfNC-u0gaK4JIrVEx5BVpANqja0" />  
 	<title><?=$page_title ?? 'Crawl Cosplay: DCSS Challenges, Guides & Community'?></title>
     <link rel="icon" href="/img/cc_stone_soup_icon-64x64.png" type="image/png">
 	<meta property="og:title" content="Crawl Cosplay: A DCSS Meta-Challenge Community">
