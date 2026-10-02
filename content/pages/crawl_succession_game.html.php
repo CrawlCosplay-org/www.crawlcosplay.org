@@ -101,6 +101,8 @@ foreach ($players as $player) {
     $queue[] = $player;
 }
 
+$ready_to_start = count($queue) >= $game->min_players;
+
 ?>
 
 <h2><?=$e($game->character_name)?></h2>
@@ -130,7 +132,13 @@ foreach ($players as $player) {
 
         <tr>
             <th>Status</th>
-            <td><?=$e(ucfirst($game->status))?></td>
+           <td>
+            <?php if ($game->status === 'planned' && $ready_to_start): ?>
+                Ready to Start
+            <?php else: ?>
+            <?=$e(ucfirst($game->status))?>
+            <?php endif; ?>
+        </td>
         </tr>
 
         <tr>
