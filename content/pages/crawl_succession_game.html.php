@@ -170,6 +170,133 @@ if ($current_user_id && $_SERVER['REQUEST_METHOD'] === 'POST') {
             $error = "Unable to join the succession game.";
         }
     }
+        /*
+     * Handle queue management.
+     */
+    if (
+        $can_edit
+        && ($game->status === 'planned' || $game->status === 'active')
+        && in_array($action, ['up', 'down', 'remove'], true)
+    ) {
+
+        $player_id = (int) ($this->request->getPostData()['player_id'] ?? 0);
+
+        $target = null;
+
+        foreach ($queue as $player) {
+
+            if ($player->id == $player_id) {
+                $target = $player;
+                break;
+            }
+        }
+
+        if (!$target) {
+
+            $error = "Player not found.";
+
+        } elseif ($action === 'remove' && $game->status === 'active' && $target->active) {
+
+            $error = "The current player cannot be removed while their turn is active.";
+
+        } else {
+
+            if ($action === 'up') {
+
+                $previous = null;
+
+                foreach ($queue as $player) {
+
+                    if ($player->position < $target->position) {
+
+                        if ($previous === null || $player->position > $previous->position) {
+                            $previous = $player;
+                        }
+                    }
+                }
+
+                if ($previous) {
+
+                    $target_position = $target->position;
+                    $previous_position = $previous->position;
+
+                    $target->save([
+                        'position' => $previous_position
+                    ]);
+
+                    $previous->save([
+                        'position' => $target_position
+                    ]);
+
+                    return $this->request->redirect(
+                        '/crawl_succession_game?id=' . $game->id
+                    );
+                }
+
+            } elseif ($action === 'down') {
+
+                $next = null;
+
+                foreach ($queue as $player) {
+
+                    if ($player->position > $target->position) {
+
+                        if ($next === null || $player->position < $next->position) {
+                            $next = $player;
+                        }
+                    }
+                }
+
+                if ($next) {
+
+                    $target_position = $target->position;
+                    $next_position = $next->position;
+
+                    $target->save([
+                        'position' => $next_position
+                    ]);
+
+                    $next->save([
+                        'position' => $target_position
+                    ]);
+
+                    return $this->request->redirect(
+                        '/crawl_succession_game?id=' . $game->id
+                    );
+                }
+
+            } elseif ($action === 'remove') {
+
+                if ($target->delete()) {
+
+                    /*
+                     * Renumber the remaining queue positions.
+                     */
+                    $remaining = CrawlSuccessionQueue::find(
+                        ['game_id' => $game->id],
+                        ['order' => '`position` ASC']
+                    );
+
+                    $position = 1;
+
+                    foreach ($remaining as $player) {
+
+                        $player->save([
+                            'position' => $position
+                        ]);
+
+                        $position++;
+                    }
+
+                    return $this->request->redirect(
+                        '/crawl_succession_game?id=' . $game->id
+                    );
+                }
+
+                $error = "Unable to remove player.";
+            }
+        }
+    }
 }
 
 
@@ -273,6 +400,10 @@ $ready_to_start = count($queue) >= $game->min_players;
             <tr>
                 <th>Position</th>
                 <th>Player</th>
+
+                <?php if ($can_edit): ?>
+                    <th>Manage</th>
+                <?php endif; ?>
             </tr>
         </thead>
 
@@ -307,6 +438,49 @@ $ready_to_start = count($queue) >= $game->min_players;
                         <strong>(Current Turn)</strong>
                     <?php endif; ?>
                 </td>
+
+                <?php if ($can_edit): ?>
+
+    <td>
+
+        <?php if ($player->position > 1): ?>
+
+            <form method="POST" style="display:inline;">
+                <input type="hidden" name="action" value="up">
+                <input type="hidden" name="player_id" value="<?=$e($player->id)?>">
+                <input type="submit" value="Move Up">
+            </form>
+
+        <?php endif; ?>
+
+        <?php if ($player->position < count($queue)): ?>
+
+            <form method="POST" style="display:inline;">
+                <input type="hidden" name="action" value="down">
+                <input type="hidden" name="player_id" value="<?=$e($player->id)?>">
+                <input type="submit" value="Move Down">
+            </form>
+
+        <?php endif; ?>
+
+        <?php if (!($game->status === 'active' && $player->active)): ?>
+
+            <form method="POST" style="display:inline;">
+                <input type="hidden" name="action" value="remove">
+                <input type="hidden" name="player_id" value="<?=$e($player->id)?>">
+                <input
+                    type="submit"
+                    value="Remove"
+                    onclick="return confirm('Remove this player from the succession game?');"
+                >
+            </form>
+
+        <?php endif; ?>
+
+        </td>
+
+        <?php endif; ?>
+    
             </tr>
 
         <?php endforeach; ?>
