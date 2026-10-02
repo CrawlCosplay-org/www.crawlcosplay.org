@@ -44,6 +44,7 @@ unset($list);
                 <th>Background</th>
                 <th>God(s)</th>
                 <th>Server</th>
+                <th>Players</th>
                 <th>Turn</th>
                 <th>Current Player</th>
             </tr>
@@ -62,6 +63,21 @@ unset($list);
                 <td><?=$e($game->background)?></td>
                 <td><?=$e($game->god)?></td>
                 <td><?=$e($game->server)?></td>
+                <td>
+                    <?php
+                        $players = CrawlSuccessionQueue::find([
+                        'game_id' => $game->id
+                        ]);
+
+                    $player_count = 0;
+
+                    foreach ($players as $player) {
+                        $player_count++;
+                            }
+                   ?>
+
+                   <?=$e($player_count)?> / <?=$e($game->max_players)?>
+                </td>
                 <td><?=$e($game->turn_number)?></td>
                 <td>
                     <?php if ($game->current_user_id): ?>
