@@ -2,6 +2,7 @@
 
 use app\models\CrawlSuccessionGame;
 use app\models\CrawlSuccessionQueue;
+use app\models\CrawlSuccessionUser;
 
 $games = [
     'active' => [],
@@ -64,9 +65,26 @@ unset($list);
                 <td><?=$e($game->turn_number)?></td>
                 <td>
                     <?php if ($game->current_user_id): ?>
-                        <?=$e($game->current_user_id)?>
+
+                        <?php
+                        $users = CrawlSuccessionUser::find([
+                            'id' => $game->current_user_id
+                        ]);
+
+                        $user = null;
+
+                        foreach ($users as $found_user) {
+                            $user = $found_user;
+                            break;
+                        }
+                        ?>
+
+                        <?=$e($user ? $user->username : 'Unknown')?>
+
                     <?php else: ?>
+
                         -
+
                     <?php endif; ?>
                 </td>
             </tr>
@@ -114,21 +132,36 @@ unset($list);
                 <td><?=$e($game->god)?></td>
                 <td><?=$e($game->server)?></td>
                 <td>
-    <?php
-    $players = CrawlSuccessionQueue::find([
-        'game_id' => $game->id
-    ]);
+                    <?php
+                    $players = CrawlSuccessionQueue::find([
+                        'game_id' => $game->id
+                    ]);
 
-    $player_count = 0;
+                    $player_count = 0;
 
-    foreach ($players as $player) {
-        $player_count++;
-    }
-    ?>
+                    foreach ($players as $player) {
+                        $player_count++;
+                    }
+                    ?>
 
-    <?=$e($player_count)?> / <?=$e($game->max_players)?>
+                    <?=$e($player_count)?> / <?=$e($game->max_players)?>
                 </td>
-                <td><?=$e($game->created_by)?></td>
+                <td>
+                    <?php
+                    $users = CrawlSuccessionUser::find([
+                        'id' => $game->created_by
+                    ]);
+
+                    $user = null;
+
+                    foreach ($users as $found_user) {
+                        $user = $found_user;
+                        break;
+                    }
+                    ?>
+
+                    <?=$e($user ? $user->username : 'Unknown')?>
+                </td>
             </tr>
 
         <?php endforeach; ?>
