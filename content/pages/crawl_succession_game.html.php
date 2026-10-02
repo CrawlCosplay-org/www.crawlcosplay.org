@@ -3,6 +3,7 @@
 use app\models\CrawlSuccessionGame;
 use app\models\CrawlSuccessionQueue;
 use app\models\CrawlSuccessionUser;
+use app\models\CrawlSuccessionTurn;
 
 session_start();
 
@@ -22,52 +23,134 @@ if (!$game) {
 }
 
 $current_user_id = $_SESSION['user_id'] ?? null;
+
 $can_edit = ($current_user_id == $game->created_by);
 
 
 /*
- * Handle joining the queue.
+ * Load queue.
  */
-if ($current_user_id && $game->status === 'planned' && $_SERVER['REQUEST_METHOD'] === 'POST') {
+$queue = [];
 
-    $queue = CrawlSuccessionQueue::find([
-        'game_id' => $game->id,
-        'user_id' => $current_user_id
-    ]);
+$players = CrawlSuccessionQueue::find(
+    ['game_id' => $game->id],
+    ['order' => '`position` ASC']
+);
 
-    $already_joined = false;
+foreach ($players as $player) {
+    $queue[] = $player;
+}
 
-    foreach ($queue as $existing) {
-        $already_joined = true;
-        break;
+$ready_to_start = count($queue) >= $game->min_players;
+
+
+/*
+ * Handle POST actions.
+ */
+if ($current_user_id && $_SERVER['REQUEST_METHOD'] === 'POST') {
+
+    $action = $this->request->getPostData()['action'] ?? '';
+
+
+    /*
+     * Start succession game.
+     */
+    if ($action === 'start') {
+
+        if (!$can_edit) {
+
+            $error = "You do not have permission to start this succession game.";
+
+        } elseif ($game->status !== 'planned') {
+
+            $error = "This succession game has already been started.";
+
+        } elseif (!$ready_to_start) {
+
+            $error = "The minimum number of players has not been reached.";
+
+        } elseif (empty($queue)) {
+
+            $error = "There are no players in the queue.";
+
+        } else {
+
+            $first_player = $queue[0];
+
+            /*
+             * Make the first player active.
+             */
+            $first_player->save([
+                'active' => 1
+            ]);
+
+            /*
+             * Start the game.
+             */
+            $game->save([
+                'status' => 'active',
+                'current_user_id' => $first_player->user_id,
+                'turn_number' => 1,
+                'started' => date('Y-m-d H:i:s')
+            ]);
+
+            /*
+             * Create the first turn.
+             */
+            $turn = new CrawlSuccessionTurn([
+                'game_id' => $game->id,
+                'turn_number' => 1,
+                'user_id' => $first_player->user_id,
+                'notes' => null,
+                'started' => date('Y-m-d H:i:s'),
+                'finished' => null
+            ]);
+
+            if ($turn->save()) {
+
+                return $this->request->redirect(
+                    '/crawl_succession_game?id=' . $game->id
+                );
+            }
+
+            $error = "Unable to create the first turn.";
+        }
     }
 
-    if ($already_joined) {
 
-        $error = "You are already in this succession.";
+    /*
+     * Handle joining the queue.
+     */
+    if ($action === 'join' && $game->status === 'planned') {
 
-    } else {
+        $already_joined = false;
 
-        $players = CrawlSuccessionQueue::find([
-            'game_id' => $game->id
-        ]);
+        foreach ($queue as $player) {
 
-        $player_count = 0;
-        $highest_position = 0;
-
-        foreach ($players as $player) {
-            $player_count++;
-
-            if ($player->position > $highest_position) {
-                $highest_position = $player->position;
+            if ($player->user_id == $current_user_id) {
+                $already_joined = true;
+                break;
             }
         }
 
-        if ($player_count >= $game->max_players) {
+        if ($already_joined) {
 
-            $error = "This succession is full.";
+            $error = "You are already in this succession game.";
+
+        } elseif (count($queue) >= $game->max_players) {
+
+            $error = "This succession game is full.";
 
         } else {
+
+            $highest_position = 0;
+
+            foreach ($queue as $player) {
+
+                if ($player->position > $highest_position) {
+                    $highest_position = $player->position;
+                }
+            }
 
             $entry = new CrawlSuccessionQueue([
                 'game_id' => $game->id,
@@ -78,18 +161,20 @@ if ($current_user_id && $game->status === 'planned' && $_SERVER['REQUEST_METHOD'
             ]);
 
             if ($entry->save()) {
+
                 return $this->request->redirect(
                     '/crawl_succession_game?id=' . $game->id
                 );
             }
 
-            $error = "Unable to join the succession.";
+            $error = "Unable to join the succession game.";
         }
     }
 }
 
+
 /*
- * Load queue.
+ * Reload the queue after any POST handling.
  */
 $queue = [];
 
@@ -133,13 +218,13 @@ $ready_to_start = count($queue) >= $game->min_players;
 
         <tr>
             <th>Status</th>
-           <td>
-            <?php if ($game->status === 'planned' && $ready_to_start): ?>
-                Ready to Start
-            <?php else: ?>
-            <?=$e(ucfirst($game->status))?>
-            <?php endif; ?>
-        </td>
+            <td>
+                <?php if ($game->status === 'planned' && $ready_to_start): ?>
+                    Ready to Start
+                <?php else: ?>
+                    <?=$e(ucfirst($game->status))?>
+                <?php endif; ?>
+            </td>
         </tr>
 
         <tr>
@@ -161,6 +246,7 @@ $ready_to_start = count($queue) >= $game->min_players;
 
     </tbody>
 </table>
+
 
 <?php if (!empty($game->description)): ?>
 
@@ -209,11 +295,16 @@ $ready_to_start = count($queue) >= $game->min_players;
 
             <tr>
                 <td><?=$e($player->position)?></td>
+
                 <td>
                     <?=$e($user ? $user->username : 'Unknown')?>
 
                     <?php if ($player->user_id == $current_user_id): ?>
                         <strong>(You)</strong>
+                    <?php endif; ?>
+
+                    <?php if ($player->active): ?>
+                        <strong>(Current Turn)</strong>
                     <?php endif; ?>
                 </td>
             </tr>
@@ -252,7 +343,7 @@ $ready_to_start = count($queue) >= $game->min_players;
     <?php if (!$current_user_id): ?>
 
         <p>
-            <a href="/crawl_succession_login">Login to join this succession.</a>
+            <a href="/crawl_succession_login">Login to join this succession game.</a>
         </p>
 
     <?php elseif ($already_joined): ?>
@@ -264,18 +355,34 @@ $ready_to_start = count($queue) >= $game->min_players;
     <?php elseif (count($queue) >= $game->max_players): ?>
 
         <p>
-            This succession is full.
+            This succession game is full.
         </p>
 
     <?php else: ?>
 
         <form method="POST">
-            <input type="submit" value="Join the succession">
+            <input type="hidden" name="action" value="join">
+            <input type="submit" value="Join the succession game">
+        </form>
+
+    <?php endif; ?>
+
+
+    <?php if ($can_edit && $ready_to_start): ?>
+
+        <form method="POST" style="margin-top: 1em;">
+            <input type="hidden" name="action" value="start">
+            <input
+                type="submit"
+                value="Start Succession Game"
+                onclick="return confirm('Start this succession game? The player queue will be locked.');"
+            >
         </form>
 
     <?php endif; ?>
 
 <?php endif; ?>
+
 
 <?php if ($can_edit): ?>
 
@@ -286,6 +393,7 @@ $ready_to_start = count($queue) >= $game->min_players;
     </p>
 
 <?php endif; ?>
+
 
 <p>
     <a href="/crawl_succession">Back to CrawlSuccession</a>
