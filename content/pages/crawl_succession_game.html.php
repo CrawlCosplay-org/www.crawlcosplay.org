@@ -49,7 +49,8 @@ $ready_to_start = count($queue) >= $game->min_players;
  */
 if ($current_user_id && $_SERVER['REQUEST_METHOD'] === 'POST') {
 
-    $action = $this->request->getPostData()['action'] ?? '';
+    $post_data = $this->request->getPostData();
+    $action = $post_data['action'] ?? '';
 
 
     /*
@@ -76,6 +77,7 @@ if ($current_user_id && $_SERVER['REQUEST_METHOD'] === 'POST') {
         } else {
 
             $first_player = $queue[0];
+            $now = date('Y-m-d H:i:s');
 
             /*
              * Make the first player active.
@@ -91,7 +93,7 @@ if ($current_user_id && $_SERVER['REQUEST_METHOD'] === 'POST') {
                 'status' => 'active',
                 'current_user_id' => $first_player->user_id,
                 'turn_number' => 1,
-                'started' => date('Y-m-d H:i:s')
+                'started' => $now
             ]);
 
             /*
@@ -102,7 +104,7 @@ if ($current_user_id && $_SERVER['REQUEST_METHOD'] === 'POST') {
                 'turn_number' => 1,
                 'user_id' => $first_player->user_id,
                 'notes' => null,
-                'started' => date('Y-m-d H:i:s'),
+                'started' => $now,
                 'finished' => null
             ]);
 
@@ -170,7 +172,163 @@ if ($current_user_id && $_SERVER['REQUEST_METHOD'] === 'POST') {
             $error = "Unable to join the succession game.";
         }
     }
-        /*
+
+
+    /*
+     * Handle finishing the current turn.
+     */
+    if ($action === 'finish_turn') {
+
+        if ($game->status !== 'active') {
+
+            $error = "This succession game is not active.";
+
+        } elseif ($game->current_user_id != $current_user_id) {
+
+            $error = "It is not your turn.";
+
+        } else {
+
+            $notes = trim($post_data['notes'] ?? '');
+            $now = date('Y-m-d H:i:s');
+
+            /*
+             * Find the current active queue entry.
+             */
+            $current_player = null;
+
+            foreach ($queue as $player) {
+
+                if (
+                    $player->user_id == $current_user_id
+                    && $player->active
+                ) {
+                    $current_player = $player;
+                    break;
+                }
+            }
+
+            if (!$current_player) {
+
+                $error = "Unable to find your active turn.";
+
+            } else {
+
+                /*
+                 * Find the current turn record.
+                 */
+                $turns = CrawlSuccessionTurn::find([
+                    'game_id' => $game->id,
+                    'turn_number' => $game->turn_number,
+                    'user_id' => $current_user_id
+                ]);
+
+                $current_turn = null;
+
+                foreach ($turns as $found_turn) {
+                    $current_turn = $found_turn;
+                    break;
+                }
+
+                if (!$current_turn) {
+
+                    $error = "Unable to find the current turn record.";
+
+                } else {
+
+                    /*
+                     * Save the notes and finish the current turn.
+                     */
+                    if (!$current_turn->save([
+                        'notes' => $notes,
+                        'finished' => $now
+                    ])) {
+
+                        $error = "Unable to finish the current turn.";
+
+                    } else {
+
+                        /*
+                         * Deactivate the current player.
+                         */
+                        $current_player->save([
+                            'active' => 0
+                        ]);
+
+                        /*
+                         * Find the next player in the queue.
+                         */
+                        $next_player = null;
+
+                        foreach ($queue as $player) {
+
+                            if (
+                                $player->position > $current_player->position
+                            ) {
+                                $next_player = $player;
+                                break;
+                            }
+                        }
+
+                        /*
+                         * If there is another player, start their turn.
+                         */
+                        if ($next_player) {
+
+                            $next_turn_number = $game->turn_number + 1;
+
+                            $next_player->save([
+                                'active' => 1
+                            ]);
+
+                            $game->save([
+                                'current_user_id' => $next_player->user_id,
+                                'turn_number' => $next_turn_number
+                            ]);
+
+                            $next_turn = new CrawlSuccessionTurn([
+                                'game_id' => $game->id,
+                                'turn_number' => $next_turn_number,
+                                'user_id' => $next_player->user_id,
+                                'notes' => null,
+                                'started' => $now,
+                                'finished' => null
+                            ]);
+
+                            if ($next_turn->save()) {
+
+                                return $this->request->redirect(
+                                    '/crawl_succession_game?id=' . $game->id
+                                );
+                            }
+
+                            $error = "Unable to create the next turn.";
+
+                        } else {
+
+                            /*
+                             * There is currently no next player.
+                             *
+                             * Leave the game active for now.
+                             * Conclusion handling will be added later.
+                             */
+                            $game->save([
+                                'current_user_id' => null,
+                                'turn_number' => $game->turn_number + 1
+                            ]);
+
+                            return $this->request->redirect(
+                                '/crawl_succession_game?id=' . $game->id
+                            );
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    /*
      * Handle queue management.
      */
     if (
@@ -179,7 +337,7 @@ if ($current_user_id && $_SERVER['REQUEST_METHOD'] === 'POST') {
         && in_array($action, ['up', 'down', 'remove'], true)
     ) {
 
-        $player_id = (int) ($this->request->getPostData()['player_id'] ?? 0);
+        $player_id = (int) ($post_data['player_id'] ?? 0);
 
         $target = null;
 
@@ -195,7 +353,11 @@ if ($current_user_id && $_SERVER['REQUEST_METHOD'] === 'POST') {
 
             $error = "Player not found.";
 
-        } elseif ($action === 'remove' && $game->status === 'active' && $target->active) {
+        } elseif (
+            $action === 'remove'
+            && $game->status === 'active'
+            && $target->active
+        ) {
 
             $error = "The current player cannot be removed while their turn is active.";
 
@@ -209,7 +371,10 @@ if ($current_user_id && $_SERVER['REQUEST_METHOD'] === 'POST') {
 
                     if ($player->position < $target->position) {
 
-                        if ($previous === null || $player->position > $previous->position) {
+                        if (
+                            $previous === null
+                            || $player->position > $previous->position
+                        ) {
                             $previous = $player;
                         }
                     }
@@ -241,7 +406,10 @@ if ($current_user_id && $_SERVER['REQUEST_METHOD'] === 'POST') {
 
                     if ($player->position > $target->position) {
 
-                        if ($next === null || $player->position < $next->position) {
+                        if (
+                            $next === null
+                            || $player->position < $next->position
+                        ) {
                             $next = $player;
                         }
                     }
@@ -316,6 +484,16 @@ foreach ($players as $player) {
 
 $ready_to_start = count($queue) >= $game->min_players;
 
+
+/*
+ * Determine whether the logged-in user is the current player.
+ */
+$is_current_player = (
+    $game->status === 'active'
+    && $current_user_id
+    && $game->current_user_id == $current_user_id
+);
+
 ?>
 
 <h2><?=$e($game->character_name)?></h2>
@@ -347,7 +525,7 @@ $ready_to_start = count($queue) >= $game->min_players;
             <th>Status</th>
             <td>
                 <?php if ($game->status === 'planned' && $ready_to_start): ?>
-                    Ready to Start
+                    Ready to Start Succession Game
                 <?php else: ?>
                     <?=$e(ucfirst($game->status))?>
                 <?php endif; ?>
@@ -382,6 +560,41 @@ $ready_to_start = count($queue) >= $game->min_players;
     <p>
         <?=$e($game->description)?>
     </p>
+
+<?php endif; ?>
+
+
+<?php if ($is_current_player): ?>
+
+    <h3>Your Turn</h3>
+
+    <form method="POST">
+
+        <input type="hidden" name="action" value="finish_turn">
+
+        <fieldset>
+
+            <label>
+                <span>Turn Notes</span><br />
+                <textarea
+                    name="notes"
+                    rows="8"
+                    cols="60"
+                    placeholder="Describe what happened during your turn..."
+                ></textarea>
+            </label>
+
+            <br /><br />
+
+            <input
+                type="submit"
+                value="Finish Turn"
+                onclick="return confirm('Finish your turn and pass to the next player?');"
+            >
+
+        </fieldset>
+
+    </form>
 
 <?php endif; ?>
 
@@ -441,46 +654,46 @@ $ready_to_start = count($queue) >= $game->min_players;
 
                 <?php if ($can_edit): ?>
 
-    <td>
+                    <td>
 
-        <?php if ($player->position > 1): ?>
+                        <?php if ($player->position > 1): ?>
 
-            <form method="POST" style="display:inline;">
-                <input type="hidden" name="action" value="up">
-                <input type="hidden" name="player_id" value="<?=$e($player->id)?>">
-                <input type="submit" value="Move Up">
-            </form>
+                            <form method="POST" style="display:inline;">
+                                <input type="hidden" name="action" value="up">
+                                <input type="hidden" name="player_id" value="<?=$e($player->id)?>">
+                                <input type="submit" value="Move Up">
+                            </form>
 
-        <?php endif; ?>
+                        <?php endif; ?>
 
-        <?php if ($player->position < count($queue)): ?>
+                        <?php if ($player->position < count($queue)): ?>
 
-            <form method="POST" style="display:inline;">
-                <input type="hidden" name="action" value="down">
-                <input type="hidden" name="player_id" value="<?=$e($player->id)?>">
-                <input type="submit" value="Move Down">
-            </form>
+                            <form method="POST" style="display:inline;">
+                                <input type="hidden" name="action" value="down">
+                                <input type="hidden" name="player_id" value="<?=$e($player->id)?>">
+                                <input type="submit" value="Move Down">
+                            </form>
 
-        <?php endif; ?>
+                        <?php endif; ?>
 
-        <?php if (!($game->status === 'active' && $player->active)): ?>
+                        <?php if (!($game->status === 'active' && $player->active)): ?>
 
-            <form method="POST" style="display:inline;">
-                <input type="hidden" name="action" value="remove">
-                <input type="hidden" name="player_id" value="<?=$e($player->id)?>">
-                <input
-                    type="submit"
-                    value="Remove"
-                    onclick="return confirm('Remove this player from the succession game?');"
-                >
-            </form>
+                            <form method="POST" style="display:inline;">
+                                <input type="hidden" name="action" value="remove">
+                                <input type="hidden" name="player_id" value="<?=$e($player->id)?>">
+                                <input
+                                    type="submit"
+                                    value="Remove"
+                                    onclick="return confirm('Remove this player from the succession game?');"
+                                >
+                            </form>
 
-        <?php endif; ?>
+                        <?php endif; ?>
 
-        </td>
+                    </td>
 
-        <?php endif; ?>
-    
+                <?php endif; ?>
+
             </tr>
 
         <?php endforeach; ?>
