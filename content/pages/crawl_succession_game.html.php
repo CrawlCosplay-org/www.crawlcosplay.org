@@ -22,6 +22,7 @@ if (!$game) {
 }
 
 $current_user_id = $_SESSION['user_id'] ?? null;
+$can_edit = ($current_user_id == $game->created_by);
 
 
 /*
@@ -276,6 +277,15 @@ $ready_to_start = count($queue) >= $game->min_players;
 
 <?php endif; ?>
 
+<?php if ($can_edit): ?>
+
+    <p>
+        <a href="/crawl_succession_edit?id=<?=$e($game->id)?>">
+            Edit Character
+        </a>
+    </p>
+
+<?php endif; ?>
 
 <p>
     <a href="/crawl_succession">Back to CrawlSuccession</a>
