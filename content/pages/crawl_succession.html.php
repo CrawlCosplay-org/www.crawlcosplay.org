@@ -76,7 +76,7 @@ unset($list);
                             }
                    ?>
 
-                   <?=$e($player_count)?> / <?=$e($game->max_players)?>
+                   <?=$e($player_count)?>
                 </td>
                 <td><?=$e($game->turn_number)?></td>
                 <td>
