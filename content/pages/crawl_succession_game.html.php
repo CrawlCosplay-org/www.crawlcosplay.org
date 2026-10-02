@@ -494,6 +494,21 @@ $is_current_player = (
     && $game->current_user_id == $current_user_id
 );
 
+
+/*
+ * Load turn history.
+ */
+$turns = [];
+
+$turn_results = CrawlSuccessionTurn::find(
+    ['game_id' => $game->id],
+    ['order' => '`turn_number` ASC']
+);
+
+foreach ($turn_results as $turn) {
+    $turns[] = $turn;
+}
+
 ?>
 
 <h2><?=$e($game->character_name)?></h2>
@@ -701,6 +716,63 @@ $is_current_player = (
         </tbody>
 
     </table>
+
+<?php endif; ?>
+
+
+<h3>Turn History</h3>
+
+<?php if (empty($turns)): ?>
+
+    <p>No turns have been completed yet.</p>
+
+<?php else: ?>
+
+    <?php foreach ($turns as $turn): ?>
+
+        <?php
+            $users = CrawlSuccessionUser::find([
+                'id' => $turn->user_id
+            ]);
+
+            $user = null;
+
+            foreach ($users as $found_user) {
+                $user = $found_user;
+                break;
+            }
+        ?>
+
+        <h4>
+            Turn <?=$e($turn->turn_number)?>
+            —
+            <?=$e($user ? $user->username : 'Unknown')?>
+        </h4>
+
+        <p>
+            <strong>Started:</strong>
+            <?=$e($turn->started ?? '-')?>
+            <br />
+
+            <strong>Finished:</strong>
+            <?=$e($turn->finished ?? 'In progress')?>
+        </p>
+
+        <?php if (!empty($turn->notes)): ?>
+
+            <p>
+                <?=$e($turn->notes)?>
+            </p>
+
+        <?php else: ?>
+
+            <p>
+                <em>No notes recorded.</em>
+            </p>
+
+        <?php endif; ?>
+
+    <?php endforeach; ?>
 
 <?php endif; ?>
 
