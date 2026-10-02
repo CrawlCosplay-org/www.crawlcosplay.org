@@ -62,22 +62,24 @@ if ($data = $this->request->getPostData()) {
 
     } else {
 
-        $game->character_name = $character_name;
-        $game->species = $species;
-        $game->background = $background;
-        $game->god = $god;
-        $game->server = $server;
-        $game->min_players = $min_players;
-        $game->max_players = $max_players;
-        $game->description = $description;
+       $save_data = [
+    'character_name' => $character_name,
+    'species' => $species,
+    'background' => $background,
+    'god' => $god,
+    'server' => $server,
+    'min_players' => $min_players,
+    'max_players' => $max_players,
+    'description' => $description
+];
 
-        if ($game->save()) {
-            return $this->request->redirect(
-                '/crawl_succession_game?id=' . $game->id
-            );
-        }
+if ($game->save($save_data)) {
+    return $this->request->redirect(
+        '/crawl_succession_game?id=' . $game->id
+    );
+}
 
-        $error = "Unable to save changes.";
+$error = "Unable to save changes.";
     }
 }
 
