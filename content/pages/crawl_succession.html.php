@@ -1,6 +1,7 @@
 <?php
 
 use app\models\CrawlSuccessionGame;
+use app\models\CrawlSuccessionQueue;
 
 $games = [
     'active' => [],
@@ -113,7 +114,19 @@ unset($list);
                 <td><?=$e($game->god)?></td>
                 <td><?=$e($game->server)?></td>
                 <td>
-                    0 / <?=$e($game->max_players)?>
+    <?php
+    $players = CrawlSuccessionQueue::find([
+        'game_id' => $game->id
+    ]);
+
+    $player_count = 0;
+
+    foreach ($players as $player) {
+        $player_count++;
+    }
+    ?>
+
+    <?=$e($player_count)?> / <?=$e($game->max_players)?>
                 </td>
                 <td><?=$e($game->created_by)?></td>
             </tr>
