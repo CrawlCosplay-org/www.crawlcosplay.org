@@ -616,6 +616,29 @@ foreach ($turn_results as $turn) {
                 ></textarea>
             </label>
 
+            <?php if ($is_final_player): ?>
+
+                <br /><br />
+
+                    <label>
+                        <span>Result</span><br />
+                            <input
+                            type="text"
+                            name="result"
+                            maxlength="50"
+                            required
+                            />
+                    </label>
+
+                    <br />
+
+                    <p>
+                    <strong>This is the final turn.</strong>
+                    Completing it will conclude the succession game.
+                    </p>
+
+            <?php endif; ?>
+
             <br /><br />
 
             <input
