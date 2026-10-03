@@ -1,8 +1,9 @@
 <?php $this->layout = 'admin'; ?>
 
-<h2>Crawl Cosplay Admin</h2>
-
-<h3>Moderation</h3>
+<h1>Crawl Cosplay Admin</h1>
+<br>
+<br>
+<h2>Moderation</h2>
 
 <ul>
     <li>
@@ -12,32 +13,36 @@
     </li>
     <li>
         <a href="/admin/crawl_succession/list">
-            CrawlSuccession Games Pending Approval
+            Crawl Succession Games Pending Approval
         </a>
     </li>
 </ul>
 
-<h3>Content Management</h3>
+<br>
+
+<h2>Content Management</h2>
 
 <ul>
     <li>
         <a href="/admin/challenges/list">
-            Challenges
+            Challenge List
         </a>
     </li>
     <li>
         <a href="/admin/players/list">
-            Players
+            Players List
         </a>
     </li>
     <li>
         <a href="/admin/ccc_seasons/list">
-            CCC Seasons
+            CCC Seasons - Task: Make new challenge characters!
         </a>
     </li>
 </ul>
 
-<h3>Account</h3>
+<br>
+
+<h2>Account</h2>
 
 <ul>
     <li>
