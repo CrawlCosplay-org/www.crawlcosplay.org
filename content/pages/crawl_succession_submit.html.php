@@ -41,7 +41,7 @@ if ($data = $this->request->getPostData()) {
             'created_by' => $_SESSION['user_id'],
             'current_user_id' => null,
             'turn_number' => 1,
-            'status' => 'planned',
+            'status' => 'pending',
             'result' => null,
             'created' => date('Y-m-d H:i:s'),
             'started' => null,
@@ -58,7 +58,12 @@ if ($data = $this->request->getPostData()) {
 
 ?>
 
-<h2>Submit a CrawlSuccession Character</h2>
+<h2>Submit a Crawl Succession Game</h2>
+<br>
+<p>
+    Your succession game will be reviewed by an admin before it becomes available
+    for players to join.
+</p>
 
 <?php if (!empty($error)): ?>
     <p style="color:red;"><b><?=$e($error)?></b></p>
