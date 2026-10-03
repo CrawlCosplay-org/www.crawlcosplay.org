@@ -13,6 +13,7 @@ class CrawlSuccessionTurn extends BaseModel
         'turn_number',
         'user_id',
         'notes',
+        'result',
         'started',
         'finished'
     ];
