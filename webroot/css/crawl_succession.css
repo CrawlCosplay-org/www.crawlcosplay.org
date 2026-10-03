@@ -1,0 +1,17 @@
+.succession-result {
+    margin: 1.5em 0 2em 0;
+    padding: 1em;
+    text-align: center;
+    border: 2px solid #999;
+}
+
+.succession-result h2 {
+    margin: 0 0 0.3em 0;
+    font-size: 1.8em;
+}
+
+.succession-result p {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: bold;
+}
