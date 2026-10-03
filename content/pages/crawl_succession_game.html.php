@@ -494,6 +494,23 @@ $is_current_player = (
     && $game->current_user_id == $current_user_id
 );
 
+/*
+ * Determine whether the current player is the final player.
+ */
+$is_final_player = false;
+
+if ($is_current_player && !empty($queue)) {
+
+    foreach ($queue as $player) {
+
+        if ($player->user_id == $current_user_id) {
+
+            $is_final_player = ($player->position == count($queue));
+
+            break;
+        }
+    }
+}
 
 /*
  * Load turn history.
