@@ -1,3 +1,4 @@
+<?php $this->layout = 'cca'; ?>
 <h1 style="color:rgb(69, 136, 5);">How to Win DCSS</h1>
 
 <br>
