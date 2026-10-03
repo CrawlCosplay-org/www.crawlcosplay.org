@@ -48,7 +48,7 @@ if (!empty($_SESSION['user_id'])) {
 
 <?php if (!empty($my_pending_games)): ?>
 
-    <h3>Pending Approval</h3>
+    <h2>Pending Approval</h2>
 
     <p>
         Your submitted succession game is awaiting admin approval.
