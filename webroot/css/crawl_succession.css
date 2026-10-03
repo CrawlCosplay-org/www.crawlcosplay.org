@@ -2,16 +2,18 @@
     margin: 1.5em 0 2em 0;
     padding: 1em;
     text-align: center;
-    border: 2px solid #999;
+    border: 2px solid #ddd;
 }
 
 .succession-result h2 {
     margin: 0 0 0.3em 0;
+    color: #ffff52;
     font-size: 1.8em;
 }
 
 .succession-result p {
     margin: 0;
+    color: #fff;
     font-size: 1.5em;
     font-weight: bold;
 }
