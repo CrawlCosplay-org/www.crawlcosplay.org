@@ -51,11 +51,12 @@ $games = CrawlSuccessionGame::find(
 
 ?>
 
-<h1>CrawlSuccession Games Pending Approval</h1>
-
+<h1>Crawl Succession Games Pending Approval</h1>
+<br>
+<br>
 <?php if (empty($games)): ?>
 
-    <p>No CrawlSuccession games are currently pending approval.</p>
+    <p>No Crawl Succession games are currently pending approval.</p>
 
 <?php else: ?>
 
@@ -122,13 +123,13 @@ $games = CrawlSuccessionGame::find(
                     <?=$e($game->created)?>
                 </td>
 
-                <td>
+               <td>
 
     <a href="/crawl_succession_game?id=<?=$e($game->id)?>">
         View
     </a>
 
-    <br /><br />
+    |
 
     <form method="POST" style="display:inline;">
         <input type="hidden" name="action" value="approve">
@@ -140,7 +141,7 @@ $games = CrawlSuccessionGame::find(
         >
     </form>
 
-    <br /><br />
+    |
 
     <form method="POST" style="display:inline;">
         <input type="hidden" name="action" value="reject">
@@ -153,14 +154,13 @@ $games = CrawlSuccessionGame::find(
     </form>
 
 </td>
-
             </tr>
 
         <?php endforeach; ?>
 
         </tbody>
     </table>
-
+<br>
 <?php endif; ?>
 
 <p>
