@@ -1,10 +1,13 @@
 <?php
 
+session_start();
+
 use app\models\CrawlSuccessionGame;
 use app\models\CrawlSuccessionQueue;
 use app\models\CrawlSuccessionUser;
 
 $games = [
+    'pending' => [],
     'active' => [],
     'planned' => [],
     'concluded' => []
@@ -26,9 +29,80 @@ unset($list);
 
 ?>
 
-<h2>CrawlSuccession</h2>
+<h1>Crawl Succession</h1>
 
-<h3>Active</h3>
+<?php
+$my_pending_games = [];
+
+if (!empty($_SESSION['user_id'])) {
+
+    foreach ($games['pending'] as $game) {
+
+        if ($game->created_by == $_SESSION['user_id']) {
+            $my_pending_games[] = $game;
+        }
+    }
+}
+?>
+
+<?php if (!empty($my_pending_games)): ?>
+
+    <h3>Pending Approval</h3>
+
+    <p>
+        Your submitted succession game is awaiting admin approval.
+    </p>
+
+    <table class="bordered">
+        <thead>
+            <tr>
+                <th>Character</th>
+                <th>Species</th>
+                <th>Background</th>
+                <th>God(s)</th>
+                <th>Server</th>
+                <th>Players</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        <?php foreach ($my_pending_games as $game): ?>
+
+            <tr>
+                <td>
+                    <a href="/crawl_succession_game?id=<?=$e($game->id)?>">
+                        <?=$e($game->character_name)?>
+                    </a>
+                </td>
+                <td><?=$e($game->species)?></td>
+                <td><?=$e($game->background)?></td>
+                <td><?=$e($game->god)?></td>
+                <td><?=$e($game->server)?></td>
+                <td>
+                    <?php
+                    $players = CrawlSuccessionQueue::find([
+                        'game_id' => $game->id
+                    ]);
+
+                    $player_count = 0;
+
+                    foreach ($players as $player) {
+                        $player_count++;
+                    }
+                    ?>
+
+                    <?=$e($player_count)?> / <?=$e($game->max_players)?>
+                </td>
+            </tr>
+
+        <?php endforeach; ?>
+
+        </tbody>
+    </table>
+
+<?php endif; ?>
+
+<h2>Active</h2>
 
 <?php if (empty($games['active'])): ?>
 
@@ -113,7 +187,7 @@ unset($list);
 <?php endif; ?>
 
 
-<h3>Planned</h3>
+<h2>Planned</h2>
 
 <?php if (empty($games['planned'])): ?>
 
@@ -188,7 +262,7 @@ unset($list);
 <?php endif; ?>
 
 
-<h3>Concluded</h3>
+<h2>Concluded</h2>
 
 <?php if (empty($games['concluded'])): ?>
 
@@ -235,8 +309,6 @@ unset($list);
 
 
 <?php
-session_start();
-
 if (!empty($_SESSION['user_id'])):
 ?>
 
