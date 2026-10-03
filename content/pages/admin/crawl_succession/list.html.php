@@ -51,8 +51,7 @@ $games = CrawlSuccessionGame::find(
 
 ?>
 
-<h1>Crawl Succession Games Pending Approval</h1>
-<br>
+<h2>Crawl Succession Games Pending Approval</h2>
 <br>
 <?php if (empty($games)): ?>
 
