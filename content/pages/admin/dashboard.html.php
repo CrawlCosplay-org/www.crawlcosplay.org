@@ -5,7 +5,7 @@
 <br>
 <h2>Moderation</h2>
 
-<ul>
+<ul style="line-height: 2;">
     <li>
         <a href="/admin/submissions/list">
             Submissions Needing Moderation
@@ -22,7 +22,7 @@
 
 <h2>Content Management</h2>
 
-<ul>
+<ul style="line-height: 2;">
     <li>
         <a href="/admin/challenges/list">
             Challenge List
@@ -44,7 +44,7 @@
 
 <h2>Account</h2>
 
-<ul>
+<ul style="line-height: 2;">
     <li>
         <a href="/admin/logout">
             Logout
