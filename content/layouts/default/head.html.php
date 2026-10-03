@@ -15,6 +15,7 @@
 	<meta property="og:url" content="https://www.crawlcosplay.org/">
     <!-- <link rel="stylesheet" 	href="/css/reset.css"> -->
     <link rel="stylesheet" href="/css/cosplay.css?v=<?=time()?>">
+	<link rel="stylesheet" href="/css/crawl_succession.css?v=<?=time()?>">  
     <!-- <link rel="stylesheet" href="https://crawl.develz.org/tournament/0.23/tourney-score.css"> -->
 
 <style>
