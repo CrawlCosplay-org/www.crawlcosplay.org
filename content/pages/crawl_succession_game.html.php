@@ -695,8 +695,8 @@ if ($game->status === 'concluded' && !empty($turns)) {
 
 <?php endif; ?>
 
-
-<h3>Player Queue</h3>
+<br>
+<h2>Player Queue</h2>
 
 <?php if (empty($queue)): ?>
 
@@ -801,8 +801,8 @@ if ($game->status === 'concluded' && !empty($turns)) {
 
 <?php endif; ?>
 
-
-<h3>Turn History</h3>
+<br>
+<h2>Turn History</h2>
 
 <?php if (empty($turns)): ?>
 
