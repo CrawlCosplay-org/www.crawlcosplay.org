@@ -7,7 +7,7 @@
 
 <ul style="line-height: 2;">
     <li>
-        <a href="/admin/submissions/list">
+        <a href="/admin/submissions/moderate">
             Submissions Needing Moderation
         </a>
     </li>
