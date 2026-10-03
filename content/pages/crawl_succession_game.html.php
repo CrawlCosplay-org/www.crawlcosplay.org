@@ -557,6 +557,8 @@ if ($game->status === 'concluded' && !empty($turns)) {
 ?>
 
 <h1><?=$e($game->character_name)?></h1>
+<br>
+<br>
 
 <?php if ($game->status === 'concluded' && !empty($final_result)): ?>
 
