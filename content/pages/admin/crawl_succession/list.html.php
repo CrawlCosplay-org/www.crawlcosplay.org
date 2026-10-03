@@ -5,6 +5,45 @@
 use app\models\CrawlSuccessionGame;
 use app\models\CrawlSuccessionUser;
 
+if ($data = $this->request->getPostData()) {
+
+    $action = $data['action'] ?? '';
+    $game_id = (int) ($data['game_id'] ?? 0);
+
+    if ($game_id > 0 && in_array($action, ['approve', 'reject'], true)) {
+
+        $games_to_update = CrawlSuccessionGame::find([
+            'id' => $game_id,
+            'status' => 'pending'
+        ]);
+
+        $game = null;
+
+        foreach ($games_to_update as $found_game) {
+            $game = $found_game;
+            break;
+        }
+
+        if ($game) {
+
+            if ($action === 'approve') {
+
+                $game->save([
+                    'status' => 'planned'
+                ]);
+
+            } elseif ($action === 'reject') {
+
+                $game->save([
+                    'status' => 'rejected'
+                ]);
+            }
+        }
+    }
+
+    return $this->request->redirect('/admin/crawl_succession/list');
+}
+
 $games = CrawlSuccessionGame::find(
     ['status' => 'pending'],
     ['order' => '`created` ASC']
@@ -84,10 +123,36 @@ $games = CrawlSuccessionGame::find(
                 </td>
 
                 <td>
-                    <a href="/crawl_succession_game?id=<?=$e($game->id)?>">
-                        View
-                    </a>
-                </td>
+
+    <a href="/crawl_succession_game?id=<?=$e($game->id)?>">
+        View
+    </a>
+
+    <br /><br />
+
+    <form method="POST" style="display:inline;">
+        <input type="hidden" name="action" value="approve">
+        <input type="hidden" name="game_id" value="<?=$e($game->id)?>">
+        <input
+            type="submit"
+            value="Approve"
+            onclick="return confirm('Approve this succession game?');"
+        >
+    </form>
+
+    <br /><br />
+
+    <form method="POST" style="display:inline;">
+        <input type="hidden" name="action" value="reject">
+        <input type="hidden" name="game_id" value="<?=$e($game->id)?>">
+        <input
+            type="submit"
+            value="Reject"
+            onclick="return confirm('Reject this succession game?');"
+        >
+    </form>
+
+</td>
 
             </tr>
 
