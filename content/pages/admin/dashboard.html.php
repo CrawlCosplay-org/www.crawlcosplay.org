@@ -27,16 +27,26 @@
         <a href="/admin/challenges/list">
             Challenge List
         </a>
+        |
+        <a href="/admin/challenges/add">
+            Add Challenge
+        </a>
     </li>
+
     <li>
         <a href="/admin/players/list">
             Players List
         </a>
+        |
+        <a href="/admin/players/add">
+            Add Player
+        </a>
     </li>
     <li>
-        <a href="/admin/ccc_seasons/list">
-            CCC Seasons - Task: Make new challenge characters!
-        </a>
+    <a href="/admin/ccc_seasons/list">
+        CCC Seasons
+    </a>
+    - Task: Make new challenge characters!
     </li>
 </ul>
 
