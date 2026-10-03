@@ -174,159 +174,172 @@ if ($current_user_id && $_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
 
-    /*
-     * Handle finishing the current turn.
-     */
-    if ($action === 'finish_turn') {
+   /*
+ * Handle finishing the current turn.
+ */
+if ($action === 'finish_turn') {
 
-        if ($game->status !== 'active') {
+    if ($game->status !== 'active') {
 
-            $error = "This succession game is not active.";
+        $error = "This succession game is not active.";
 
-        } elseif ($game->current_user_id != $current_user_id) {
+    } elseif ($game->current_user_id != $current_user_id) {
 
-            $error = "It is not your turn.";
+        $error = "It is not your turn.";
+
+    } else {
+
+        $notes = trim($post_data['notes'] ?? '');
+        $now = date('Y-m-d H:i:s');
+
+        /*
+         * Find the current active queue entry.
+         */
+        $current_player = null;
+
+        foreach ($queue as $player) {
+
+            if (
+                $player->user_id == $current_user_id
+                && $player->active
+            ) {
+                $current_player = $player;
+                break;
+            }
+        }
+
+        if (!$current_player) {
+
+            $error = "Unable to find your active turn.";
 
         } else {
 
-            $notes = trim($post_data['notes'] ?? '');
-            $now = date('Y-m-d H:i:s');
-
             /*
-             * Find the current active queue entry.
+             * Find the current turn record.
              */
-            $current_player = null;
+            $turns = CrawlSuccessionTurn::find([
+                'game_id' => $game->id,
+                'turn_number' => $game->turn_number,
+                'user_id' => $current_user_id
+            ]);
 
-            foreach ($queue as $player) {
+            $current_turn = null;
 
-                if (
-                    $player->user_id == $current_user_id
-                    && $player->active
-                ) {
-                    $current_player = $player;
-                    break;
-                }
+            foreach ($turns as $found_turn) {
+                $current_turn = $found_turn;
+                break;
             }
 
-            if (!$current_player) {
+            if (!$current_turn) {
 
-                $error = "Unable to find your active turn.";
+                $error = "Unable to find the current turn record.";
 
             } else {
 
                 /*
-                 * Find the current turn record.
+                 * Determine whether this is the final player.
                  */
-                $turns = CrawlSuccessionTurn::find([
-                    'game_id' => $game->id,
-                    'turn_number' => $game->turn_number,
-                    'user_id' => $current_user_id
-                ]);
+                $is_final_player = (
+                    $current_player->position == count($queue)
+                );
 
-                $current_turn = null;
+                $result = trim($post_data['result'] ?? '');
 
-                foreach ($turns as $found_turn) {
-                    $current_turn = $found_turn;
-                    break;
-                }
+                /*
+                 * Save the current turn.
+                 */
+                if (!$current_turn->save([
+                    'notes' => $notes,
+                    'result' => $is_final_player ? $result : null,
+                    'finished' => $now
+                ])) {
 
-                if (!$current_turn) {
-
-                    $error = "Unable to find the current turn record.";
+                    $error = "Unable to finish the current turn.";
 
                 } else {
 
                     /*
-                     * Save the notes and finish the current turn.
+                     * Deactivate the current player.
                      */
-                    if (!$current_turn->save([
-                        'notes' => $notes,
-                        'finished' => $now
-                    ])) {
+                    $current_player->save([
+                        'active' => 0
+                    ]);
 
-                        $error = "Unable to finish the current turn.";
+                    /*
+                     * If this is the final player, conclude the succession game.
+                     */
+                    if ($is_final_player) {
 
-                    } else {
-
-                        /*
-                         * Deactivate the current player.
-                         */
-                        $current_player->save([
-                            'active' => 0
+                        $game->save([
+                            'status' => 'concluded',
+                            'current_user_id' => null,
+                            'concluded' => $now
                         ]);
 
-                        /*
-                         * Find the next player in the queue.
-                         */
-                        $next_player = null;
+                        return $this->request->redirect(
+                            '/crawl_succession_game?id=' . $game->id
+                        );
+                    }
 
-                        foreach ($queue as $player) {
+                    /*
+                     * Find the next player in the queue.
+                     */
+                    $next_player = null;
 
-                            if (
-                                $player->position > $current_player->position
-                            ) {
-                                $next_player = $player;
-                                break;
-                            }
+                    foreach ($queue as $player) {
+
+                        if (
+                            $player->position > $current_player->position
+                        ) {
+                            $next_player = $player;
+                            break;
                         }
+                    }
 
-                        /*
-                         * If there is another player, start their turn.
-                         */
-                        if ($next_player) {
+                    /*
+                     * Start the next player's turn.
+                     */
+                    if ($next_player) {
 
-                            $next_turn_number = $game->turn_number + 1;
+                        $next_turn_number = $game->turn_number + 1;
 
-                            $next_player->save([
-                                'active' => 1
-                            ]);
+                        $next_player->save([
+                            'active' => 1
+                        ]);
 
-                            $game->save([
-                                'current_user_id' => $next_player->user_id,
-                                'turn_number' => $next_turn_number
-                            ]);
+                        $game->save([
+                            'current_user_id' => $next_player->user_id,
+                            'turn_number' => $next_turn_number
+                        ]);
 
-                            $next_turn = new CrawlSuccessionTurn([
-                                'game_id' => $game->id,
-                                'turn_number' => $next_turn_number,
-                                'user_id' => $next_player->user_id,
-                                'notes' => null,
-                                'started' => $now,
-                                'finished' => null
-                            ]);
+                        $next_turn = new CrawlSuccessionTurn([
+                            'game_id' => $game->id,
+                            'turn_number' => $next_turn_number,
+                            'user_id' => $next_player->user_id,
+                            'notes' => null,
+                            'result' => null,
+                            'started' => $now,
+                            'finished' => null
+                        ]);
 
-                            if ($next_turn->save()) {
-
-                                return $this->request->redirect(
-                                    '/crawl_succession_game?id=' . $game->id
-                                );
-                            }
-
-                            $error = "Unable to create the next turn.";
-
-                        } else {
-
-                            /*
-                             * There is currently no next player.
-                             *
-                             * Leave the game active for now.
-                             * Conclusion handling will be added later.
-                             */
-                            $game->save([
-                                'current_user_id' => null,
-                                'turn_number' => $game->turn_number + 1
-                            ]);
+                        if ($next_turn->save()) {
 
                             return $this->request->redirect(
                                 '/crawl_succession_game?id=' . $game->id
                             );
                         }
+
+                        $error = "Unable to create the next turn.";
+
+                    } else {
+
+                        $error = "Unable to find the next player.";
                     }
                 }
             }
         }
     }
-
+}
 
     /*
      * Handle queue management.
@@ -809,6 +822,15 @@ foreach ($turn_results as $turn) {
 
             <p>
                 <em>No notes recorded.</em>
+            </p>
+
+        <?php endif; ?>
+    
+        <?php if (!empty($turn->result)): ?>
+
+            <p>
+                <strong>Result:</strong>
+                <?=$e($turn->result)?>
             </p>
 
         <?php endif; ?>
