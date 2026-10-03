@@ -10,11 +10,8 @@
 		<div class="fineprint" align="right">
    			To be Moderated: <?php echo app\models\Submission::getNumberOfUnscoredSubmissions() ?>
 			<?php if ($this->request->session('admin')) : ?>
-			          Subs <a href="/admin/submissions/list">Official</a> <a href="/admin/submissions/moderate">Moderate</a> <a href="/admin/submissions/add">New</a>
-     	 		  	| Players <a href="/admin/players/list">List</a> <a href="/admin/players/add">New</a>
-			    	| Challenges <a href="/admin/challenges/list">List</a> <a href="/admin/challenges/add">New</a>
-			        | CCC Seasons <a href="/admin/ccc_seasons/list.html">List</a> <a href="/admin/ccc_seasons/add.html">New</a>
-     	  		 	| <a href="/admin/logout">Logout</a>
+        		 | <a href="/admin/dashboard">Admin Dashboard</a>
+   				 | <a href="/admin/logout">Logout</a>
 			<?php else : ?>
 			          <a href="/backoffice">Admin</a>
 			<?php endif; ?>
