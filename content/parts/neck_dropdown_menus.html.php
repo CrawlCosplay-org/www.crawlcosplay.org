@@ -5,9 +5,10 @@
 			<a href="/cc_streamers"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#8627; CC Streamers</a>
 			<a href="/cca">Crawl Cosplay Academy (CCA)</a>
 			<a href="/cca/about_cca"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#8627; About CCA</a>
+			<a href="/cca/how_to_win_dcss"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#8627; How to Win DCSS</a>
 			<a href="/ccc">Crawl Cosplay Challenge (CCC)</a>
 			<a href="/ccc/about_ccc"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#8627; About CCC</a>
-			<a href="/ccc/all_ccc_history"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#8627; all CCC challenges</a>
+			<a href="/ccc/all_ccc_history"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#8627; All CCC challenges</a>
 			<a href="/cctt">Crawl Cosplay Trunk Tournament (CCTT)</a>
 			<a href="/cctt/about_cctt"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#8627; About CCTT</a>
 			<a href="/ccft">Crawl Cosplay Forks Tournament (CCFT)</a>
