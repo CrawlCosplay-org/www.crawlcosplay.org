@@ -15,7 +15,7 @@ if ($data = $this->request->getPostData()) {
 	if ($data['passphrase'] === $key) {
 		session_start();
 		$_SESSION['admin'] = true;
-		$this->request->redirect('/admin/submissions/moderate');
+		$this->request->redirect('/admin/dashboard');
 		return;
 	} else {
 		Log::warning("Admin phrase failed : [{$data['passphrase']}] != [{$key}]");
