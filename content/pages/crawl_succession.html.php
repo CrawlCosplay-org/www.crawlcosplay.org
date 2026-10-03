@@ -30,7 +30,8 @@ unset($list);
 ?>
 
 <h1>Crawl Succession</h1>
-
+<br>
+<br>
 <?php
 $my_pending_games = [];
 
@@ -99,7 +100,7 @@ if (!empty($_SESSION['user_id'])) {
 
         </tbody>
     </table>
-
+<br>
 <?php endif; ?>
 
 <h2>Active</h2>
@@ -186,7 +187,7 @@ if (!empty($_SESSION['user_id'])) {
 
 <?php endif; ?>
 
-
+<br>
 <h2>Planned</h2>
 
 <?php if (empty($games['planned'])): ?>
@@ -261,7 +262,7 @@ if (!empty($_SESSION['user_id'])) {
 
 <?php endif; ?>
 
-
+<br>
 <h2>Concluded</h2>
 
 <?php if (empty($games['concluded'])): ?>
@@ -307,7 +308,7 @@ if (!empty($_SESSION['user_id'])) {
 
 <?php endif; ?>
 
-
+<br>
 <?php
 if (!empty($_SESSION['user_id'])):
 ?>
