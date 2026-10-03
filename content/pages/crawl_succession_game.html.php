@@ -625,7 +625,8 @@ foreach ($turn_results as $turn) {
                             <input
                             type="text"
                             name="result"
-                            maxlength="50"
+                            maxlength="100"
+                            placeholder="Win/Lose, Rune Count, Gems, Other Facts..."    
                             required
                             />
                     </label>
