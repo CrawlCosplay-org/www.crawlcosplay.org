@@ -104,6 +104,7 @@ if ($current_user_id && $_SERVER['REQUEST_METHOD'] === 'POST') {
                 'turn_number' => 1,
                 'user_id' => $first_player->user_id,
                 'notes' => null,
+                'result' => null,
                 'started' => $now,
                 'finished' => null
             ]);
@@ -539,9 +540,34 @@ foreach ($turn_results as $turn) {
     $turns[] = $turn;
 }
 
+/*
+ * Get the final result.
+ */
+$final_result = null;
+
+if ($game->status === 'concluded' && !empty($turns)) {
+
+    $last_turn = end($turns);
+
+    if (!empty($last_turn->result)) {
+        $final_result = $last_turn->result;
+    }
+}
+
 ?>
 
-<h2><?=$e($game->character_name)?></h2>
+<h1><?=$e($game->character_name)?></h1>
+
+<?php if ($game->status === 'concluded' && !empty($final_result)): ?>
+
+    <div class="succession-result">
+        <h2>GAME CONCLUDED</h2>
+        <p>
+            <?=$e($final_result)?>
+        </p>
+    </div>
+
+<?php endif; ?>
 
 <table class="bordered">
     <tbody>
@@ -658,7 +684,7 @@ foreach ($turn_results as $turn) {
             <input
                 type="submit"
                 value="Finish Turn"
-                onclick="return confirm('Finish your turn and pass to the next player?');"
+                onclick="return confirm('<?=$is_final_player ? 'Conclude the game?' : 'Finish your turn and pass to the next player?'?>');"
             >
 
         </fieldset>
