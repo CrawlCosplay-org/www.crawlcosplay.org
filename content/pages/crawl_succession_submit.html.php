@@ -59,7 +59,7 @@ if ($data = $this->request->getPostData()) {
 ?>
 
 <h2>Submit a Crawl Succession Game</h2>
-<br>
+
 <p>
     Your succession game will be reviewed by an admin before it becomes available
     for players to join.
