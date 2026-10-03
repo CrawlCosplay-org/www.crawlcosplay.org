@@ -7,6 +7,9 @@
 <p><img src="/img/uniques/Snorg.png" width="72" height="72" style="float:right">Want to improve your gameplay and have fun doing it? 
 <b>Crawl Cosplay Academy (CCA)</b> is a guided series of approachable challenges designed to teach core skills from a diverse range of builds while playing characters inspired by iconic
 <a href="http://crawl.chaosforge.org/Unique_monster" target="_blank">DCSS Uniques,</a> such as our mascot, <b><i>Snorg</b></i></p>
+<br>
+
+<p>Still learning the basics? Check out our <a href="/how_to_win_dcss">How To Win DCSS</a> starter guide.</p><br>
 
 <br>
   
