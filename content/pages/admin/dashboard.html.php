@@ -42,12 +42,16 @@
             Add Player
         </a>
     </li>
-    <li>
+ <li>
     <a href="/admin/ccc_seasons/list">
-        CCC Seasons
+        CCC Seasons List
     </a>
-    - Task: Make new challenge characters!
-    </li>
+    - Task: Make 36 new challenge characters!
+    |
+    <a href="/admin/ccc_seasons/add">
+        Add Challenge
+    </a>
+</li>
 </ul>
 
 <br>
