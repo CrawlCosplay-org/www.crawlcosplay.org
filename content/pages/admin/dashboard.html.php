@@ -1,6 +1,6 @@
 <?php $this->layout = 'admin'; ?>
 
-<h1>Crawl Cosplay Admin</h1>
+<h1>Admin Dashboard</h1>
 <br>
 <br>
 <h2>Moderation</h2>
