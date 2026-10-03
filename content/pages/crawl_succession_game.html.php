@@ -1,5 +1,7 @@
 <?php
 
+$this->addCSS('/css/crawl_succession.css');
+
 use app\models\CrawlSuccessionGame;
 use app\models\CrawlSuccessionQueue;
 use app\models\CrawlSuccessionUser;
