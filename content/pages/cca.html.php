@@ -10,7 +10,7 @@ use app\models\{Challenge, Submission, Player};
 <h1 style="color:rgb(69, 136, 5);">Welcome New Crawlers!</h1>
 <h2>Ready?</h2>
 <p>Whether you're chasing your first win or simply looking for a fresh way to experience DCSS, Crawl Cosplay Academy offers a guided introduction to several major build archetypes.</p>
-<p>Want to know more before jumping in? Read the <a href="/cca/about_cca">About CCA</a> webpage.</p><br>
+<p>Want to know more before jumping in? Read the <a href="/cca/about_cca">About CCA</a> webpage.</p>
 <p>Still learning the basics? Check out our <a href="/how_to_win_dcss">How To Win DCSS</a> starter guide.</p><br>
 
 <h2>Set...</h2>
