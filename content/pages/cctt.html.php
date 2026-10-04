@@ -104,7 +104,7 @@ setInterval(updateCountdown, 1000);
 				$made_seperator = true; // only make one seperator if multiple bonuses
 			}
 			echo '<th>' . $e($c->week) . '. ';
-			if ($cha->icon) echo '<a href="/cctt/tchallengedetails?id='.$c->id.'"><img src="'.$e($c->icon).'" style="height: 1.5em" /></a>';
+			if ($c->icon) echo '<a href="/cctt/tchallengedetails?id='.$c->id.'"><img src="'.$e($c->icon).'" style="height: 1.5em" /></a>';
 			echo "</th>";
 		}
 		?>
