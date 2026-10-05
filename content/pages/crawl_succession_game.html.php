@@ -24,7 +24,12 @@ if (!$game) {
 
 $current_user_id = $_SESSION['user_id'] ?? null;
 
-$can_edit = ($current_user_id == $game->created_by);
+$is_admin = !empty($_SESSION['admin']);
+
+$can_edit = (
+    $current_user_id == $game->created_by
+    || $is_admin
+);
 
 
 /*
@@ -47,10 +52,38 @@ $ready_to_start = count($queue) >= $game->min_players;
 /*
  * Handle POST actions.
  */
-if ($current_user_id && $_SERVER['REQUEST_METHOD'] === 'POST') {
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $post_data = $this->request->getPostData();
     $action = $post_data['action'] ?? '';
+
+    if ($is_admin && in_array($action, ['approve', 'reject'], true)) {
+
+    if ($game->status !== 'pending') {
+
+        $error = "This succession game is no longer pending approval.";
+
+    } elseif ($action === 'approve') {
+
+        $game->save([
+            'status' => 'planned'
+        ]);
+
+        return $this->request->redirect(
+            '/crawl_succession_game?id=' . $game->id
+        );
+
+    } elseif ($action === 'reject') {
+
+        $game->save([
+            'status' => 'rejected'
+        ]);
+
+        return $this->request->redirect(
+            '/admin/crawl_succession/list'
+        );
+    }
+}
 
 
     /*
@@ -559,6 +592,33 @@ if ($game->status === 'concluded' && !empty($turns)) {
 <h1><?=$e($game->character_name)?></h1>
 <br>
 <br>
+
+<?php if ($is_admin && $game->status === 'pending'): ?>
+
+    <h2>Admin Review</h2>
+
+    <form method="POST" style="display:inline;">
+        <input type="hidden" name="action" value="approve">
+        <input
+            type="submit"
+            value="Approve"
+            onclick="return confirm('Approve this succession game?');"
+        >
+    </form>
+
+    <form method="POST" style="display:inline;">
+        <input type="hidden" name="action" value="reject">
+        <input
+            type="submit"
+            value="Reject"
+            onclick="return confirm('Reject this succession game?');"
+        >
+    </form>
+
+    <br>
+    <br>
+
+<?php endif; ?>
 
 <?php if ($game->status === 'concluded' && !empty($final_result)): ?>
 
