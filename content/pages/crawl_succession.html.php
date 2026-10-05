@@ -307,7 +307,7 @@ if (!empty($_SESSION['user_id'])) {
     </table>
 
 <?php endif; ?>
-
+<br>
 <?php
 if (!empty($_SESSION['user_id'])):
 ?>
