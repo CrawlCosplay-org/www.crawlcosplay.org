@@ -124,9 +124,11 @@ $games = CrawlSuccessionGame::find(
 
                <td>
 
-  <a href="/crawl_succession_game?id=<?=$e($game->id)?>&admin=1">
-    View
-  </a>
+    <input
+    type="button"
+    value="View"
+    onclick="window.location='/crawl_succession_game?id=<?=$e($game->id)?>&admin=1';"
+    >
 
     |
 
