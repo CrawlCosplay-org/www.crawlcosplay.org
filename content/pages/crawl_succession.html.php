@@ -308,23 +308,35 @@ if (!empty($_SESSION['user_id'])) {
 
 <?php endif; ?>
 
-<br>
 <?php
 if (!empty($_SESSION['user_id'])):
 ?>
 
-    <p>
-        <a href="/crawl_succession_submit">Submit a new character</a>
-        |
-        <a href="/crawl_succession_logout">Logout</a>
-    </p>
+    <input
+        type="button"
+        value="Submit a new character"
+        onclick="window.location='/crawl_succession_submit';"
+    >
+
+    <input
+        type="button"
+        value="Logout"
+        onclick="window.location='/crawl_succession_logout';"
+    >
 
 <?php else: ?>
 
-    <p>
-        <a href="/crawl_succession_login">Login</a>
-        |
-        <a href="/crawl_succession_register">Register</a>
-    </p>
+    <input
+        type="button"
+        value="Login"
+        onclick="window.location='/crawl_succession_login';"
+    >
+
+    <input
+        type="button"
+        value="Register"
+        onclick="window.location='/crawl_succession_register';"
+    >
 
 <?php endif; ?>
+<br>
