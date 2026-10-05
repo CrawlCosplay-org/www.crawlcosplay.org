@@ -124,9 +124,9 @@ $games = CrawlSuccessionGame::find(
 
                <td>
 
-    <a href="/crawl_succession_game?id=<?=$e($game->id)?>">
-        View
-    </a>
+  <a href="/crawl_succession_game?id=<?=$e($game->id)?>&admin=1">
+    View
+  </a>
 
     |
 
