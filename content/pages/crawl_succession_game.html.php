@@ -630,7 +630,7 @@ if ($game->status === 'concluded' && !empty($turns)) {
     </div>
 
 <?php endif; ?>
-
+<br>
 <table class="bordered">
     <tbody>
 
@@ -992,19 +992,20 @@ if ($game->status === 'concluded' && !empty($turns)) {
     <?php endif; ?>
 
 <?php endif; ?>
-
+<br>
 
 <?php if ($can_edit): ?>
 
-    <p>
-        <a href="/crawl_succession_edit?id=<?=$e($game->id)?>">
-            Edit Character
-        </a>
-    </p>
+    <input
+        type="button"
+        value="Edit Character"
+        onclick="window.location='/crawl_succession_edit?id=<?=$e($game->id)?>';"
+    >
 
 <?php endif; ?>
 
-
-<p>
-    <a href="/crawl_succession">Back to CrawlSuccession</a>
-</p>
+<input
+    type="button"
+    value="Back to CrawlSuccession"
+    onclick="window.location='/crawl_succession';"
+>
