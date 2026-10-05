@@ -1009,3 +1009,4 @@ if ($game->status === 'concluded' && !empty($turns)) {
     value="Back to CrawlSuccession"
     onclick="window.location='/crawl_succession';"
 >
+<br>
