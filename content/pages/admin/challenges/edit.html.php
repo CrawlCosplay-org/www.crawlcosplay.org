@@ -25,7 +25,6 @@ if ($data = $this->request->getPostData()) {
 
 ?>
 <h2>Edit: <?=$cha->name?></h2>
-<pre><?php var_dump($cha->data()); ?></pre>
 <form method="POST">
 	<fieldset>
 		<input type="submit" name="Save">
