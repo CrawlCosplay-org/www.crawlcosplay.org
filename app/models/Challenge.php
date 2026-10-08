@@ -115,9 +115,9 @@ class Challenge extends BaseModel
 
     /********/
 
-    public function shortform(): string
-    {
-        /** return empty($this->shortform) ? "{$this->species}, {$this->background}, {$this->gods}" : $this->shortform;  **/
-    }
+ //   public function shortform(): string
+ //  {
+ //        return empty($this->shortform) ? "{$this->species}, {$this->background}, {$this->gods}" : $this->shortform;  **/
+ //   } 
 
 }
