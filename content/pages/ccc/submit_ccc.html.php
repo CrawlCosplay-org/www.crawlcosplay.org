@@ -79,8 +79,8 @@ if ($data = $this->request->getPostData()) {
         </label>
         <br />
         <label>
-            <span>Comment</span><br />
-            <textarea name="comment" placeholder="Estimate of points and stars? Username (for new offline players)?" rows="5" cols="100" ></textarea>
+            <span>Comments/Feedback</span><br />
+            <textarea name="comment" placeholder="Provide estimate of points and stars as well as feedback on the challenge." rows="5" cols="100" ></textarea>
         </label>
         <br />
         <input type="submit" value="Submit Run" />
