@@ -10,6 +10,11 @@ use app\models\Submission;
 $included_sets = [35];
 $min_week = 1;
 $max_week = 5;
+$tournament_labels = [
+    35 => 'CCTT .35',
+    // 36 => 'CCTT .36',
+    // Add future set labels here.
+];
 
 $challenges = Challenge::list();
 $challenges_with_notes = [];
@@ -71,7 +76,7 @@ usort($challenges_with_notes, function ($a, $b) {
 <table class="bordered">
     <thead>
         <tr>
-            <th>Set</th>
+            <th>Tournament</th>
             <th>Week</th>
             <th>Challenge</th>
             <th>Submissions with Notes</th>
@@ -87,7 +92,12 @@ usort($challenges_with_notes, function ($a, $b) {
             <?php $r = 0; ?>
             <?php foreach ($challenges_with_notes as $challenge) : ?>
             <tr class="<?=$r++ % 2 == 0 ? 'odd' : 'even'?>">
-                <td><?=$challenge['setnr']?></td>
+                <td><?=htmlspecialchars(
+                    $tournament_labels[$challenge['setnr']] ?? 'Set ' . $challenge['setnr'],
+                    ENT_QUOTES,
+                    'UTF-8'
+                    )?>
+                </td>
                 <td><?=$challenge['week']?></td>
                 <td><?=htmlspecialchars((string) $challenge['name'], ENT_QUOTES, 'UTF-8')?></td>
                 <td><?=$challenge['note_count']?></td>
