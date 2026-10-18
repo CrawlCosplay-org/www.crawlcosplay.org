@@ -11,7 +11,11 @@
             Moderate Submissions
         </a>
         |
-        <a href="/admin/submission_notes/list">
+        <a href="/admin/submissions/list">
+            Submission List
+        </a>
+        |
+         <a href="/admin/submission_notes/list">
             Submission Notes
         </a>
     </li>
