@@ -17,37 +17,89 @@ if (!$p) {
 }
 
 $submissions = $p->submissions();
+
 $tournament_submissions = [];
 $normal_submissions = [];
 $acadamy_sumissions = [];
+$best_by_challenge = [];
 
-array_reduce($submissions, function($carry, Submission $s) use (&$tournament_submissions, &$normal_submissions, &$acadamy_sumissions) {
-    if ($s->challenge()->setnr > 30) {
+foreach ($submissions as $s) {
+    $cha = $s->challenge();
+
+    if ($cha->setnr > 30) {
         $tournament_submissions[] = $s;
-    } elseif ($s->challenge()->setnr == 0) {
+    } elseif ($cha->setnr == 0) {
         $acadamy_sumissions[] = $s;
     } else {
         $normal_submissions[] = $s;
     }
-}, null);
+
+    if (!$s->accepted) {
+        continue;
+    }
+
+    $cid = (int) $s->challenge_id;
+
+    if (!isset($best_by_challenge[$cid])) {
+        $best_by_challenge[$cid] = $s;
+        continue;
+    }
+
+    $best = $best_by_challenge[$cid];
+
+    if (
+        $s->score > $best->score ||
+        (
+            $s->score == $best->score &&
+            $s->stars > $best->stars
+        ) ||
+        (
+            $s->score == $best->score &&
+            $s->stars == $best->stars &&
+            $s->created < $best->created
+        )
+    ) {
+        $best_by_challenge[$cid] = $s;
+    }
+}
 
 
-if ($tournament_submissions) :
+/*
+ * Split the selected submissions into the same sections
+ * as the existing player page.
+ */
+$best_tournament_submissions = [];
+$best_normal_submissions = [];
+$best_academy_submissions = [];
+
+foreach ($best_by_challenge as $s) {
+    $cha = $s->challenge();
+
+    if ($cha->setnr > 30) {
+        $best_tournament_submissions[] = $s;
+    } elseif ($cha->setnr == 0) {
+        $best_academy_submissions[] = $s;
+    } else {
+        $best_normal_submissions[] = $s;
+    }
+}
+
+
+if ($best_tournament_submissions) :
 
 
     $board = [];
     $first_set = 999;
     $last_set = 0;
-    foreach ($tournament_submissions as $sub) {
-        if ($sub->isScoring() === false) {
-            continue;
-        }
-        $cha = $sub->challenge();
-        $set = (int) $cha->setnr;
-        $week = (int) $cha->week;
-        if ($sub->hs === false || $week > 6) {
-            continue;
-        }
+    
+    foreach ($best_tournament_submissions as $sub) {
+    $cha = $sub->challenge();
+    $set = (int) $cha->setnr;
+    $week = (int) $cha->week;
+
+    if ($week < 1 || $week > 6 || $cha->bonus) {
+        continue;
+    }
         $first_set = $first_set < $set ? $first_set : $set;
         $last_set = $last_set > $set ? $last_set : $set;
         $board[$set][$week] = $sub;
@@ -118,15 +170,12 @@ $has_non_scoring = false;
 $board = [];
 $first_set = 999;
 $last_set = 0;
-foreach ($normal_submissions as $sub) {
-    if ($sub->isScoring() === false) {
-        continue;
-    }
+foreach ($best_normal_submissions as $sub) {
     $cha = $sub->challenge();
     $set = (int) $cha->setnr;
     $week = (int) $cha->week;
-    if ($sub->hs === false || $week > 5) {
-        $has_non_scoring = true;
+
+    if ($week < 1 || $cha->bonus) {
         continue;
     }
     $first_set = $first_set < $set ? $first_set : $set;
@@ -192,25 +241,34 @@ for ($set_key=$last_set; $set_key >= $first_set; $set_key--) {
 <br/>
 
 <?php 
-if ($acadamy_sumissions) : 
+if ($best_academy_submissions) :
 
     $has_non_scoring = false;
     $board = [];
 
     // All academy submissions are setnr 0 - so no need to worry about first and last
-    foreach ($acadamy_sumissions as $sub) {
-        if ($sub->isScoring() === false) {
-            continue;
-        }
-        $cha = $sub->challenge();
-        $set = (int) $cha->setnr;
-        $week = (int) $cha->week;
-        $board[$set][$week] = $sub;
-        if (!isset($board[$set]['total'])) $board[$set]['total'] = 0;
-        if (!isset($board[$set]['stars'])) $board[$set]['stars'] = 0;
-        $board[$set]['total'] += $sub->score;
-        $board[$set]['stars'] += $sub->stars;
+   foreach ($best_academy_submissions as $sub) {
+    $cha = $sub->challenge();
+    $set = (int) $cha->setnr;
+    $week = (int) $cha->week;
+
+    if ($week < 1 || $week > 12 || $cha->bonus) {
+        continue;
     }
+
+    $board[$set][$week] = $sub;
+
+    if (!isset($board[$set]['total'])) {
+        $board[$set]['total'] = 0;
+    }
+
+    if (!isset($board[$set]['stars'])) {
+        $board[$set]['stars'] = 0;
+    }
+
+    $board[$set]['total'] += (int) $sub->score;
+    $board[$set]['stars'] += (int) $sub->stars;
+}
 
     $set_key = 0;
 
@@ -243,7 +301,7 @@ if ($acadamy_sumissions) :
         $r = 0;
         $set_key = 0;
     ?>
-        <tr class="'<?=$r++%2==0?'odd':'even'?>'">
+        <tr class="<?=$r++%2==0?'odd':'even'?>'">
         <td><?=$board[$set_key]['total']?> <?=$board[$set_key]['stars']?><span class="star">&#9733;</span></td>
         <?php for ($i=1; $i <= 12; $i++) : ?>
             <?php
