@@ -65,14 +65,14 @@ echo '
 /* <img src="/img/misc/arrow-flashing-left.gif" width="40" height="10"> */
 
 	echo "<h2>" . _("Compete For Glory!") . "</h2>";
-	echo '<h3>(Active!) <a href="/cctt">' . _("Crawl Cosplay Trunk Tournament") . "</a> (CCTT) &nbsp;<img src=\"/img/misc/arrow-flashing-left.gif\" width=\"40\" height=\"10\"></h3>";
+	echo '<h3><a href="/cctt">' . _("Crawl Cosplay Trunk Tournament") . "</a> (CCTT) </h3>";
    	echo "<ul><li>" . _("A DCSS tournament lasting about a month with each week highlighting some of the latest Trunk changes.") . "</li>";
    	echo     "<li>" . _("Read") . ': <a href="/cctt/about_cctt">' . _("About CCTT") . "</a>.</li>";
    	echo 	 '<li><a href="/cctt/past_cctt_results">' . _("Past CCTT Results") . "</a></li></ul><br>";
 ?>
 	
 <!-- Adds countdown timer, update Epoch time each week! -->
-	
+<!--	
 <div style="text-align:center; margin-top:-10px; margin-bottom:60px;">
     <h3 style="margin-bottom:5px;">Tournament starts in:</h3>
     <div id="countdown" style="font-size:24px; font-weight:bold;"></div>
@@ -106,7 +106,7 @@ function updateCountdown() {
 updateCountdown();
 setInterval(updateCountdown, 1000);
 </script>
-
+-->
 <?php
 
 	echo '<h3><a href="/ccsdt">' . _("Crawl Cosplay Sudden Death Tournament") . '</a> (CCSDT)</h3>';
