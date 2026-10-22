@@ -28,7 +28,7 @@
 
 <!-- Adds countdown timer, update Epoch time each week! -->
 	
-<div style="text-align:center;">
+<!-- <div style="text-align:center;">
     <h3>Tournament starts in:</h3>
     <div id="countdown" style="font-size:24px; font-weight:bold;"></div>
 </div>
@@ -60,6 +60,7 @@ function updateCountdown() {
 updateCountdown();
 setInterval(updateCountdown, 1000);
 </script>
+-->
 
 <h3>Previous Tournament Results</h3>
 <p><a href="/cctt/past_cctt_results.html">CCTT results</a>.</p>
