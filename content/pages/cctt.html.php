@@ -157,7 +157,7 @@ setInterval(updateCountdown, 1000);
 	
 <!-- Adds countdown timer, update Epoch time each week! -->
 	
-<div style="text-align:center;">
+<!-- <div style="text-align:center;">
     <h3>Tournament starts in:</h3>
     <div id="countdown" style="font-size:24px; font-weight:bold;"></div>
 </div>
@@ -189,29 +189,30 @@ function updateCountdown() {
 
 updateCountdown();
 setInterval(updateCountdown, 1000);
-</script>
+</script> -->
 
 <?php
 	echo '<h2>See the <a href="/cctt/about_cctt">About Page</a> to learn more!</h2>';
 	
-echo '
-<div style="width:80%; max-width:800px; margin:0 auto;">
-    <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden;">
-        <iframe
-            src="https://www.youtube.com/embed/rH1KmbgpboA?si=kFqUzUg1W6h0hq0W"
-            title="Crawl Cosplay Forks Tournament"
-            style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;"
-            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen>
-        </iframe>
-    </div>
-</div><br>';
+#echo '
+#<div style="width:80%; max-width:800px; margin:0 auto;">
+#    <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden;">
+#        <iframe
+#            src="https://www.youtube.com/embed/rH1KmbgpboA?si=kFqUzUg1W6h0hq0W"
+#            title="Crawl Cosplay Forks Tournament"
+#            style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;"
+#            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+#            allowfullscreen>
+#        </iframe>
+#    </div>
+#</div><br>';
 
 	echo '<div style="margin-bottom: 20px;"></div>';
 	echo 'For previous tournament results, see:';
 	echo '<ul><li><a href="/cctt/tresults.html?set=32">CCTT#1</a> June 2024</li>';
 	echo '<li><a href="/cctt/tresults.html?set=33">CCTT#2</a> March 2025</li>';
 	echo '<li><a href="/cctt/tresults.html?set=34">CCTT#3</a> December 2025</li>';
+	echo '<li><a href="/cctt/tresults.html?set=35">CCTT#3</a> October 2026</li>';
 	echo "</ul>";
 	echo "<br>";
 endif;
