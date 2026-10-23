@@ -52,7 +52,7 @@ use app\models\{Challenge, Submission, Player};
 				}
 
 				echo '<th>' . $e($c->week) . '. ';
-				if ($cha->icon) echo '<a href="/cctt/tchallengedetails?id='.$c->id.'"><img src="'.$e($c->icon).'" style="height: 1.5em" /></a>';
+				if ($c->icon) echo '<a href="/cctt/tchallengedetails?id='.$c->id.'"><img src="'.$e($c->icon).'" style="height: 1.5em" /></a>';
 				echo "</th>";
 			}
 			?>
@@ -63,23 +63,29 @@ use app\models\{Challenge, Submission, Player};
 			<td><?=++$r?></td>
 			<td><a href="/player?id=<?=$row['pid']?>"><?=$row['player']?></a></td>
 			<td><?=$row['total']?> <?=$row['stars']?><span class="star">&#9733;</span></td>
-			<?php 
-			foreach ($row['week'] as $week) {
-				if ($week == null) {
+			<?php
+			foreach ($challenges_in_set as $c) {
+				$week = $row['week'][$c->id] ?? null;
+
+				if ($week === null) {
 					echo "<td>&nbsp;</td>";
 					continue;
 				}
+
 				$out = '<td>';
-				if (!empty($week['morgue'])) $out .= '<a href="' . $e($week['morgue']) . '" target="_blank">';
+				if (!empty($week['morgue'])) {
+					$out .= '<a href="' . $e($week['morgue']) . '" target="_blank">';
+				}
 				$out .= $week['score'];
-				for ($i=0; $i < (int) $week['stars'] ; $i++) {
+
+				for ($i = 0; $i < (int) $week['stars']; $i++) {
 					$out .= '<span class="star">&#9733;</span>';
 				}
-				if (!empty($week['morgue'])) $out .= '</a>';
-				echo $out . "</td>";
-			}
-			for ($i=0; $i < $weeks - sizeof($row['week']); $i++) { 
-				echo "<td>&nbsp;</td>";
+
+				if (!empty($week['morgue'])) {
+					$out .= '</a>';
+				}
+				echo $out . '</td>';
 			}
 			?>
 		</tr>
