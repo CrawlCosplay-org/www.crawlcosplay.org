@@ -192,7 +192,7 @@ setInterval(updateCountdown, 1000);
 </script> -->
 
 <?php
-	echo '<h2>See the <a href="/cctt/about_cctt">About Page</a> to learn more!</h2>';
+	echo '<h2 style="color:rgb(69, 136, 5);">Welcome to the <b>Crawl Cosplay Trunk Tournament</b> (CCFT)</h2>';
 	echo '<img src="img/uniques/Goji.png" width="250" height="250" style="float:right" alt="Goji">';
 	
 #echo '
@@ -207,14 +207,19 @@ setInterval(updateCountdown, 1000);
 #        </iframe>
 #    </div>
 #</div><br>';
-
-	echo '<div style="margin-bottom: 20px;"></div>';
+#echo '<div style="margin-bottom: 20px;"></div>';	
+	
+	echo "<h3>There is currently no active Crawl Cosplay Forks Tournament (CCFT)</h3><br>";
+	echo 'This page will update with full challenge details when the next Tournament goes live!<br>';
+	echo "<br>";
 	echo 'For previous tournament results, see:';
 	echo '<ul><li><a href="/cctt/tresults.html?set=32">CCTT#1</a> June 2024</li>';
 	echo '<li><a href="/cctt/tresults.html?set=33">CCTT#2</a> March 2025</li>';
 	echo '<li><a href="/cctt/tresults.html?set=34">CCTT#3</a> December 2025</li>';
 	echo '<li><a href="/cctt/tresults.html?set=35">CCTT#4</a> October 2026</li>';
 	echo "</ul>";
+	echo '<h3>For More Info, Rules, and Scoring:</h3><br>';
+  	echo 'See the <a href="/cctt/about_cctt">CCTT About page</a>.';
 	echo "<br>";
 endif;
 ?>
