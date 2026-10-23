@@ -109,7 +109,7 @@ $this->setData("meta", ['filename' => $cha->icon]);
 
 <!-- Adds countdown timer, update Epoch time each week! -->
 	
-<div style="text-align:center;">
+<!--<div style="text-align:center;">
     <h3>Week 5 ends in:</h3>
     <div id="countdown" style="font-size:24px; font-weight:bold;"></div>
 </div>
@@ -140,7 +140,7 @@ function updateCountdown() {
 
 updateCountdown();
 setInterval(updateCountdown, 1000);
-</script>
+</script>-->
 
 	
 <h3>Cosplay conduct points</h3>
