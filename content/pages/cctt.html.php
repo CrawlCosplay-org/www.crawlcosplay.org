@@ -152,7 +152,7 @@ setInterval(updateCountdown, 1000);
 		//echo '<img src="'.$e($image).'" width="350" style="float:right">';
 	//}
 
-	echo "<h2>There is currently no active Crawl Cosplay Trunk Tournament (CCTT)</h2>";
+	#echo "<h2>There is currently no active Crawl Cosplay Trunk Tournament (CCTT)</h2>";
 	?>
 	
 <!-- Adds countdown timer, update Epoch time each week! -->
