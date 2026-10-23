@@ -193,6 +193,7 @@ setInterval(updateCountdown, 1000);
 
 <?php
 	echo '<h2>See the <a href="/cctt/about_cctt">About Page</a> to learn more!</h2>';
+	echo '<img src="img/uniques/Goji.png" width="250" height="250" style="float:right" alt="Goji">';
 	
 #echo '
 #<div style="width:80%; max-width:800px; margin:0 auto;">
