@@ -57,7 +57,7 @@ $this->setData("meta", ['filename' => $cha->icon]);
 	- Small mistakes will likely NOT be forgiven unless they are minute. (If you are unsure please ask ASAP if you are forgiven in our CC Discord linked above.)</p>
 <br>
 	<!-- Weekly timer, update each week -->
-<div style="text-align:center; clear:both;">
+<!--<div style="text-align:center; clear:both;">
     <h3>Week 5 ends in:</h3>
     <div id="countdown" style="font-size:24px; font-weight:bold;"></div>
 </div>
@@ -89,7 +89,7 @@ function updateCountdown() {
 
 updateCountdown();
 setInterval(updateCountdown, 1000);
-</script>
+</script>-->
 	
 <?php if ($cha->special_rule) : ?>
 <h3>Special Rule or Notes</h3>
