@@ -1,6 +1,6 @@
 <h2>The latest NEWS</h2>
 <h3>Crawl Cosplay-Related News</h3>
-<ul><li>The <a href="/cctt"><b>Crawl Cosplay Trunk Tournament</b></a> (CCTT#4) has begun!</li>
+<ul><li>The <a href="/cctt"><b>Crawl Cosplay Trunk Tournament</b></a> (CCTT#4) has finished - congratulations to Nabutte for winning, and the entire top 5 for getting perfect scores across 5 weeks!</li>
 	<li>The <a href="/ccft"><b>Crawl Cosplay Forks Tournament</b></a> (CCFT#2) has finished - congratulations to Kuniqs on the win and to all the players who more than doubled participation over the first Forks Tournament!</li>
 </ul>
 
