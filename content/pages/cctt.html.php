@@ -212,7 +212,7 @@ setInterval(updateCountdown, 1000);
 	echo '<ul><li><a href="/cctt/tresults.html?set=32">CCTT#1</a> June 2024</li>';
 	echo '<li><a href="/cctt/tresults.html?set=33">CCTT#2</a> March 2025</li>';
 	echo '<li><a href="/cctt/tresults.html?set=34">CCTT#3</a> December 2025</li>';
-	echo '<li><a href="/cctt/tresults.html?set=35">CCTT#3</a> October 2026</li>';
+	echo '<li><a href="/cctt/tresults.html?set=35">CCTT#4</a> October 2026</li>';
 	echo "</ul>";
 	echo "<br>";
 endif;
