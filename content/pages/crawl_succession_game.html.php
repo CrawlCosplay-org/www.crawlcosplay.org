@@ -1052,12 +1052,6 @@ if ($game->status === 'concluded' && !empty($turns)) {
     >
 </div>
 
-    <input
-        type="button"
-        value="Link Discord Account"
-        onclick="window.location='/link_discord';"
-    >
-
 <?php elseif ($already_joined): ?>
 
     <p>
