@@ -57,6 +57,34 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $post_data = $this->request->getPostData();
     $action = $post_data['action'] ?? '';
 
+/*
+ * Admin-only permanent game deletion.
+ */
+if ($is_admin && $action === 'delete') {
+
+    $queue_entries = CrawlSuccessionQueue::find([
+        'game_id' => $game->id
+    ]);
+
+    foreach ($queue_entries as $entry) {
+        $entry->delete();
+    }
+
+    $turns = CrawlSuccessionTurn::find([
+        'game_id' => $game->id
+    ]);
+
+    foreach ($turns as $turn) {
+        $turn->delete();
+    }
+
+    $game->delete();
+
+    return $this->request->redirect(
+        '/admin/crawl_succession/list'
+    );
+}
+
     if ($is_admin && in_array($action, ['approve', 'reject'], true)) {
 
     if ($game->status !== 'pending') {
@@ -612,6 +640,24 @@ if ($game->status === 'concluded' && !empty($turns)) {
             type="submit"
             value="Reject"
             onclick="return confirm('Reject this succession game?');"
+        >
+    </form>
+
+    <br>
+    <br>
+
+<?php endif; ?>
+
+<?php if ($is_admin): ?>
+
+    <h2>Admin Actions</h2>
+
+    <form method="POST" style="display:inline;">
+        <input type="hidden" name="action" value="delete">
+        <input
+            type="submit"
+            value="Delete Game"
+            onclick="return confirm('Permanently delete this succession game and all of its queue and turn data?');"
         >
     </form>
 
