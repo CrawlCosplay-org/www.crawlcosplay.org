@@ -26,12 +26,43 @@ foreach ($games as $status => &$list) {
 }
 
 unset($list);
+$current_user = null;
 
+if (!empty($_SESSION['user_id'])) {
+    $users = CrawlSuccessionUser::find([
+        'id' => $_SESSION['user_id']
+    ]);
+
+    foreach ($users as $user) {
+        $current_user = $user;
+        break;
+    }
+}
+    
 ?>
 
 <h1>Crawl Succession</h1>
 <br>
 <br>
+<?php if ($current_user && empty($current_user->discord_id)): ?>
+
+    <p>
+        <strong>Link your Discord account</strong>
+    </p>
+
+    <p>
+        You need to link your Discord account before you can
+        create or join a succession game.
+    </p>
+
+    <input
+        type="button"
+        value="Link Discord Account"
+        onclick="window.location='/link_discord';"
+    >
+
+<?php endif; ?>
+
 <?php
 $my_pending_games = [];
 
