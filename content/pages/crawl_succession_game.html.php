@@ -1033,9 +1033,24 @@ if ($game->status === 'concluded' && !empty($turns)) {
 
 <?php elseif (empty($current_user_discord_linked)): ?>
 
-    <p>
-        You need to link your Discord account before you can join this succession game.
-    </p>
+   <div style="
+    border: 2px solid #d99a24;
+    background-color: #fff4d6;
+    padding: 16px 20px;
+    margin: 20px 0;
+    border-radius: 6px;
+">
+    <h2 style="margin-top: 0; color: #8B0000;">
+        You need to link your Discord account before you can
+        join this succession game.
+    </h2>
+
+    <input
+        type="button"
+        value="Link Discord Account"
+        onclick="window.location='/link_discord';"
+    >
+</div>
 
     <input
         type="button"
