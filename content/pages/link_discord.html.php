@@ -22,17 +22,7 @@ if (!$user) {
     die('CrawlSuccession account not found.');
 }
 
-$config_path = dirname(__DIR__, 3) . '/private/discord_config.php';
-
-echo 'Config directory readable: ';
-var_dump(is_readable(dirname($config_path)));
-
-echo '<br>Config file readable: ';
-var_dump(is_readable($config_path));
-
-exit;
-
-$config = require dirname(__DIR__, 3) . '/private/discord_config.php';
+$config = require dirname(__DIR__, 3) . '/Private/discord_config.php';
 
 $state = bin2hex(random_bytes(32));
 $_SESSION['discord_oauth_state'] = $state;
