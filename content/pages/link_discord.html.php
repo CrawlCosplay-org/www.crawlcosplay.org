@@ -22,10 +22,11 @@ if (!$user) {
     die('CrawlSuccession account not found.');
 }
 
-echo 'Home directory: ' . dirname(__DIR__, 4);
-echo '<br>Private directory exists: ';
-var_dump(is_dir(dirname(__DIR__, 4) . '/private'));
-
+echo 'Page directory: ' . __DIR__;
+echo '<br>Parent 1: ' . dirname(__DIR__, 1);
+echo '<br>Parent 2: ' . dirname(__DIR__, 2);
+echo '<br>Parent 3: ' . dirname(__DIR__, 3);
+echo '<br>Parent 4: ' . dirname(__DIR__, 4);
 exit;
 
 $config = require dirname(__DIR__, 3) . '/private/discord_config.php';
