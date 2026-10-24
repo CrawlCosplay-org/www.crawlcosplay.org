@@ -152,9 +152,8 @@ if (
     die('Your CrawlSuccession account is already linked to a different Discord account.');
 }
 
-$user->discord_id = $discord_id;
 
-if (!$user->save()) {
+if (!$user->save(['discord_id' => $discord_id])) {
     error_log('CrawlSuccession: failed to save Discord ID for user ' . $user->id);
     die('Discord was verified, but saving your account link failed. Please check the server error log.');
 }
