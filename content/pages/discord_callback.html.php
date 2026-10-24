@@ -36,7 +36,7 @@ if (!is_string($code) || $code === '') {
 }
 
 $config = require dirname(__DIR__, 3)
-    . '/private/discord_config.php';
+    . '/Private/discord_config.php';
 
 $users = CrawlSuccessionUser::find([
     'id' => $_SESSION['user_id']
