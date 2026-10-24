@@ -54,13 +54,9 @@ if (!empty($_SESSION['user_id'])) {
         border-radius: 6px;
     ">
         <h2 style="margin-top: 0; color: #8B0000;">
-            Link your Discord account
-        </h2>
-
-        <p style="font-size: 1.1em; font-weight: bold;">
             You need to link your Discord account before you can
             create or join a succession game.
-        </p>
+        </h2>
 
         <input
             type="button"
