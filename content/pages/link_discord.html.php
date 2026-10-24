@@ -22,6 +22,14 @@ if (!$user) {
     die('CrawlSuccession account not found.');
 }
 
+$config_path = dirname(__DIR__, 3) . '/private/discord_config.php';
+
+if (!file_exists($config_path)) {
+    die('Discord configuration file not found at: ' . $config_path);
+}
+
+$config = require $config_path;
+
 $config = require dirname(__DIR__, 3) . '/private/discord_config.php';
 
 $state = bin2hex(random_bytes(32));
