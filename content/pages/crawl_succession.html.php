@@ -46,20 +46,28 @@ if (!empty($_SESSION['user_id'])) {
 <br>
 <?php if ($current_user && empty($current_user->discord_id)): ?>
 
-    <p>
-        <strong>Link your Discord account</strong>
-    </p>
+    <div style="
+        border: 2px solid #d99a24;
+        background-color: #fff4d6;
+        padding: 16px 20px;
+        margin: 20px 0;
+        border-radius: 6px;
+    ">
+        <h2 style="margin-top: 0;">
+            Link your Discord account
+        </h2>
 
-    <p>
-        You need to link your Discord account before you can
-        create or join a succession game.
-    </p>
+        <p style="font-size: 1.1em; font-weight: bold;">
+            You need to link your Discord account before you can
+            create or join a succession game.
+        </p>
 
-    <input
-        type="button"
-        value="Link Discord Account"
-        onclick="window.location='/link_discord';"
-    >
+        <input
+            type="button"
+            value="Link Discord Account"
+            onclick="window.location='/link_discord';"
+        >
+    </div>
 
 <?php endif; ?>
 
