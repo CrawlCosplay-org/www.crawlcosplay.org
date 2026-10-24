@@ -153,6 +153,10 @@ if (
 }
 
 $user->discord_id = $discord_id;
-$user->save();
+
+if (!$user->save()) {
+    error_log('CrawlSuccession: failed to save Discord ID for user ' . $user->id);
+    die('Discord was verified, but saving your account link failed. Please check the server error log.');
+}
 
 return $this->request->redirect('/crawl_succession');
