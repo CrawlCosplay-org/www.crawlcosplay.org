@@ -138,7 +138,7 @@ if (!empty($_SESSION['user_id'])) {
 <br>
 <?php endif; ?>
 
-<p>Community-run cooperative events where participants take turns playing a shared account. Start your own games, or join those made by others to take on defined challenge runs, play for high win rates, help new players learn, or anything else you can imagine!</p>
+<h3>Community-run cooperative events where participants take turns playing a shared account. Start your own games, or join those made by others to take on defined challenge runs, play for high win rates, help new players learn, or anything else you can imagine!</h3>
 <br>
 <h2>Active</h2>
 
