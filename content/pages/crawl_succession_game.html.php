@@ -81,7 +81,7 @@ if ($is_admin && $action === 'delete') {
     $game->delete();
 
     return $this->request->redirect(
-        '/admin/crawl_succession/list'
+        '/crawl_succession'
     );
 }
 
