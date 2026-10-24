@@ -58,6 +58,10 @@ if ($data = $this->request->getPostData()) {
 </form>
 
 <p>
+    <a href="/crawl_succession_forgot_password">Forgot Password?</a>
+</p>
+
+<p>
     Don't have an account?
     <a href="/crawl_succession_register">Register</a>
 </p>
