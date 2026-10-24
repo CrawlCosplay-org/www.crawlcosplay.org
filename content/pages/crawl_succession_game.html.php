@@ -5,6 +5,9 @@ use app\models\CrawlSuccessionQueue;
 use app\models\CrawlSuccessionUser;
 use app\models\CrawlSuccessionTurn;
 
+require_once dirname(__DIR__, 3)
+    . '/Private/crawl_succession_discord.php';
+
 session_start();
 
 $id = (int) ($this->request->getGetData()['id'] ?? 0);
@@ -182,12 +185,49 @@ if ($is_admin && $action === 'delete') {
                 'finished' => null
             ]);
 
-            if ($turn->save()) {
+           
+if ($turn->save()) {
 
-                return $this->request->redirect(
-                    '/crawl_succession_game?id=' . $game->id
-                );
-            }
+    $players = crawlSuccessionDiscordPlayers($queue);
+    $mentions = [];
+    $discordIds = [];
+    $firstPlayerName = 'Unknown';
+
+    foreach ($players as $player) {
+        $mentions[] = $player['mention'];
+
+        if ($player['discord_id']) {
+            $discordIds[] = $player['discord_id'];
+        }
+
+        if (
+            $player['user_id']
+            === (string) $first_player->user_id
+        ) {
+            $firstPlayerName = $player['username'];
+        }
+    }
+
+    $gameUrl = 'https://www.crawlcosplay.org/crawl_succession_game?id='
+        . (int) $game->id;
+
+    $message =
+        "**CrawlSuccession game started: "
+        . $game->character_name . "**\n"
+        . "Turn 1: **" . $firstPlayerName . "**\n"
+        . "Players: " . implode(', ', $mentions) . "\n"
+        . $gameUrl;
+
+    sendCrawlSuccessionDiscordNotification(
+        $message,
+        $discordIds
+    );
+
+    return $this->request->redirect(
+        '/crawl_succession_game?id=' . $game->id
+    );
+}
+
 
             $error = "Unable to create the first turn.";
         }
@@ -361,15 +401,44 @@ if ($action === 'finish_turn') {
                      */
                     if ($is_final_player) {
 
-                        $game->save([
-                            'status' => 'concluded',
-                            'current_user_id' => null,
-                            'concluded' => $now
-                        ]);
+                if ($game->save([
+                'status' => 'concluded',
+                'current_user_id' => null,
+                'concluded' => $now
+            ])) {
+                $players = crawlSuccessionDiscordPlayers($queue);
+                $mentions = [];
+                $discordIds = [];
 
-                        return $this->request->redirect(
-                            '/crawl_succession_game?id=' . $game->id
-                        );
+                foreach ($players as $player) {
+                    $mentions[] = $player['mention'];
+
+                    if ($player['discord_id']) {
+                        $discordIds[] = $player['discord_id'];
+                    }
+                }
+
+                $gameUrl = 'https://www.crawlcosplay.org/crawl_succession_game?id='
+                    . (int) $game->id;
+
+                $message =
+                    "**CrawlSuccession game concluded: "
+                    . $game->character_name . "**\n"
+                    . "Final result: **" . $result . "**\n"
+                    . "Players: " . implode(', ', $mentions) . "\n"
+                    . $gameUrl;
+
+                sendCrawlSuccessionDiscordNotification(
+                    $message,
+                    $discordIds
+                );
+
+                return $this->request->redirect(
+                    '/crawl_succession_game?id=' . $game->id
+                );
+            }
+
+            $error = "Unable to conclude the succession game.";
                     }
 
                     /*
@@ -413,12 +482,40 @@ if ($action === 'finish_turn') {
                             'finished' => null
                         ]);
 
-                        if ($next_turn->save()) {
+                        
+if ($next_turn->save()) {
 
-                            return $this->request->redirect(
-                                '/crawl_succession_game?id=' . $game->id
-                            );
-                        }
+    $nextUser = crawlSuccessionDiscordUserInfo(
+        $next_player->user_id
+    );
+
+    $gameUrl = 'https://www.crawlcosplay.org/crawl_succession_game?id='
+        . (int) $game->id;
+
+    if ($nextUser) {
+        $recipient = $nextUser['discord_id']
+            ? '<@' . $nextUser['discord_id'] . '>'
+            : $nextUser['username'];
+
+        $message =
+             $recipient . ", it's your turn in **"
+            . $game->character_name . "**.\n"
+            . "Turn " . $next_turn_number . "\n"
+            . $gameUrl;
+        
+        sendCrawlSuccessionDiscordNotification(
+            $message,
+            $nextUser['discord_id']
+                ? [$nextUser['discord_id']]
+                : []
+        );
+    }
+
+    return $this->request->redirect(
+        '/crawl_succession_game?id=' . $game->id
+    );
+}
+
 
                         $error = "Unable to create the next turn.";
 
