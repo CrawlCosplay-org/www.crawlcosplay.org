@@ -1025,11 +1025,27 @@ if ($game->status === 'concluded' && !empty($turns)) {
         }
     ?>
 
-   <?php if (!$current_user_id): ?>
+  
+<?php if (!$current_user_id): ?>
 
-    <p>
-        <a href="/crawl_succession_login">Login to join this succession game.</a>
-    </p>
+    <div style="
+        border: 2px solid #d99a24;
+        background-color: #fff4d6;
+        padding: 16px 20px;
+        margin: 20px 0;
+        border-radius: 6px;
+    ">
+        <h2 style="margin-top: 0; color: #8B0000;">
+            You need to log in before you can join this succession game.
+        </h2>
+
+        <input
+            type="button"
+            value="Login"
+            onclick="window.location='/crawl_succession_login';"
+        >
+    </div>
+
 
 <?php elseif (empty($current_user_discord_linked)): ?>
 
