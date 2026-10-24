@@ -23,6 +23,18 @@ if (!$game) {
 }
 
 $current_user_id = $_SESSION['user_id'] ?? null;
+$current_user_discord_linked = false;
+
+if ($current_user_id) {
+    $users = CrawlSuccessionUser::find([
+        'id' => $current_user_id
+    ]);
+
+    foreach ($users as $user) {
+        $current_user_discord_linked = !empty($user->discord_id);
+        break;
+    }
+}
 
 $is_admin = !empty($_SESSION['admin']);
 
@@ -185,7 +197,24 @@ if ($is_admin && $action === 'delete') {
     /*
      * Handle joining the queue.
      */
-    if ($action === 'join' && $game->status === 'planned') {
+   if ($action === 'join' && $game->status === 'planned') {
+
+    $discord_linked = false;
+
+    if ($current_user_id) {
+        $users = CrawlSuccessionUser::find([
+            'id' => $current_user_id
+        ]);
+
+        foreach ($users as $user) {
+            $discord_linked = !empty($user->discord_id);
+            break;
+        }
+    }
+
+    if (!$discord_linked) {
+        $error = "You need to link your Discord account before joining a succession game.";
+    } else {
 
         $already_joined = false;
 
@@ -234,7 +263,7 @@ if ($is_admin && $action === 'delete') {
             $error = "Unable to join the succession game.";
         }
     }
-
+ }
 
    /*
  * Handle finishing the current turn.
@@ -996,33 +1025,44 @@ if ($game->status === 'concluded' && !empty($turns)) {
         }
     ?>
 
-    <?php if (!$current_user_id): ?>
+   <?php if (!$current_user_id): ?>
 
-        <p>
-            <a href="/crawl_succession_login">Login to join this succession game.</a>
-        </p>
+    <p>
+        <a href="/crawl_succession_login">Login to join this succession game.</a>
+    </p>
 
-    <?php elseif ($already_joined): ?>
+<?php elseif (empty($current_user_discord_linked)): ?>
 
-        <p>
-            You are already in the player queue.
-        </p>
+    <p>
+        You need to link your Discord account before you can join this succession game.
+    </p>
 
-    <?php elseif (count($queue) >= $game->max_players): ?>
+    <input
+        type="button"
+        value="Link Discord Account"
+        onclick="window.location='/link_discord';"
+    >
 
-        <p>
-            This succession game is full.
-        </p>
+<?php elseif ($already_joined): ?>
 
-    <?php else: ?>
+    <p>
+        You are already in the player queue.
+    </p>
 
-        <form method="POST">
-            <input type="hidden" name="action" value="join">
-            <input type="submit" value="Join the succession game">
-        </form>
+<?php elseif (count($queue) >= $game->max_players): ?>
 
-    <?php endif; ?>
+    <p>
+        This succession game is full.
+    </p>
 
+<?php else: ?>
+
+    <form method="POST">
+        <input type="hidden" name="action" value="join">
+        <input type="submit" value="Join the succession game">
+    </form>
+
+<?php endif; ?>
 
     <?php if ($can_edit && $ready_to_start): ?>
 
