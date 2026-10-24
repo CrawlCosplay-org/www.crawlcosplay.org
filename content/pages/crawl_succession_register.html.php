@@ -6,15 +6,14 @@ if ($data = $this->request->getPostData()) {
 
     $username = trim($data['username'] ?? '');
     $password = $data['password'] ?? '';
-    $discord_id = trim($data['discord_id'] ?? '');
 
-    if ($username === '' || $password === '' || $discord_id === '') {
+    if ($username === '' || $password === '') {
         $error = "All fields are required.";
     } else {
         $user = new CrawlSuccessionUser([
             'username' => $username,
             'password_hash' => password_hash($password, PASSWORD_DEFAULT),
-            'discord_id' => $discord_id,
+            'discord_id' => null,
             'created' => date('Y-m-d H:i:s')
         ]);
 
@@ -50,13 +49,6 @@ if ($data = $this->request->getPostData()) {
         <label>
             <span>Password</span><br />
             <input type="password" name="password" required />
-        </label>
-
-        <br /><br />
-
-        <label>
-            <span>Discord User ID</span><br />
-            <input type="text" name="discord_id" maxlength="30" required />
         </label>
 
         <br /><br />
