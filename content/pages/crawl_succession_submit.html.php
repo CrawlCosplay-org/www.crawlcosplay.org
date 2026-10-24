@@ -1,11 +1,31 @@
 <?php
 
 use app\models\CrawlSuccessionGame;
+use app\models\CrawlSuccessionUser;
 
 session_start();
 
 if (empty($_SESSION['user_id'])) {
     return $this->request->redirect('/crawl_succession_login');
+}
+
+$users = CrawlSuccessionUser::find([
+    'id' => $_SESSION['user_id']
+]);
+
+$current_user = null;
+
+foreach ($users as $user) {
+    $current_user = $user;
+    break;
+}
+
+if (!$current_user) {
+    die('CrawlSuccession account not found.');
+}
+
+if (empty($current_user->discord_id)) {
+    return $this->request->redirect('/crawl_succession');
 }
 
 if ($data = $this->request->getPostData()) {
