@@ -53,7 +53,7 @@ if (!empty($_SESSION['user_id'])) {
         margin: 20px 0;
         border-radius: 6px;
     ">
-        <h2 style="margin-top: 0;">
+        <h2 style="margin-top: 0; color: #8B0000;">
             Link your Discord account
         </h2>
 
