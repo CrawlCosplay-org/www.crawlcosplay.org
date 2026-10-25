@@ -16,6 +16,7 @@ class CrawlSuccessionGame extends BaseModel
         'server',
         'min_players',
         'max_players',
+        'minimum_players_notified',
         'description',
         'created_by',
         'current_user_id',
