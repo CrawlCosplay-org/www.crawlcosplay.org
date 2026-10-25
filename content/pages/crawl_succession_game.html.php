@@ -1195,7 +1195,7 @@ if ($game->status === 'concluded' && !empty($turns)) {
 echo '<p><strong>Standard route (48 floors):</strong> Dungeon (15) → Lair (5) → Orc (2) → S-branches (8) → Elf (3) → Vaults:1–4 (4) → Slime or Vaults:5 (1) → Depths (4) → Zot (5) → Orb Run (1). Extra floors outside the standard branch order are allowed. Check the player notes or Ctrl + o to see what\'s next.</p>';
 ?>
 
-    <table class="bordered">
+    <table class="bordered" style="font-size: 1.25em;">
 
        
         <thead>
@@ -1250,10 +1250,7 @@ echo '<p><strong>Standard route (48 floors):</strong> Dungeon (15) → Lair (5) 
                 <?php if ($game->status === 'active'): ?>
                     <td>
                         <?php if ($can_edit): ?>
-                            <div
-   							 id="floor-display-<?= (int) $player->id ?>"
-   							 style="font-size: 1.25em; font-weight: bold;"
-							>
+                            <div id="floor-display-<?= (int) $player->id ?>">
                                 <?= $e($player->allocated_floors) ?>
                                 <button
                                     type="button"
