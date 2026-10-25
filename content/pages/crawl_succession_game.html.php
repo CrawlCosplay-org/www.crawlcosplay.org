@@ -1250,7 +1250,10 @@ echo '<p><strong>Standard route (48 floors):</strong> Dungeon (15) → Lair (5) 
                 <?php if ($game->status === 'active'): ?>
                     <td>
                         <?php if ($can_edit): ?>
-                            <div id="floor-display-<?= (int) $player->id ?>">
+                            <div
+   							 id="floor-display-<?= (int) $player->id ?>"
+   							 style="font-size: 1.25em; font-weight: bold;"
+							>
                                 <?= $e($player->allocated_floors) ?>
                                 <button
                                     type="button"
