@@ -56,7 +56,7 @@ if ($data = $this->request->getPostData()) {
 
     </fieldset>
 </form>
-
+<br>
 <input
     type="button"
     value="Back to Crawl Succession"
