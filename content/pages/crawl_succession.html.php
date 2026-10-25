@@ -225,7 +225,7 @@ if (!empty($_SESSION['user_id'])) {
 <?php endif; ?>
 
 <br>
-<h2>Planned</h2>
+<h2>Looking for Players</h2>
 
 <?php if (empty($games['planned'])): ?>
 
