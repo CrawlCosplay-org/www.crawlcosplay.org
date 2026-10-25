@@ -669,6 +669,50 @@ if ($next_turn->save()) {
     }
 }
 
+
+/*
+ * Update a player's allocated floor count.
+ */
+if (
+    $can_edit
+    && $action === 'update_floor_allocation'
+    && $game->status === 'active'
+) {
+    $queue_id = (int) ($post_data['queue_id'] ?? 0);
+    $allocated_floors = filter_var(
+        $post_data['allocated_floors'] ?? null,
+        FILTER_VALIDATE_INT
+    );
+
+  $queue_entries = CrawlSuccessionQueue::find([
+    'id' => $queue_id,
+    'game_id' => $game->id
+	]);
+
+	$player = null;
+
+	foreach ($queue_entries as $found_player) {
+	    $player = $found_player;
+	    break;
+	}
+
+    if (
+        $player
+        && $allocated_floors !== false
+        && $allocated_floors !== null
+        && $allocated_floors >= 0
+        && $allocated_floors <= 48
+    ) {
+        $player->save([
+            'allocated_floors' => $allocated_floors
+        ]);
+    }
+
+    return $this->request->redirect(
+        '/crawl_succession_game?id=' . $game->id
+    );
+}
+	
     /*
      * Handle queue management.
      */
@@ -774,141 +818,51 @@ if ($next_turn->save()) {
                     );
                 }
 
-            } elseif ($action === 'remove') {
+		} elseif ($action === 'remove') {
 
-                if ($target->delete()) {
+   		 if ($target->delete()) {
 
-                    /*
-                     * Redistribute floors if the game is active.
-                     * Players who have already started their turns
-                     * keep their original allocations.
-                     */
-                    if ($game->status === 'active') {
+    		    /*
+     		    * Renumber the remaining queue positions.
+     		    */
+     		   $remaining = CrawlSuccessionQueue::find(
+      		      ['game_id' => $game->id],
+    		        ['order' => '`position` ASC']
+    		    );
 
-                        /*
-                         * Find all players who have already started a turn.
-                         */
-                        $turns = CrawlSuccessionTurn::find([
-                            'game_id' => $game->id
-                        ]);
+   		     $position = 1;
 
-                        $started_user_ids = [];
+   		     foreach ($remaining as $player) {
+    		        $player->save([
+    		            'position' => $position
+    		        ]);
+		
+  		          $position++;
+  		      }
 
-                        foreach ($turns as $turn) {
-                            $started_user_ids[] = (int) $turn->user_id;
-                        }
+     		   /*
+      		   * Ask whether to redistribute floors after removing
+      		   * a player from an active game.
+      		   */
+     		   if ($game->status === 'active') {
 
-                        /*
-                         * Count the floors allocated to players who have
-                         * already started, including the removed player
-                         * if they have a turn record.
-                         */
-                        $allocated_started_floors = 0;
+      		      return $this->request->redirect(
+       		         '/crawl_succession_game?id='
+        		        . $game->id
+       		         . '&prompt_reallocate=1'
+        		    );
+      		  }
 
-                        foreach ($queue as $player) {
+    		    return $this->request->redirect(
+            '/crawl_succession_game?id=' . $game->id
+    		    );
+		    }
 
-                            if (
-                                in_array(
-                                    (int) $player->user_id,
-                                    $started_user_ids,
-                                    true
-                                )
-                            ) {
-                                $allocated_started_floors +=
-                                    (int) $player->allocated_floors;
-                            }
-                        }
-
-                        /*
-                         * Work out how many standard-route floors remain.
-                         */
-                        $remaining_floors =
-                            48 - $allocated_started_floors;
-
-                        /*
-                         * Reload the queue after removing the player.
-                         */
-                        $remaining = CrawlSuccessionQueue::find(
-                            ['game_id' => $game->id],
-                            ['order' => '`position` ASC']
-                        );
-
-                        /*
-                         * Only players who have not started a turn
-                         * receive a new allocation.
-                         */
-                        $waiting_players = [];
-
-                        foreach ($remaining as $player) {
-
-                            if (
-                                !in_array(
-                                    (int) $player->user_id,
-                                    $started_user_ids,
-                                    true
-                                )
-                            ) {
-                                $waiting_players[] = $player;
-                            }
-                        }
-
-                        $waiting_count = count($waiting_players);
-
-                        if ($waiting_count > 0) {
-
-                            $base_floors = intdiv(
-                                $remaining_floors,
-                                $waiting_count
-                            );
-
-                            $extra_floors =
-                                $remaining_floors % $waiting_count;
-
-                            foreach (
-                                $waiting_players as $index => $player
-                            ) {
-
-                                $allocated_floors = $base_floors;
-
-                                if ($index < $extra_floors) {
-                                    $allocated_floors++;
-                                }
-
-                                $player->save([
-                                    'allocated_floors' => $allocated_floors
-                                ]);
-                            }
-                        }
-                    }
-
-                    /*
-                     * Renumber the remaining queue positions.
-                     */
-                    $remaining = CrawlSuccessionQueue::find(
-                        ['game_id' => $game->id],
-                        ['order' => '`position` ASC']
-                    );
-
-                    $position = 1;
-
-                    foreach ($remaining as $player) {
-
-                        $player->save([
-                            'position' => $position
-                        ]);
-
-                        $position++;
-                    }
-
-                    return $this->request->redirect(
-                        '/crawl_succession_game?id=' . $game->id
-                    );
-                }
-
-                $error = "Unable to remove player.";
-            }
+ 		   $error = "Unable to remove player.";
+		}
         }
     }
+	
 }
 
 
@@ -1198,6 +1152,36 @@ if ($game->status === 'concluded' && !empty($turns)) {
 
 <?php endif; ?>
 
+<?php if (
+    $can_edit
+    && $game->status === 'active'
+    && isset($_GET['prompt_reallocate'])
+    && $_GET['prompt_reallocate'] === '1'
+): ?>
+    <form method="POST">
+        <input
+            type="hidden"
+            name="action"
+            value="reallocate_floors"
+        >
+
+        <p>
+            Would you like to automatically redistribute the
+            48 standard-route floors among the remaining players?
+            If you decline, you can still edit the floor allocation manually.
+        </p>
+
+        <input
+            type="submit"
+            value="Yes, redistribute floors"
+        >
+
+        <a href="/crawl_succession_game?id=<?= (int) $game->id ?>">
+            No, keep current allocations
+        </a>
+    </form>
+<?php endif; ?>
+
 <br>
 <h2>Player Queue</h2>
 
@@ -1261,11 +1245,39 @@ echo '<p><strong>Standard route (48 floors):</strong> Dungeon (15) → Lair (5) 
                         <strong>(Current Turn)</strong>
                     <?php endif; ?>
                 </td>
+              
                 <?php if ($game->status === 'active'): ?>
-                      <td>
-                        <?=$e($player->allocated_floors)?>
-                     </td>
+                    <td>
+                        <?php if ($can_edit): ?>
+                            <form method="POST" style="display: inline;">
+                                <input
+                                    type="hidden"
+                                    name="action"
+                                    value="update_floor_allocation"
+                                >
+                                <input
+                                    type="hidden"
+                                    name="queue_id"
+                                    value="<?= (int) $player->id ?>"
+                                >
+                                <input
+                                    type="number"
+                                    name="allocated_floors"
+                                    min="0"
+                                    max="48"
+                                    step="1"
+                                    required
+                                    value="<?= (int) $player->allocated_floors ?>"
+                                    style="width: 65px;"
+                                >
+                                <button type="submit">Save</button>
+                            </form>
+                        <?php else: ?>
+                            <?= $e($player->allocated_floors) ?>
+                        <?php endif; ?>
+                    </td>
                 <?php endif; ?>
+
                 <?php if ($can_edit): ?>
 
                     <td>
