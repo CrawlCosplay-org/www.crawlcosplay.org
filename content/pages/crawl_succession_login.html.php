@@ -57,6 +57,13 @@ if ($data = $this->request->getPostData()) {
     </fieldset>
 </form>
 
+<input
+    type="button"
+    value="Back to Crawl Succession"
+    onclick="window.location='/crawl_succession';"
+>
+<br>
+
 <p>
     <a href="/crawl_succession_forgot_password">Forgot Password?</a>
 </p>
