@@ -12,7 +12,7 @@ class CrawlSuccessionQueue extends BaseModel
         'game_id',
         'user_id',
         'position',
-        'allocated_floors'
+        'allocated_floors',
         'active',
         'joined'
     ];
