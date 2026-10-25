@@ -420,7 +420,7 @@ if ($entry->save()) {
                     . $player_count
                     . ' players). You can start the game whenever you are ready.'
                     . "\n"
-                    . $game_url;
+                    . '<' . $game_url . '>';
 
                 sendCrawlSuccessionDiscordNotification(
                     $message,
