@@ -1246,10 +1246,23 @@ echo '<p><strong>Standard route (48 floors):</strong> Dungeon (15) → Lair (5) 
                     <?php endif; ?>
                 </td>
               
+                
                 <?php if ($game->status === 'active'): ?>
                     <td>
                         <?php if ($can_edit): ?>
-                            <form method="POST" style="display: inline;">
+                            <div id="floor-display-<?= (int) $player->id ?>">
+                                <?= $e($player->allocated_floors) ?>
+                                <button
+                                    type="button"
+                                    onclick="document.getElementById('floor-display-<?= (int) $player->id ?>').style.display='none'; document.getElementById('floor-edit-<?= (int) $player->id ?>').style.display='inline';"
+                                >Edit</button>
+                            </div>
+
+                            <form
+                                id="floor-edit-<?= (int) $player->id ?>"
+                                method="POST"
+                                style="display: none;"
+                            >
                                 <input
                                     type="hidden"
                                     name="action"
@@ -1271,12 +1284,17 @@ echo '<p><strong>Standard route (48 floors):</strong> Dungeon (15) → Lair (5) 
                                     style="width: 65px;"
                                 >
                                 <button type="submit">Save</button>
+                                <button
+                                    type="button"
+                                    onclick="document.getElementById('floor-edit-<?= (int) $player->id ?>').style.display='none'; document.getElementById('floor-display-<?= (int) $player->id ?>').style.display='inline';"
+                                >Cancel</button>
                             </form>
                         <?php else: ?>
                             <?= $e($player->allocated_floors) ?>
                         <?php endif; ?>
                     </td>
                 <?php endif; ?>
+
 
                 <?php if ($can_edit): ?>
 
