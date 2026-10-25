@@ -215,5 +215,5 @@ if ($data = $this->request->getPostData()) {
 </form>
 
 <p>
-    <a href="/crawl_succession">Back to CrawlSuccession</a>
+    <a href="/crawl_succession">Back to Crawl Succession</a>
 </p>
