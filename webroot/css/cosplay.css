@@ -359,8 +359,6 @@ table.grouping td, table.grouping th {
 table.bordered {
     border: 1px solid #ddd;
     border-collapse: collapse;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.15em;
 }
 div.bordered {
     border: 1px solid #ddd;
