@@ -14,6 +14,8 @@ class CrawlSuccessionGame extends BaseModel
         'background',
         'god',
         'server',
+        'server_username',
+        'server_password',
         'min_players',
         'max_players',
         'minimum_players_notified',
