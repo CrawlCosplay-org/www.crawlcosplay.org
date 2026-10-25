@@ -7,6 +7,8 @@ use app\models\CrawlSuccessionTurn;
 
 require_once dirname(__DIR__, 3)
     . '/Private/crawl_succession_discord.php';
+require_once dirname(__DIR__, 3)
+    . '/Private/crawl_succession_credentials_crypto.php';
 
 session_start();
 
@@ -59,6 +61,53 @@ $players = CrawlSuccessionQueue::find(
 
 foreach ($players as $player) {
     $queue[] = $player;
+}
+
+
+/*
+ * Check access to server credentials.
+ */
+$is_queued_player = false;
+
+if ($current_user_id && $current_user_discord_linked) {
+    foreach ($queue as $player) {
+        if ((string) $player->user_id === (string) $current_user_id) {
+            $is_queued_player = true;
+            break;
+        }
+    }
+}
+
+$can_view_credentials =
+    $game->status === 'active'
+    && $current_user_id
+    && $current_user_discord_linked
+    && $is_queued_player;
+
+$server_username = null;
+$server_password = null;
+$credentials_error = false;
+
+if (
+    $can_view_credentials
+    && !empty($game->server_username)
+    && !empty($game->server_password)
+) {
+    try {
+        $server_username = decryptCrawlSuccessionCredential(
+            $game->server_username
+        );
+
+        $server_password = decryptCrawlSuccessionCredential(
+            $game->server_password
+        );
+    } catch (\Throwable $exception) {
+        error_log(
+            'CrawlSuccession: Unable to decrypt server credentials.'
+        );
+
+        $credentials_error = true;
+    }
 }
 
 $ready_to_start = count($queue) >= $game->min_players;
@@ -1051,6 +1100,34 @@ if ($game->status === 'concluded' && !empty($turns)) {
     </tbody>
 </table>
 
+<?php if ($can_view_credentials): ?>
+    <h3>Server Credentials</h3>
+
+    <?php if ($credentials_error): ?>
+
+        <p>Unable to load server credentials.</p>
+
+    <?php elseif (
+        $server_username !== null
+        && $server_password !== null
+    ): ?>
+
+        <p>
+            <strong>Username:</strong>
+            <code><?=$e($server_username)?></code>
+        </p>
+
+        <p>
+            <strong>Password:</strong>
+            <code><?=$e($server_password)?></code>
+        </p>
+
+    <?php else: ?>
+
+        <p>Server credentials are not available.</p>
+
+    <?php endif; ?>
+<?php endif; ?>
 
 <?php if (!empty($game->description)): ?>
 
