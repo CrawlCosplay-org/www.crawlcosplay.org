@@ -216,7 +216,7 @@ if ($turn->save()) {
         . $game->character_name . "**\n"
         . "Turn 1: **" . $firstPlayerName . "**\n"
         . "Players: " . implode(', ', $mentions) . "\n"
-        . $gameUrl;
+        . "<" . $gameUrl . ">";
 
     sendCrawlSuccessionDiscordNotification(
         $message,
@@ -490,7 +490,7 @@ if ($action === 'finish_turn') {
                     . $game->character_name . "**\n"
                     . "Final result: **" . $result . "**\n"
                     . "Players: " . implode(', ', $mentions) . "\n"
-                    . $gameUrl;
+                    . "<" . $gameUrl . ">";
 
                 sendCrawlSuccessionDiscordNotification(
                     $message,
@@ -565,7 +565,7 @@ if ($next_turn->save()) {
              $recipient . ", it's your turn in **"
             . $game->character_name . "**.\n"
             . "Turn " . $next_turn_number . "\n"
-            . $gameUrl;
+            . "<" . $gameUrl . ">";
         
         sendCrawlSuccessionDiscordNotification(
             $message,
