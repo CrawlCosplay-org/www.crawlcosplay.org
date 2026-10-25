@@ -206,48 +206,51 @@ if ($is_admin && $action === 'delete') {
             ]);
 
            
-if ($turn->save()) {
 
-    $players = crawlSuccessionDiscordPlayers($queue);
-    $mentions = [];
-    $discordIds = [];
-    $firstPlayerName = 'Unknown';
 
-    foreach ($players as $player) {
-        $mentions[] = $player['mention'];
+			if ($turn->save()) {
 
-        if ($player['discord_id']) {
-            $discordIds[] = $player['discord_id'];
-        }
+				$players = crawlSuccessionDiscordPlayers($queue);
+				$mentions = [];
+				$discordIds = [];
+				$firstPlayerName = 'Unknown';
 
-        if (
-            $player['user_id']
-            === (string) $first_player->user_id
-        ) {
-            $firstPlayerName = $player['username'];
-        }
-    }
+				foreach ($players as $player) {
+					$mentions[] = $player['mention'];
 
-    $gameUrl = 'https://www.crawlcosplay.org/crawl_succession_game?id='
-        . (int) $game->id;
+					if ($player['discord_id']) {
+						$discordIds[] = $player['discord_id'];
+					}
 
-    $message =
-        "**CrawlSuccession game started: "
-        . $game->character_name . "**\n"
-        . "Turn 1: **" . $firstPlayerName . "**\n"
-        . "Players: " . implode(', ', $mentions) . "\n"
-        . "<" . $gameUrl . ">";
+					if (
+						$player['user_id']
+						=== (string) $first_player->user_id
+					) {
+						$firstPlayerName = $player['username'];
+					}
+				}
 
-    sendCrawlSuccessionDiscordNotification(
-        $message,
-        $discordIds
-    );
+				$gameUrl = 'https://www.crawlcosplay.org/crawl_succession_game?id='
+					. (int) $game->id;
 
-    return $this->request->redirect(
-        '/crawl_succession_game?id=' . $game->id
-    );
-}
+				$message =
+					"**CrawlSuccession game started: "
+					. $game->character_name . "**\n"
+					. "Turn 1: **" . $firstPlayerName . "**\n"
+					. "Play **" . (int) $first_player->allocated_floors
+					. " floors** (check player notes for current progress).\n"
+					. "Players: " . implode(', ', $mentions) . "\n"
+					. "<" . $gameUrl . ">";
 
+				sendCrawlSuccessionDiscordNotification(
+					$message,
+					$discordIds
+				);
+
+				return $this->request->redirect(
+					'/crawl_succession_game?id=' . $game->id
+				);
+			}
 
             $error = "Unable to create the first turn.";
         }
@@ -581,11 +584,15 @@ if ($next_turn->save()) {
             ? '<@' . $nextUser['discord_id'] . '>'
             : $nextUser['username'];
 
+        
         $message =
-             $recipient . ", it's your turn in **"
-            . $game->character_name . "**.\n"
+             $recipient . ", it's your turn on **"
+            . $game->character_name . "**!\n"
             . "Turn " . $next_turn_number . "\n"
+            . "Play **" . (int) $next_player->allocated_floors
+            . " floors** (check player notes for current progress).\n"
             . "<" . $gameUrl . ">";
+
         
         sendCrawlSuccessionDiscordNotification(
             $message,
