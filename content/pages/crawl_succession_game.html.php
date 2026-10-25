@@ -1499,7 +1499,7 @@ echo '<p><strong>Standard route (48 floors):</strong> Dungeon (15) → Lair (5) 
 
 <input
     type="button"
-    value="Back to CrawlSuccession"
+    value="Back to Crawl Succession"
     onclick="window.location='/crawl_succession';"
 >
 <br>
