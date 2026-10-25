@@ -3,6 +3,9 @@
 use app\models\CrawlSuccessionGame;
 use app\models\CrawlSuccessionUser;
 
+require_once dirname(__DIR__, 3)
+    . '/Private/crawl_succession_credentials_crypto.php';
+
 session_start();
 
 if (empty($_SESSION['user_id'])) {
@@ -35,13 +38,20 @@ if ($data = $this->request->getPostData()) {
     $background = trim($data['background'] ?? '');
     $god = trim($data['god'] ?? '');
     $server = trim($data['server'] ?? '');
+    $server_username = trim($data['server_username'] ?? '');
+    $server_password = $data['server_password'] ?? '';
     $min_players = (int) ($data['min_players'] ?? 6);
     $max_players = (int) ($data['max_players'] ?? 25);
     $description = trim($data['description'] ?? '');
 
-    if ($character_name === '' || $server === '') {
+    if (
+        $character_name === ''
+        || $server === ''
+        || $server_username === ''
+        || $server_password === ''
+    ) {
 
-        $error = "Character name and server are required.";
+        $error = "Character name, server, server username and server password are required.";
 
     } elseif ($min_players < 1 || $max_players < $min_players) {
 
@@ -49,30 +59,49 @@ if ($data = $this->request->getPostData()) {
 
     } else {
 
-        $game = new CrawlSuccessionGame([
-            'character_name' => $character_name,
-            'species' => $species,
-            'background' => $background,
-            'god' => $god,
-            'server' => $server,
-            'min_players' => $min_players,
-            'max_players' => $max_players,
-            'description' => $description,
-            'created_by' => $_SESSION['user_id'],
-            'current_user_id' => null,
-            'turn_number' => 1,
-            'status' => 'pending',
-            'result' => null,
-            'created' => date('Y-m-d H:i:s'),
-            'started' => null,
-            'concluded' => null
-        ]);
+        try {
 
-        if ($game->save()) {
-            return $this->request->redirect('/crawl_succession');
+            $encrypted_username =
+                encryptCrawlSuccessionCredential($server_username);
+
+            $encrypted_password =
+                encryptCrawlSuccessionCredential($server_password);
+
+            $game = new CrawlSuccessionGame([
+                'character_name' => $character_name,
+                'species' => $species,
+                'background' => $background,
+                'god' => $god,
+                'server' => $server,
+                'server_username' => $encrypted_username,
+                'server_password' => $encrypted_password,
+                'min_players' => $min_players,
+                'max_players' => $max_players,
+                'description' => $description,
+                'created_by' => $_SESSION['user_id'],
+                'current_user_id' => null,
+                'turn_number' => 1,
+                'status' => 'pending',
+                'result' => null,
+                'created' => date('Y-m-d H:i:s'),
+                'started' => null,
+                'concluded' => null
+            ]);
+
+            if ($game->save()) {
+                return $this->request->redirect('/crawl_succession');
+            }
+
+            $error = "Unable to create character.";
+
+        } catch (\Throwable $exception) {
+
+            error_log(
+                'CrawlSuccession: Unable to encrypt credentials during character creation.'
+            );
+
+            $error = "Unable to process server credentials. Please try again.";
         }
-
-        $error = "Unable to create character.";
     }
 }
 
@@ -126,6 +155,38 @@ if ($data = $this->request->getPostData()) {
         </label>
 
         <br /><br />
+
+        <label>
+            <span>Server Username</span><br />
+            <input
+                type="text"
+                name="server_username"
+                maxlength="200"
+                autocomplete="off"
+                required
+            />
+        </label>
+
+        <br /><br />
+
+        <label>
+            <span>Server Password</span><br />
+            <input
+                type="password"
+                name="server_password"
+                autocomplete="new-password"
+                required
+            />
+        </label>
+
+        <p>
+            Your server username and password will be encrypted before being
+            stored. Once the succession game becomes active, the credentials
+            will only be shown to players who are signed in, have linked their
+            Discord account, and are registered in this game's player queue.
+        </p>
+
+        <br />
 
         <label>
             <span>Minimum Players to Start</span><br />
