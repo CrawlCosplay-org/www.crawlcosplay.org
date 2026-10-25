@@ -293,12 +293,76 @@ if ($turn->save()) {
                 'joined' => date('Y-m-d H:i:s')
             ]);
 
-            if ($entry->save()) {
+            
+if ($entry->save()) {
 
-                return $this->request->redirect(
-                    '/crawl_succession_game?id=' . $game->id
+    $player_count = count($queue) + 1;
+
+    /*
+     * Notify the character creator once when the minimum
+     * player count has been reached.
+     */
+    if (
+        $player_count >= $game->min_players
+        && empty($game->minimum_players_notified)
+    ) {
+        /*
+         * Save the flag before sending the notification so
+         * later joins cannot trigger it again.
+         */
+        if ($game->save([
+            'minimum_players_notified' => 1
+        ])) {
+            $creators = CrawlSuccessionUser::find([
+                'id' => $game->created_by
+            ]);
+
+            $creator = null;
+
+            foreach ($creators as $found_creator) {
+                $creator = $found_creator;
+                break;
+            }
+
+            if ($creator) {
+                $creator_name = $creator->username;
+                $discord_ids = [];
+                $creator_mention = $creator_name;
+
+                if (!empty($creator->discord_id)) {
+                    $discord_ids[] = $creator->discord_id;
+                    $creator_mention = '<@'
+                        . $creator->discord_id
+                        . '>';
+                }
+
+                $game_url =
+                    'https://www.crawlcosplay.org/crawl_succession_game?id='
+                    . (int) $game->id;
+
+                $message =
+                    $creator_mention
+                    . ', your succession game for **'
+                    . $game->character_name
+                    . '** has reached its minimum player count ('
+                    . $player_count
+                    . ' players). You can start the game whenever you are ready.'
+                    . "\n"
+                    . $game_url;
+
+                sendCrawlSuccessionDiscordNotification(
+                    $message,
+                    $discord_ids
                 );
             }
+        }
+    }
+
+    return $this->request->redirect(
+        '/crawl_succession_game?id=' . $game->id
+    );
+}
+
 
             $error = "Unable to join the succession game.";
         }
