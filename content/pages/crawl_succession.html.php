@@ -95,6 +95,7 @@ if (!empty($_SESSION['user_id'])) {
         <thead>
             <tr>
                 <th>Character</th>
+                <th>Game Type</th>
                 <th>Species</th>
                 <th>Background</th>
                 <th>God(s)</th>
@@ -112,6 +113,7 @@ if (!empty($_SESSION['user_id'])) {
                         <?=$e($game->character_name)?>
                     </a>
                 </td>
+                <td><?=$e($game->game_type)?></td>
                 <td><?=$e($game->species)?></td>
                 <td><?=$e($game->background)?></td>
                 <td><?=$e($game->god)?></td>
@@ -152,6 +154,7 @@ if (!empty($_SESSION['user_id'])) {
         <thead>
             <tr>
                 <th>Character</th>
+                <th>Game Type</th>
                 <th>Species</th>
                 <th>Background</th>
                 <th>God(s)</th>
@@ -171,6 +174,7 @@ if (!empty($_SESSION['user_id'])) {
                         <?=$e($game->character_name)?>
                     </a>
                 </td>
+                <td><?=$e($game->game_type)?></td>
                 <td><?=$e($game->species)?></td>
                 <td><?=$e($game->background)?></td>
                 <td><?=$e($game->god)?></td>
@@ -239,6 +243,7 @@ if (!empty($_SESSION['user_id'])) {
         <thead>
             <tr>
                 <th>Character</th>
+                <th>Game Type</th>
                 <th>Species</th>
                 <th>Background</th>
                 <th>God(s)</th>
@@ -257,6 +262,7 @@ if (!empty($_SESSION['user_id'])) {
                         <?=$e($game->character_name)?>
                     </a>
                 </td>
+                <td><?=$e($game->game_type)?></td>
                 <td><?=$e($game->species)?></td>
                 <td><?=$e($game->background)?></td>
                 <td><?=$e($game->god)?></td>
@@ -314,12 +320,14 @@ if (!empty($_SESSION['user_id'])) {
         <thead>
             <tr>
                 <th>Character</th>
+                <th>Game Type</th>
                 <th>Species</th>
                 <th>Background</th>
                 <th>God(s)</th>
                 <th>Server</th>
                 <th>Result</th>
                 <th>Turns</th>
+                <th>Submitted By</th>
             </tr>
         </thead>
         <tbody>
@@ -332,12 +340,29 @@ if (!empty($_SESSION['user_id'])) {
                         <?=$e($game->character_name)?>
                     </a>
                 </td>
+                <td><?=$e($game->game_type)?></td>
                 <td><?=$e($game->species)?></td>
                 <td><?=$e($game->background)?></td>
                 <td><?=$e($game->god)?></td>
                 <td><?=$e($game->server)?></td>
                 <td><?=$e($game->result ?? '-')?></td>
                 <td><?=$e($game->turn_number)?></td>
+                 <td>
+                    <?php
+                    $users = CrawlSuccessionUser::find([
+                        'id' => $game->created_by
+                    ]);
+
+                    $user = null;
+
+                    foreach ($users as $found_user) {
+                        $user = $found_user;
+                        break;
+                    }
+                    ?>
+
+                    <?=$e($user ? $user->username : 'Unknown')?>
+                </td>
             </tr>
 
         <?php endforeach; ?>
