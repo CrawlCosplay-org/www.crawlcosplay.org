@@ -45,14 +45,9 @@ if ($data = $this->request->getPostData()) {
     $max_players = (int) ($data['max_players'] ?? 25);
     $description = trim($data['description'] ?? '');
 
-    if (
-        $character_name === ''
-        || $server === ''
-        || $server_username === ''
-        || $server_password === ''
-    ) {
-
-        $error = "Character name, server, server username and server password are required.";
+   if ($character_name === '' || $server === '') {
+    $error = "Character name and server are required.";
+    }
 
     } elseif (!in_array($game_type, [
     'Winrate',
@@ -72,11 +67,13 @@ if ($data = $this->request->getPostData()) {
 
         try {
 
-            $encrypted_username =
-                encryptCrawlSuccessionCredential($server_username);
+            $encrypted_username = $server_username !== ''
+                ? encryptCrawlSuccessionCredential($server_username)
+                : null;
 
-            $encrypted_password =
-                encryptCrawlSuccessionCredential($server_password);
+            $encrypted_password = $server_password !== ''
+                ? encryptCrawlSuccessionCredential($server_password)
+                : null;
 
             $game = new CrawlSuccessionGame([
                 'character_name' => $character_name,
@@ -205,10 +202,12 @@ if ($data = $this->request->getPostData()) {
         </label>
 
         <p>
-            Your server username and password will be encrypted before being
+            <u>Note:</u> Your server username and password will be encrypted before being
             stored. Once the succession game becomes active, the credentials
             will only be shown to players who are signed in, have linked their
             Discord account, and are registered in this game's player queue.
+            <br>
+            You may leave the server username and password fields blank and write below if you want to use one of Crawl Cosplay's accounts: Winrate, Challenge, Just For Fun, Educational,
         </p>
 
         <br />
