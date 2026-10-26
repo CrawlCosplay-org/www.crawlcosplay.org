@@ -34,6 +34,7 @@ if (empty($current_user->discord_id)) {
 if ($data = $this->request->getPostData()) {
 
     $character_name = trim($data['character_name'] ?? '');
+    $game_type = trim($data['game_type'] ?? '');
     $species = trim($data['species'] ?? '');
     $background = trim($data['background'] ?? '');
     $god = trim($data['god'] ?? '');
@@ -53,6 +54,16 @@ if ($data = $this->request->getPostData()) {
 
         $error = "Character name, server, server username and server password are required.";
 
+    } elseif (!in_array($game_type, [
+    'Winrate',
+    'Challenge',
+    'Just For Fun',
+    'Educational',
+    'Other'
+    ], true)) {
+
+    $error = "Please select a valid game type.";    
+
     } elseif ($min_players < 1 || $max_players < $min_players) {
 
         $error = "Invalid player limits.";
@@ -69,6 +80,7 @@ if ($data = $this->request->getPostData()) {
 
             $game = new CrawlSuccessionGame([
                 'character_name' => $character_name,
+                'game_type' => $game_type,
                 'species' => $species,
                 'background' => $background,
                 'god' => $god,
@@ -124,6 +136,19 @@ if ($data = $this->request->getPostData()) {
         <label>
             <span>Character Name (suggestion: name it after an in-game unique)</span><br />
             <input type="text" name="character_name" maxlength="100" required autofocus />
+        </label>
+
+        <br /><br />
+
+        <label>
+            <span>Game Type</span><br />
+            <select name="game_type" required>
+                <option value="Winrate">Winrate</option>
+                <option value="Challenge">Challenge</option>
+                <option value="Just For Fun" selected>Just For Fun</option>
+                <option value="Educational">Educational</option>
+                <option value="Other">Other</option>
+            </select>
         </label>
 
         <br /><br />
