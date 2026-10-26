@@ -1097,6 +1097,7 @@ if (
 
                     $error = "Unable to remove player.";
                 }
+			}	
         }
     }
 } // End POST actions
