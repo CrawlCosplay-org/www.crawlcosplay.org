@@ -287,26 +287,6 @@ if ($is_admin && $action === 'delete') {
             $first_player = $queue[0];
             $now = date('Y-m-d H:i:s');
 
-            /*
-             * Make the first player active.
-             */
-            $first_player->save([
-                'active' => 1
-            ]);
-
-            /*
-             * Start the game.
-             */
-            $game->save([
-                'status' => 'active',
-                'current_user_id' => $first_player->user_id,
-                'turn_number' => 1,
-                'started' => $now
-            ]);
-
-            /*
-             * Create the first turn.
-             */
             $turn = new CrawlSuccessionTurn([
                 'game_id' => $game->id,
                 'turn_number' => 1,
@@ -317,54 +297,72 @@ if ($is_admin && $action === 'delete') {
                 'finished' => null
             ]);
 
-            if ($turn->save()) {
+            if (!$turn->save()) {
 
-                $players = crawlSuccessionDiscordPlayers($queue);
-                $mentions = [];
-                $discordIds = [];
-                $firstPlayerName = 'Unknown';
+                $error = "Unable to create the first turn.";
 
-                foreach ($players as $player) {
-                    $mentions[] = $player['mention'];
+            } else {
 
-                    if ($player['discord_id']) {
-                        $discordIds[] = $player['discord_id'];
+                if ($game->save([
+                    'status' => 'active',
+                    'current_user_id' => $first_player->user_id,
+                    'turn_number' => 1,
+                    'started' => $now
+                ])) {
+
+                    $first_player->save([
+                        'active' => 1
+                    ]);
+
+                    $players = crawlSuccessionDiscordPlayers($queue);
+                    $mentions = [];
+                    $discordIds = [];
+                    $firstPlayerName = 'Unknown';
+
+                    foreach ($players as $player) {
+                        $mentions[] = $player['mention'];
+
+                        if ($player['discord_id']) {
+                            $discordIds[] = $player['discord_id'];
+                        }
+
+                        if (
+                            $player['user_id']
+                            === (string) $first_player->user_id
+                        ) {
+                            $firstPlayerName = $player['username'];
+                        }
                     }
 
-                    if (
-                        $player['user_id']
-                        === (string) $first_player->user_id
-                    ) {
-                        $firstPlayerName = $player['username'];
-                    }
+                    $gameUrl = 'https://www.crawlcosplay.org/crawl_succession_game?id='
+                        . (int) $game->id;
+
+                    $message =
+                        "**CrawlSuccession game started: "
+                        . $game->character_name . "**\n"
+                        . "Turn 1: **" . $firstPlayerName . "**\n"
+                        . "Play **" . (int) $first_player->allocated_floors
+                        . " floors** (check player notes for current progress).\n"
+                        . "Players: " . implode(', ', $mentions) . "\n"
+                        . "<" . $gameUrl . ">";
+
+                    sendCrawlSuccessionDiscordNotification(
+                        $message,
+                        $discordIds
+                    );
+
+                    return $this->request->redirect(
+                        '/crawl_succession_game?id=' . $game->id
+                    );
+
+                } else {
+
+                    $turn->delete();
+
+                    $error = "Unable to start the succession game.";
                 }
-
-                $gameUrl = 'https://www.crawlcosplay.org/crawl_succession_game?id='
-                    . (int) $game->id;
-
-                $message =
-                    "**CrawlSuccession game started: "
-                    . $game->character_name . "**\n"
-                    . "Turn 1: **" . $firstPlayerName . "**\n"
-                    . "Play **" . (int) $first_player->allocated_floors
-                    . " floors** (check player notes for current progress).\n"
-                    . "Players: " . implode(', ', $mentions) . "\n"
-                    . "<" . $gameUrl . ">";
-
-                sendCrawlSuccessionDiscordNotification(
-                    $message,
-                    $discordIds
-                );
-
-                return $this->request->redirect(
-                    '/crawl_succession_game?id=' . $game->id
-                );
             }
-
-            $error = "Unable to create the first turn.";
-        }
-    }
-
+		}
     /*
      * Handle joining the queue.
      */
@@ -774,6 +772,37 @@ if (
     );
 }
 	
+	 /*
+     * Redistribute the 48 standard-route floors among remaining players.
+     */
+    if (
+        $can_edit
+        && $action === 'reallocate_floors'
+        && $game->status === 'active'
+    ) {
+        $remaining_count = count($queue);
+
+        if ($remaining_count > 0) {
+            $base_floors = intdiv(48, $remaining_count);
+            $extra_floors = 48 % $remaining_count;
+
+            foreach ($queue as $index => $player) {
+                $allocated_floors = $base_floors;
+
+                if ($index < $extra_floors) {
+                    $allocated_floors++;
+                }
+
+                $player->save([
+                    'allocated_floors' => $allocated_floors
+                ]);
+            }
+        }
+
+        return $this->request->redirect(
+            '/crawl_succession_game?id=' . $game->id
+        );
+    }
    
     /*
      * Handle queue management.
@@ -799,14 +828,6 @@ if (
         if (!$target) {
 
             $error = "Player not found.";
-
-        } elseif (
-            $action === 'remove'
-            && $game->status === 'active'
-            && $target->active
-        ) {
-
-            $error = "The current player cannot be removed while their turn is active.";
 
         } else {
 
@@ -896,56 +917,187 @@ if (
 
             } elseif ($action === 'remove') {
 
-                if ($target->delete()) {
+                $next_player = null;
 
-                    /*
-                     * Renumber the remaining queue positions.
-                     */
-                    $remaining = CrawlSuccessionQueue::find(
-                        ['game_id' => $game->id],
-                        ['order' => '`position` ASC']
-                    );
-
-                    $position = 1;
-
-                    foreach ($remaining as $player) {
-                        $player->save([
-                            'position' => $position
-                        ]);
-
-                        $position++;
+                /*
+                 * If removing the active player, find the next player
+                 * in queue order before deleting the current player.
+                 */
+                if (
+                    $game->status === 'active'
+                    && $target->active
+                ) {
+                    foreach ($queue as $player) {
+                        if (
+                            $player->position > $target->position
+                            && (
+                                $next_player === null
+                                || $player->position < $next_player->position
+                            )
+                        ) {
+                            $next_player = $player;
+                        }
                     }
 
                     /*
-                     * Ask whether to redistribute floors after removing
-                     * a player from an active game.
+                     * Do not remove the final remaining player in an
+                     * active game, as there would be nobody to take over.
                      */
-                    if ($game->status === 'active') {
-
-                        return $this->request->redirect(
-                            '/crawl_succession_game?id='
-                            . $game->id
-                            . '&prompt_reallocate=1'
-                        );
+                    if ($next_player === null) {
+                        $error = "This player cannot be removed because there is no next player in the queue.";
                     }
-
-                    $redirect_url = '/crawl_succession_game?id=' . $game->id;
-
-                    if (
-                        $game->status === 'planned'
-                        && isset($post_data['confirm_start'])
-                    ) {
-                        $redirect_url .= '&confirm_start=1';
-                    }
-
-                    return $this->request->redirect($redirect_url);
                 }
 
-                $error = "Unable to remove player.";
-            }
+                if (
+                    !(
+                        $game->status === 'active'
+                        && $target->active
+                        && $next_player === null
+                    )
+                ) {
+                    $was_active = (
+                        $game->status === 'active'
+                        && $target->active
+                    );
+
+                    $now = date('Y-m-d H:i:s');
+
+                    /*
+                     * Finish the removed player's current turn record.
+                     */
+                    if ($was_active) {
+                        $current_turns = CrawlSuccessionTurn::find([
+                            'game_id' => $game->id,
+                            'turn_number' => $game->turn_number,
+                            'user_id' => $target->user_id
+                        ]);
+
+                        foreach ($current_turns as $current_turn) {
+                            $current_turn->save([
+                                'finished' => $now
+                            ]);
+                            break;
+                        }
+                    }
+
+                    if ($target->delete()) {
+
+                        /*
+                         * Renumber the remaining queue positions.
+                         */
+                        $remaining = CrawlSuccessionQueue::find(
+                            ['game_id' => $game->id],
+                            ['order' => '`position` ASC']
+                        );
+
+                        $position = 1;
+
+                        foreach ($remaining as $player) {
+                            $player->save([
+                                'position' => $position
+                            ]);
+
+                            $position++;
+                        }
+
+                        /*
+                         * Transfer the active turn to the next player.
+                         */
+                        if ($was_active && $next_player) {
+
+                            $next_turn_number = $game->turn_number + 1;
+
+                            $next_player->save([
+                                'active' => 1
+                            ]);
+
+                            $game->save([
+                                'current_user_id' => $next_player->user_id,
+                                'turn_number' => $next_turn_number
+                            ]);
+
+                            $next_turn = new CrawlSuccessionTurn([
+                                'game_id' => $game->id,
+                                'turn_number' => $next_turn_number,
+                                'user_id' => $next_player->user_id,
+                                'notes' => null,
+                                'result' => null,
+                                'started' => $now,
+                                'finished' => null
+                            ]);
+
+                            if (!$next_turn->save()) {
+                                $error = "The player was removed, but the next turn could not be created.";
+                            } else {
+                                /*
+                                 * Notify the next player on Discord.
+                                 */
+                                $next_user = crawlSuccessionDiscordUserInfo(
+                                    $next_player->user_id
+                                );
+
+                                if ($next_user) {
+                                    $recipient = !empty($next_user['discord_id'])
+                                        ? '<@' . $next_user['discord_id'] . '>'
+                                        : $next_user['username'];
+
+                                    $game_url =
+                                        'https://www.crawlcosplay.org/crawl_succession_game?id='
+                                        . (int) $game->id;
+
+                                    $total_turns = count($remaining);
+
+                                    $message =
+                                        $recipient
+                                        . ", it's your turn on **"
+                                        . $game->character_name . "**!\n"
+                                        . "Turn " . $next_turn_number
+                                        . " of " . $total_turns . "\n"
+                                        . "Play **"
+                                        . (int) $next_player->allocated_floors
+                                        . " floors** (check player notes for current progress).\n"
+                                        . "<" . $game_url . ">";
+
+                                    sendCrawlSuccessionDiscordNotification(
+                                        $message,
+                                        !empty($next_user['discord_id'])
+                                            ? [$next_user['discord_id']]
+                                            : []
+                                    );
+                                }
+                            }
+                        }
+
+                        /*
+                         * Ask whether to redistribute floors after
+                         * removing a player from an active game.
+                         */
+                        if ($game->status === 'active') {
+                            return $this->request->redirect(
+                                '/crawl_succession_game?id='
+                                . $game->id
+                                . '&prompt_reallocate=1'
+                            );
+                        }
+
+                        $redirect_url =
+                            '/crawl_succession_game?id=' . $game->id;
+
+                        if (
+                            $game->status === 'planned'
+                            && isset($post_data['confirm_start'])
+                        ) {
+                            $redirect_url .= '&confirm_start=1';
+                        }
+
+                        return $this->request->redirect($redirect_url);
+                    }
+
+                    $error = "Unable to remove player.";
+                }
         }
     }
-
+} // End POST actions
 
 
 /*
@@ -1408,9 +1560,7 @@ echo '<p><strong><u>Standard route (48 floors):</u></strong> Dungeon (15) → La
 
                         <?php endif; ?>
 
-                        <?php if (!($game->status === 'active' && $player->active)): ?>
-
-                            <form method="POST" style="display:inline;">
+                                <form method="POST" style="display:inline;">
                                 <input type="hidden" name="action" value="remove">
                                 <input type="hidden" name="player_id" value="<?=$e($player->id)?>">
 								<?php if (isset($_GET['confirm_start'])): ?>
