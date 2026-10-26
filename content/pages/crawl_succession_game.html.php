@@ -1244,7 +1244,12 @@ if ($game->status === 'concluded' && !empty($turns)) {
             <th>Species</th>
             <td><?=$e($game->species)?></td>
         </tr>
-
+		
+ 		<tr>
+            <th>Game Type</th>
+            <td><?=$e($game->game_type)?></td>
+        </tr>
+		
         <tr>
             <th>Background</th>
             <td><?=$e($game->background)?></td>
