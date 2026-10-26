@@ -75,9 +75,7 @@ $games = iterator_to_array($games);
         <thead>
             <tr>
                 <th>Character</th>
-                <th>Species</th>
-                <th>Background</th>
-                <th>God(s)</th>
+                <th>Game Type</th>
                 <th>Server</th>
                 <th>Server Username</th>
                 <th>Username Status</th>
@@ -162,13 +160,9 @@ $games = iterator_to_array($games);
                     </a>
                 </td>
 
-                <td><?=$e($game->species)?></td>
+                <td><?=$e($game->game_type)?></td>
 
-                <td><?=$e($game->background)?></td>
-
-                <td><?=$e($game->god)?></td>
-
-                <td><?=$e($game->server)?></td>
+               <td><?=$e($game->server)?></td>
 
                 <td><?=$e($server_username)?></td>
 
