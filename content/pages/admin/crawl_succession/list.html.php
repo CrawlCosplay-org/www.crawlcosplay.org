@@ -5,6 +5,9 @@
 use app\models\CrawlSuccessionGame;
 use app\models\CrawlSuccessionUser;
 
+require_once dirname(__DIR__, 3)
+    . '/Private/crawl_succession_credentials_crypto.php';
+
 if ($data = $this->request->getPostData()) {
 
     $action = $data['action'] ?? '';
@@ -53,6 +56,7 @@ $games = CrawlSuccessionGame::find(
 
 <h2>Crawl Succession Games Pending Approval</h2>
 <br>
+
 <?php if (empty($games)): ?>
 
     <p>No Crawl Succession games are currently pending approval.</p>
@@ -67,6 +71,7 @@ $games = CrawlSuccessionGame::find(
                 <th>Background</th>
                 <th>God(s)</th>
                 <th>Server</th>
+                <th>Server Username</th>
                 <th>Players</th>
                 <th>Submitted By</th>
                 <th>Submitted</th>
@@ -91,6 +96,20 @@ $games = CrawlSuccessionGame::find(
                 break;
             }
 
+            $server_username = 'Unavailable';
+
+            if (!empty($game->server_username)) {
+                try {
+                    $server_username = decryptCrawlSuccessionCredential(
+                        $game->server_username
+                    );
+                } catch (\Throwable $exception) {
+                    error_log(
+                        'CrawlSuccession: Unable to decrypt server username in admin approvals list.'
+                    );
+                }
+            }
+
             ?>
 
             <tr>
@@ -109,6 +128,8 @@ $games = CrawlSuccessionGame::find(
 
                 <td><?=$e($game->server)?></td>
 
+                <td><?=$e($server_username)?></td>
+
                 <td>
                     <?=$e($game->min_players)?> /
                     <?=$e($game->max_players)?>
@@ -122,46 +143,49 @@ $games = CrawlSuccessionGame::find(
                     <?=$e($game->created)?>
                 </td>
 
-               <td>
+                <td>
 
-    <input
-    type="button"
-    value="View"
-    onclick="window.location='/crawl_succession_game?id=<?=$e($game->id)?>&admin=1';"
-    >
+                    <input
+                        type="button"
+                        value="View"
+                        onclick="window.location='/crawl_succession_game?id=<?=$e($game->id)?>&admin=1';"
+                    >
 
-    |
+                    |
 
-    <form method="POST" style="display:inline;">
-        <input type="hidden" name="action" value="approve">
-        <input type="hidden" name="game_id" value="<?=$e($game->id)?>">
-        <input
-            type="submit"
-            value="Approve"
-            onclick="return confirm('Approve this succession game?');"
-        >
-    </form>
+                    <form method="POST" style="display:inline;">
+                        <input type="hidden" name="action" value="approve">
+                        <input type="hidden" name="game_id" value="<?=$e($game->id)?>">
+                        <input
+                            type="submit"
+                            value="Approve"
+                            onclick="return confirm('Approve this succession game?');"
+                        >
+                    </form>
 
-    |
+                    |
 
-    <form method="POST" style="display:inline;">
-        <input type="hidden" name="action" value="reject">
-        <input type="hidden" name="game_id" value="<?=$e($game->id)?>">
-        <input
-            type="submit"
-            value="Reject"
-            onclick="return confirm('Reject this succession game?');"
-        >
-    </form>
+                    <form method="POST" style="display:inline;">
+                        <input type="hidden" name="action" value="reject">
+                        <input type="hidden" name="game_id" value="<?=$e($game->id)?>">
+                        <input
+                            type="submit"
+                            value="Reject"
+                            onclick="return confirm('Reject this succession game?');"
+                        >
+                    </form>
 
-</td>
+                </td>
+
             </tr>
 
         <?php endforeach; ?>
 
         </tbody>
     </table>
-<br>
+
+    <br>
+
 <?php endif; ?>
 
 <p>
