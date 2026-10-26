@@ -347,12 +347,11 @@ if (!empty($_SESSION['user_id'])) {
 <br>
 <?php endif; ?>
 <br>
+<h3 style="margin-top: 0; color: #00E676;">Create your own games by Submitting a New Character below!</h3>
+<br>
 <?php
 if (!empty($_SESSION['user_id'])):
 ?>
-    
-<h3 style="margin-top: 0; color: #00E676;">Create your own games by Submitting a New Character below!</h3>
-<br>
 
     <input
         type="button"
