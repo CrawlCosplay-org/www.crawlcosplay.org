@@ -52,20 +52,13 @@ $games = CrawlSuccessionGame::find(
     ['order' => '`created` ASC']
 );
 
-echo '<p>DEBUG: Reached pending approvals list.</p>';
-var_dump($games);
-die();
+$games = iterator_to_array($games);
 ?>
 
-<h2>Crawl Succession Games Pending Approval - Debug Check</h2>
+<h2>Crawl Succession Games Pending Approval</h2>
 <br>
 
 <?php if (empty($games)): ?>
-
-    <?php
-    var_dump($games);
-    die();
-    ?>
 
     <p>No Crawl Succession games are currently pending approval.</p>
 
