@@ -207,7 +207,8 @@ if ($data = $this->request->getPostData()) {
             will only be shown to players who are signed in, have linked their
             Discord account, and are registered in this game's player queue.
             <br>
-            You may leave the server username and password fields blank and write below if you want to use one of Crawl Cosplay's accounts: Winrate, Challenge, Just For Fun, Educational,
+            <br>
+            You may leave the server username and password fields blank and write below if you want to use one of Crawl Cosplay's accounts: Winrate, Challenge, Just For Fun, or Educational.
         </p>
 
         <br />
