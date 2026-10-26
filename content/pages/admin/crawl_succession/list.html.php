@@ -5,7 +5,7 @@
 use app\models\CrawlSuccessionGame;
 use app\models\CrawlSuccessionUser;
 
-$crypto_path = dirname(__DIR__, 3)
+$crypto_path = dirname(__DIR__, 5)
     . '/Private/crawl_succession_credentials_crypto.php';
 
 var_dump($crypto_path, file_exists($crypto_path));
