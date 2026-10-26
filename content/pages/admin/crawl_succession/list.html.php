@@ -59,6 +59,11 @@ $games = CrawlSuccessionGame::find(
 
 <?php if (empty($games)): ?>
 
+    <?php
+    var_dump($games);
+    die();
+    ?>
+
     <p>No Crawl Succession games are currently pending approval.</p>
 
 <?php else: ?>
