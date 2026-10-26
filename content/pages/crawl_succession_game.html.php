@@ -178,8 +178,8 @@ if ($is_admin && $action === 'delete') {
 }
 
 
-    /*
-     * Start succession game.
+      /*
+     * Prepare succession game by randomizing the queue.
      */
     if ($action === 'start') {
 
@@ -201,28 +201,91 @@ if ($is_admin && $action === 'delete') {
 
         } else {
 
-            $first_player = $queue[0];
-            $now = date('Y-m-d H:i:s');
+            /*
+             * Randomize the queue.
+             */
+            shuffle($queue);
+
+            $player_count = count($queue);
+
+            /*
+             * Move players to temporary positions first to avoid
+             * conflicts if queue positions must be unique.
+             */
+            foreach ($queue as $index => $player) {
+                $player->save([
+                    'position' => $player_count + $index + 1
+                ]);
+            }
+
+            /*
+             * Save the randomized queue positions permanently.
+             */
+            foreach ($queue as $index => $player) {
+                $player->save([
+                    'position' => $index + 1
+                ]);
+            }
 
             /*
              * Allocate the 48 standard-route floors across the queue.
              * Any remainder goes to the earliest players.
              */
-            $player_count = count($queue);
             $base_floors = intdiv(48, $player_count);
             $extra_floors = 48 % $player_count;
 
             foreach ($queue as $index => $player) {
                 $allocated_floors = $base_floors;
 
-            if ($index < $extra_floors) {
-                $allocated_floors++;
+                if ($index < $extra_floors) {
+                    $allocated_floors++;
                 }
 
-            $player->save([
-                'allocated_floors' => $allocated_floors
+                $player->save([
+                    'allocated_floors' => $allocated_floors
                 ]);
             }
+
+            return $this->request->redirect(
+                '/crawl_succession_game?id=' . $game->id
+                . '&confirm_start=1'
+            );
+        }
+    }
+
+    /*
+     * Confirm the queue order and start the succession game.
+     */
+    if ($action === 'confirm_start') {
+
+        if (!$can_edit) {
+
+            $error = "You do not have permission to start this succession game.";
+
+        } elseif ($game->status !== 'planned') {
+
+            $error = "This succession game has already been started.";
+
+        } elseif (!$ready_to_start) {
+
+            $error = "The minimum number of players has not been reached.";
+
+        } elseif (empty($queue)) {
+
+            $error = "There are no players in the queue.";
+
+        } else {
+
+            /*
+             * Load the finalized queue in position order.
+             */
+            $queue = CrawlSuccessionQueue::find(
+                ['game_id' => $game->id],
+                ['order' => '`position` ASC']
+            );
+
+            $first_player = $queue[0];
+            $now = date('Y-m-d H:i:s');
 
             /*
              * Make the first player active.
@@ -254,57 +317,53 @@ if ($is_admin && $action === 'delete') {
                 'finished' => null
             ]);
 
-           
+            if ($turn->save()) {
 
+                $players = crawlSuccessionDiscordPlayers($queue);
+                $mentions = [];
+                $discordIds = [];
+                $firstPlayerName = 'Unknown';
 
-			if ($turn->save()) {
+                foreach ($players as $player) {
+                    $mentions[] = $player['mention'];
 
-				$players = crawlSuccessionDiscordPlayers($queue);
-				$mentions = [];
-				$discordIds = [];
-				$firstPlayerName = 'Unknown';
+                    if ($player['discord_id']) {
+                        $discordIds[] = $player['discord_id'];
+                    }
 
-				foreach ($players as $player) {
-					$mentions[] = $player['mention'];
+                    if (
+                        $player['user_id']
+                        === (string) $first_player->user_id
+                    ) {
+                        $firstPlayerName = $player['username'];
+                    }
+                }
 
-					if ($player['discord_id']) {
-						$discordIds[] = $player['discord_id'];
-					}
+                $gameUrl = 'https://www.crawlcosplay.org/crawl_succession_game?id='
+                    . (int) $game->id;
 
-					if (
-						$player['user_id']
-						=== (string) $first_player->user_id
-					) {
-						$firstPlayerName = $player['username'];
-					}
-				}
+                $message =
+                    "**CrawlSuccession game started: "
+                    . $game->character_name . "**\n"
+                    . "Turn 1: **" . $firstPlayerName . "**\n"
+                    . "Play **" . (int) $first_player->allocated_floors
+                    . " floors** (check player notes for current progress).\n"
+                    . "Players: " . implode(', ', $mentions) . "\n"
+                    . "<" . $gameUrl . ">";
 
-				$gameUrl = 'https://www.crawlcosplay.org/crawl_succession_game?id='
-					. (int) $game->id;
+                sendCrawlSuccessionDiscordNotification(
+                    $message,
+                    $discordIds
+                );
 
-				$message =
-					"**CrawlSuccession game started: "
-					. $game->character_name . "**\n"
-					. "Turn 1: **" . $firstPlayerName . "**\n"
-					. "Play **" . (int) $first_player->allocated_floors
-					. " floors** (check player notes for current progress).\n"
-					. "Players: " . implode(', ', $mentions) . "\n"
-					. "<" . $gameUrl . ">";
-
-				sendCrawlSuccessionDiscordNotification(
-					$message,
-					$discordIds
-				);
-
-				return $this->request->redirect(
-					'/crawl_succession_game?id=' . $game->id
-				);
-			}
+                return $this->request->redirect(
+                    '/crawl_succession_game?id=' . $game->id
+                );
+            }
 
             $error = "Unable to create the first turn.";
         }
     }
-
 
     /*
      * Handle joining the queue.
@@ -634,10 +693,12 @@ if ($next_turn->save()) {
             : $nextUser['username'];
 
         
+        $total_turns = count($queue);
+
         $message =
              $recipient . ", it's your turn on **"
             . $game->character_name . "**!\n"
-            . "Turn " . $next_turn_number . "\n"
+            . "Turn " . $next_turn_number . " of " . $total_turns . "\n"
             . "Play **" . (int) $next_player->allocated_floors
             . " floors** (check player notes for current progress).\n"
             . "<" . $gameUrl . ">";
@@ -713,6 +774,7 @@ if (
     );
 }
 	
+   
     /*
      * Handle queue management.
      */
@@ -778,9 +840,16 @@ if (
                         'position' => $target_position
                     ]);
 
-                    return $this->request->redirect(
-                        '/crawl_succession_game?id=' . $game->id
-                    );
+                    $redirect_url = '/crawl_succession_game?id=' . $game->id;
+
+                    if (
+                        $game->status === 'planned'
+                        && isset($post_data['confirm_start'])
+                    ) {
+                        $redirect_url .= '&confirm_start=1';
+                    }
+
+                    return $this->request->redirect($redirect_url);
                 }
 
             } elseif ($action === 'down') {
@@ -813,57 +882,70 @@ if (
                         'position' => $target_position
                     ]);
 
-                    return $this->request->redirect(
-                        '/crawl_succession_game?id=' . $game->id
-                    );
+                    $redirect_url = '/crawl_succession_game?id=' . $game->id;
+
+                    if (
+                        $game->status === 'planned'
+                        && isset($post_data['confirm_start'])
+                    ) {
+                        $redirect_url .= '&confirm_start=1';
+                    }
+
+                    return $this->request->redirect($redirect_url);
                 }
 
-		} elseif ($action === 'remove') {
+            } elseif ($action === 'remove') {
 
-   		 if ($target->delete()) {
+                if ($target->delete()) {
 
-    		    /*
-     		    * Renumber the remaining queue positions.
-     		    */
-     		   $remaining = CrawlSuccessionQueue::find(
-      		      ['game_id' => $game->id],
-    		        ['order' => '`position` ASC']
-    		    );
+                    /*
+                     * Renumber the remaining queue positions.
+                     */
+                    $remaining = CrawlSuccessionQueue::find(
+                        ['game_id' => $game->id],
+                        ['order' => '`position` ASC']
+                    );
 
-   		     $position = 1;
+                    $position = 1;
 
-   		     foreach ($remaining as $player) {
-    		        $player->save([
-    		            'position' => $position
-    		        ]);
-		
-  		          $position++;
-  		      }
+                    foreach ($remaining as $player) {
+                        $player->save([
+                            'position' => $position
+                        ]);
 
-     		   /*
-      		   * Ask whether to redistribute floors after removing
-      		   * a player from an active game.
-      		   */
-     		   if ($game->status === 'active') {
+                        $position++;
+                    }
 
-      		      return $this->request->redirect(
-       		         '/crawl_succession_game?id='
-        		        . $game->id
-       		         . '&prompt_reallocate=1'
-        		    );
-      		  }
+                    /*
+                     * Ask whether to redistribute floors after removing
+                     * a player from an active game.
+                     */
+                    if ($game->status === 'active') {
 
-    		    return $this->request->redirect(
-            '/crawl_succession_game?id=' . $game->id
-    		    );
-		    }
+                        return $this->request->redirect(
+                            '/crawl_succession_game?id='
+                            . $game->id
+                            . '&prompt_reallocate=1'
+                        );
+                    }
 
- 		   $error = "Unable to remove player.";
-		}
+                    $redirect_url = '/crawl_succession_game?id=' . $game->id;
+
+                    if (
+                        $game->status === 'planned'
+                        && isset($post_data['confirm_start'])
+                    ) {
+                        $redirect_url .= '&confirm_start=1';
+                    }
+
+                    return $this->request->redirect($redirect_url);
+                }
+
+                $error = "Unable to remove player.";
+            }
         }
     }
-	
-}
+
 
 
 /*
@@ -1305,6 +1387,9 @@ echo '<p><strong><u>Standard route (48 floors):</u></strong> Dungeon (15) → La
                             <form method="POST" style="display:inline;">
                                 <input type="hidden" name="action" value="up">
                                 <input type="hidden" name="player_id" value="<?=$e($player->id)?>">
+				                <?php if (isset($_GET['confirm_start'])): ?>
+                                    <input type="hidden" name="confirm_start" value="1">
+                                <?php endif; ?>
                                 <input type="submit" value="Move Up">
                             </form>
 
@@ -1315,6 +1400,9 @@ echo '<p><strong><u>Standard route (48 floors):</u></strong> Dungeon (15) → La
                             <form method="POST" style="display:inline;">
                                 <input type="hidden" name="action" value="down">
                                 <input type="hidden" name="player_id" value="<?=$e($player->id)?>">
+								<?php if (isset($_GET['confirm_start'])): ?>
+                                    <input type="hidden" name="confirm_start" value="1">
+                                <?php endif; ?>
                                 <input type="submit" value="Move Down">
                             </form>
 
@@ -1325,6 +1413,9 @@ echo '<p><strong><u>Standard route (48 floors):</u></strong> Dungeon (15) → La
                             <form method="POST" style="display:inline;">
                                 <input type="hidden" name="action" value="remove">
                                 <input type="hidden" name="player_id" value="<?=$e($player->id)?>">
+								<?php if (isset($_GET['confirm_start'])): ?>
+                                    <input type="hidden" name="confirm_start" value="1">
+                                <?php endif; ?>
                                 <input
                                     type="submit"
                                     value="Remove"
@@ -1501,20 +1592,35 @@ echo '<p><strong><u>Standard route (48 floors):</u></strong> Dungeon (15) → La
 
 <?php endif; ?>
 
-    <?php if ($can_edit && $ready_to_start): ?>
+       <?php if ($can_edit && $ready_to_start && $game->status === 'planned'): ?>
 
-        <form method="POST" style="margin-top: 1em;">
-            <input type="hidden" name="action" value="start">
-            <input
-                type="submit"
-                value="Start Succession Game"
-                onclick="return confirm('Start this succession game? The player queue will be locked.');"
-            >
-        </form>
+        <?php if (isset($_GET['confirm_start'])): ?>
 
-    <?php endif; ?>
+            <form method="POST" style="margin-top: 1em;">
+                <input type="hidden" name="action" value="confirm_start">
+                <input
+                    type="submit"
+                    value="Confirm and Start Succession Game"
+                    onclick="return confirm('Confirm the player order and start this succession game?');"
+                >
+            </form>
 
-<?php endif; ?>
+        <?php else: ?>
+
+            <form method="POST" style="margin-top: 1em;">
+                <input type="hidden" name="action" value="start">
+                <input
+                    type="submit"
+                    value="Randomize Queue"
+                    onclick="return confirm('Randomize the player queue so you can review and rearrange the order before starting?');"
+                >
+            </form>
+
+         <?php endif; ?> <!-- confirm_start -->
+
+    <?php endif; ?> <!-- start controls -->
+
+<?php endif; ?> <!-- game status is planned -->
 <br>
 
 <?php if ($can_edit): ?>
