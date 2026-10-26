@@ -1539,7 +1539,7 @@ echo '<p><strong><u>Standard route (48 floors):</u></strong> Dungeon (15) → La
                             <form method="POST" style="display:inline;">
                                 <input type="hidden" name="action" value="up">
                                 <input type="hidden" name="player_id" value="<?=$e($player->id)?>">
-				                <?php if (isset($_GET['confirm_start'])): ?>
+                                <?php if (isset($_GET['confirm_start'])): ?>
                                     <input type="hidden" name="confirm_start" value="1">
                                 <?php endif; ?>
                                 <input type="submit" value="Move Up">
@@ -1552,7 +1552,7 @@ echo '<p><strong><u>Standard route (48 floors):</u></strong> Dungeon (15) → La
                             <form method="POST" style="display:inline;">
                                 <input type="hidden" name="action" value="down">
                                 <input type="hidden" name="player_id" value="<?=$e($player->id)?>">
-								<?php if (isset($_GET['confirm_start'])): ?>
+                                <?php if (isset($_GET['confirm_start'])): ?>
                                     <input type="hidden" name="confirm_start" value="1">
                                 <?php endif; ?>
                                 <input type="submit" value="Move Down">
@@ -1560,20 +1560,18 @@ echo '<p><strong><u>Standard route (48 floors):</u></strong> Dungeon (15) → La
 
                         <?php endif; ?>
 
-                                <form method="POST" style="display:inline;">
-                                <input type="hidden" name="action" value="remove">
-                                <input type="hidden" name="player_id" value="<?=$e($player->id)?>">
-								<?php if (isset($_GET['confirm_start'])): ?>
-                                    <input type="hidden" name="confirm_start" value="1">
-                                <?php endif; ?>
-                                <input
-                                    type="submit"
-                                    value="Remove"
-                                    onclick="return confirm('Remove this player from the succession game?');"
-                                >
-                            </form>
-
-                        <?php endif; ?>
+                        <form method="POST" style="display:inline;">
+                            <input type="hidden" name="action" value="remove">
+                            <input type="hidden" name="player_id" value="<?=$e($player->id)?>">
+                            <?php if (isset($_GET['confirm_start'])): ?>
+                                <input type="hidden" name="confirm_start" value="1">
+                            <?php endif; ?>
+                            <input
+                                type="submit"
+                                value="Remove"
+                                onclick="return confirm('Remove this player from the succession game?');"
+                            >
+                        </form>
 
                     </td>
 
