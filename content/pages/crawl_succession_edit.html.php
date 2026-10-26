@@ -2,6 +2,9 @@
 
 use app\models\CrawlSuccessionGame;
 
+require_once dirname(__DIR__, 3)
+    . '/Private/crawl_succession_credentials_crypto.php';
+
 session_start();
 
 $id = (int) ($this->request->getGetData()['id'] ?? 0);
@@ -19,7 +22,6 @@ if (!$game) {
     die('Game not found.');
 }
 
-
 /*
  * Require a logged-in CrawlSuccession account.
  */
@@ -29,14 +31,19 @@ if (!$current_user_id) {
     return $this->request->redirect('/crawl_succession_login');
 }
 
-
 /*
- * Only the creator can currently edit the succession.
+ * Allow the creator or an admin to edit the game.
  */
-if ($current_user_id != $game->created_by) {
-    die('You do not have permission to edit this succession.');
-}
+$is_admin = !empty($_SESSION['admin']);
 
+$can_edit = (
+    (string) $current_user_id === (string) $game->created_by
+    || $is_admin
+);
+
+if (!$can_edit) {
+    die('You do not have permission to edit this succession game.');
+}
 
 /*
  * Handle form submission.
@@ -48,38 +55,69 @@ if ($data = $this->request->getPostData()) {
     $background = trim($data['background'] ?? '');
     $god = trim($data['god'] ?? '');
     $server = trim($data['server'] ?? '');
+    $server_username = trim($data['server_username'] ?? '');
+    $server_password = $data['server_password'] ?? '';
     $min_players = (int) ($data['min_players'] ?? 0);
     $max_players = (int) ($data['max_players'] ?? 0);
     $description = trim($data['description'] ?? '');
 
     if ($character_name === '' || $server === '') {
 
-        $error = "Character name and server are required.";
+        $error = 'Character name and server are required.';
 
     } elseif ($min_players < 1 || $max_players < $min_players) {
 
-        $error = "Invalid player limits.";
+        $error = 'Invalid player limits.';
 
     } else {
 
-       $save_data = [
-    'character_name' => $character_name,
-    'species' => $species,
-    'background' => $background,
-    'god' => $god,
-    'server' => $server,
-    'min_players' => $min_players,
-    'max_players' => $max_players,
-    'description' => $description
-];
+        $save_data = [
+            'character_name' => $character_name,
+            'species' => $species,
+            'background' => $background,
+            'god' => $god,
+            'server' => $server,
+            'min_players' => $min_players,
+            'max_players' => $max_players,
+            'description' => $description
+        ];
 
-if ($game->save($save_data)) {
-    return $this->request->redirect(
-        '/crawl_succession_game?id=' . $game->id
-    );
-}
+        try {
 
-$error = "Unable to save changes.";
+            /*
+             * Only replace credentials when a new value is supplied.
+             * Never display or prefill the existing password.
+             */
+            if ($server_username !== '') {
+                $save_data['server_username'] =
+                    encryptCrawlSuccessionCredential(
+                        $server_username
+                    );
+            }
+
+            if ($server_password !== '') {
+                $save_data['server_password'] =
+                    encryptCrawlSuccessionCredential(
+                        $server_password
+                    );
+            }
+
+            if ($game->save($save_data)) {
+                return $this->request->redirect(
+                    '/crawl_succession_game?id=' . $game->id
+                );
+            }
+
+            $error = 'Unable to save changes.';
+
+        } catch (\Throwable $exception) {
+
+            error_log(
+                'CrawlSuccession: Unable to encrypt credentials during game editing.'
+            );
+
+            $error = 'Unable to process server credentials. Please try again.';
+        }
     }
 }
 
@@ -88,9 +126,7 @@ $error = "Unable to save changes.";
 <h2>Edit CrawlSuccession Character</h2>
 
 <?php if (!empty($error)): ?>
-
     <p style="color:red;"><b><?=$e($error)?></b></p>
-
 <?php endif; ?>
 
 <form method="POST">
@@ -154,6 +190,36 @@ $error = "Unable to save changes.";
                 maxlength="50"
                 value="<?=$e($game->server)?>"
                 required
+            />
+        </label>
+
+        <br /><br />
+
+        <h3>Server Credentials</h3>
+
+        <p>
+            Leave a field blank to keep its existing credential.
+            Any replacement will be encrypted before being stored.
+        </p>
+
+        <label>
+            <span>Server Username</span><br />
+            <input
+                type="text"
+                name="server_username"
+                maxlength="200"
+                autocomplete="off"
+            />
+        </label>
+
+        <br /><br />
+
+        <label>
+            <span>Replace Server Password</span><br />
+            <input
+                type="password"
+                name="server_password"
+                autocomplete="new-password"
             />
         </label>
 
