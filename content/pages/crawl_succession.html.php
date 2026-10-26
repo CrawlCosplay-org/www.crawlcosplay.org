@@ -227,6 +227,8 @@ if (!empty($_SESSION['user_id'])) {
 <br>
 <h2>Looking for Players</h2>
 
+<h3 style="margin-top: 0; color: #00E676;">Join others' games here!</h3>
+
 <?php if (empty($games['planned'])): ?>
 
     <p>No planned characters.</p>
@@ -348,6 +350,9 @@ if (!empty($_SESSION['user_id'])) {
 <?php
 if (!empty($_SESSION['user_id'])):
 ?>
+    
+<h3 style="margin-top: 0; color: #00E676;">Create your own games by Submitting a New Character below!</h3>
+<br>
 
     <input
         type="button"
