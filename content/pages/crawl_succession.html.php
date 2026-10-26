@@ -372,7 +372,7 @@ if (!empty($_SESSION['user_id'])) {
 <br>
 <?php endif; ?>
 <br>
-<h3 style="margin-top: 0; color: #00E676;">Create your own games by Submitting a New Character below!</h3>
+<h3 style="margin-top: 0; color: #00E676;">Create your own games by Logging In and Submitting A New Character below!</h3>
 <br>
 <?php
 if (!empty($_SESSION['user_id'])):
@@ -380,7 +380,7 @@ if (!empty($_SESSION['user_id'])):
 
     <input
         type="button"
-        value="Submit a new character"
+        value="Submit a New character"
         onclick="window.location='/crawl_succession_submit';"
     >
 
