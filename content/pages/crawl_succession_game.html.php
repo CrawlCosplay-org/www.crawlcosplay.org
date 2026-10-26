@@ -1293,6 +1293,26 @@ if ($game->status === 'concluded' && !empty($turns)) {
             <td><?=$e($game->turn_number)?></td>
         </tr>
 
+		<tr>
+			<th>Submitted By</th>
+			<td>
+                    <?php
+                    $users = CrawlSuccessionUser::find([
+                        'id' => $game->created_by
+                    ]);
+
+                    $user = null;
+
+                    foreach ($users as $found_user) {
+                        $user = $found_user;
+                        break;
+                    }
+                    ?>
+
+                    <?=$e($user ? $user->username : 'Unknown')?>
+            </td>
+		</tr>
+
     </tbody>
 </table>
 
