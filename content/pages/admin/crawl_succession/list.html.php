@@ -62,9 +62,8 @@ $games = iterator_to_array($games);
 ?>
 
 <h2>Crawl Succession Games Pending Approval</h2>
-<br>
 
-<p>Note to Admin: Check that the Server Username is not currently in use by other games</p>
+<p>Note to Admin: Check that the Server Username is not currently in use by other games.</p>
 
 <?php if (empty($games)): ?>
 
