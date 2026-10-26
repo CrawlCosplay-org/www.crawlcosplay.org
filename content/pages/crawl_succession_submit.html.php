@@ -45,9 +45,9 @@ if ($data = $this->request->getPostData()) {
     $max_players = (int) ($data['max_players'] ?? 25);
     $description = trim($data['description'] ?? '');
 
-   if ($character_name === '' || $server === '') {
-    $error = "Character name and server are required.";
-    }
+    if ($character_name === '' || $server === '') {
+
+        $error = "Character name and server are required.";
 
     } elseif (!in_array($game_type, [
     'Winrate',
