@@ -57,7 +57,7 @@ var_dump($games);
 die();
 ?>
 
-<h2>Crawl Succession Games Pending Approval</h2>
+<h2>Crawl Succession Games Pending Approval - Debug Check</h2>
 <br>
 
 <?php if (empty($games)): ?>
