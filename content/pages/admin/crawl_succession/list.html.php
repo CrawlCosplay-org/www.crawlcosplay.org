@@ -52,11 +52,19 @@ $games = CrawlSuccessionGame::find(
     ['order' => '`created` ASC']
 );
 
+$active_games = CrawlSuccessionGame::find([
+    'status' => 'active'
+]);
+
+$active_games = iterator_to_array($active_games);
+
 $games = iterator_to_array($games);
 ?>
 
 <h2>Crawl Succession Games Pending Approval</h2>
 <br>
+
+<p>Note to Admin: Check that the Server Username is not currently in use by other games</p>
 
 <?php if (empty($games)): ?>
 
@@ -73,6 +81,7 @@ $games = iterator_to_array($games);
                 <th>God(s)</th>
                 <th>Server</th>
                 <th>Server Username</th>
+                <th>Username Status</th>
                 <th>Players</th>
                 <th>Submitted By</th>
                 <th>Submitted</th>
@@ -110,7 +119,40 @@ $games = iterator_to_array($games);
                     );
                 }
             }
+                $username_in_use = false;
+                $active_game_name = null;
 
+                if ($server_username !== 'Unavailable') {
+
+                    foreach ($active_games as $active_game) {
+
+                        if (empty($active_game->server_username)) {
+                            continue;
+                        }
+
+                        try {
+                            $active_username = decryptCrawlSuccessionCredential(
+                                $active_game->server_username
+                            );
+                            } catch (\Throwable $exception) {
+                            error_log(
+                                'CrawlSuccession: Unable to decrypt active game server username.'
+                            );
+                            continue;
+                        }
+
+                        if (
+                            strcasecmp(
+                                trim($server_username),
+                                trim($active_username)
+                            ) === 0
+                        ) {
+                            $username_in_use = true;
+                            $active_game_name = $active_game->character_name;
+                            break;
+                        }
+                    }
+                }
             ?>
 
             <tr>
@@ -130,6 +172,19 @@ $games = iterator_to_array($games);
                 <td><?=$e($game->server)?></td>
 
                 <td><?=$e($server_username)?></td>
+
+                <td>
+                    <?php if ($username_in_use): ?>
+                        <strong>
+                            Username in use!
+                        </strong>
+                        <br>
+                        Waiting for active game:
+                        <?=$e($active_game_name)?>
+                    <?php else: ?>
+                        Available
+                    <?php endif; ?>
+                </td>
 
                 <td>
                     <?=$e($game->min_players)?> /
@@ -155,13 +210,14 @@ $games = iterator_to_array($games);
                     |
 
                     <form method="POST" style="display:inline;">
-                        <input type="hidden" name="action" value="approve">
-                        <input type="hidden" name="game_id" value="<?=$e($game->id)?>">
-                        <input
-                            type="submit"
-                            value="Approve"
-                            onclick="return confirm('Approve this succession game?');"
-                        >
+                    <input type="hidden" name="action" value="approve">
+                    <input type="hidden" name="game_id" value="<?=$e($game->id)?>">
+                    <input
+                        type="submit"
+                        value="Approve"
+                        <?= $username_in_use ? 'disabled' : '' ?>
+                        onclick="return confirm('Approve this succession game?');"
+                    >
                     </form>
 
                     |
