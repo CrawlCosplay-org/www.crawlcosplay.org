@@ -52,6 +52,9 @@ $games = CrawlSuccessionGame::find(
     ['order' => '`created` ASC']
 );
 
+echo '<p>DEBUG: Reached pending approvals list.</p>';
+var_dump($games);
+die();
 ?>
 
 <h2>Crawl Succession Games Pending Approval</h2>
