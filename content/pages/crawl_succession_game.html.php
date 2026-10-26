@@ -363,6 +363,8 @@ if ($is_admin && $action === 'delete') {
                 }
             }
 		}
+	} // Close the confirm_start action
+	
     /*
      * Handle joining the queue.
      */
