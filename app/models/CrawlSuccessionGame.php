@@ -10,6 +10,7 @@ class CrawlSuccessionGame extends BaseModel
     static $fields = [
         'id',
         'character_name',
+        'game_type',
         'species',
         'background',
         'god',
