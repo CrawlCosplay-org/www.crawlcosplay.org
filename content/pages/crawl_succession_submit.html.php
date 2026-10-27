@@ -197,7 +197,6 @@ if ($data = $this->request->getPostData()) {
                 type="password"
                 name="server_password"
                 autocomplete="new-password"
-                required
             />
         </label>
 
