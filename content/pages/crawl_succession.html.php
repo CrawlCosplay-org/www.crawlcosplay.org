@@ -306,7 +306,7 @@ if (!empty($_SESSION['user_id'])) {
     </table>
 
 <?php endif; ?>
-
+<br>
 <h3 style="margin-top: 0; color: #00E676;">Or submit your own character here (must be logged in):</h3>
 
 <?php if ($current_user && !empty($current_user->discord_id)): ?>
@@ -401,7 +401,6 @@ if (!empty($_SESSION['user_id'])) {
 <?php
 if (!empty($_SESSION['user_id'])):
 ?>
-
     <input
         type="button"
         value="Logout"
