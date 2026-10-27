@@ -1787,7 +1787,7 @@ echo '<p><strong><u>Standard route (48 floors):</u></strong> Dungeon (15) → La
                 <input type="hidden" name="action" value="start">
                 <input
                     type="submit"
-                    value="Randomize Queue"
+                    value="Ready to Start?"
                     onclick="return confirm('Randomize the player queue so you can review and rearrange the order before starting?');"
                 >
             </form>
