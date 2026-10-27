@@ -307,6 +307,32 @@ if (!empty($_SESSION['user_id'])) {
 
 <?php endif; ?>
 
+<h3 style="margin-top: 0; color: #00E676;">Or submit your own character here (must be logged in):</h3>
+
+<?php if ($current_user && !empty($current_user->discord_id)): ?>
+
+    <input
+        type="button"
+        value="Submit a New character"
+        onclick="window.location='/crawl_succession_submit';"
+    >
+
+<?php elseif (!$current_user): ?>
+
+    <p>Log in below and link your Discord account to submit a character.</p>
+
+<?php else: ?>
+
+    <p>Link your Discord account to submit a character.</p>
+
+    <input
+        type="button"
+        value="Link Discord Account"
+        onclick="window.location='/link_discord';"
+    >
+
+<?php endif; ?>
+
 <br>
 <h2>Concluded</h2>
 
@@ -372,17 +398,9 @@ if (!empty($_SESSION['user_id'])) {
 <br>
 <?php endif; ?>
 <br>
-<h3 style="margin-top: 0; color: #00E676;">Create your own games by Logging In and Submitting A New Character below!</h3>
-<br>
 <?php
 if (!empty($_SESSION['user_id'])):
 ?>
-
-    <input
-        type="button"
-        value="Submit a New character"
-        onclick="window.location='/crawl_succession_submit';"
-    >
 
     <input
         type="button"
