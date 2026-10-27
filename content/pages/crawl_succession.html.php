@@ -307,7 +307,7 @@ if (!empty($_SESSION['user_id'])) {
 
 <?php endif; ?>
 <br>
-<h3 style="margin-top: 0; color: #00E676;">Or submit your own character here (must be logged in):</h3>
+<h3 style="margin-top: 0; color: #00E676;">Or submit your own character here:</h3>
 
 <?php if ($current_user && !empty($current_user->discord_id)): ?>
 
@@ -319,7 +319,7 @@ if (!empty($_SESSION['user_id'])) {
 
 <?php elseif (!$current_user): ?>
 
-    <p>Log in below and link your Discord account to submit a character.</p>
+    <p>Must be logged in to submit a character.</p>
 
 <?php else: ?>
 
