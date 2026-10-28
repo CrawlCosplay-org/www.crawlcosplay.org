@@ -775,39 +775,7 @@ if (
         '/crawl_succession_game?id=' . $game->id
     );
 }
-	
-	 /*
-     * Redistribute the 48 standard-route floors among remaining players.
-     */
-    if (
-        $can_edit
-        && $action === 'reallocate_floors'
-        && $game->status === 'active'
-    ) {
-        $remaining_count = count($queue);
-
-        if ($remaining_count > 0) {
-            $base_floors = intdiv(48, $remaining_count);
-            $extra_floors = 48 % $remaining_count;
-
-            foreach ($queue as $index => $player) {
-                $allocated_floors = $base_floors;
-
-                if ($index < $extra_floors) {
-                    $allocated_floors++;
-                }
-
-                $player->save([
-                    'allocated_floors' => $allocated_floors
-                ]);
-            }
-        }
-
-        return $this->request->redirect(
-            '/crawl_succession_game?id=' . $game->id
-        );
-    }
-   
+	  
     /*
      * Handle queue management.
      */
@@ -984,7 +952,7 @@ if (
 
                     if ($target->delete()) {
 
-                       /*
+                     	/*
 						 * Renumber the remaining queue positions.
 						 */
 						$remaining = CrawlSuccessionQueue::find(
@@ -1004,6 +972,29 @@ if (
 						    $position++;
 						}
 
+						/*
+						 * Automatically redistribute the 48 standard-route floors
+						 * among the remaining players.
+						 */
+						$remaining_count = count($remaining);
+
+						if ($remaining_count > 0) {
+						    $base_floors = intdiv(48, $remaining_count);
+						    $extra_floors = 48 % $remaining_count;
+
+						    foreach ($remaining as $index => $player) {
+						        $allocated_floors = $base_floors;
+
+						        if ($index < $extra_floors) {
+						            $allocated_floors++;
+						        }
+
+						        $player->save([
+						            'allocated_floors' => $allocated_floors
+						        ]);
+						    }
+						}
+						
                         /*
                          * Transfer the active turn to the next player.
                          */
@@ -1072,15 +1063,9 @@ if (
                             }
                         }
 
-                        /*
-                         * Ask whether to redistribute floors after
-                         * removing a player from an active game.
-                         */
-                        if ($game->status === 'active') {
+                         if ($game->status === 'active') {
                             return $this->request->redirect(
-                                '/crawl_succession_game?id='
-                                . $game->id
-                                . '&prompt_reallocate=1'
+                                '/crawl_succession_game?id=' . $game->id
                             );
                         }
 
@@ -1414,43 +1399,6 @@ if ($game->status === 'concluded' && !empty($turns)) {
 
     </form>
 
-<?php endif; ?>
-
-<?php if (
-    $can_edit
-    && $game->status === 'active'
-    && isset($_GET['prompt_reallocate'])
-    && $_GET['prompt_reallocate'] === '1'
-): ?>
-    <div class="reallocate-prompt">
-        <h2>Player Removed — Redistribute Floors?</h2>
-
-        <p>
-            A player has been removed from this succession game.
-            Would you like to automatically redistribute the
-            48 standard-route floors among the remaining players?
-        </p>
-
-        <p>
-            If you decline, you can still edit the floor allocation manually.
-        </p>
-
-        <form method="POST">
-            <input
-                type="hidden"
-                name="action"
-                value="reallocate_floors"
-            >
-
-            <button type="submit">
-                Yes, redistribute floors
-            </button>
-
-            <a href="/crawl_succession_game?id=<?= (int) $game->id ?>">
-                No, keep current allocations
-            </a>
-        </form>
-    </div>
 <?php endif; ?>
 
 <br>
