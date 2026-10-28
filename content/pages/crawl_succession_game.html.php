@@ -284,6 +284,8 @@ if ($is_admin && $action === 'delete') {
                 ['order' => '`position` ASC']
             );
 
+			$queue = iterator_to_array($queue, false);
+			
             $first_player = $queue[0];
             $now = date('Y-m-d H:i:s');
 
