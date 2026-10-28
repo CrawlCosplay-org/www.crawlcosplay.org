@@ -1422,28 +1422,35 @@ if ($game->status === 'concluded' && !empty($turns)) {
     && isset($_GET['prompt_reallocate'])
     && $_GET['prompt_reallocate'] === '1'
 ): ?>
-    <form method="POST">
-        <input
-            type="hidden"
-            name="action"
-            value="reallocate_floors"
-        >
+    <div class="reallocate-prompt">
+        <h2>Player Removed — Redistribute Floors?</h2>
 
         <p>
+            A player has been removed from this succession game.
             Would you like to automatically redistribute the
             48 standard-route floors among the remaining players?
+        </p>
+
+        <p>
             If you decline, you can still edit the floor allocation manually.
         </p>
 
-        <input
-            type="submit"
-            value="Yes, redistribute floors"
-        >
+        <form method="POST">
+            <input
+                type="hidden"
+                name="action"
+                value="reallocate_floors"
+            >
 
-        <a href="/crawl_succession_game?id=<?= (int) $game->id ?>">
-            No, keep current allocations
-        </a>
-    </form>
+            <button type="submit">
+                Yes, redistribute floors
+            </button>
+
+            <a href="/crawl_succession_game?id=<?= (int) $game->id ?>">
+                No, keep current allocations
+            </a>
+        </form>
+    </div>
 <?php endif; ?>
 
 <br>
