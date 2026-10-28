@@ -7,6 +7,8 @@ use app\models\CrawlSuccessionUser;
 
 require_once dirname(__DIR__, 5)
     . '/Private/crawl_succession_credentials_crypto.php';
+require_once dirname(__DIR__, 5)
+    . '/Private/crawl_succession_discord.php';
 
 if ($data = $this->request->getPostData()) {
 
@@ -27,13 +29,57 @@ if ($data = $this->request->getPostData()) {
             break;
         }
 
-        if ($game) {
+             if ($game) {
 
             if ($action === 'approve') {
 
-                $game->save([
+                if ($game->save([
                     'status' => 'planned'
-                ]);
+                ])) {
+
+                    $creators = CrawlSuccessionUser::find([
+                        'id' => $game->created_by
+                    ]);
+
+                    $creator = null;
+
+                    foreach ($creators as $found_creator) {
+                        $creator = $found_creator;
+                        break;
+                    }
+
+                    $creator_mention = 'Unknown creator';
+                    $discord_ids = [];
+
+                    if ($creator) {
+                        $creator_mention = $creator->username;
+
+                        if (!empty($creator->discord_id)) {
+                            $discord_ids[] = $creator->discord_id;
+                            $creator_mention = '<@'
+                                . $creator->discord_id
+                                . '>';
+                        }
+                    }
+
+                    $game_url =
+                        'https://www.crawlcosplay.org/crawl_succession_game?id='
+                        . (int) $game->id;
+
+                    $message =
+                        "**New succession game available!**\n\n"
+                        . "**Created by:** " . $creator_mention . "\n"
+                        . "**Game Type:** " . $game->game_type . "\n"
+                        . "**Players:** " . (int) $game->min_players
+                        . "–" . (int) $game->max_players . "\n\n"
+                        . "Sign up and join this game!\n"
+                        . "<" . $game_url . ">";
+
+                    sendCrawlSuccessionDiscordNotification(
+                        $message,
+                        $discord_ids
+                    );
+                }
 
             } elseif ($action === 'reject') {
 
