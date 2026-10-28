@@ -994,6 +994,22 @@ if (
 						        ]);
 						    }
 						}
+						                     
+						/*
+                         * Refresh the next player's queue entry so their
+                         * allocation matches the updated database value.
+                         */
+                        if ($was_active && $next_player) {
+                            foreach ($remaining as $remaining_player) {
+                                if (
+                                    $remaining_player->user_id
+                                    == $next_player->user_id
+                                ) {
+                                    $next_player = $remaining_player;
+                                    break;
+                                }
+                            }
+                        }
 						
                         /*
                          * Transfer the active turn to the next player.
