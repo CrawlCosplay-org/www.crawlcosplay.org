@@ -96,6 +96,7 @@ if ($data = $this->request->getPostData()) {
                     $message =
                         "**New succession game available!**\n\n"
                         . "**Created by:** " . $creator_mention . "\n"
+                        . "**Game:** " . $game->game_name . "\n"
                         . "**Game Type:** " . $game->game_type . "\n"
                         . "**Players:** " . (int) $game->min_players
                         . "–" . (int) $game->max_players . "\n\n"
