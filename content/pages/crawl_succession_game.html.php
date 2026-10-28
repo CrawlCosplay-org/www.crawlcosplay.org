@@ -986,23 +986,25 @@ if (
 
                     if ($target->delete()) {
 
-                        /*
-                         * Renumber the remaining queue positions.
-                         */
-                        $remaining = CrawlSuccessionQueue::find(
-                            ['game_id' => $game->id],
-                            ['order' => '`position` ASC']
-                        );
+                       /*
+						 * Renumber the remaining queue positions.
+						 */
+						$remaining = CrawlSuccessionQueue::find(
+						    ['game_id' => $game->id],
+						    ['order' => '`position` ASC']
+						);
 
-                        $position = 1;
+						$remaining = iterator_to_array($remaining, false);
 
-                        foreach ($remaining as $player) {
-                            $player->save([
-                                'position' => $position
-                            ]);
+						$position = 1;
 
-                            $position++;
-                        }
+						foreach ($remaining as $player) {
+						    $player->save([
+						        'position' => $position
+						    ]);
+
+						    $position++;
+						}
 
                         /*
                          * Transfer the active turn to the next player.
