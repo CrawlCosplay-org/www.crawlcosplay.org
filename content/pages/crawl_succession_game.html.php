@@ -345,7 +345,7 @@ if ($is_admin && $action === 'delete') {
                         . "Turn 1: **" . $firstPlayerName . "**\n"
                         . "Play **" . (int) $first_player->allocated_floors
                         . " floors** (check player notes for current progress).\n"
-                        . "Players: " . implode(', ', $mentions) . "\n"
+                        . "Player order: " . implode(', ', $mentions) . "\n"
                         . "<" . $gameUrl . ">";
 
                     sendCrawlSuccessionDiscordNotification(
