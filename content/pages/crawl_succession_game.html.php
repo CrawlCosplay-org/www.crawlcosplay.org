@@ -966,23 +966,21 @@ if (
 
                     $now = date('Y-m-d H:i:s');
 
-                    /*
-                     * Finish the removed player's current turn record.
-                     */
-                    if ($was_active) {
-                        $current_turns = CrawlSuccessionTurn::find([
-                            'game_id' => $game->id,
-                            'turn_number' => $game->turn_number,
-                            'user_id' => $target->user_id
-                        ]);
+                  /*
+					 * Remove the current turn record for the removed player.
+					 */
+						if ($was_active) {
+						    $current_turns = CrawlSuccessionTurn::find([
+						    'game_id' => $game->id,
+    					    'turn_number' => $game->turn_number,
+ 					      	'user_id' => $target->user_id
+					    ]);
 
-                        foreach ($current_turns as $current_turn) {
-                            $current_turn->save([
-                                'finished' => $now
-                            ]);
-                            break;
-                        }
-                    }
+					    foreach ($current_turns as $current_turn) {
+					        $current_turn->delete();
+					        break;
+					    }
+					}
 
                     if ($target->delete()) {
 
@@ -1011,7 +1009,7 @@ if (
                          */
                         if ($was_active && $next_player) {
 
-                            $next_turn_number = $game->turn_number + 1;
+                            $next_turn_number = $game->turn_number;
 
                             $next_player->save([
                                 'active' => 1
