@@ -3,6 +3,7 @@
 <?php
 
 use app\models\CrawlSuccessionGame;
+use app\models\CrawlSuccessionQueue;
 use app\models\CrawlSuccessionUser;
 
 require_once dirname(__DIR__, 5)
@@ -29,7 +30,7 @@ if ($data = $this->request->getPostData()) {
             break;
         }
 
-             if ($game) {
+        if ($game) {
 
             if ($action === 'approve') {
 
@@ -37,6 +38,32 @@ if ($data = $this->request->getPostData()) {
                     'status' => 'planned'
                 ])) {
 
+                    // Automatically add the creator to the queue.
+                    $existing_entries = CrawlSuccessionQueue::find([
+                        'game_id' => $game->id,
+                        'user_id' => $game->created_by
+                    ]);
+
+                    $already_queued = false;
+
+                    foreach ($existing_entries as $entry) {
+                        $already_queued = true;
+                        break;
+                    }
+
+                    if (!$already_queued) {
+
+                        $queue_entry = new CrawlSuccessionQueue([
+                            'game_id' => $game->id,
+                            'user_id' => $game->created_by,
+                            'position' => 1,
+                            'active' => 0,
+                            'joined' => date('Y-m-d H:i:s')
+                        ]);
+
+                        $queue_entry->save();
+                    }
+                    
                     $creators = CrawlSuccessionUser::find([
                         'id' => $game->created_by
                     ]);
