@@ -17,3 +17,27 @@
     font-size: 1.5em;
     font-weight: bold;
 }
+.reallocate-prompt {
+    margin: 1.5em 0 2em 0;
+    padding: 1.5em;
+    background: #fff3cd;
+    border: 2px solid #e0a800;
+    border-left: 8px solid #d39e00;
+    border-radius: 6px;
+    color: #664d03;
+}
+
+.reallocate-prompt h2 {
+    margin-top: 0;
+    color: #664d03;
+}
+
+.reallocate-prompt p {
+    font-size: 1.05em;
+}
+
+.reallocate-prompt button {
+    font-weight: bold;
+    padding: 10px 16px;
+    margin-right: 12px;
+}
