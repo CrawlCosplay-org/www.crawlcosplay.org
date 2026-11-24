@@ -14,6 +14,7 @@ class CrawlSuccessionTurn extends BaseModel
         'user_id',
         'notes',
         'result',
+        'morgue_url',
         'started',
         'finished'
     ];
