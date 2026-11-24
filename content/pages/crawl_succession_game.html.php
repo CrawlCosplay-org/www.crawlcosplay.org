@@ -518,6 +518,7 @@ if ($action === 'finish_turn') {
     } else {
 
         $notes = trim($post_data['notes'] ?? '');
+		$morgue_url = trim($post_data['morgue_url'] ?? '');
         $now = date('Y-m-d H:i:s');
 
         /*
@@ -576,11 +577,20 @@ if ($action === 'finish_turn') {
                 /*
                  * Save the current turn.
                  */
-                if (!$current_turn->save([
-                    'notes' => $notes,
-                    'result' => $is_final_player ? $result : null,
-                    'finished' => $now
-                ])) {
+               if (
+   				 empty($morgue_url)
+  				 || !filter_var($morgue_url, FILTER_VALIDATE_URL)
+  				 || !preg_match('/^https?:\/\//i', $morgue_url)
+				) {
+
+  				  $error = "Please provide a valid morgue file URL.";
+
+				} elseif (!$current_turn->save([
+ 				   'notes' => $notes,
+  				   'result' => $is_final_player ? $result : null,
+    			   'morgue_url' => $morgue_url,
+   				 'finished' => $now
+				])) {
 
                     $error = "Unable to finish the current turn.";
 
@@ -1379,6 +1389,20 @@ if ($game->status === 'concluded' && !empty($turns)) {
                 ></textarea>
             </label>
 
+			<br /><br />
+
+			<label>
+   			 <span>Morgue File URL</span><br />
+  			 <input
+   			     type="url"
+    			 name="morgue_url"
+        		 maxlength="2048"
+       			 size="60"
+       			 placeholder="https://crawl.example.com/morgue/..."
+      			 required
+ 			   />
+			</label>
+
             <?php if ($is_final_player): ?>
 
                 <br /><br />
@@ -1626,6 +1650,19 @@ echo '<p><strong><u>Standard route (48 floors):</u></strong> Dungeon (15) → La
             <strong>Finished:</strong>
             <?=$e($turn->finished ?? 'In progress')?>
         </p>
+
+			<?php if (!empty($turn->morgue_url)): ?>
+
+ 			   <p>
+    			    <strong>Morgue File:</strong>
+     			    <a
+         			   href="<?=$e($turn->morgue_url)?>"
+        			   target="_blank"
+         			   rel="noopener noreferrer"
+        			>View Morgue File</a>
+ 			   </p>
+
+			<?php endif; ?>
 
         <?php if (!empty($turn->notes)): ?>
 
